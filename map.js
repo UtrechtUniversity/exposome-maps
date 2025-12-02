@@ -1,6 +1,7 @@
-var map = L.map('map').setView([47.58, 6.06], 6);
+var map = L.map('map',{zoomControl:false}).setView([47.58, 6.06], 6);
 window.currentDisplayedLayer = null;
 map.createPane('basemaps');
+
 
 var geoserverURL = "https://geoserver-openshift-2-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/geoserver/EXPANSE_map/wms";
 

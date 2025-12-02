@@ -1,5 +1,3 @@
-/* copied from Tutorial */
-@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
 body {
   color: #5D5F63;
   background: #19486A;
@@ -12,13 +10,23 @@ body {
   height: 100%;
 }
 
+.leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control {
+    position: relative;   /* or fixed */
+    top: 60px;
+    border-width:0px;
+    z-index: 9999;
+    background-color: #fd6925c9;
+    font-family: Ebrima , sans-serif;
+    font-size: 15px;
+}
+
 #top-bar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
-    background-color: #4C9F38;
+    height: 50px;
+    background-color: #fd6925c9;
     display: flex;
     align-items: center;
     padding: 0 20px; /* left and right breathing room */
@@ -27,22 +35,20 @@ body {
 }
 /* Text styling */
 #top-bar .top-bar-text {
-    font-size: 40px; 
+    font-size: 32px; 
     color: rgb(255, 255, 255); 
     margin: 0 auto;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-
 }
-
 .viewbutton {
     background-color: #00689D;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 7px 10px;
+    font-size: 15px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -54,7 +60,7 @@ body {
 
 .view {
     position: absolute;
-    top: 70px; /* below top-bar */
+    top: 0; /* behind top-bar */
     left: 0;
     width: 100%;
     bottom: 0; /* take all remaining space */
@@ -90,33 +96,32 @@ body {
 #sidebar
 , #sidebar2 {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 60px;
+    bottom: 10px;
+    left: 5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 1em;
+    font-size: 12px;
     width: clamp(60px, 4vw, 100px); /* collapsed width */
-    height: 100%;
-    background-color: #19486A;
+    background-color: #19486ab9;
     padding: clamp(8px, 1vw, 20px);
     z-index: 1000;
     box-sizing: border-box;
     overflow: hidden;
     transition: width 0.3s ease, padding 0.3s ease;
     overflow-y: auto;
+    border-radius: 10px
 }
 
 #sidebar.open
 , #sidebar2.open {
-  font-size: 1em;
     width: clamp(200px, 20vw, 350px); /* scales up to a max width */
     padding: clamp(10px, 2vw, 25px);
 }
 
 #sidebar aside,
 #sidebar2 aside {
-  font-size: 1em;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
@@ -124,41 +129,44 @@ body {
 
 #sidebar.open aside,
 #sidebar2.open aside {
-  font-size: 1em;
   opacity: 1;
   pointer-events: all;
 }
 
 /* Make map the same width as the top bar */
 #map {
+    position:relative;
     width: 100%;
     height: 100%;
 }
 
 .sidebar {
-  background: #19486A;
+  background: #19486a;
   width: clamp(200px, 25vw, 450px);
-  font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.rem);
   display: flex;
   max-width: 100%;
   box-sizing: border-box;
   flex-direction: column;
   gap: 10px;
-
+  border-radius:5px;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   z-index: 100;
+  margin-top: 2em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.384);
 }
-.sidebar  {
-    margin-top: 2em;
-}
+
 .sidebar ul,
 .sidebar ul ul {
     margin: -2px 0 0;
     padding: 0;
+    border: 2px;
 }
 
 .sidebar ul li {
@@ -176,9 +184,9 @@ body {
     display: block;
     padding: 0.3em 0 0.6em 0.4em;
     font-size: 2em;
-    border-bottom: 2px solid #52614e7e;
     cursor: pointer;
     transition: all 200ms ease-in;
+    border-color:black;
 }
 
 .sidebar  ul li a:hover {
@@ -190,9 +198,10 @@ body {
 }
 
 .sidebar  ul ul li {
-    background: #00689D;
-    margin: 0;
-    border-bottom: none;
+    background: #00699d;
+    font-size: 1em;
+    margin:3px;
+
 }
 
 .sidebar  ul ul li a {
@@ -202,14 +211,36 @@ body {
 }
 
 .sidebar  ul ul ul li a {
-    font-size: 0.85em;
+    font-size: 1em;
     padding: 0.7em 0.5em;
     color: #ffffff;
 }
 
+.sidebar-img1 {
+  position: absolute; /* or fixed if you want it viewport-relative */
+  bottom: 10px;
+  left: 25px; /* optional, or adjust as needed */
+  background-color: rgba(255, 255, 255, 0.397);
+  border-radius: 10px;
+  max-width: 39%;
+  padding: 5px;
+  height:35px;
+}
+
+.sidebar-img2 {
+  position: absolute; /* or fixed if you want it viewport-relative */
+  bottom: 10px;
+  right: 25px; /* optional, or adjust as needed */
+  background-color: rgba(255, 255, 255, 0.397);
+  border-radius: 10px;
+  max-width: 39%;
+  padding: 5px;
+  height:35px;
+}
+
 #dynamic-populated-menu li ul li a.selected,
 #dynamic-populated-menu-catalogue-view li ul li a.selected {
-    background-color: #4C9F38; /* blue */
+    background-color: #fd6925c9;
     color: #ffffff;
     font-weight: bold;
     width: 100%;
@@ -220,6 +251,7 @@ body {
   border-radius: 5px;
   color: white;
   text-align: center;
+
 }
 
 /* Make the h3 less squished */
@@ -279,12 +311,14 @@ body {
 }
 
 #showOnMapBtn{
-  background-color: #4C9F38;
+  background-color: #fd6925c9;
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  border-radius:10px;
+  margin:10px;
 }
 
 #showOnMapBtn:disabled {
@@ -327,14 +361,14 @@ body {
 /* Make themap label be on top of the map, on the bottom center */
 #map-label {
   position: absolute;
-  bottom: 20px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.8);
+  background: #19486aa6;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 30px;
-  color: #333;
+  font-size: 16px;
+  color: #ffffff;
   z-index: 1000;
   font-weight: 300;
 }
@@ -343,22 +377,20 @@ body {
 /* position it relative to the map container */
 .slider-container {
     position: absolute;
-    top: 100px;  
+    top: 160px;  
     right: 12px;
     z-index: 1000;
-    background: #ffffff; 
+    background-color:#fd6925c9;
+    border: 0px;
     border-radius: 5px;
     padding: 6px 10px 6px 6px;
     width: 200px;
-    border: 2px solid rgb(0 0 0 / 20%);
     color:#000000;
     background-clip: border-box;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-kerning: auto;
-    font-weight: lighter;
-    font-size: 12px;
+    font-family: Ebrima, sans-serif;
+    font-size: 15px;
     text-align: center;
+    font-weight: lighter;
 }
 
 #opacity-slider {
@@ -368,14 +400,14 @@ body {
 .toggle_container {
   display: inline-block;
   cursor: pointer;
-  left: 18px;
+  left: 10px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   z-index: 1001;
 }
 
 .toggle_bar1, .toggle_bar2, .toggle_bar3 {
-  width: 35px;
+  width: 20px;
   height: 5px;
   background-color: #26BDE2;
   margin: 6px 0;
