@@ -11,13 +11,25 @@ body {
 }
 
 .leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control {
-    position: relative;   /* or fixed */
+    position: relative;
     top: 60px;
     border-width:0px;
     z-index: 9999;
     background-color: #fd6925c9;
     font-family: Ebrima , sans-serif;
     font-size: 15px;
+}
+
+.leaflet-popup-content {
+    text-align: center;
+    margin: 5px 10px;
+    line-height: 1.4;
+    background-color: #fc8e5bc9;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #fd6925c9;
+    color: #333;
 }
 
 #top-bar {

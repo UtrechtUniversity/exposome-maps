@@ -32,9 +32,9 @@ map.getPane('basemaps').style.zIndex = 200;
 map.getPane('basemaps').style.pointerEvents = 'none';
 
 var baseLayers = {
-    "OpenStreetMap": osmLayer,
+    "Light background": lightLayer,
     "Dark background": darkLayer,
-    "Light background": lightLayer
+    "OpenStreetMap": osmLayer
 };
 L.control.layers(baseLayers, {}, {collapsed: false}).addTo(map);
 
@@ -46,8 +46,8 @@ map.on('baselayerchange', function(e) {
 });
 
 // Default basemap
-osmLayer.addTo(map);
-osmLayer.bringToBack();
+lightLayer.addTo(map);
+lightLayer.bringToBack();
 
 // Prepare dates to be used as parameters for WMS requests
 function selectDateCleanup(dateStr) {
@@ -93,6 +93,7 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
         console.log("Layer name:", layerName);
         var dateParameter = selectDateCleanup(window.selectedDate);
         console.log("Date parameter for WMS request:", dateParameter);
+        var style = window.selectedItem.geoserver_style
 
         if (window.currentDisplayedLayer) {
             map.removeLayer(window.currentDisplayedLayer);
@@ -112,6 +113,30 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
         // Update map label
         var mapLabel = document.getElementById("map-label");
         mapLabel.innerHTML = `<strong> ${window.selectedItem.Description} ${window.selectedDate}</strong>`;
+
+        // Get legend
+        // if (document.querySelector('.legend-' + style)) {
+        //     return; //Dont add legend again for the same kind of layer
+        // }      
+        if (map._legends) {
+            Object.values(map._legends).forEach(l => map.removeControl(l));
+            map._legends = {};
+        }
+
+        var legendUrl = geoserverURL + `?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image/png&style=EXPANSE_map:${style}_no_zero&STRICT=false`;
+
+        console.log(legendUrl)
+        console.log(window.selectedItem.geoserver_style)
+        var legend = L.control({position: 'bottomright'});
+        legend.onAdd = function () {
+            var div = L.DomUtil.create('div', 'info legend-' + style);
+            div.innerHTML += '<img src="' + legendUrl + '" alt="Legend"/>';
+            return div;
+        };
+        legend.addTo(map);
+        legend._legendName = style;
+        map._legends = map._legends || {};
+        map._legends[style] = legend;
     }
 });
 
