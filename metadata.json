@@ -1,5 +1,4 @@
 {
-    "Food": {},
     "Built": {
         "NDVI": [
             {
@@ -784,10 +783,10 @@
             }
         ]
     },
-    "Physio-Chemical": {
+    "Physical-Chemical": {
         "Air pollution": [
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Air pollution",
                 "id": "NO2B25_AAV",
                 "geoserver_layer": "NO2B25_AAV",
@@ -795,8 +794,8 @@
                 "file_name": "NO2B25_AAV_XX_XX_%yr%_v2",
                 "File type": "TIF",
                 "start_time": "01_01_2000",
-                "end_time": "01_12_2019",
-                "time_period": "2000 - 2019",
+                "end_time": "01_12_2023",
+                "time_period": "2000 - 2023",
                 "temporal_resolution": "Annual",
                 "Spatial resolution": "25x25 m",
                 "Extent": "Full EU",
@@ -808,10 +807,10 @@
                 "crs": "EPSG:3035",
                 "no_data_value": "NaN",
                 "show_on_map": true,
-                "available_years": "2000, 2001"
+                "available_years": "2003, 2023"
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Air pollution",
                 "id": "NO2B25_MAV",
                 "geoserver_layer": "NO2B25_MAV",
@@ -831,11 +830,11 @@
                 "comments": "",
                 "crs": "EPSG:3035",
                 "no_data_value": "NaN",
-                "show_on_map": true,
+                "show_on_map": false,
                 "available_years": ""
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Air pollution",
                 "id": "P10B25_AAV",
                 "geoserver_layer": "P10B25_AAV",
@@ -843,8 +842,8 @@
                 "file_name": "P10B25_AAV_XX_XX_%yr%_v2",
                 "File type": "TIF",
                 "start_time": "01_01_2000",
-                "end_time": "01_12_2019",
-                "time_period": "2000 - 2019",
+                "end_time": "01_12_2023",
+                "time_period": "2000 - 2023",
                 "temporal_resolution": "Annual",
                 "Spatial resolution": "25x25 m",
                 "Extent": "Full EU",
@@ -856,10 +855,10 @@
                 "crs": "EPSG:3035",
                 "no_data_value": "NaN",
                 "show_on_map": true,
-                "available_years": "2000, 2001"
+                "available_years": "2003, 2023"
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Air pollution",
                 "id": "P10B25_MAV",
                 "geoserver_layer": "P10B25_MAV",
@@ -879,11 +878,11 @@
                 "comments": "",
                 "crs": "EPSG:3035",
                 "no_data_value": "NaN",
-                "show_on_map": true,
+                "show_on_map": false,
                 "available_years": ""
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Air pollution",
                 "id": "P25B25_AAV",
                 "geoserver_layer": "P25B25_AAV",
@@ -891,8 +890,8 @@
                 "file_name": "P25B25_AAV_XX_XX_%yr%_v2",
                 "File type": "TIF",
                 "start_time": "01_01_2000",
-                "end_time": "01_12_2019",
-                "time_period": "2000 - 2019",
+                "end_time": "01_12_2023",
+                "time_period": "2000 - 2023",
                 "temporal_resolution": "Annual",
                 "Spatial resolution": "25x25 m",
                 "Extent": "Full EU",
@@ -904,10 +903,10 @@
                 "crs": "EPSG:3035",
                 "no_data_value": "NaN",
                 "show_on_map": true,
-                "available_years": "2000, 2001"
+                "available_years": "2003, 2023"
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Air pollution",
                 "id": "P25B25_MAV",
                 "geoserver_layer": "P25B25_MAV",
@@ -927,11 +926,11 @@
                 "comments": "",
                 "crs": "EPSG:3035",
                 "no_data_value": "NaN",
-                "show_on_map": true,
+                "show_on_map": false,
                 "available_years": ""
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Air pollution",
                 "id": "OZOB25_AAV",
                 "geoserver_layer": "OZOB25_AAV",
@@ -939,8 +938,8 @@
                 "file_name": "OZOB25_AAV_XX_XX_%yr%_v2",
                 "File type": "TIF",
                 "start_time": "01_01_2000",
-                "end_time": "01_12_2019",
-                "time_period": "2000 - 2019",
+                "end_time": "01_12_2023",
+                "time_period": "2000 - 2023",
                 "temporal_resolution": "Annual",
                 "Spatial resolution": "25x25 m",
                 "Extent": "Full EU",
@@ -952,10 +951,10 @@
                 "crs": "EPSG:3035",
                 "no_data_value": "NaN",
                 "show_on_map": true,
-                "available_years": "2000, 2001"
+                "available_years": "2003, 2023"
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Air pollution",
                 "id": "OZOB25_MAV",
                 "geoserver_layer": "OZOB25_MAV",
@@ -975,13 +974,13 @@
                 "comments": "",
                 "crs": "EPSG:3035",
                 "no_data_value": "NaN",
-                "show_on_map": true,
+                "show_on_map": false,
                 "available_years": ""
             }
         ],
         "Temperature": [
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Temperature",
                 "id": "TMP_AVG",
                 "geoserver_layer": "TMP_AVG",
@@ -1005,7 +1004,7 @@
                 "available_years": ""
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Temperature",
                 "id": "TMP_AVG",
                 "geoserver_layer": "TMP_AVG",
@@ -1029,7 +1028,7 @@
                 "available_years": ""
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Temperature",
                 "id": "TMP_MIN",
                 "geoserver_layer": "TMP_MIN",
@@ -1053,7 +1052,7 @@
                 "available_years": ""
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Temperature",
                 "id": "TMP_MAX",
                 "geoserver_layer": "TMP_MAX",
@@ -1077,7 +1076,7 @@
                 "available_years": ""
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Temperature",
                 "id": "TEMP_AVG",
                 "geoserver_layer": "TEMP_AVG",
@@ -1103,7 +1102,7 @@
         ],
         "Urbanicity": [
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Urbanicity",
                 "id": "UR_B15",
                 "geoserver_layer": "UR_B15",
@@ -1129,7 +1128,7 @@
         ],
         "Noise RTN": [
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Noise RTN",
                 "id": "RTN_AVG",
                 "geoserver_layer": "RTN_AVG",
@@ -1155,7 +1154,7 @@
         ],
         "Downward UV radiation at the surface": [
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Downward UV radiation at the surface",
                 "id": "UV_AVG",
                 "geoserver_layer": "UV_AVG",
@@ -1179,7 +1178,7 @@
                 "available_years": ""
             },
             {
-                "category": "Physio-Chemical",
+                "category": "Physical-Chemical",
                 "theme": "Downward UV radiation at the surface",
                 "id": "UV_MAX",
                 "geoserver_layer": "UV_MAX",
