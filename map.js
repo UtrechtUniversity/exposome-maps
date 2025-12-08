@@ -3,7 +3,9 @@ window.currentDisplayedLayer = null;
 map.createPane('basemaps');
 
 
-var geoserverURL = "https://geoserver-openshift-2-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/geoserver/EXPANSE_map/wms";
+// var geoserverURL = "https://geoserver-openshift-2-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/geoserver/EXPANSE_map/wms";
+var geoserverURL = "http://localhost:8080/geoserver/EXPANSE_map/wms"; // Used for testing
+
 
 var geoserver_workspace = "EXPANSE_map";
 
@@ -123,9 +125,8 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
             map._legends = {};
         }
 
-        var legendUrl = geoserverURL + `?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image/png&style=EXPANSE_map:${style}_no_zero&STRICT=false`;
+        var legendUrl = geoserverURL + `?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image/png&style=EXPANSE_map:${style}_legend&STRICT=false`;
 
-        console.log(legendUrl)
         console.log(window.selectedItem.geoserver_style)
         var legend = L.control({position: 'bottomright'});
         legend.onAdd = function () {
@@ -160,7 +161,7 @@ map.on('click', function(e) {
         }
         return response.json();
     }).then(data => {
-                    if (!data || !data.features || data.features.length === 0) return;
+                    if (!data || !data.features || data.features.length === 0 || data.features[0].properties.GRAY_INDEX == window.selectedItem.no_data_value) return;
         
                     var popupContent = '';
                     var grayIndex = null;
