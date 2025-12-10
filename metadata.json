@@ -479,31 +479,6 @@
                 "no_data_value": "65535",
                 "show_on_map": true,
                 "available_years": "2006, 2018"
-            },
-            {
-                "category": "Built",
-                "theme": "Green Space",
-                "id": "GSU_DIS",
-                "geoserver_layer": "GSU_DIS",
-                "geoserver_style": "",
-                "Description": "distance to nearest green space using URBAN ATLAS",
-                "file_name": "GSU_DIS_XX_XX_%yr%_v2",
-                "File type": "TIF",
-                "start_time": "01_01_2006",
-                "end_time": "01_12_2018",
-                "time_period": "2006 - 2018",
-                "temporal_resolution": "Annual",
-                "Spatial resolution": "0.25 / 1 ha",
-                "Extent": "EU Urban agglomerations",
-                "Owner": "Kees de Hoogh",
-                "cbs": "1",
-                "lifelines": "1",
-                "unit": "meters",
-                "comments": "",
-                "crs": "EPSG:3035",
-                "no_data_value": "65535",
-                "show_on_map": true,
-                "available_years": "2006, 2018"
             }
         ],
         "Light at Night": [
@@ -1023,7 +998,7 @@
                 "category": "Physico-Chemical",
                 "theme": "Temperature",
                 "id": "TMP_AVG",
-                "geoserver_layer": "TMP_AVG",
+                "geoserver_layer": "TMP_AVG_YEARLY",
                 "geoserver_style": "",
                 "Description": "Yearly average temperature",
                 "file_name": "TMP_AVG_XX_XX_%yr%_v3.tif",
@@ -1042,7 +1017,7 @@
                 "crs": "EPSG:3035",
                 "no_data_value": "-3,40E+38",
                 "show_on_map": true,
-                "available_years": ""
+                "available_years": "2003, 2020"
             },
             {
                 "category": "Physico-Chemical",
@@ -1123,13 +1098,13 @@
                 "category": "Physico-Chemical",
                 "theme": "Temperature",
                 "id": "TEMP_AVG",
-                "geoserver_layer": "TEMP_AVG",
+                "geoserver_layer": "TEMP_AVG_MONTHLY",
                 "geoserver_style": "",
                 "Description": "Monthly average temperature",
                 "file_name": "TEMP_AVG_XX_%mo%_%yr%_v3.tif",
                 "File type": "TIF",
-                "start_time": "01_01_2003",
-                "end_time": "01_12_2020",
+                "start_time": "01_01_2020",
+                "end_time": "01_02_2020",
                 "time_period": "2003 - 2020",
                 "temporal_resolution": "Monthly",
                 "Spatial resolution": "1x1km",
@@ -1142,7 +1117,7 @@
                 "crs": "EPSG:3035",
                 "no_data_value": "-3,40E+38",
                 "show_on_map": true,
-                "available_years": ""
+                "available_years": "2003, 2020"
             }
         ],
         "Urbanicity": [
