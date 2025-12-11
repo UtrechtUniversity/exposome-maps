@@ -479,6 +479,31 @@
                 "no_data_value": "65535",
                 "show_on_map": true,
                 "available_years": "2006, 2018"
+            },
+            {
+                "category": "Built",
+                "theme": "Green Space",
+                "id": "GSU_DIS",
+                "geoserver_layer": "GSU_DIS",
+                "geoserver_style": "GSU",
+                "Description": "distance to nearest green space using URBAN ATLAS",
+                "file_name": "GSU_DIS_XX_XX_%yr%_v2",
+                "File type": "TIF",
+                "start_time": "01_01_2006",
+                "end_time": "01_12_2018",
+                "time_period": "2006 - 2018",
+                "temporal_resolution": "Annual",
+                "Spatial resolution": "0.25 / 1 ha",
+                "Extent": "EU Urban agglomerations",
+                "Owner": "Kees de Hoogh",
+                "cbs": "1",
+                "lifelines": "1",
+                "unit": "meters",
+                "comments": "",
+                "crs": "EPSG:3035",
+                "no_data_value": "65535",
+                "show_on_map": true,
+                "available_years": "2006, 2018"
             }
         ],
         "Light at Night": [
