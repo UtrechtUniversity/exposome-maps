@@ -162,6 +162,7 @@ map.on('click', function(e) {
         return response.json();
     }).then(data => {
                     if (!data || !data.features || data.features.length === 0 || data.features[0].properties.GRAY_INDEX == window.selectedItem.no_data_value) return;
+                    if (Math.abs(data.features[0].properties.GRAY_INDEX + 3.3999999521443642e+38) < 1e+30) return;
         
                     var popupContent = '';
                     var grayIndex = null;
