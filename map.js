@@ -3,8 +3,8 @@ window.currentDisplayedLayer = null;
 map.createPane('basemaps');
 
 
-var geoserverURL = "https://geoserver-openshift-2-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/geoserver/EXPANSE_map/wms";
-// var geoserverURL = "http://localhost:8080/geoserver/EXPANSE_map/wms"; // Used for testing
+// var geoserverURL = "https://geoserver-openshift-2-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/geoserver/EXPANSE_map/wms";
+var geoserverURL = "http://localhost:8080/geoserver/EXPANSE_map/wms"; // Used for testing
 
 
 var geoserver_workspace = "EXPANSE_map";
@@ -117,17 +117,11 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
         mapLabel.innerHTML = `<strong> ${window.selectedItem.Description} ${window.selectedDate}</strong>`;
 
         // Get legend
-        // if (document.querySelector('.legend-' + style)) {
-        //     return; //Dont add legend again for the same kind of layer
-        // }      
         if (map._legends) {
             Object.values(map._legends).forEach(l => map.removeControl(l));
             map._legends = {};
         }
-
         var legendUrl = geoserverURL + `?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image/png&style=EXPANSE_map:${style}_legend&STRICT=false`;
-
-        console.log(window.selectedItem.geoserver_style)
         var legend = L.control({position: 'bottomright'});
         legend.onAdd = function () {
             var div = L.DomUtil.create('div', 'info legend-' + style);
@@ -138,6 +132,19 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
         legend._legendName = style;
         map._legends = map._legends || {};
         map._legends[style] = legend;
+
+        // Switch basemap to window.selectedItem.default_basemap if this value is not empty. Such as the darkLayer for LAN layers
+        var defaultBasemap = window.selectedItem.default_basemap;
+        if (defaultBasemap) {
+            var basemapLayer = baseLayers[defaultBasemap.charAt(0).toUpperCase() + defaultBasemap.slice(1) + " background"];
+            if (basemapLayer) {
+                basemapLayer.addTo(map);
+                basemapLayer.bringToBack();
+            }
+        }
+        
+
+
     }
 });
 
@@ -161,8 +168,8 @@ map.on('click', function(e) {
         }
         return response.json();
     }).then(data => {
-                    if (!data || !data.features || data.features.length === 0 || data.features[0].properties.GRAY_INDEX == window.selectedItem.no_data_value) return;
-                    if (Math.abs(data.features[0].properties.GRAY_INDEX + 3.3999999521443642e+38) < 1e+30) return;
+                    if (!data || !data.features || data.features.length === 0 || data.features[0].properties.GRAY_INDEX == -9999 || data.features[0].properties.GRAY_INDEX == window.selectedItem.no_data_value) return;
+                    if (Math.abs(data.features[0].properties.GRAY_INDEX + 3.3999999521443642e+38) < 1e+30 || Math.abs(data.features[0].properties.GRAY_INDEX + 3.4028234663852886e+38) < 1e+30) return;
         
                     var popupContent = '';
                     var grayIndex = null;

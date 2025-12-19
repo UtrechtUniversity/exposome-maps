@@ -513,6 +513,7 @@
                 "id": "LAN_B03",
                 "geoserver_layer": "LAN_B03",
                 "geoserver_style": "LAN",
+                "default_basemap": "dark",
                 "Description": "Light-at-night 300m buffer",
                 "file_name": "LAN_B03_XX_XX_%yr%_v2",
                 "File type": "TIF",

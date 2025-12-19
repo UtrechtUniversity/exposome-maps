@@ -37,11 +37,10 @@
         </div>
 
     </div>
-    <div id="infoBox" class="info-box hidden">
+    <div id="infoBox" class="info-box">
         <button id="info-close" class="info-close">&times;</button>
         <div id="info-content">
-            <p>Here we provide an overview of External Exposome data that has been inventoried by the Exposome-NL and EXPANSE projects and that have been used in epidemiological studies conducted by these projects.
-            </p>
+            <p></p>
         </div>
     </div>
     <div id="MapView" class="view active">
@@ -141,6 +140,16 @@
         infoCloseButton.addEventListener("click", () => {
             infoBox.classList.add("hidden");
         });
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        fetch("info-page.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("info-content").innerHTML = html;
+            })
+            .catch(err => console.error("Error loading info:", err));
+    });
     </script>
 
     <!-- External scripts-->

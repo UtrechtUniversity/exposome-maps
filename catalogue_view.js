@@ -60,39 +60,25 @@ function openCataloguePanel(subcategoryItems) {
         const itemDiv = document.createElement("div");
         itemDiv.classList.add("catalogue-item");
         
-        // Title
-        const titleDiv = document.createElement("div");
-        titleDiv.classList.add("catalogue-item-title");
-        titleDiv.textContent = item.Description || item.id || "No Title";
-        itemDiv.appendChild(titleDiv);
-
         // Content (keys/values aligned)
         const contentDiv = document.createElement("div");
         contentDiv.classList.add("catalogue-item-content");
 
-        // Only include specified keys
-        const specifiedKeys = ["Description", "Category", "theme", "file_name", "File type", "time_period", "temporal_resolution", "Spatial resolution", "Extent", "crs", "Owner", "comments", "no_data_value"];
-
-        for (const key in item) {
-            if (item.hasOwnProperty(key) && key !== "Description" && specifiedKeys.includes(key)) {
-                const rowDiv = document.createElement("div");
-                rowDiv.classList.add("catalogue-item-row");
-
-                const keyDiv = document.createElement("div");
-                keyDiv.classList.add("catalogue-item-key");
-                keyDiv.textContent = key;
-
-                const valueDiv = document.createElement("div");
-                valueDiv.classList.add("catalogue-item-value");
-                valueDiv.textContent = item[key];
-
-                rowDiv.appendChild(keyDiv);
-                rowDiv.appendChild(valueDiv);
-                contentDiv.appendChild(rowDiv);
-            }
-        }
+        // Add Thumbnail image <img src="images\ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL logo" class="sidebar-img1">
+        const thumbnail = document.createElement("img");
+        // thumbnail.src = item.thumbnail;
+        thumbnail.src = "images/thumbnails/ndvi.png";
+        thumbnail.classList.add("catalogue-item-thumbnail");
+        contentDiv.appendChild(thumbnail);
+        
+        // Title
+        const titleDiv = document.createElement("div");
+        titleDiv.classList.add("catalogue-item-title");
+        titleDiv.textContent = item.Description || item.id || "No Title";
+        contentDiv.appendChild(titleDiv);
 
         itemDiv.appendChild(contentDiv);
         cataloguePanel.appendChild(itemDiv);
     });
+
 }
