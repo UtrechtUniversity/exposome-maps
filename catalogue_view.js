@@ -67,14 +67,19 @@ function openCataloguePanel(subcategoryItems) {
         // Add Thumbnail image <img src="images\ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL logo" class="sidebar-img1">
         const thumbnail = document.createElement("img");
         // thumbnail.src = item.thumbnail;
-        thumbnail.src = "images/thumbnails/ndvi.png";
+        thumbnail.src = "/catalogue_pages/images/thumbnails/ndvi.png";
         thumbnail.classList.add("catalogue-item-thumbnail");
         contentDiv.appendChild(thumbnail);
         
         // Title
-        const titleDiv = document.createElement("div");
+        const titleDiv = document.createElement("a");
         titleDiv.classList.add("catalogue-item-title");
         titleDiv.textContent = item.Description || item.id || "No Title";
+        // if (item.link) {
+        //     titleDiv.href = item.link;
+        // }
+        titleDiv.href = "/catalogue_pages/NDVI.html";
+
         contentDiv.appendChild(titleDiv);
 
         itemDiv.appendChild(contentDiv);

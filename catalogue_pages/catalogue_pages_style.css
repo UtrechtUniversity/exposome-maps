@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ebrima , sans-serif;
+}
+
+/* Shared horizontal padding for page and top bar inner container */
+:root {
+    --page-gutter: clamp(100px, 8vw, 120px); /* bigger gutter, responsive */
+}
+
+#page,
+.top-bar-inner {
+    padding-left: var(--page-gutter);
+    padding-right: var(--page-gutter);
+    box-sizing: border-box;
+}
+
+/* Top bar full width with blue background */
+#top-bar {
+    display: flex;
+    justify-content: center; /* center inner container */
+    background-color: #19486a;
+    color: white;
+    font-family: Ebrima, sans-serif;
+    padding: 20px 0; /* vertical padding */
+}
+
+/* Inner container stacks content vertically */
+.top-bar-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* fills #top-bar width inside the gutter */
+}
+
+/* Logos row */
+.top-bar-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Logos */
+.sidebar-img {
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+    padding: 5px;
+    height: 35px;
+    width: auto;
+}
+
+/* Title text */
+.title-text {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
