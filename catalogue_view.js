@@ -76,7 +76,13 @@ function openCataloguePanel(subcategoryItems) {
         // Add Thumbnail image <img src="images\ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL logo" class="sidebar-img1">
         const thumbnail = document.createElement("img");
         // thumbnail.src = item.thumbnail;
-        thumbnail.src = "/catalogue_pages/images/thumbnails/" + item.thumbnail + ".png";
+        const basePath = "/catalogue_pages/images/thumbnails/";
+        thumbnail.onerror = function () {
+            this.onerror = null;
+            this.src = `${basePath}not_available.png`;
+        };
+
+        thumbnail.src = `${basePath}${item.thumbnail}.png`;
         thumbnail.classList.add("catalogue-item-thumbnail");
         contentDiv.appendChild(thumbnail);
         
