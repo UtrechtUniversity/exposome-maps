@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposome Maps</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
+
+    <link rel="stylesheet" href="catalogue_pages_style.css">
+
+    <!--external scripts-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.14.0/proj4.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Lilita+One&family=Pangolin&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-bar-logos">
+                <img src="images/EXPANSE_logo_1380x300_noborder.png"
+                    alt="EXPANSE logo"
+                    class="sidebar-img">
+
+                <img src="images/ExposomeNL_logo_1320x320_noborder.png"
+                    alt="ExposomeNL logo"
+                    class="sidebar-img">
+            </div>
+
+            <div id="title" class="title">
+                <span class="title-text">
+                    Dataset: Distance to nearest green space using URBAN ATLAS
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="page">
+        <h2 class="title">Metadata</h2>
+        <div id="metadata-section">
+            
+            <div id="metadata-box"> 
+            </div>
+            <img src="images/thumbnails/urban_greenspace.png" alt="Urban green space example image" class="thumbnail">
+        </div>
+
+        <h2 class="title">Comments</h2>
+        
+        <h2 class="title">Background</h2>
+        <h2 class="title">References</h2>
+    </div>
+
+</body>
+    <script>
+        const metadataBox = document.getElementById("metadata-box");
+        const metadataContent = document.createElement("div");
+
+    </script>
+    <script>
+    // Rename these from the dcat terms to display terms after conversion of the json
+    const specifiedKeys = [
+        "Description",
+        "category",
+        "theme",
+        "File type",
+        "time_period",
+        "temporal_resolution",
+        "Frequency",
+        "Spatial resolution",
+        "Extent",
+        "crs",
+        "Owner",
+        "comments",
+        "unit",
+        "crs",
+        "no_data_value",
+    ];
+
+    const productName = "Distance to nearest green space using URBAN ATLAS";
+
+    fetch("../metadata.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log("Metadata loaded:", data, productName);
+            const product = findProductByDescription(data, productName);
+
+            if (!product) {
+                console.error("Product not found:", productName);
+                return;
+            }
+
+            populateMetadata(product);
+        })
+        .catch(error => console.error("Error loading metadata:", error));
+
+    function findProductByDescription(metadata, productName) {
+        for (const categoryKey in metadata) {
+            const categoryObj = metadata[categoryKey];
+            if (typeof categoryObj !== "object") continue;
+
+            for (const themeKey in categoryObj) {
+                const list = categoryObj[themeKey];
+                if (!Array.isArray(list)) continue;
+
+                const match = list.find(
+                    item => item.catalogue_page === productName
+                );
+
+                if (match) return match;
+            }
+        }
+        return null;
+    }
+
+    function populateMetadata(item) {
+        const metadataBox = document.getElementById("metadata-box");
+        metadataBox.innerHTML = "";
+
+        for (const key of specifiedKeys) {
+            if (item[key] !== undefined) {
+                const rowDiv = document.createElement("div");
+                rowDiv.className = "metadata-row";
+
+                const keyDiv = document.createElement("div");
+                keyDiv.className = "metadata-key";
+                keyDiv.textContent = key;
+
+                const valueDiv = document.createElement("div");
+                valueDiv.className = "metadata-value";
+                valueDiv.textContent = item[key];
+
+                rowDiv.appendChild(keyDiv);
+                rowDiv.appendChild(valueDiv);
+                metadataBox.appendChild(rowDiv);
+            }
+        }
+    }
+
+    </script>
+

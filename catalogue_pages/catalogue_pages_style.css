@@ -7,7 +7,9 @@ html, body {
 
 /* Shared horizontal padding for page and top bar inner container */
 :root {
-    --page-gutter: clamp(100px, 8vw, 120px); /* bigger gutter, responsive */
+    /* Make gutter bigger */
+    /* --page-gutter: clamp(100px, 8vw, 120px); bigger gutter, responsive */
+    --page-gutter: clamp(200px, 6vw, 240px);
 }
 
 #page,
@@ -59,3 +61,45 @@ html, body {
     font-weight: bold;
     text-align: center;
 }
+
+#metadata-section{
+    /* side by side */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.thumbnail{
+    /* Make width 200 and proportional height */
+    width: 500px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#metadata-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.metadata-row {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+/* .metadata-key {
+    font-weight: 600;
+    color: #333;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.metadata-value {
+    color: #555;
+    line-height: 1.4;
+} */

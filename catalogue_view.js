@@ -29,7 +29,16 @@ function initMenu(dataCatalogue, container) {
                 e.stopPropagation();
                 container.querySelectorAll(".subcategory a.selected").forEach(a => a.classList.remove("selected"));
                 subA.classList.add("selected");
-                const subcategoryItems = dataCatalogue[category][subcategory];
+                let subcategoryItems = dataCatalogue[category][subcategory];
+                // Overwrite subcategoryItems that have a unique catalogue_page
+                const uniqueCataloguePages = new Map();
+                subcategoryItems.forEach(item => {
+                    if (item.catalogue_page) {
+                        uniqueCataloguePages.set(item.catalogue_page, item);
+                    }
+                });
+                subcategoryItems = Array.from(uniqueCataloguePages.values());
+
                 openCataloguePanel(subcategoryItems);
             });
 
@@ -67,18 +76,18 @@ function openCataloguePanel(subcategoryItems) {
         // Add Thumbnail image <img src="images\ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL logo" class="sidebar-img1">
         const thumbnail = document.createElement("img");
         // thumbnail.src = item.thumbnail;
-        thumbnail.src = "/catalogue_pages/images/thumbnails/ndvi.png";
+        thumbnail.src = "/catalogue_pages/images/thumbnails/" + item.thumbnail + ".png";
         thumbnail.classList.add("catalogue-item-thumbnail");
         contentDiv.appendChild(thumbnail);
         
         // Title
         const titleDiv = document.createElement("a");
         titleDiv.classList.add("catalogue-item-title");
-        titleDiv.textContent = item.Description || item.id || "No Title";
+        titleDiv.textContent = item.catalogue_page || item.id || "No Title";
         // if (item.link) {
         //     titleDiv.href = item.link;
         // }
-        titleDiv.href = "/catalogue_pages/NDVI.html";
+        titleDiv.href = "/catalogue_pages/" + item.catalogue_page + ".html";
 
         contentDiv.appendChild(titleDiv);
 
