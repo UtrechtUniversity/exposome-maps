@@ -46,12 +46,36 @@ function initMenu(dataCatalogue, container) {
                     // Clear previous content
                     metadataContent.innerHTML = "";
 
-                    ["Description","File type","Time period","Spatial resolution","Extent","Owner","CRS"].forEach(key => {
-                        if(item[key]) {
-                            const div = document.createElement("div");
-                            div.style.textAlign = "left";
-                            div.innerHTML = `<strong>${key}</strong><br>${item[key]}<br><br>`;
-                            metadataContent.appendChild(div);
+                    ["Category",
+                      "Theme",
+                      "Description",
+                      "Summary",
+                      "File type",
+                      "Temporal resolution",
+                      "Time period",
+                      "Frequency",
+                      "Spatial resolution",
+                      "Extent",
+                      "Unit",
+                      "CRS",
+                      "No-data value",
+                      "Owner",
+                      "Comments"].forEach(key => {
+                        if (item[key]) {
+                            const row = document.createElement("div");
+                            row.className = "metadata-row";
+
+                            const keyEl = document.createElement("span");
+                            keyEl.className = "metadata-key";
+                            keyEl.textContent = key;
+
+                            const valueEl = document.createElement("span");
+                            valueEl.className = "metadata-value";
+                            valueEl.textContent = item[key];
+
+                            row.appendChild(keyEl);
+                            row.appendChild(valueEl);
+                            metadataContent.appendChild(row);
                         }
                     });
 
@@ -125,8 +149,8 @@ if (item) {
 const dateInput = document.getElementById("datePicker");
 
 function display_time_component(item) {
-  if (!item || !item.temporal_resolution) {
-    console.warn("Item or temporal_resolution missing");
+  if (!item || !item["Temporal resolution"]) {
+    console.warn("Item or temporal resolution missing");
     return;
   }
 
@@ -141,7 +165,7 @@ function display_time_component(item) {
     }
   };
 
-  switch (item.temporal_resolution) {
+  switch (item["Temporal resolution"]) {
     // Add a listener to update window.selectedDate when a date is picked
     case "Daily": {
       const input = document.createElement("input");
@@ -229,7 +253,7 @@ function display_time_component(item) {
     }
 
     default:
-      console.log("Unknown temporal_resolution:", item.temporal_resolution);
+      console.log("Unknown temporal_resolution:", item["Temporal resolution"]);
       break;
   }
   setupShowOnMapListener();

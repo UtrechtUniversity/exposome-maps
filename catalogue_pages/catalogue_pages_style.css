@@ -103,3 +103,22 @@ html, body {
     color: #555;
     line-height: 1.4;
 } */
+
+.references {
+  max-width: 80ch;          /* comfortable reading width */
+}
+
+.reference {
+  margin-bottom: 1.25em;    /* space between entries */
+  padding-left: 2em;        /* hanging indent width */
+  text-indent: -2em;        /* pull first line back */
+  line-height: 1.5;
+}
+
+.reference a {
+  word-break: break-word;   /* prevent long DOIs from overflowing */
+}
+
+.reference .title {
+  font-weight: normal;      /* keep titles unbolded unless required */
+}

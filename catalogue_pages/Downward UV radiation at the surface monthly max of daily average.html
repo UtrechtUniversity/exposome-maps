@@ -50,7 +50,13 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/max_uv.png" alt="Downward UV radiation example image" class="thumbnail">
+            <img
+            src="images/thumbnails/max_uv.png"
+            alt="Downward UV radiation example image"
+            class="thumbnail"
+            onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+        
+        
         </div>
 
         <h2 class="title">Comments</h2>
@@ -68,24 +74,23 @@
     <script>
     // Rename these from the dcat terms to display terms after conversion of the json
     const specifiedKeys = [
+        "Category",
+        "Theme",
         "Description",
-        "category",
-        "theme",
+        "Summary",
         "File type",
-        "time_period",
-        "temporal_resolution",
+        "Temporal resolution",
+        "Time period",
         "Frequency",
         "Spatial resolution",
         "Extent",
-        "crs",
+        "Unit",
+        "CRS",
+        "No-data value",
         "Owner",
-        "comments",
-        "unit",
-        "crs",
-        "no_data_value",
     ];
 
-    const productName = "Downward UV radiation at the surface monthy mean of daily average";
+    const productName = "Downward UV radiation at the surface monthly max of daily average";
 
     fetch("../metadata.json")
         .then(response => response.json())

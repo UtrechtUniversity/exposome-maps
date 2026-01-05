@@ -50,7 +50,8 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/sd_msavi.png" alt="Standard deviation MSAVI example image" class="thumbnail">
+            <img src="images/thumbnails/sd_msavi.png" alt="Standard deviation MSAVI example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+
         </div>
 
         <h2 class="title">Comments</h2>
@@ -68,21 +69,20 @@
     <script>
     // Rename these from the dcat terms to display terms after conversion of the json
     const specifiedKeys = [
+        "Category",
+        "Theme",
         "Description",
-        "category",
-        "theme",
+        "Summary",
         "File type",
-        "time_period",
-        "temporal_resolution",
+        "Temporal resolution",
+        "Time period",
         "Frequency",
         "Spatial resolution",
         "Extent",
-        "crs",
+        "Unit",
+        "CRS",
+        "No-data value",
         "Owner",
-        "comments",
-        "unit",
-        "crs",
-        "no_data_value",
     ];
 
     const productName = "Standard deviation MSAVI";

@@ -333,6 +333,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 .metadata-box.hidden {
   display: none;
 }
@@ -348,6 +350,24 @@ body {
   color: #ffffff;
 }
 
+.metadata-row {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  column-gap: 0.25rem;
+  margin-bottom: 0.35rem;
+  align-items: start;
+}
+
+.metadata-key {
+  font-weight: 600;     /* bold */
+  text-align: left;
+}
+
+.metadata-value {
+  font-weight: 400;     /* normal */
+  text-align: left;
+  word-break: break-word;
+}
 #showOnMapBtn{
   background-color: #fd6925c9;
   color: white;
