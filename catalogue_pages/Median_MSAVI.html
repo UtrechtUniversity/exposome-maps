@@ -38,7 +38,7 @@
 
             <div id="title" class="title">
                 <span class="title-text">
-                    Dataset: Walkabiliy
+                    Dataset: Median MSAVI (Modified Soil Adjusted Vegetation Index)
                 </span>
             </div>
         </div>
@@ -50,7 +50,7 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/walkability.png" alt="Walkability example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+            <img src="images/thumbnails/median_msavi.png" alt="Median MSAVI example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
 
         </div>
 
@@ -85,7 +85,7 @@
         "Owner",
     ];
 
-    const productName = "Walkabiliy";
+    const productName = "Median MSAVI";
 
     fetch("../metadata.json")
         .then(response => response.json())

@@ -32,7 +32,7 @@ function initMenu(dataCatalogue, container) {
                 productItem.classList.add("product-item");
 
                 const itemA = document.createElement("a");
-                itemA.textContent = item.Description;
+                itemA.textContent = item.Title;
                 itemA.itemData = item;
 
                 const metadataIcon = document.createElement("span");
@@ -48,7 +48,7 @@ function initMenu(dataCatalogue, container) {
 
                     ["Category",
                       "Theme",
-                      "Description",
+                      "Title",
                       "Summary",
                       "File type",
                       "Temporal resolution",

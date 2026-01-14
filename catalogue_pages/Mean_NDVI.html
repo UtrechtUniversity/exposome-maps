@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposome Maps</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
+
+    <link rel="stylesheet" href="catalogue_pages_style.css">
+
+    <!--external scripts-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.14.0/proj4.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Lilita+One&family=Pangolin&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-bar-logos">
+                <img src="images/EXPANSE_logo_1380x300_noborder.png"
+                    alt="EXPANSE logo"
+                    class="sidebar-img">
+
+                <img src="images/ExposomeNL_logo_1320x320_noborder.png"
+                    alt="ExposomeNL logo"
+                    class="sidebar-img">
+            </div>
+
+            <div id="title" class="title">
+                <span class="title-text">
+                    Dataset: Mean Normalized Difference Vegetation Index (NDVI)
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="page">
+        <h2 class="title">Metadata</h2>
+        <div id="metadata-section">
+            
+            <div id="metadata-box"> 
+            </div>
+            <img src="images/thumbnails/mean_ndvi.png" alt="NDVI example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+
+        </div>
+
+        <h2 class="title">Comments</h2>
+        
+        <h2 class="title">Background</h2>
+        <p>
+            NDVI quantifies photosynthetically active vegetation by measuring the difference between 
+            near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs). 
+            NDVI values range from +1.0 to -1.0. Areas of barren rock, sand, or snow usually show very 
+            low NDVI values (for example, 0.1 or less). Sparse vegetation such as shrubs and grasslands 
+            or senescing crops may result in moderate NDVI values (approximately 0.2 to 0.5). High NDVI 
+            values (approximately 0.6 to 0.9) correspond to dense vegetation such as that found in 
+            temperate and tropical forests or crops at their peak growth stage. Negative values of NDVI 
+            (values approaching -1) correspond mainly to water and ice and snow cover. 
+        </p>
+        <p>
+            In EXPANSE, NDVI is derived from the Vegetation Indices (MOD13Q1) product of the 
+            Terra Moderate Resolution Imaging Spectroradiometer (MODIS) with 250 m x 250 m resolution 
+            (K. Didan, 2015). MOD13Q1 16-day composite vegetation indices provide one NDVI value 
+            every 16 days allowing the composition of gap-free temporal-series. The per-pixel compositing 
+            algorithm is described in the MOD13Q1 product user guide (Kamel Didan et al., 2015). The 
+            MOD13Q1 product includes the following relevant bands, among others: a) NDVI and b) quality 
+            assessment (QA) information. More information could be found elsewhere 
+            (https://lpdaac.usgs.gov/products/mod13q1v006/). Per-pixel Quality Assessment (QA) band 
+            provides information about how reliable the acquired data is and allows for removal of pixels 
+            with less accuracies. QA values of 0 and 1 mean a good quality level, whereas values of 2 and 
+            3 represent pixels covered by ice, snow or clouds, which are discarded. Water features have 
+            typically negative signal values for NDVI, so they add noise to the negative edge when 
+            conducting spatial analysis. In order to identify and remove the influence of water bodies in the 
+            analysis, the Land Water Mask derived from MODIS and SRTM (MOD44W) will be used 
+            (Carroll et al., 2017) to filter out the water bodies from the NDVI maps.
+            This mask is a well-described satellite imagery with the same spatial resolution (250m) provided by the U.S. 
+            Geological Survey (USGS). MOD44W is a raster binary mask with land pixels represented as 
+            0 and water as 1. 
+
+            For EXPANSE, surrounding greenness for the last 20 years will be calculated using 5-year 
+            time points (2000, 2005, 2010, 2015 and 2020) at different buffers (300, 500, 1000 m). For 
+            each buffer, we will calculate the number of statistics such as min, p10, p25, p50, mean, p75, 
+            p90, max, and sd values. The pilot GIS dataset will provide insight to evaluate which are the 
+            most relevant ones. As a result, a total of 15 multi-band raster datasets with 250m resolution 
+            for NDVI exposure will be delivered. Each of the bands will represent a selected statistic (see 
+            table S4 in Annex).
+            
+            In brief, the data processing strategy includes the following steps:
+            - All MOD13Q1 imagery within a year will be loaded and processed using Google Earth 
+            Engine. A maximum of 23 dates are available each year.
+            - Processed imagery will be clipped to the defined study area within the project.
+            - Quality assessment (QA) information will be applied to obtain good quality data.
+            - Water bodies will be masked out, using MOD44W. See an example in figure 1. 
+            - Selected statistics (explored in the pilot study) will be calculated from the previous 
+            processed image collection to result in a multi-band raster dataset. 
+        </p>
+        <h2 class="title">References</h2>
+            <p>
+                Carroll, M., Townshend, J., DiMiceli, C., Sohlberg, R., Hansen, M., & DeFries, R. (2017). 
+                Global land cover (MCD12Q1) NASA EOSDIS Land Processes DAAC. 
+                https://doi.org/10.5067/MODIS/MCD12Q1.006
+            </p>
+            <p>
+                Didan, K. (2015). MOD13Q1 MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V006 
+                [Data set]. NASA EOSDIS Land Processes DAAC. 
+                https://doi.org/10.5067/MODIS/MOD13Q1.006
+            </p>
+            <p>
+                Didan, K., Munoz, A. B., Solano, R., & Huete, A. (2015). MODIS vegetation index user’s guide 
+                (MOD13 series) (Version 3.0). The University of Arizona.
+            </p>
+    </div>
+
+</body>
+    <script>
+        const metadataBox = document.getElementById("metadata-box");
+        const metadataContent = document.createElement("div");
+
+    </script>
+    <script>
+    // Rename these from the dcat terms to display terms after conversion of the json
+    const specifiedKeys = [
+        "Category",
+        "Theme",
+        "Title",
+        "Summary",
+        "File type",
+        "Temporal resolution",
+        "Time period",
+        "Frequency",
+        "Spatial resolution",
+        "Extent",
+        "Unit",
+        "CRS",
+        "No-data value",
+        "Owner",
+    ];
+
+    const productName = "Mean NDVI";
+
+    fetch("../metadata.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log("Metadata loaded:", data, productName);
+            const product = findProductByName(data, productName);
+
+            if (!product) {
+                console.error("Product not found:", productName);
+                return;
+            }
+
+            populateMetadata(product);
+        })
+        .catch(error => console.error("Error loading metadata:", error));
+
+    function findProductByName(metadata, productName) {
+        for (const categoryKey in metadata) {
+            const categoryObj = metadata[categoryKey];
+            if (typeof categoryObj !== "object") continue;
+
+            for (const themeKey in categoryObj) {
+                const list = categoryObj[themeKey];
+                if (!Array.isArray(list)) continue;
+
+                const match = list.find(
+                    item => item.catalogue_page === productName
+                );
+
+                if (match) return match;
+            }
+        }
+        return null;
+    }
+
+    function populateMetadata(item) {
+        const metadataBox = document.getElementById("metadata-box");
+        metadataBox.innerHTML = "";
+
+        for (const key of specifiedKeys) {
+            if (item[key] !== undefined) {
+                const rowDiv = document.createElement("div");
+                rowDiv.className = "metadata-row";
+
+                const keyDiv = document.createElement("div");
+                keyDiv.className = "metadata-key";
+                keyDiv.textContent = key;
+
+                const valueDiv = document.createElement("div");
+                valueDiv.className = "metadata-value";
+                valueDiv.textContent = item[key];
+
+                rowDiv.appendChild(keyDiv);
+                rowDiv.appendChild(valueDiv);
+                metadataBox.appendChild(rowDiv);
+            }
+        }
+    }
+
+    </script>
+

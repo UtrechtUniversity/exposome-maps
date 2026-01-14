@@ -207,7 +207,7 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Description",
+        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -227,7 +227,7 @@
         .then(response => response.json())
         .then(data => {
             console.log("Metadata loaded:", data, productName);
-            const product = findProductByDescription(data, productName);
+            const product = findProductByName(data, productName);
 
             if (!product) {
                 console.error("Product not found:", productName);
@@ -238,7 +238,7 @@
         })
         .catch(error => console.error("Error loading metadata:", error));
 
-    function findProductByDescription(metadata, productName) {
+    function findProductByName(metadata, productName) {
         for (const categoryKey in metadata) {
             const categoryObj = metadata[categoryKey];
             if (typeof categoryObj !== "object") continue;

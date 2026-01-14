@@ -114,7 +114,7 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
 
         // Update map label
         var mapLabel = document.getElementById("map-label");
-        mapLabel.innerHTML = `<strong> ${window.selectedItem.Description} ${window.selectedDate}</strong>`;
+        mapLabel.innerHTML = `<strong> ${window.selectedItem.Title} ${window.selectedDate}</strong>`;
 
         // Get legend
         if (map._legends) {

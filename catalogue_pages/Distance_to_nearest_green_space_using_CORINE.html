@@ -38,7 +38,7 @@
 
             <div id="title" class="title">
                 <span class="title-text">
-                    Dataset: Walkabiliy
+                    Dataset: Distance to nearest green space using CORINE
                 </span>
             </div>
         </div>
@@ -50,13 +50,22 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/walkability.png" alt="Walkability example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+            <img src="images/thumbnails/corine_greenspace.png" alt="CORINE green space example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
 
         </div>
 
         <h2 class="title">Comments</h2>
         
         <h2 class="title">Background</h2>
+        Prior research has evidenced positive associations between greenness and physical and 
+        mental health outcomes. While surrounding greenness is the commonly used metric, 
+        quantification of green spaces and accessibility using land cover datasets have been less 
+        popular (Fong et al., 2018).
+        As a general guideline, WHO has recommended that urban residents should be able to 
+        access public green spaces of at least 0.5–1 hectare located within 300 metres’ linear 
+        distance (around 5 minutes’ walk) of their homes (WHO, 2017).
+
+        
         <h2 class="title">References</h2>
     </div>
 
@@ -85,7 +94,7 @@
         "Owner",
     ];
 
-    const productName = "Walkabiliy";
+    const productName = "Distance to nearest green space using CORINE";
 
     fetch("../metadata.json")
         .then(response => response.json())

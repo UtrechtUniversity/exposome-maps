@@ -38,7 +38,7 @@
 
             <div id="title" class="title">
                 <span class="title-text">
-                    Dataset: Walkabiliy
+                    Dataset: Downward UV radiation at the surface monthly max of daily average
                 </span>
             </div>
         </div>
@@ -50,8 +50,13 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/walkability.png" alt="Walkability example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
-
+            <img
+            src="images/thumbnails/max_uv.png"
+            alt="Downward UV radiation example image"
+            class="thumbnail"
+            onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+        
+        
         </div>
 
         <h2 class="title">Comments</h2>
@@ -85,7 +90,7 @@
         "Owner",
     ];
 
-    const productName = "Walkabiliy";
+    const productName = "Downward UV radiation at the surface monthly max of daily average";
 
     fetch("../metadata.json")
         .then(response => response.json())
