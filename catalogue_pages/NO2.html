@@ -51,7 +51,6 @@
             <div id="metadata-box"> 
             </div>
             <img src="images/thumbnails/no2.png" alt="NO2 example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
-
         </div>
 
         <h2 class="title">Comments</h2>
@@ -219,6 +218,7 @@
         "CRS",
         "No-data value",
         "Owner",
+        "Path to XML file"
     ];
 
     const productName = "NO2";
@@ -272,7 +272,15 @@
 
                 const valueDiv = document.createElement("div");
                 valueDiv.className = "metadata-value";
+                if (key === "Path to XML file") {
+                    const link = document.createElement("a");
+                    link.href = item[key];
+                    link.textContent = "Download ISO XML";
+                    link.download = "";
+                    valueDiv.appendChild(link);
+                } else {
                 valueDiv.textContent = item[key];
+                }
 
                 rowDiv.appendChild(keyDiv);
                 rowDiv.appendChild(valueDiv);
