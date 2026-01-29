@@ -5,7 +5,7 @@
                 "Title": "Median NDVI within 300m",
                 "Category": "Built",
                 "Theme": "NDVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_NDV_MD3_v2",
                 "catalogue_page": "Median_NDVI",
@@ -37,13 +37,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_NDVI_within_300m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Median_NDVI_within_300m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_NDVI_within_300m.xml"
             },
             {
                 "Title": "Median NDVI within 500m",
                 "Category": "Built",
                 "Theme": "NDVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_NDV_MD5_v2",
                 "catalogue_page": "Median_NDVI",
@@ -75,13 +76,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_NDVI_within_500m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Median_NDVI_within_500m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_NDVI_within_500m.xml"
             },
             {
                 "Title": "Median NDVI within 1km",
                 "Category": "Built",
                 "Theme": "NDVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_NDV_MD1_v2",
                 "catalogue_page": "Median_NDVI",
@@ -113,13 +115,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_NDVI_within_1km.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Median_NDVI_within_1km.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_NDVI_within_1km.xml"
             },
             {
                 "Title": "Standard deviation NDVI within 300m",
                 "Category": "Built",
                 "Theme": "NDVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_NDV_ST3_v2",
                 "catalogue_page": "Standard_deviation_NDVI",
@@ -151,13 +154,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml"
             },
             {
                 "Title": "Standard deviation NDVI within 500m",
                 "Category": "Built",
                 "Theme": "NDVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_NDV_ST5_v2",
                 "catalogue_page": "Standard_deviation_NDVI",
@@ -189,13 +193,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml"
             },
             {
                 "Title": "Standard deviation NDVI within 1km",
                 "Category": "Built",
                 "Theme": "NDVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_NDV_ST1_v2",
                 "catalogue_page": "Standard_deviation_NDVI",
@@ -227,13 +232,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml"
             },
             {
                 "Title": "Mean NDVI within 300m",
                 "Category": "Built",
                 "Theme": "NDVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_NDV_ME3_v2",
                 "catalogue_page": "Mean_NDVI",
@@ -265,13 +271,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml"
             },
             {
                 "Title": "Mean NDVI within 500m",
                 "Category": "Built",
                 "Theme": "NDVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_NDV_ME5_v2",
                 "catalogue_page": "Mean_NDVI",
@@ -303,13 +310,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml"
             },
             {
                 "Title": "Mean NDVI within 1km",
                 "Category": "Built",
                 "Theme": "NDVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_NDV_ME1_v2",
                 "catalogue_page": "Mean_NDVI",
@@ -341,7 +349,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml"
             }
         ],
         "MSAVI": [
@@ -349,7 +358,7 @@
                 "Title": "Median MSAVI within 300m",
                 "Category": "Built",
                 "Theme": "MSAVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_MVI_MD3_v2",
                 "catalogue_page": "Median_MSAVI",
@@ -381,13 +390,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml"
             },
             {
                 "Title": "Median MSAVI within 500m",
                 "Category": "Built",
                 "Theme": "MSAVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_MVI_MD5_v2",
                 "catalogue_page": "Median_MSAVI",
@@ -419,13 +429,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml"
             },
             {
                 "Title": "Median MSAVI within 1km",
                 "Category": "Built",
                 "Theme": "MSAVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_MVI_MD1_v2",
                 "catalogue_page": "Median_MSAVI",
@@ -457,13 +468,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml"
             },
             {
                 "Title": "Standard deviation MSAVI within 300m",
                 "Category": "Built",
                 "Theme": "MSAVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_MVI_ST3_v2",
                 "catalogue_page": "Standard_deviation_MSAVI",
@@ -495,13 +507,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml"
             },
             {
                 "Title": "Standard deviation MSAVI within 500m",
                 "Category": "Built",
                 "Theme": "MSAVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_MVI_ST5_v2",
                 "catalogue_page": "Standard_deviation_MSAVI",
@@ -533,13 +546,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml"
             },
             {
                 "Title": "Standard deviation MSAVI within 1km",
                 "Category": "Built",
                 "Theme": "MSAVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_MVI_ST1_v2",
                 "catalogue_page": "Standard_deviation_MSAVI",
@@ -571,13 +585,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml"
             },
             {
                 "Title": "Mean MSAVI within 300m",
                 "Category": "Built",
                 "Theme": "MSAVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_MVI_ME3_v2",
                 "catalogue_page": "Mean_MSAVI",
@@ -609,13 +624,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml"
             },
             {
                 "Title": "Mean MSAVI within 500m",
                 "Category": "Built",
                 "Theme": "MSAVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_MVI_ME5_v2",
                 "catalogue_page": "Mean_MSAVI",
@@ -647,13 +663,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml"
             },
             {
                 "Title": "Mean MSAVI within 1km",
                 "Category": "Built",
                 "Theme": "MSAVI",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_MVI_ME1_v2",
                 "catalogue_page": "Mean_MSAVI",
@@ -685,7 +702,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml"
             }
         ],
         "Green Space": [
@@ -693,7 +711,7 @@
                 "Title": "Distance to nearest green space using CORINE",
                 "Category": "Built",
                 "Theme": "Green Space",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_GSC_DIS_v2",
                 "catalogue_page": "Distance_to_nearest_green_space_using_CORINE",
@@ -725,13 +743,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 6-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml"
             },
             {
                 "Title": "Distance to nearest green space using URBAN ATLAS",
                 "Category": "Built",
                 "Theme": "Green Space",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_GSU_DIS_v2",
                 "catalogue_page": "Distance_to_nearest_green_space_using_URBAN_ATLAS",
@@ -763,7 +782,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 6-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml"
             }
         ],
         "Light at Night": [
@@ -771,7 +791,7 @@
                 "Title": "Light-at-night 300m buffer",
                 "Category": "Built",
                 "Theme": "Light at Night",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_LAN_B03_v2",
                 "catalogue_page": "Light_at_night",
@@ -798,18 +818,19 @@
                 "CRS": "ETRS89-extended / LAEA Europe (EPSG: 3035)",
                 "No-data value": "255",
                 "show_on_map": true,
-                "available_years": "2005, 2020",
+                "available_years": "2000, 2005, 2010, 2015, 2020",
                 "Comments": "",
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml"
             },
             {
                 "Title": "Light-at-night 500m buffer",
                 "Category": "Built",
                 "Theme": "Light at Night",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_LAN_B05_v2",
                 "catalogue_page": "Light_at_night",
@@ -836,18 +857,19 @@
                 "CRS": "ETRS89-extended / LAEA Europe (EPSG: 3035)",
                 "No-data value": "255",
                 "show_on_map": true,
-                "available_years": "2005, 2020",
+                "available_years": "2000, 2005, 2010, 2015, 2020",
                 "Comments": "",
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml"
             },
             {
                 "Title": "Light-at-night 1000m buffer",
                 "Category": "Built",
                 "Theme": "Light at Night",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_LAN_B10_v2",
                 "catalogue_page": "Light_at_night",
@@ -874,12 +896,13 @@
                 "CRS": "ETRS89-extended / LAEA Europe (EPSG: 3035)",
                 "No-data value": "255",
                 "show_on_map": true,
-                "available_years": "2005, 2020",
+                "available_years": "2000, 2005, 2010, 2015, 2020",
                 "Comments": "",
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 5-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml"
             }
         ],
         "Imperviousness": [
@@ -887,7 +910,7 @@
                 "Title": "Imperviousness 300m buffer",
                 "Category": "Built",
                 "Theme": "Imperviousness",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_IMP_B03_v2",
                 "catalogue_page": "Imperviousness",
@@ -914,18 +937,19 @@
                 "CRS": "ETRS89-extended / LAEA Europe (EPSG: 3035)",
                 "No-data value": "255",
                 "show_on_map": true,
-                "available_years": "2006, 2018",
+                "available_years": "2006, 2009, 2012, 2015, 2018",
                 "Comments": "",
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 3-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml"
             },
             {
                 "Title": "Imperviousness 500m buffer",
                 "Category": "Built",
                 "Theme": "Imperviousness",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_IMP_B05_v2",
                 "catalogue_page": "Imperviousness",
@@ -952,18 +976,19 @@
                 "CRS": "ETRS89-extended / LAEA Europe (EPSG: 3035)",
                 "No-data value": "255",
                 "show_on_map": true,
-                "available_years": "2006, 2018",
+                "available_years": "2006, 2009, 2012, 2015, 2018",
                 "Comments": "",
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 3-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml"
             },
             {
                 "Title": "Imperviousness 1000m buffer",
                 "Category": "Built",
                 "Theme": "Imperviousness",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_IMP_B10_v2",
                 "catalogue_page": "Imperviousness",
@@ -990,12 +1015,13 @@
                 "CRS": "ETRS89-extended / LAEA Europe (EPSG: 3035)",
                 "No-data value": "255",
                 "show_on_map": true,
-                "available_years": "2006, 2018",
+                "available_years": "2006, 2009, 2012, 2015, 2018",
                 "Comments": "",
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "Date  are availble in 3-year intervals between the start and end years",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml"
             }
         ],
         "Blue spaces": [
@@ -1003,7 +1029,7 @@
                 "Title": "Distance to nearest blue space",
                 "Category": "Built",
                 "Theme": "Blue spaces",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_BSW_DIS_v2",
                 "catalogue_page": "Distance_to_nearest_blue_space",
@@ -1035,13 +1061,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml"
             },
             {
                 "Title": "Distance to nearest sea/ocean",
                 "Category": "Built",
                 "Theme": "Blue spaces",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_BSS_DIS_v2",
                 "catalogue_page": "Distance_to_nearest_sea_ocean",
@@ -1073,13 +1100,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_sea_ocean.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Distance_to_nearest_sea_ocean.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_sea_ocean.xml"
             },
             {
                 "Title": "Distance to nearest inland freshwater",
                 "Category": "Built",
                 "Theme": "Blue spaces",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_BSI_DIS_v2",
                 "catalogue_page": "Distance_to_nearest_inland_freshwater",
@@ -1111,7 +1139,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml"
             }
         ],
         "Walkability": [
@@ -1119,7 +1148,7 @@
                 "Title": "Walkabiliy 300m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_WAL_B03_v3",
                 "catalogue_page": "Walkabiliy",
@@ -1151,13 +1180,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Walkabiliy_300m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Walkabiliy_300m_buffer.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Walkabiliy_300m_buffer.xml"
             },
             {
                 "Title": "Walkabiliy 500m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_WAL_B05_v3",
                 "catalogue_page": "Walkabiliy",
@@ -1189,13 +1219,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Walkabiliy_500m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Walkabiliy_500m_buffer.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Walkabiliy_500m_buffer.xml"
             },
             {
                 "Title": "Walkabiliy 1000m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_WAL_B10_v3",
                 "catalogue_page": "Walkabiliy",
@@ -1227,7 +1258,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Walkabiliy_1000m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Walkabiliy_1000m_buffer.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Walkabiliy_1000m_buffer.xml"
             }
         ]
     },
@@ -1237,7 +1269,7 @@
                 "Title": "Annual NO2 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "The air pollution annual average estimates were created by geographically and temporally weighted regression built for each pollutant from 2000 to 2019.",
                 "File identifier": "expanse_project_exposome_maps_NO2B25_AAV_v2",
                 "catalogue_page": "NO2",
@@ -1269,13 +1301,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_NO2_25m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Annual_NO2_25m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_NO2_25m.xml"
             },
             {
                 "Title": "Annual PM10 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "The air pollution annual average estimates were created by geographically and temporally weighted regression built for each pollutant from 2000 to 2019.",
                 "File identifier": "expanse_project_exposome_maps_P10B25_AAV_v2",
                 "catalogue_page": "PM10",
@@ -1307,13 +1340,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_PM10_25m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Annual_PM10_25m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_PM10_25m.xml"
             },
             {
                 "Title": "Annual PM25 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "The air pollution annual average estimates were created by geographically and temporally weighted regression built for each pollutant from 2000 to 2019.",
                 "File identifier": "expanse_project_exposome_maps_P25B25_AAV_v2",
                 "catalogue_page": "PM25",
@@ -1345,13 +1379,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_PM25_25m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Annual_PM25_25m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_PM25_25m.xml"
             },
             {
                 "Title": "Annual O3 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "The air pollution annual average estimates were created by geographically and temporally weighted regression built for each pollutant from 2000 to 2019.",
                 "File identifier": "expanse_project_exposome_maps_OZOB25_AAV_v2",
                 "catalogue_page": "OZO",
@@ -1383,7 +1418,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_O3_25m.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Annual_O3_25m.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_O3_25m.xml"
             }
         ],
         "Temperature": [
@@ -1391,7 +1427,7 @@
                 "Title": "Yearly average temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "climatologyMeteorologyAtmosphere",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_TMP_AVG_YEARLY_v3",
                 "catalogue_page": "Average_temperature",
@@ -1423,13 +1459,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Yearly_average_temperature.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Yearly_average_temperature.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Yearly_average_temperature.xml"
             },
             {
                 "Title": "Daily average temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "climatologyMeteorologyAtmosphere",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_TMP_AVG_DAILY_v3",
                 "catalogue_page": "Average_temperature",
@@ -1461,13 +1498,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Daily_average_temperature.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Daily_average_temperature.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Daily_average_temperature.xml"
             },
             {
                 "Title": "Daily minimum temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "climatologyMeteorologyAtmosphere",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_TMP_MIN_DAILY_v3",
                 "catalogue_page": "Minimum_temperature",
@@ -1499,13 +1537,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Daily_minimum_temperature.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Daily_minimum_temperature.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Daily_minimum_temperature.xml"
             },
             {
                 "Title": "Daily maximum temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "climatologyMeteorologyAtmosphere",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_TMP_MAX_DAILY_v3",
                 "catalogue_page": "Maximum_temperature",
@@ -1537,13 +1576,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Daily_maximum_temperature.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Daily_maximum_temperature.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Daily_maximum_temperature.xml"
             },
             {
                 "Title": "Monthly average temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "climatologyMeteorologyAtmosphere",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_TEMP_AVG_MONTHLY_v3",
                 "catalogue_page": "Average_temperature",
@@ -1575,7 +1615,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Monthly_average_temperature.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Monthly_average_temperature.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Monthly_average_temperature.xml"
             }
         ],
         "Urbanicity": [
@@ -1583,7 +1624,7 @@
                 "Title": "Urban-Rural indicator",
                 "Category": "Physico-Chemical",
                 "Theme": "Urbanicity",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_UR_B15_v3",
                 "catalogue_page": "Urban_Rural_indicator",
@@ -1615,7 +1656,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Urban_Rural_indicator.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Urban_Rural_indicator.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Urban_Rural_indicator.xml"
             }
         ],
         "Noise RTN": [
@@ -1623,7 +1665,7 @@
                 "Title": "Annual average (A-weighted) road traffic noise estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Noise RTN",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_RTN_AVG_v3",
                 "catalogue_page": "Road_traffic_noise_estimates",
@@ -1655,7 +1697,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_average_A_weighted_road_traffic_noise_estimates.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Annual_average_A_weighted_road_traffic_noise_estimates.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Annual_average_A_weighted_road_traffic_noise_estimates.xml"
             }
         ],
         "UV radiation": [
@@ -1663,7 +1706,7 @@
                 "Title": "Downward UV radiation at the surface, monthy mean of daily average",
                 "Category": "Physico-Chemical",
                 "Theme": "UV radiation",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_UV_AVG_v3",
                 "catalogue_page": "Downward_UV_radiation_at_the_surface_monthy_mean_of_daily_average",
@@ -1695,13 +1738,14 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthy_mean_of_daily_average.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthy_mean_of_daily_average.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthy_mean_of_daily_average.xml"
             },
             {
                 "Title": "Downward UV radiation at the surface, monthly max of daily average",
                 "Category": "Physico-Chemical",
                 "Theme": "UV radiation",
-                "MD_TopicCategoryCode": "health",
+                "MD_TopicCategoryCode": "environment",
                 "Summary": "No summary",
                 "File identifier": "expanse_project_exposome_maps_UV_MAX_v3",
                 "catalogue_page": "Downward_UV_radiation_at_the_surface_monthly_max_of_daily_average",
@@ -1733,7 +1777,8 @@
                 "Metadata last updated": "8-1-2026",
                 "Dataset last revised": "8-1-2026",
                 "Lineage_statement": "No lineage information",
-                "Path to XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthly_max_of_daily_average.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/exposome-maps/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthly_max_of_daily_average.xml",
+                "Hosted XML file": "https://nginx-xml-metadata-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/xml_metadata_files/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthly_max_of_daily_average.xml"
             }
         ]
     }
