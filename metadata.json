@@ -1175,7 +1175,7 @@
         "Walkability": [
             {
                 "Surface Number": 43,
-                "Title": "Walkabiliy 300m buffer",
+                "Title": "Walkability 300m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
                 "Summary": "No summary",
@@ -1199,7 +1199,7 @@
                 "MD_TopicCategoryCode": "environment",
                 "Lineage_statement": "No lineage information",
                 "File identifier": "expanse_project_exposome_maps_WAL_B03_v3",
-                "catalogue_page": "Walkabiliy",
+                "catalogue_page": "Walkability",
                 "thumbnail": "walkability",
                 "geoserver_layer": "WAL_B03",
                 "geoserver_style": "WAL",
@@ -1210,12 +1210,12 @@
                 "lifelines": "1",
                 "show_on_map": true,
                 "file_name": "WAL_B03_XX_XX_20_v3",
-                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkabiliy_300m_buffer.xml",
-                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkabiliy_300m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml",
+                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml"
             },
             {
                 "Surface Number": 44,
-                "Title": "Walkabiliy 500m buffer",
+                "Title": "Walkability 500m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
                 "Summary": "No summary",
@@ -1239,7 +1239,7 @@
                 "MD_TopicCategoryCode": "environment",
                 "Lineage_statement": "No lineage information",
                 "File identifier": "expanse_project_exposome_maps_WAL_B05_v3",
-                "catalogue_page": "Walkabiliy",
+                "catalogue_page": "Walkability",
                 "thumbnail": "walkability",
                 "geoserver_layer": "WAL_B05",
                 "geoserver_style": "WAL",
@@ -1250,12 +1250,12 @@
                 "lifelines": "1",
                 "show_on_map": true,
                 "file_name": "WAL_B05_XX_XX_20_v3",
-                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkabiliy_500m_buffer.xml",
-                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkabiliy_500m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml",
+                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml"
             },
             {
                 "Surface Number": 45,
-                "Title": "Walkabiliy 1000m buffer",
+                "Title": "Walkability 1000m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
                 "Summary": "No summary",
@@ -1279,7 +1279,7 @@
                 "MD_TopicCategoryCode": "environment",
                 "Lineage_statement": "No lineage information",
                 "File identifier": "expanse_project_exposome_maps_WAL_B10_v3",
-                "catalogue_page": "Walkabiliy",
+                "catalogue_page": "",
                 "thumbnail": "walkability",
                 "geoserver_layer": "WAL_B10",
                 "geoserver_style": "WAL",
@@ -1290,8 +1290,8 @@
                 "lifelines": "1",
                 "show_on_map": true,
                 "file_name": "WAL_B10_XX_XX_20_v3",
-                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkabiliy_1000m_buffer.xml",
-                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkabiliy_1000m_buffer.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml",
+                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml"
             }
         ]
     },
