@@ -38,7 +38,7 @@
 
             <div id="title" class="title">
                 <span class="title-text">
-                    Dataset: PM10 (Particulate Matter 10)
+                    Dataset: O3 (Ozone)
                 </span>
             </div>
         </div>
@@ -50,7 +50,7 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/pm10.png" alt="PM10 example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+            <img src="images/thumbnails/o3.png" alt="O3 example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
 
         </div>
 
@@ -181,8 +181,6 @@
                 <em>Environ. Sci. Technol.</em> 53, 2595–2611.
                 <a href="https://doi.org/10.1021/acs.est.8b06392">https://doi.org/10.1021/acs.est.8b06392</a>
             </div>
-
-
     </div>
 
 </body>
@@ -208,9 +206,12 @@
         "CRS",
         "No-data value",
         "Owner",
+        "Hosted XML file"
     ];
 
-    const productName = "PM10";
+    
+
+    const productName = "OZO";
 
     fetch("../metadata.json")
         .then(response => response.json())
@@ -261,7 +262,15 @@
 
                 const valueDiv = document.createElement("div");
                 valueDiv.className = "metadata-value";
+                if (key === "Hosted XML file") {
+                    const link = document.createElement("a");
+                    link.href = item[key];
+                    link.textContent = "Download ISO XML";
+                    link.download = "";
+                    valueDiv.appendChild(link);
+                } else {
                 valueDiv.textContent = item[key];
+                }
 
                 rowDiv.appendChild(keyDiv);
                 rowDiv.appendChild(valueDiv);

@@ -83,7 +83,10 @@
         "CRS",
         "No-data value",
         "Owner",
+        "Hosted XML file"
     ];
+
+    
 
     const productName = "Imperviousness";
 
@@ -136,7 +139,15 @@
 
                 const valueDiv = document.createElement("div");
                 valueDiv.className = "metadata-value";
+                if (key === "Hosted XML file") {
+                    const link = document.createElement("a");
+                    link.href = item[key];
+                    link.textContent = "Download ISO XML";
+                    link.download = "";
+                    valueDiv.appendChild(link);
+                } else {
                 valueDiv.textContent = item[key];
+                }
 
                 rowDiv.appendChild(keyDiv);
                 rowDiv.appendChild(valueDiv);

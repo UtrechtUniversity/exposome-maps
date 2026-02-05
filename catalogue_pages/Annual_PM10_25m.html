@@ -38,7 +38,7 @@
 
             <div id="title" class="title">
                 <span class="title-text">
-                    Dataset: NO2
+                    Dataset: PM10 (Particulate Matter 10)
                 </span>
             </div>
         </div>
@@ -50,25 +50,13 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/no2.png" alt="NO2 example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+            <img src="images/thumbnails/pm10.png" alt="PM10 example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+
         </div>
 
         <h2 class="title">Comments</h2>
+        
         <h2 class="title">Background</h2>
-            We built one LUR model for each year from 2000 to 2019 using annual average concentrations from routine monitoring stations across 
-            Europe. Supervised linear regression (SLR) was first used to select predictors, and then 
-            GTWR estimated the potentially spatially and annually-varying regression coefficients. We 
-            evaluated the model performance using five-fold cross-validation (CV) for each year.
-            Please refer to Shen et al. (Shen et al., 2022) for more detailed information.
-
-
-        <h2 class="title">Inputs</h2>
-        <h3>Input air pollution observations</h3>
-        Routine monitoring data collected from the European Environmental Agency (EEA).
-        We aggregated hourly observations to annual averages.
-
-        <h3>Input predictors</h3>
-
         <h2 class="title">References</h2>
             <div class="reference">
                 Boersma, K.F., Eskes, H.J., Dirksen, R.J., Van Der A, R.J., Veefkind, J.P., Stammes, P., 
@@ -193,6 +181,8 @@
                 <em>Environ. Sci. Technol.</em> 53, 2595–2611.
                 <a href="https://doi.org/10.1021/acs.est.8b06392">https://doi.org/10.1021/acs.est.8b06392</a>
             </div>
+
+
     </div>
 
 </body>
@@ -218,10 +208,12 @@
         "CRS",
         "No-data value",
         "Owner",
-        "Path to XML file"
+        "Hosted XML file"
     ];
 
-    const productName = "NO2";
+    
+
+    const productName = "PM10";
 
     fetch("../metadata.json")
         .then(response => response.json())
@@ -272,7 +264,7 @@
 
                 const valueDiv = document.createElement("div");
                 valueDiv.className = "metadata-value";
-                if (key === "Path to XML file") {
+                if (key === "Hosted XML file") {
                     const link = document.createElement("a");
                     link.href = item[key];
                     link.textContent = "Download ISO XML";
