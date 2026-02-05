@@ -133,6 +133,12 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
         map._legends = map._legends || {};
         map._legends[style] = legend;
 
+        // Move legend 30 pix up to avoid overlapping with opacity slider
+        var legendDiv = document.querySelector('.legend-' + style);
+        if (legendDiv) {
+            legendDiv.style.marginBottom = '120px';
+        }
+
         // Switch basemap to window.selectedItem.default_basemap if this value is not empty. Such as the darkLayer for LAN layers
         var defaultBasemap = window.selectedItem.default_basemap;
         if (defaultBasemap) {

@@ -32,6 +32,8 @@ body {
     color: #333;
 }
 
+
+
 #info_button {
     background-color: #00689D;
     color: rgb(255, 255, 255);
@@ -430,6 +432,23 @@ body {
   z-index: 1000;
   font-weight: 300;
 }
+
+/* Put it on the bottom of the page on the left side */
+#projection_note {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  background: #19486aa6;
+  padding: 8px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #ffffff;
+  z-index: 1000;
+  font-weight: 300;
+  /* max width */
+  max-width: 220px;
+}
+
 
 /* Slider container */
 /* position it relative to the map container */
