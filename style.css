@@ -106,6 +106,8 @@ body {
     display: flex;
 }
 
+
+
 #title {
     display: flex;
     align-items: center;
@@ -133,12 +135,13 @@ body {
     position: fixed;
     top: 60px;
     bottom: 10px;
-    left: 5px;
+    right: 5px;
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 12px;
-    width: clamp(60px, 4vw, 100px); /* collapsed width */
+    /* width: clamp(60px, 1vw, 100px); collapsed width */
     background-color: #19486ab9;
     padding: clamp(8px, 1vw, 20px);
     z-index: 1000;
@@ -151,7 +154,7 @@ body {
 
 #sidebar.open
 , #sidebar2.open {
-    width: clamp(200px, 20vw, 350px); /* scales up to a max width */
+    width: clamp(200px, 20vw, 350px);
     padding: clamp(10px, 2vw, 25px);
 }
 
@@ -361,8 +364,10 @@ body {
 }
 
 .metadata-key {
-  font-weight: 600;     /* bold */
+  font-weight: 600;
   text-align: left;
+  /* Make it be bold */
+  font-family: monospace;
 }
 
 .metadata-value {
@@ -501,6 +506,12 @@ body {
 }
 
 /* ################ CATALOGUE VIEW ######################## */
+/* #CatalogueView {
+  display: grid;
+  grid-template-columns: 320px 1fr 120px; 
+  min-height: 100vh;
+} */
+ 
 
 #catalogue {
   background-color: #fafaf8;
@@ -509,16 +520,17 @@ body {
   box-sizing: border-box;
   padding-top: 10px;
   width: 100% ;
-  margin-left: clamp(10vw, 18vw, 20vw);
-  margin-right: 15%;
+  margin-right: clamp(200px, 20vw, 350px);
 } 
 
 #catalogue-panel {
   /* Appear in a grid of three rectangles across */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  /* Make the template columns be repreated 3, each column with 18% of the total window width */
+  grid-template-columns: repeat(3, 320px);
+  gap: 40px;
   margin-top: 80px;
+  justify-content: center;
 }
 
 .catalogue_sidebar {
@@ -550,9 +562,23 @@ body {
   padding-left: 5%;
 }
 /*  */
-#CatalogueView #sidebar {
+#sidebar {
   position: relative;
 }
+
+.catalogue-item-thumbnail {
+    width: 90%;
+    height: 260px; 
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+    /* Padding above */
+    
+    /* padding around */
+    /* display: block; */
+}
+
+
 
 /* Info Box */
 #infoBox {
@@ -646,18 +672,4 @@ body {
 /* Optional: reduce line height inside lists */
 #infoBox li {
     line-height: 1.35;
-}
-
-
-.catalogue-item-thumbnail {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    object-fit: contain;
-    /* Padding above */
-    margin-top: 24px;
-    margin-bottom: 10px;
-    /* padding around */
-    /* display: block; */
 }

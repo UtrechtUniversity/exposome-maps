@@ -45,7 +45,7 @@
     </div>
 
     <div id="page">
-        <h2 class="title">Metadata</h2>
+        <h2 class="title">Details</h2>
         <div id="metadata-section">
             
             <div id="metadata-box"> 
@@ -115,7 +115,7 @@
                 if (!Array.isArray(list)) continue;
 
                 const match = list.find(
-                    item => item.catalogue_page === productName
+                    item => item.Title=== productName
                 );
 
                 if (match) return match;
