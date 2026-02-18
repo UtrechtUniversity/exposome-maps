@@ -364,10 +364,8 @@ body {
 }
 
 .metadata-key {
-  font-weight: 600;
+  font-weight: 600;     /* bold */
   text-align: left;
-  /* Make it be bold */
-  font-family: monospace;
 }
 
 .metadata-value {
