@@ -112,10 +112,13 @@
 
             for (const themeKey in categoryObj) {
                 const list = categoryObj[themeKey];
-                if (!Array.isArray(list)) continue;
+                if (!Array.isArray(list)) continue; 
 
+                console.log()
+
+                console.log("Searching for match of catalogue_page:", productName, "in list:", list);
                 const match = list.find(
-                    item => item.Title=== productName
+                    item => item.catalogue_page=== productName
                 );
 
                 if (match) return match;
