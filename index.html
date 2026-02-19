@@ -51,7 +51,7 @@
                 <label for="opacity-slider">Layer transparency</label>
                 <input type="range" id="opacity-slider" min="0" max="1" step="0.01" value="1">
             </div>
-            <div id="projection_note">Note: Data was reprojected from its original coordinate reference system. The values displayed on the map may be slightly different from actual data due to interpolation.</div>
+            <div id="projection_note" class="projection_note">Note: Data was reprojected from its original coordinate reference system. The values displayed on the map may be slightly different from actual data due to interpolation.</div>
         </div>
         <div id="sidebar" class="open">
             <div class="toggle_container change" id="sidebar-toggle">
@@ -75,13 +75,14 @@
                 <button id="showOnMapBtn" disabled>Show on Map</button>
             </aside>
         
-            <img src="images\ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL logo" class="sidebar-img1">
-            <img src="images\EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE logo" class="sidebar-img2">
+            <img id="sidebar-img1" src="images/ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL logo" class="sidebar-img1 open">
+            <img id="sidebar-img2" src="images/EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE logo" class="sidebar-img2 open">
         </div>
         <div id="metadata-box" class="metadata-box hidden">
             <button id="metadata-close">&times;</button>
             <div id="metadata-content"></div>
         </div>
+
     </div>
     <div id = "CatalogueView" class="view">
         <div id="sidebar2" class="open">

@@ -46,10 +46,10 @@ function initMenu(dataCatalogue, container) {
                     // Clear previous content
                     metadataContent.innerHTML = "";
 
-                    ["Surface ID",
+                    ["Title",
+                      "Surface ID",
                       "Category",
                       "Theme",
-                      "Title",
                       "Summary",
                       "File type",
                       "Temporal resolution",
@@ -83,7 +83,9 @@ function initMenu(dataCatalogue, container) {
                     // Position the metadata box to the right of the sidebar
                     const sidebar = document.getElementById("sidebar");
                     const sidebarRect = sidebar.getBoundingClientRect();
-                    metadataBox.style.left = `${sidebarRect.right}px`;
+                    const distanceFromRight = window.innerWidth - sidebarRect.left;
+                    metadataBox.style.right = `${distanceFromRight}px`
+                    metadataBox.style.left = "auto";
 
                     metadataBox.classList.remove("hidden");
                 });
@@ -273,6 +275,23 @@ function setupShowOnMapListener() {
   });
 }
 
+function positionMapWidgets() {
+    const sidebar = document.getElementById("sidebar");
+    const sidebarWidth = sidebar.offsetWidth;
+    const sidebarRightOffset = 5; 
+
+    const slider = document.querySelector(".slider-container");
+    slider.style.right = `${sidebarWidth + sidebarRightOffset + 12}px`;
+
+    const projection_note = document.querySelector(".projection_note");
+    projection_note.style.right = `${sidebarWidth + sidebarRightOffset + 12}px`;
+
+    const layerSwitcher = document.querySelector(".leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control");
+    layerSwitcher.style.right = `${sidebarWidth + sidebarRightOffset + 4}px`;
+}
+
+// positionMapWidgets()
+
 document.getElementById("metadata-close").addEventListener("click", () => {
     document.getElementById("metadata-box").classList.add("hidden");
 });
@@ -283,6 +302,24 @@ toggleButton.addEventListener("click", function(event) {
     var sidebar = document.querySelector("#sidebar");
     sidebar.classList.toggle("open");
 });
+
+positionMapWidgets();
+
+toggleButton.addEventListener("click", function(event) {
+    event.currentTarget.classList.toggle("change");
+    var sidebar_img1 = document.querySelector("#sidebar-img1");
+    var sidebar_img2 = document.querySelector("#sidebar-img2");
+    var metadataBox = document.querySelector("#metadata-box");
+    sidebar_img1.classList.toggle("open");
+    sidebar_img2.classList.toggle("open");
+
+    // Toggle only if the metadata box is currently open
+    if (!metadataBox.classList.contains("hidden")) {
+    metadataBox.classList.toggle("hidden");
+    }
+    setTimeout(positionMapWidgets, 310);
+});
+
 });
 
 
