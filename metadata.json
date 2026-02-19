@@ -2,7 +2,7 @@
     "Built": {
         "NDVI": [
             {
-                "Surface Number": 14,
+                "Surface ID": 14,
                 "Title": "Median NDVI within 300m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -42,7 +42,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml"
             },
             {
-                "Surface Number": 15,
+                "Surface ID": 15,
                 "Title": "Median NDVI within 500m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -82,7 +82,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml"
             },
             {
-                "Surface Number": 16,
+                "Surface ID": 16,
                 "Title": "Median NDVI within 1km",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -122,7 +122,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml"
             },
             {
-                "Surface Number": 17,
+                "Surface ID": 17,
                 "Title": "Standard deviation NDVI within 300m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -162,7 +162,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml"
             },
             {
-                "Surface Number": 18,
+                "Surface ID": 18,
                 "Title": "Standard deviation NDVI within 500m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -202,7 +202,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml"
             },
             {
-                "Surface Number": 19,
+                "Surface ID": 19,
                 "Title": "Standard deviation NDVI within 1km",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -242,7 +242,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml"
             },
             {
-                "Surface Number": 20,
+                "Surface ID": 20,
                 "Title": "Mean NDVI within 300m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -282,7 +282,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml"
             },
             {
-                "Surface Number": 21,
+                "Surface ID": 21,
                 "Title": "Mean NDVI within 500m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -322,7 +322,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml"
             },
             {
-                "Surface Number": 22,
+                "Surface ID": 22,
                 "Title": "Mean NDVI within 1km",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -364,7 +364,7 @@
         ],
         "MSAVI": [
             {
-                "Surface Number": 23,
+                "Surface ID": 23,
                 "Title": "Median MSAVI within 300m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -404,7 +404,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml"
             },
             {
-                "Surface Number": 24,
+                "Surface ID": 24,
                 "Title": "Median MSAVI within 500m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -444,7 +444,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml"
             },
             {
-                "Surface Number": 25,
+                "Surface ID": 25,
                 "Title": "Median MSAVI within 1km",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -484,7 +484,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml"
             },
             {
-                "Surface Number": 26,
+                "Surface ID": 26,
                 "Title": "Standard deviation MSAVI within 300m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -524,7 +524,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml"
             },
             {
-                "Surface Number": 27,
+                "Surface ID": 27,
                 "Title": "Standard deviation MSAVI within 500m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -564,7 +564,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml"
             },
             {
-                "Surface Number": 28,
+                "Surface ID": 28,
                 "Title": "Standard deviation MSAVI within 1km",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -604,7 +604,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml"
             },
             {
-                "Surface Number": 29,
+                "Surface ID": 29,
                 "Title": "Mean MSAVI within 300m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -644,7 +644,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml"
             },
             {
-                "Surface Number": 30,
+                "Surface ID": 30,
                 "Title": "Mean MSAVI within 500m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -684,7 +684,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml"
             },
             {
-                "Surface Number": 31,
+                "Surface ID": 31,
                 "Title": "Mean MSAVI within 1km",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -726,7 +726,7 @@
         ],
         "Green Space": [
             {
-                "Surface Number": 32,
+                "Surface ID": 32,
                 "Title": "Distance to nearest green space using CORINE",
                 "Category": "Built",
                 "Theme": "Green Space",
@@ -766,7 +766,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml"
             },
             {
-                "Surface Number": 33,
+                "Surface ID": 33,
                 "Title": "Distance to nearest green space using URBAN ATLAS",
                 "Category": "Built",
                 "Theme": "Green Space",
@@ -808,7 +808,7 @@
         ],
         "Light at Night": [
             {
-                "Surface Number": 34,
+                "Surface ID": 34,
                 "Title": "Light-at-night 300m buffer",
                 "Category": "Built",
                 "Theme": "Light at Night",
@@ -848,7 +848,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml"
             },
             {
-                "Surface Number": 35,
+                "Surface ID": 35,
                 "Title": "Light-at-night 500m buffer",
                 "Category": "Built",
                 "Theme": "Light at Night",
@@ -888,7 +888,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml"
             },
             {
-                "Surface Number": 36,
+                "Surface ID": 36,
                 "Title": "Light-at-night 1000m buffer",
                 "Category": "Built",
                 "Theme": "Light at Night",
@@ -930,7 +930,7 @@
         ],
         "Imperviousness": [
             {
-                "Surface Number": 37,
+                "Surface ID": 37,
                 "Title": "Imperviousness 300m buffer",
                 "Category": "Built",
                 "Theme": "Imperviousness",
@@ -970,7 +970,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml"
             },
             {
-                "Surface Number": 38,
+                "Surface ID": 38,
                 "Title": "Imperviousness 500m buffer",
                 "Category": "Built",
                 "Theme": "Imperviousness",
@@ -1010,7 +1010,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml"
             },
             {
-                "Surface Number": 39,
+                "Surface ID": 39,
                 "Title": "Imperviousness 1000m buffer",
                 "Category": "Built",
                 "Theme": "Imperviousness",
@@ -1052,7 +1052,7 @@
         ],
         "Blue spaces": [
             {
-                "Surface Number": 40,
+                "Surface ID": 40,
                 "Title": "Distance to nearest blue space",
                 "Category": "Built",
                 "Theme": "Blue spaces",
@@ -1092,7 +1092,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml"
             },
             {
-                "Surface Number": 41,
+                "Surface ID": 41,
                 "Title": "Distance to nearest sea/ocean",
                 "Category": "Built",
                 "Theme": "Blue spaces",
@@ -1132,7 +1132,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_sea_ocean.xml"
             },
             {
-                "Surface Number": 42,
+                "Surface ID": 42,
                 "Title": "Distance to nearest inland freshwater",
                 "Category": "Built",
                 "Theme": "Blue spaces",
@@ -1174,7 +1174,7 @@
         ],
         "Walkability": [
             {
-                "Surface Number": 43,
+                "Surface ID": 43,
                 "Title": "Walkability 300m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
@@ -1214,7 +1214,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml"
             },
             {
-                "Surface Number": 44,
+                "Surface ID": 44,
                 "Title": "Walkability 500m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
@@ -1254,7 +1254,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml"
             },
             {
-                "Surface Number": 45,
+                "Surface ID": 45,
                 "Title": "Walkability 1000m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
@@ -1298,7 +1298,7 @@
     "Physico-Chemical": {
         "Air pollution": [
             {
-                "Surface Number": 1,
+                "Surface ID": 1,
                 "Title": "Annual NO2 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1338,7 +1338,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_NO2_25m.xml"
             },
             {
-                "Surface Number": 2,
+                "Surface ID": 2,
                 "Title": "Annual PM10 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1378,7 +1378,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM10_25m.xml"
             },
             {
-                "Surface Number": 3,
+                "Surface ID": 3,
                 "Title": "Annual PM2.5 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1418,7 +1418,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM25_25m.xml"
             },
             {
-                "Surface Number": 4,
+                "Surface ID": 4,
                 "Title": "Annual O3 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1460,7 +1460,7 @@
         ],
         "Temperature": [
             {
-                "Surface Number": 5,
+                "Surface ID": 5,
                 "Title": "Yearly average temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -1500,7 +1500,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml"
             },
             {
-                "Surface Number": 6,
+                "Surface ID": 6,
                 "Title": "Daily average temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -1540,7 +1540,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml"
             },
             {
-                "Surface Number": 7,
+                "Surface ID": 7,
                 "Title": "Daily minimum temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -1580,7 +1580,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_minimum_temperature.xml"
             },
             {
-                "Surface Number": 8,
+                "Surface ID": 8,
                 "Title": "Daily maximum temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -1620,7 +1620,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_maximum_temperature.xml"
             },
             {
-                "Surface Number": 9,
+                "Surface ID": 9,
                 "Title": "Monthly average temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -1662,7 +1662,7 @@
         ],
         "Urbanicity": [
             {
-                "Surface Number": 10,
+                "Surface ID": 10,
                 "Title": "Urban-Rural indicator",
                 "Category": "Physico-Chemical",
                 "Theme": "Urbanicity",
@@ -1704,7 +1704,7 @@
         ],
         "UV radiation": [
             {
-                "Surface Number": 12,
+                "Surface ID": 12,
                 "Title": "Downward UV radiation at the surface, monthy mean of daily average",
                 "Category": "Physico-Chemical",
                 "Theme": "UV radiation",
@@ -1744,7 +1744,7 @@
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthy_mean_of_daily_average.xml"
             },
             {
-                "Surface Number": 13,
+                "Surface ID": 13,
                 "Title": "Downward UV radiation at the surface, monthly max of daily average",
                 "Category": "Physico-Chemical",
                 "Theme": "UV radiation",

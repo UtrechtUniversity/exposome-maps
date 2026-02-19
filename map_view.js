@@ -46,7 +46,8 @@ function initMenu(dataCatalogue, container) {
                     // Clear previous content
                     metadataContent.innerHTML = "";
 
-                    ["Category",
+                    ["Surface ID",
+                      "Category",
                       "Theme",
                       "Title",
                       "Summary",
