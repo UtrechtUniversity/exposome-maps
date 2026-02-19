@@ -50,7 +50,7 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/median_ndvi.png" alt="NDVI example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+            <img src="images/thumbnails/yearly_avg_temp.png" alt="Average temperature example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
 
         </div>
 
@@ -59,18 +59,22 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>5</td>
             <td>Yearly average temperature</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml" target="_blank">Open metadata XML</a></td>
         </tr>
         <tr>
             <td>6</td>
             <td>Daily average temperature</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml" target="_blank">Open metadata XML</a></td>        
         </tr>
         <tr>
             <td>9</td>
             <td>Monthly average temperature</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_average_temperature.xml" target="_blank">Open metadata XML</a></td>
         </tr>
         </table>
 
@@ -91,10 +95,8 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
-        "Temporal resolution",
         "Time period",
         "Frequency",
         "Spatial resolution",
@@ -102,11 +104,10 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
-    const productName = "Average temperature";
+    const productName = "Average_temperature";
 
     fetch("../metadata.json")
         .then(response => response.json())

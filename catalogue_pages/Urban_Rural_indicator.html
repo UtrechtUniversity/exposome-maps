@@ -59,10 +59,12 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>10</td>
             <td>Urban-Rural indicator</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Urban_Rural_indicator.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         </table>
 
@@ -83,7 +85,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -94,13 +95,12 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
     
 
-    const productName = "Urban_Rural indicator";
+    const productName = "Urban_Rural_indicator";
 
     fetch("../metadata.json")
         .then(response => response.json())

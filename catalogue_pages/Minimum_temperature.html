@@ -59,10 +59,12 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>7</td>
             <td>Daily minimum temperature</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_minimum_temperature.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         </table>
 
@@ -83,7 +85,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -94,11 +95,10 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
-    const productName = "Minimum temperature";
+    const productName = "Minimum_temperature";
 
     fetch("../metadata.json")
         .then(response => response.json())

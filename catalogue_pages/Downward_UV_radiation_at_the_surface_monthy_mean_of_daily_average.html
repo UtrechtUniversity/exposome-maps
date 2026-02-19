@@ -62,10 +62,12 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>13</td>
             <td>Downward UV radiation at the surface, monthly mean of daily average</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthly_mean_of_daily_average.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         </table>
 
@@ -86,7 +88,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -97,13 +98,12 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
     
 
-    const productName = "Downward UV radiation at the surface monthy mean of daily average";
+    const productName = "Downward_UV_radiation_at_the_surface_monthy_mean_of_daily_average";
 
     fetch("../metadata.json")
         .then(response => response.json())

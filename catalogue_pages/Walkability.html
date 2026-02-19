@@ -59,18 +59,22 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>43</td>
             <td>Walkability within 300m</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         <tr>
             <td>44</td>
             <td>Walkability within 500m</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         <tr>
             <td>45</td>
             <td>Walkability within 1km</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         </table>
 
@@ -91,7 +95,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -102,11 +105,10 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
-    const productName = "Walkabiliy";
+    const productName = "Walkability";
 
     fetch("../metadata.json")
         .then(response => response.json())

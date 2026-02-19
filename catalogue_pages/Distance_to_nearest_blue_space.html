@@ -59,10 +59,12 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>40</td>
             <td>Distance to nearest blue space</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml" target="_blank">Open metadata XML</a></td>
         </tr>
         </table>
 
@@ -82,7 +84,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -93,11 +94,10 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
-    const productName = "Distance to nearest blue space";
+    const productName = "Distance_to_nearest_blue_space";
 
     fetch("../metadata.json")
         .then(response => response.json())

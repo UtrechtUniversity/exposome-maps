@@ -59,10 +59,13 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>3</td>
             <td>Annual PM2.5, 25m resolution</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM25_25m.xml" target="_blank">Open metadata XML</a></td>
+
         </tr>
         </table>
 
@@ -207,7 +210,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -218,13 +220,12 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
     
 
-    const productName = "PM25";
+    const productName = "Annual_PM2.5_25m";
 
     fetch("../metadata.json")
         .then(response => response.json())

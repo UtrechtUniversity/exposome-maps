@@ -59,10 +59,13 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>33</td>
             <td>Distance to nearest green space using URBAN ATLAS</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml" target="_blank">Open metadata XML</a></td>        
+
         </tr>
         </table>
 
@@ -92,7 +95,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -103,13 +105,12 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
     
 
-    const productName = "Distance to nearest green space using URBAN ATLAS";
+    const productName = "Distance_to_nearest_green_space_using_URBAN_ATLAS";
 
     fetch("../metadata.json")
         .then(response => response.json())

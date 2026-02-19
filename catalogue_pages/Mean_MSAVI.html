@@ -59,18 +59,22 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>29</td>
             <td>Mean MSAVI within 300m</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         <tr>
             <td>30</td>
             <td>Mean MSAVI within 500m</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         <tr>
             <td>31</td>
             <td>Mean MSAVI within 1km</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         </table>
 
@@ -91,7 +95,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -102,13 +105,10 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
-    
-
-    const productName = "Mean MSAVI";
+    const productName = "Mean_MSAVI";
 
     fetch("../metadata.json")
         .then(response => response.json())

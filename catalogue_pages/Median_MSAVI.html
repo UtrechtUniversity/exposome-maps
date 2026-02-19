@@ -59,18 +59,22 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>23</td>
             <td>Median MSAVI within 300m</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         <tr>
             <td>24</td>
             <td>Median MSAVI within 500m</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         <tr>
             <td>25</td>
             <td>Median MSAVI within 1km</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         </table>
 
@@ -91,7 +95,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -102,13 +105,12 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
     
 
-    const productName = "Median MSAVI";
+    const productName = "Median_MSAVI";
 
     fetch("../metadata.json")
         .then(response => response.json())

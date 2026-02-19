@@ -59,18 +59,22 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>17</td>
             <td>Standard deviation NDVI within 300m</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         <tr>
             <td>18</td>
             <td>Standard deviation NDVI within 500m</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         <tr>
             <td>19</td>
             <td>Standard deviation NDVI within 1km</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml" target="_blank">Open metadata XML</a></td>         
         </tr>
         </table>
 
@@ -91,7 +95,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -102,13 +105,12 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
     
 
-    const productName = "Standard deviation NDVI";
+    const productName = "Standard_deviation_NDVI";
 
     fetch("../metadata.json")
         .then(response => response.json())

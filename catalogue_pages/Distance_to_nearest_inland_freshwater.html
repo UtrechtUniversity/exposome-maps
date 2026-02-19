@@ -59,10 +59,12 @@
         <tr>
             <th>Surface ID</th>
             <th>Description</th>
+            <th>Metadata</th>
         </tr>
         <tr>
             <td>42</td>
             <td>Distance to nearest inland freshwater</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml" target="_blank">Open metadata XML</a></td>        
         </tr>
         </table>
 
@@ -83,7 +85,6 @@
     const specifiedKeys = [
         "Category",
         "Theme",
-        "Title",
         "Summary",
         "File type",
         "Temporal resolution",
@@ -94,13 +95,12 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner",
-        "Hosted XML file"
+        "Owner"
     ];
 
     
 
-    const productName = "Distance to nearest inland freshwater";
+    const productName = "Distance_to_nearest_inland_freshwater";
 
     fetch("../metadata.json")
         .then(response => response.json())
