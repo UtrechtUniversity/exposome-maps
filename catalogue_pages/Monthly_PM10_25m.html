@@ -38,7 +38,7 @@
 
             <div id="title" class="title">
                 <span class="title-text">
-                    Dataset: Annual O3 (Ozone)
+                    Dataset: Monthly PM10 (Particulate Matter 10)
                 </span>
             </div>
         </div>
@@ -50,7 +50,7 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/o3.png" alt="O3 example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+            <img src="images/thumbnails/pm10.png" alt="PM10 example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
 
         </div>
 
@@ -73,9 +73,10 @@
             <th>Metadata</th>
         </tr>
         <tr>
-            <td>4</td>
-            <td>Annual O3, 25m resolution</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_O3_25m.xml" target="_blank">Open metadata XML</a></td>
+            <td>47</td>
+            <td>Monthly PM10, 25m resolution</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_25m.xml" target="_blank">Open metadata XML</a></td>
+
         </tr>
         </table>
 
@@ -83,7 +84,7 @@
         
         <h2 class="title">Background</h2>
         <h2 class="title">References</h2>
- 
+
     </div>
 
 </body>
@@ -112,7 +113,7 @@
 
     
 
-    const productName = "Annual_O3_25m";
+    const productName = "Monthly_PM10_25m";
 
     fetch("../metadata.json")
         .then(response => response.json())
