@@ -49,7 +49,6 @@ function initMenu(dataCatalogue, container) {
     }
 }
 
-
 // Toggle submenus on category click
 $(document).on("click", "#dynamic-populated-menu-catalogue-view > li.category", function (e) {
     const subUl = $(this).children("ul");

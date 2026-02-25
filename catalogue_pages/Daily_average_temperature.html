@@ -38,7 +38,7 @@
 
             <div id="title" class="title">
                 <span class="title-text">
-                    Dataset: Maximum temperature
+                    Dataset: Daily Average Temperature
                 </span>
             </div>
         </div>
@@ -50,11 +50,9 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/max_temp.png" alt="Maximum temperature example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+            <img src="images/thumbnails/yearly_avg_temp.png" alt="Average temperature example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
 
         </div>
-
-        <h2 class="title">Comments</h2>
 
         <h2 class="title">Surfaces</h2>
                 
@@ -75,12 +73,14 @@
             <th>Metadata</th>
         </tr>
         <tr>
-            <td>8</td>
-            <td>Daily maximum temperature</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_maximum_temperature.xml" target="_blank">Open metadata XML</a></td>         
+            <td>6</td>
+            <td>Daily average temperature</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml" target="_blank">Open metadata XML</a></td>        
         </tr>
         </table>
 
+        <h2 class="title">Comments</h2>
+        
         <h2 class="title">Background</h2>
         <h2 class="title">References</h2>
     </div>
@@ -98,7 +98,6 @@
         "Theme",
         "Summary",
         "File type",
-        "Temporal resolution",
         "Time period",
         "Frequency",
         "Spatial resolution",
@@ -109,9 +108,7 @@
         "Owner"
     ];
 
-    
-
-    const productName = "Maximum_temperature";
+    const productName = "Daily_average_temperature";
 
     fetch("../metadata.json")
         .then(response => response.json())

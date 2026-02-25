@@ -38,7 +38,7 @@
 
             <div id="title" class="title">
                 <span class="title-text">
-                    Dataset: Average temperature
+                    Dataset: Monthly Average Temperature
                 </span>
             </div>
         </div>
@@ -74,23 +74,12 @@
         </tr>
         <tr>
             <td>5</td>
-            <td>Yearly average temperature</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml" target="_blank">Open metadata XML</a></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Daily average temperature</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml" target="_blank">Open metadata XML</a></td>        
-        </tr>
-        <tr>
-            <td>9</td>
             <td>Monthly average temperature</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_average_temperature.xml" target="_blank">Open metadata XML</a></td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml" target="_blank">Open metadata XML</a></td>
         </tr>
         </table>
 
         <h2 class="title">Comments</h2>
-        
         <h2 class="title">Background</h2>
         <h2 class="title">References</h2>
     </div>
@@ -118,7 +107,7 @@
         "Owner"
     ];
 
-    const productName = "Average_temperature";
+    const productName = "Monthly_average_temperature";
 
     fetch("../metadata.json")
         .then(response => response.json())
