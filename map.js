@@ -122,7 +122,7 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
             map._legends = {};
         }
         var legendUrl = geoserverURL + `?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image/png&style=EXPANSE_map:${style}_legend&STRICT=false`;
-        var legend = L.control({position: 'bottomright'});
+        var legend = L.control({position: 'bottomleft'});
         legend.onAdd = function () {
             var div = L.DomUtil.create('div', 'info legend-' + style);
             div.innerHTML += '<img src="' + legendUrl + '" alt="Legend"/>';
@@ -136,7 +136,7 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
         // Move legend 30 pix up to avoid overlapping with opacity slider
         var legendDiv = document.querySelector('.legend-' + style);
         if (legendDiv) {
-            legendDiv.style.marginBottom = '120px';
+            legendDiv.style.marginBottom = '10px';
         }
 
         // Switch basemap to window.selectedItem.default_basemap if this value is not empty. Such as the darkLayer for LAN layers
