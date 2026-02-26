@@ -1865,7 +1865,7 @@
         "UV radiation": [
             {
                 "Surface ID": 12,
-                "Title": "Downward UV radiation at the surface, monthly mean of daily average",
+                "Title": "Daily mean of downward UV radiation at the surface",
                 "Category": "Physico-Chemical",
                 "Theme": "UV radiation",
                 "Summary": "No summary",
@@ -1874,8 +1874,8 @@
                 "start_time": "01_01_2000",
                 "end_time": "31_12_2022",
                 "Time period": "2000 - 2022",
-                "Temporal resolution": "Monthly",
-                "Frequency": "Monthly",
+                "Temporal resolution": "Daily",
+                "Frequency": "Daily",
                 "Spatial resolution": "27x27km",
                 "Extent": "Full EU",
                 "Owner": "Kees de Hoogh",
@@ -1884,12 +1884,12 @@
                 "No-data value": "NaN",
                 "available_years": "",
                 "Comments": "",
-                "Metadata last updated": "6-2-2026",
+                "Metadata last updated": "26-2-2026",
                 "Dataset last revised": "8-1-2026",
                 "MD_TopicCategoryCode": "environment",
                 "Lineage_statement": "No lineage information",
                 "File identifier": "expanse_project_exposome_maps_UV_AVG_v3",
-                "catalogue_page": "Downward_UV_radiation_at_the_surface_monthy_mean_of_daily_average",
+                "catalogue_page": "Daily_mean_of_downward_UV_radiation_at_the_surface",
                 "thumbnail": "mean_uv",
                 "geoserver_layer": "UV_AVG",
                 "geoserver_style": "UV",
@@ -1900,12 +1900,12 @@
                 "lifelines": "",
                 "show_on_map": false,
                 "file_name": "UV_AVG_%day%_%month%_%year%_v3",
-                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthy_mean_of_daily_average.xml",
-                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthy_mean_of_daily_average.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_mean_of_downward_UV_radiation_at_the_surface.xml",
+                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_mean_of_downward_UV_radiation_at_the_surface.xml"
             },
             {
                 "Surface ID": 13,
-                "Title": "Downward UV radiation at the surface, monthly max of daily average",
+                "Title": "Daily max of downward UV radiation at the surface",
                 "Category": "Physico-Chemical",
                 "Theme": "UV radiation",
                 "Summary": "No summary",
@@ -1914,8 +1914,8 @@
                 "start_time": "01_01_2000",
                 "end_time": "31_12_2022",
                 "Time period": "2000 - 2022",
-                "Temporal resolution": "Monthly",
-                "Frequency": "Monthly",
+                "Temporal resolution": "Daily",
+                "Frequency": "Daily",
                 "Spatial resolution": "27x27km",
                 "Extent": "Full EU",
                 "Owner": "Kees de Hoogh",
@@ -1924,12 +1924,12 @@
                 "No-data value": "NaN",
                 "available_years": "",
                 "Comments": "",
-                "Metadata last updated": "6-2-2026",
+                "Metadata last updated": "26-2-2026",
                 "Dataset last revised": "8-1-2026",
                 "MD_TopicCategoryCode": "environment",
                 "Lineage_statement": "No lineage information",
                 "File identifier": "expanse_project_exposome_maps_UV_MAX_v3",
-                "catalogue_page": "Downward_UV_radiation_at_the_surface_monthly_max_of_daily_average",
+                "catalogue_page": "Daily_max_of_downward_UV_radiation_at_the_surface",
                 "thumbnail": "max_uv",
                 "geoserver_layer": "UV_MAX",
                 "geoserver_style": "UV",
@@ -1940,8 +1940,8 @@
                 "lifelines": "",
                 "show_on_map": false,
                 "file_name": "UV_MAX_%day%_%month%_%year%_v3",
-                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthly_max_of_daily_average.xml",
-                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Downward_UV_radiation_at_the_surface,_monthly_max_of_daily_average.xml"
+                "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_max_of_downward_UV_radiation_at_the_surface.xml",
+                "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_max_of_downward_UV_radiation_at_the_surface.xml"
             }
         ]
     }

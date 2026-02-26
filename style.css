@@ -564,6 +564,11 @@ body {
   text-decoration: underline;
   /* buffer left */
   padding-left: 5%;
+  display: block;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+  white-space: normal;
 }
 
 .catalogue-item-thumbnail {
