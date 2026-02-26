@@ -88,7 +88,9 @@ function openCataloguePanel(subcategoryItems) {
         // Title
         const titleDiv = document.createElement("a");
         titleDiv.classList.add("catalogue-item-title");
-        titleDiv.textContent = item.catalogue_page || item.id || "No Title";
+        const displayTitle = item.catalogue_page ? item.catalogue_page.replace(/_/g, " ") : item.id || "No Title";
+
+        titleDiv.textContent = displayTitle;
         titleDiv.href = "/catalogue_pages/" + item.catalogue_page + ".html";
         titleDiv.target = "_blank";
         titleDiv.rel = "noopener noreferrer";

@@ -426,6 +426,7 @@ body {
   cursor: pointer;
 }
 
+
 .year-select:hover {
   border-color: #999;
   cursor: pointer;
@@ -436,6 +437,8 @@ body {
   border-color: #0078d7;
   box-shadow: 0 0 3px rgba(0, 120, 215, 0.4);
 }
+
+/* Make the year select options background color orange when hovered and selected */
 
 /* Make themap label be on top of the map, on the bottom center */
 #map-label {

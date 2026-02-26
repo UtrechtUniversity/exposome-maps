@@ -246,6 +246,19 @@ function display_time_component(item) {
         }
       }
 
+      if (item.clickable_years.length > 0) {
+        const clickable_years = item.clickable_years.split(",").map(y => y.trim());
+        console.log("Clickable years:", clickable_years);
+        const options = select.querySelectorAll("option.year_option");
+        options.forEach(option => { 
+          if (!clickable_years.includes(option.value)) {
+            option.disabled = true;
+            // And make it visually clear that it's disabled
+            option.style.color = "#999"; // light gray background
+          }
+        });
+      }
+
       if (lastSelected) select.value = lastSelected;
       select.addEventListener("change", () => {
         window.selectedDate = select.value;
@@ -253,7 +266,7 @@ function display_time_component(item) {
 
       timeControls.appendChild(select);
       break;
-    }
+    } // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     default:
       console.log("Unknown temporal_resolution:", item["Temporal resolution"]);
