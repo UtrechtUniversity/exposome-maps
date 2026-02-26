@@ -254,7 +254,9 @@ function display_time_component(item) {
           if (!clickable_years.includes(option.value)) {
             option.disabled = true;
             // And make it visually clear that it's disabled
-            option.style.color = "#999"; // light gray background
+            option.style.color = "#929292"; // light gray background
+            // Make the font not bold and smaller to indicate it's not selectable
+            option.style.fontWeight = "normal";
           }
         });
       }
