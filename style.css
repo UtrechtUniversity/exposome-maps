@@ -438,7 +438,18 @@ body {
   box-shadow: 0 0 3px rgba(0, 120, 215, 0.4);
 }
 
-/* Make the year select options background color orange when hovered and selected */
+.flatpickr-monthSelect-month.flatpickr-disabled {
+  color: #929292;
+  background: transparent;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.flatpickr-monthSelect-month:not(.flatpickr-disabled) {
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
 
 /* Make themap label be on top of the map, on the bottom center */
 #map-label {

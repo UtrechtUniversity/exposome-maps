@@ -57,35 +57,45 @@ function selectDateCleanup(dateStr) {
     var length = String(dateStr).length;
     var monthMap = {
     "Jan": "01",
+    "January": "01",
     "Feb": "02",
+    "February": "02",
     "Mar": "03",
+    "March": "03",
     "Apr": "04",
+    "April": "04",
     "May": "05",
     "Jun": "06",
+    "June": "06",
     "Jul": "07",
+    "July": "07",
     "Aug": "08",
+    "August": "08",
     "Sep": "09",
+    "September": "09",
     "Oct": "10",
+    "October": "10",
     "Nov": "11",
-    "Dec": "12"
+    "November": "11",
+    "Dec": "12",
+    "December": "12"
     };
     if (length === 4) { // Yearly, add day and month
         return dateStr
     }
-    else if (length === 8) { // Monthly, convert month number
-        var month = dateStr.substring(0, 3);
-
-        month = monthMap[month];
-        // Add month to the year part
-        return dateStr.substring(4, 8) + "-" + month; // 1st day of that month
+    else if (length > 8) { // Monthly, convert month number
+        // Year is the last 4 characters of the string, month is everything before it
+        var year  = dateStr.substring(dateStr.length - 4);
+        var month = monthMap[dateStr.substring(0, dateStr.length - 5)];
+        return year + "-" + month
     }
-    else {
-        var day = dateStr.substring(0, 2);
-        var month = dateStr.substring(3, 6);
-        month = monthMap[month];
-        var year = dateStr.substring(7, 11);
-        return year + "-" + month + "-" + day;
-    }
+    // else {
+    //     var day = dateStr.substring(0, 2);
+    //     var month = dateStr.substring(3, 6);
+    //     month = monthMap[month];
+    //     var year = dateStr.substring(7, 11);
+    //     return year + "-" + month + "-" + day;
+    // }
 }
 
 // Add event listener for the show on map button. When clicked, it will fetch the selected layer
@@ -94,13 +104,13 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
         var layerName = window.selectedItem.geoserver_layer;
         console.log("Layer name:", layerName);
         var dateParameter = selectDateCleanup(window.selectedDate);
+        console.log("Selected date:", window.selectedDate);
         console.log("Date parameter for WMS request:", dateParameter);
         var style = window.selectedItem.geoserver_style
 
         if (window.currentDisplayedLayer) {
             map.removeLayer(window.currentDisplayedLayer);
         }
-        console.log("Current Opacity value:", opacityValue);
         window.currentDisplayedLayer = L.tileLayer.wms(geoserverURL, {
             layers: `${geoserver_workspace}:${layerName}`,
             time: dateParameter,

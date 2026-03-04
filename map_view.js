@@ -197,12 +197,23 @@ function display_time_component(item) {
       // Add a listener to update window.selectedDate when a month is picked
       options.plugins = [new monthSelectPlugin({
         shorthand: true,
-        dateFormat: "M-Y",
+        // dateFormat: "M-Y",
         altFormat: "m_Y",
         theme: "dark"
       })];
       options.minDate = item.start_time;
       options.maxDate = item.end_time;
+      // options.enable = ["2020-01-01", "2020-06-01", "2020-12-01"]
+
+      const chooseableMonths = item.chooseable_in_map.split(",").map(dateStr => {
+        const [year, month] = dateStr.trim().split("-");
+        return `${year}-${month}-01`;
+      });
+      console.log("Chooseable months:", chooseableMonths);
+      options.enable = chooseableMonths;
+
+
+
       if (lastSelected) options.defaultDate = lastSelected;
       flatpickr(input, options);
       break;
@@ -220,8 +231,8 @@ function display_time_component(item) {
       emptyOption.selected = true;
       select.appendChild(emptyOption);
 
-      if (item.available_years && item.available_years.length > 0) {
-        const years = item.available_years.split(",").map(y => y.trim());
+      if (item.available && item.available.length > 0) {
+        const years = item.available.split(",").map(y => y.trim());
         years.forEach(year => {
           const option = document.createElement("option");
           option.classList.add("year_option");
@@ -234,8 +245,8 @@ function display_time_component(item) {
         const start_time = item.start_time;
         const end_time = item.end_time;
 
-        const startYear = parseInt(start_time.split("_")[2]);
-        const endYear = parseInt(end_time.split("_")[2]);
+        const startYear = parseInt(start_time.split("-")[0]);
+        const endYear = parseInt(end_time.split("-")[0]);
 
         for (let year = startYear; year <= endYear; year++) {
           const option = document.createElement("option");
@@ -246,12 +257,11 @@ function display_time_component(item) {
         }
       }
 
-      if (item.clickable_years.length > 0) {
-        const clickable_years = item.clickable_years.split(",").map(y => y.trim());
-        console.log("Clickable years:", clickable_years);
+      if (item.chooseable_in_map.length > 0) {
+        const chooseable_in_map = item.chooseable_in_map.split(",").map(y => y.trim());
         const options = select.querySelectorAll("option.year_option");
         options.forEach(option => { 
-          if (!clickable_years.includes(option.value)) {
+          if (!chooseable_in_map.includes(option.value)) {
             option.disabled = true;
             // And make it visually clear that it's disabled
             option.style.color = "#929292"; // light gray background
