@@ -6,6 +6,17 @@ window.dataCataloguePromise.then(data => {
 });
 
 function initMenu(dataCatalogue, container) {
+  const expanseSection = document.createElement("div");
+  const exposomeSection = document.createElement("div");
+
+  const expanseHeader = document.createElement("h3");
+  expanseHeader.textContent = "EXPANSE";
+  expanseSection.appendChild(expanseHeader);
+
+  const exposomeHeader = document.createElement("h3");
+  exposomeHeader.textContent = "EXPOSOME";
+  exposomeSection.appendChild(exposomeHeader);
+
     for (const category in dataCatalogue) {
         const categoryLi = document.createElement("li");
         categoryLi.classList.add("sub-menu");

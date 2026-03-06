@@ -52,6 +52,9 @@ body {
     border: none;
 }
 
+button.info-link-button {
+  cursor: pointer;
+}
 
 #top-bar {
     position: fixed;
