@@ -3,7 +3,7 @@ window.currentDisplayedLayer = null;
 map.createPane('basemaps');
 
 
-var geoserverURL = "https://geoserver-openshift-2-dgk-prd-expomaps.apps.cl01.cp.its.uu.nl/geoserver/EXPANSE_map/wms";
+var geoserverURL = "https://exposome.uu.nl/geoserver/wms";
 // var geoserverURL = "http://localhost:8080/geoserver/EXPANSE_map/wms"; // Used for testing
 
 
