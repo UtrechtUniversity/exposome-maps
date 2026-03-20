@@ -187,13 +187,19 @@ function display_time_component(item) {
       input.type = "text";
       input.placeholder = "Select a date";
       timeControls.appendChild(input);
-
-      options.dateFormat = "d-M-Y";
+      // 31-12-2020
+      options.dateFormat = "d-m-Y";
       options.altFormat = "d_m_Y";
       options.minDate = item.start_time;
       options.maxDate = item.end_time;
+      const chooseableDates = item.chooseable_in_map.split(",").map(dateStr => {
+        const [year, month, day] = dateStr.trim().split("-");
+        return `${day}-${month}-${year}`;
+      });
+      console.log("Chooseable dates:", chooseableDates);
+      options.enable = chooseableDates;
+      options.theme = "dark";
       if (lastSelected) options.defaultDate = lastSelected;
-
       flatpickr(input, options);
       break;
     }
@@ -222,8 +228,6 @@ function display_time_component(item) {
       });
       console.log("Chooseable months:", chooseableMonths);
       options.enable = chooseableMonths;
-
-
 
       if (lastSelected) options.defaultDate = lastSelected;
       flatpickr(input, options);

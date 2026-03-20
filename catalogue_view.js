@@ -40,6 +40,8 @@ function initMenu(dataCatalogue, container) {
                 subcategoryItems = Array.from(uniqueCataloguePages.values());
 
                 openCataloguePanel(subcategoryItems);
+                document.getElementById("OpenDataButton").classList.add("inactive");
+                document.getElementById("OpenDataButton").classList.remove("active");
             });
 
             subUl.appendChild(subLi);
@@ -100,5 +102,34 @@ function openCataloguePanel(subcategoryItems) {
         itemDiv.appendChild(contentDiv);
         cataloguePanel.appendChild(itemDiv);
     });
-
 }
+
+const openDataContent = `
+<h2>Open Exposome Data</h2>
+<p>Exposome studies frequently use openly available datasets to explore the interactions
+between environmental exposures and health outcomes, or as inputs for the modeling of more complex exposures.
+</p>
+
+We provide a selection of open datasets that have been used in Expanse and ExposomeNL studies.
+
+// table
+<table>
+    <tr>
+        <th>Dataset</th>
+        <th>Description</th>
+        <th>Source</th> 
+        <th>Spatial extent</th>
+    </tr>
+    <tr>
+
+
+`;
+
+document.getElementById("OpenDataButton").addEventListener("click", function () {
+    const cataloguePanel = document.getElementById("catalogue-panel");
+    cataloguePanel.innerHTML = openDataContent; // display open data content
+    document.querySelectorAll("#dynamic-populated-menu-catalogue-view .subcategory a.selected")
+        .forEach(a => a.classList.remove("selected"));
+    this.classList.add("active");
+    document.getElementById("OpenDataButton").classList.remove("inactive");
+});

@@ -454,6 +454,32 @@ button.info-link-button {
   font-weight: bold;
 }
 
+.flatpickr-monthSelect-theme-dark .flatpickr-monthSelect-month.selected
+  {
+    background-color: #fd6925c9;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+.flatpickr-day.flatpickr-disabled{
+  color: #929292;
+  background: transparent;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.flatpickr-day:not(.flatpickr-disabled) {
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.flatpickr-day.selected {
+  background-color: #fd6925c9;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 /* Make themap label be on top of the map, on the bottom center */
 #map-label {
   position: absolute;
@@ -705,4 +731,28 @@ button.info-link-button {
     cursor: pointer;
   }
 
+}
+
+#OpenDataButton{
+  background-color: #19486a;
+  color: white;
+  padding: 10px 10px;
+  font-size: clamp(0.8rem, 1.2vw, 1.rem);
+  width: 100%;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  border-radius:5px;
+  border-color: rgba(255, 255, 255, 0.384);
+  border-style: solid;
+}
+
+#OpenDataButton.active {
+    background-color: #fd6925c9;
+    color: #ffffff;
+}
+
+#OpenDataButton.inactive {
+    background-color: #19486a;
+    color: #ffffff;
 }
