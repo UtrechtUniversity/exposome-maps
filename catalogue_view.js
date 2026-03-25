@@ -112,9 +112,10 @@ const openDataContent = `
         <h2>Open Exposome Data</h2>
         <p>Exposome studies frequently use openly available datasets to explore the interactions
         between environmental exposures and health outcomes, or as inputs for the modeling of more complex exposures.
-        We provide a selection of open datasets that have been used in Expanse and ExposomeNL studies, 
-        and data platforms that provide access to exposome-related data.</p>
-    </div>
+        We provide a partial list of open datasets that have been used in Expanse and ExposomeNL studies, 
+        and data platforms that provide access to even more exposome-related datasets.</p>
+
+        </div>
 
     <h3>Datasets</h3>
     <table class="resources-table">
