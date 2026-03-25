@@ -590,6 +590,10 @@ button.info-link-button {
   justify-content: center;
 }
 
+#catalogue-panel.no-grid {
+    display: block;
+}
+
 .catalogue-item {
   border: 1px solid #ccc;
   padding: 12px 12px;
@@ -755,4 +759,69 @@ button.info-link-button {
 #OpenDataButton.inactive {
     background-color: #19486a;
     color: #ffffff;
+}
+
+.open-data-container {
+    padding: 24px 32px;
+    max-width: 100%;
+}
+
+.open-data-intro h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.open-data-intro p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 28px;
+}
+
+.open-data-container h3 {
+    font-size: 16px;
+    color: #f47c20;
+    margin: 24px 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.resources-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+    font-size: 13px;
+}
+
+.resources-table th {
+    background-color: #f47c20;
+    color: white;
+    text-align: left;
+    padding: 10px 14px;
+    font-weight: 600;
+}
+
+.resources-table td {
+    padding: 9px 14px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #444;
+    vertical-align: top;
+}
+
+.resources-table tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+
+.resources-table tr:hover td {
+    background-color: #fff3e6;
+}
+
+.resources-table a {
+    color: #f47c20;
+    text-decoration: none;
+}
+
+.resources-table a:hover {
+    text-decoration: underline;
 }
