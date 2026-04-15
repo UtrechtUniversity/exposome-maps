@@ -162,6 +162,34 @@ if (item) {
 
 const dateInput = document.getElementById("datePicker");
 
+function parseChooseableDate(value) {
+  if (!value || typeof value !== "string") return null;
+
+  const trimmedValue = value.trim();
+  const parseFormats = ["d-m-Y", "j-n-Y", "d-m-y", "j-n-y"];
+
+  for (const format of parseFormats) {
+    const parsedDate = flatpickr.parseDate(trimmedValue, format);
+    if (parsedDate) return parsedDate;
+  }
+
+  return null;
+}
+
+function extractYear(value) {
+  const match = String(value || "").match(/(\d{4})(?!.*\d{4})/);
+  return match ? match[1] : "";
+}
+
+function normalizeMonthlyValue(value) {
+  const parsedDate = parseChooseableDate(value);
+  if (!parsedDate) return null;
+
+  const year = parsedDate.getFullYear();
+  const month = String(parsedDate.getMonth() + 1).padStart(2, "0");
+  return `${year}-${month}-01`;
+}
+
 function display_time_component(item) {
   if (!item || !item["Temporal resolution"]) {
     console.warn("Item or temporal resolution missing");
@@ -190,12 +218,11 @@ function display_time_component(item) {
       // 31-12-2020
       options.dateFormat = "d-m-Y";
       options.altFormat = "d_m_Y";
-      options.minDate = item.start_time;
-      options.maxDate = item.end_time;
-      const chooseableDates = item.chooseable_in_map.split(",").map(dateStr => {
-        const [year, month, day] = dateStr.trim().split("-");
-        return `${day}-${month}-${year}`;
-      });
+      options.minDate = parseChooseableDate(item.start_time);
+      options.maxDate = parseChooseableDate(item.end_time);
+      const chooseableDates = item.chooseable_in_map.split(",")
+        .map(parseChooseableDate)
+        .filter(Boolean);
       console.log("Chooseable dates:", chooseableDates);
       options.enable = chooseableDates;
       options.theme = "dark";
@@ -218,14 +245,13 @@ function display_time_component(item) {
         altFormat: "m_Y",
         theme: "dark"
       })];
-      options.minDate = item.start_time;
-      options.maxDate = item.end_time;
+      options.minDate = normalizeMonthlyValue(item.start_time);
+      options.maxDate = normalizeMonthlyValue(item.end_time);
       // options.enable = ["2020-01-01", "2020-06-01", "2020-12-01"]
 
-      const chooseableMonths = item.chooseable_in_map.split(",").map(dateStr => {
-        const [year, month] = dateStr.trim().split("-");
-        return `${year}-${month}-01`;
-      });
+      const chooseableMonths = item.chooseable_in_map.split(",")
+        .map(normalizeMonthlyValue)
+        .filter(Boolean);
       console.log("Chooseable months:", chooseableMonths);
       options.enable = chooseableMonths;
 
@@ -260,8 +286,8 @@ function display_time_component(item) {
         const start_time = item.start_time;
         const end_time = item.end_time;
 
-        const startYear = parseInt(start_time.split("-")[0]);
-        const endYear = parseInt(end_time.split("-")[0]);
+        const startYear = parseInt(extractYear(start_time));
+        const endYear = parseInt(extractYear(end_time));
 
         for (let year = startYear; year <= endYear; year++) {
           const option = document.createElement("option");
@@ -276,7 +302,7 @@ function display_time_component(item) {
         const chooseable_in_map = item.chooseable_in_map.split(",").map(y => y.trim());
         const options = select.querySelectorAll("option.year_option");
         options.forEach(option => { 
-          if (!chooseable_in_map.includes(option.value)) {
+          if (!chooseable_in_map.some(dateValue => extractYear(dateValue) === option.value)) {
             option.disabled = true;
             // And make it visually clear that it's disabled
             option.style.color = "#929292"; // light gray background
