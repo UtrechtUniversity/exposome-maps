@@ -297,17 +297,13 @@ button.info-link-button {
     transition: right 0.1s ease; /* smooth movement */
 }
 
-#dynamic-populated-menu li ul li a.selected {
-    background-color: #fd6925c9;
-    color: #ffffff;
-    font-weight: bold;
-    width: 100%;
-}
-
-#dynamic-populated-menu-catalogue-view li ul li a.selected {
-    background-color: #fd6925c9;
-    color: #ffffff;
-    font-weight: bold;
+#dynamic-populated-menu li ul li a.selected,
+#sidebar .project-menu .subcategory a.selected,
+#sidebar2 .project-menu .subcategory a.selected {
+  background-color: #fd6925c9;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
 }
 
 #time-component {
@@ -579,6 +575,74 @@ button.info-link-button {
   width: 100% ;
   margin-right: clamp(200px, 20vw, 350px);
 } 
+
+#sidebar .project-menu-section,
+#sidebar2 .project-menu-section {
+  width: 100%;
+}
+
+#sidebar .project-menu-label,
+#sidebar2 .project-menu-label {
+  margin: 8px 4px 6px;
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: #00689D;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#sidebar2 .project-menu-divider {
+  width: 100%;
+  height: 1px;
+  margin: 12px 0;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#sidebar .project-menu,
+#sidebar2 .project-menu {
+  width: 100%;
+}
+
+#sidebar .project-menu > li.category > a,
+#sidebar2 .project-menu > li.category > a {
+  font-size: 2em;
+  padding: 0.3em 0 0.6em 0.4em;
+}
+
+#sidebar .project-menu > li.category > ul > li.subcategory > a,
+#sidebar2 .project-menu > li.category > ul > li.subcategory > a {
+  font-size: 1.5em;
+  padding: 0.4em 0.5em;
+}
+
+#sidebar .project-menu > li.category > ul > li.subcategory,
+#sidebar2 .project-menu > li.category > ul > li.subcategory {
+  background: #00699d;
+  font-size: 1em;
+  margin: 3px;
+}
+
+#sidebar .project-menu > li.category > ul > li.subcategory a:hover,
+#sidebar2 .project-menu > li.category > ul > li.subcategory a:hover {
+  color: #56C02B;
+}
+
+#sidebar .project-menu > li.category > ul > li.subcategory > ul > li > a,
+#sidebar2 .project-menu > li.category > ul > li.subcategory > ul > li > a {
+  font-size: 1em;
+  padding: 0.7em 0.5em;
+  color: #ffffff;
+}
+
+#sidebar .project-menu > li.category > ul > li.subcategory > ul > li,
+#sidebar2 .project-menu > li.category > ul > li.subcategory > ul > li {
+  background: #00699d;
+}
 
 #catalogue-panel {
   /* Appear in a grid of three rectangles across */

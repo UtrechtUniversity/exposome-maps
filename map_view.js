@@ -2,21 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
 const menuContainer = document.getElementById("dynamic-populated-menu");
 
 window.dataCataloguePromise.then(data => {
+  // Drop the "UV radiation" key from key "Physico-Chemical" in the dataCatalogue for the map view
+  console.log("Original dataCatalogue keys:", Object.keys(data));
+  if (data["Physico-Chemical"]) {
+    delete data["Physico-Chemical"]["UV radiation"];
+  }
   initMenu(data, menuContainer);
 });
 
 function initMenu(dataCatalogue, container) {
-  const expanseSection = document.createElement("div");
-  const exposomeSection = document.createElement("div");
-
-  const expanseHeader = document.createElement("h3");
-  expanseHeader.textContent = "EXPANSE";
-  expanseSection.appendChild(expanseHeader);
-
-  const exposomeHeader = document.createElement("h3");
-  exposomeHeader.textContent = "EXPOSOME";
-  exposomeSection.appendChild(exposomeHeader);
-
     for (const category in dataCatalogue) {
         const categoryLi = document.createElement("li");
         categoryLi.classList.add("sub-menu");
@@ -28,6 +22,11 @@ function initMenu(dataCatalogue, container) {
 
         const subUl = document.createElement("ul");
         for (const subcategory in dataCatalogue[category]) {
+          const categoryItems = dataCatalogue[category][subcategory].filter(item => item.Project === "Expanse" && item.show_on_map === true);
+          if (categoryItems.length === 0) {
+            continue;
+          }
+
             const subLi = document.createElement("li");
             const subA = document.createElement("a");
             subA.href = "javascript:void(0)";
@@ -35,8 +34,7 @@ function initMenu(dataCatalogue, container) {
             subLi.appendChild(subA);
 
             const itemsUl = document.createElement("ul");
-            dataCatalogue[category][subcategory].forEach(item => {
-                if (item.show_on_map !== true) return;
+          categoryItems.forEach(item => {
 
                 const itemLi = document.createElement("li");
                 const productItem = document.createElement("div");
@@ -111,8 +109,10 @@ function initMenu(dataCatalogue, container) {
             subUl.appendChild(subLi);
         }
 
-        categoryLi.appendChild(subUl);
-        container.appendChild(categoryLi);
+        if (subUl.children.length > 0) {
+          categoryLi.appendChild(subUl);
+          container.appendChild(categoryLi);
+        }
     }
 }
 // Toggle submenus on click

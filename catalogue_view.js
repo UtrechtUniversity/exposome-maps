@@ -1,10 +1,35 @@
-const menuContainerCatalogue = document.getElementById("dynamic-populated-menu-catalogue-view");
+const catalogueMenuTargets = [
+    { project: "Expanse", containerId: "dynamic-populated-menu-catalogue-view-expanse" },
+    { project: "Exposome", containerId: "dynamic-populated-menu-catalogue-view-exposome" }
+];
 
 window.dataCataloguePromise.then(data => {
-    initMenu(data, menuContainerCatalogue);
+    catalogueMenuTargets.forEach(({ project, containerId }) => {
+        const container = document.getElementById(containerId);
+        if (container) {
+            initMenu(data, container, project);
+        }
+    });
 });
 
-function initMenu(dataCatalogue, container) {
+function getUniqueCatalogueItems(items) {
+    const uniqueCataloguePages = new Map();
+    items.forEach(item => {
+        if (item.catalogue_page) {
+            uniqueCataloguePages.set(item.catalogue_page, item);
+        }
+    });
+
+    return Array.from(uniqueCataloguePages.values());
+}
+
+function clearSelectedCatalogueThemes() {
+    document.querySelectorAll(
+        ".project-menu .subcategory a.selected"
+    ).forEach(a => a.classList.remove("selected"));
+}
+
+function initMenu(dataCatalogue, container, projectName) {
     for (const category in dataCatalogue) {
         // --- Category level ---
         const categoryLi = document.createElement("li");
@@ -17,6 +42,13 @@ function initMenu(dataCatalogue, container) {
 
         const subUl = document.createElement("ul");
         for (const subcategory in dataCatalogue[category]) {
+            let subcategoryItems = dataCatalogue[category][subcategory].filter(item => item.Project === projectName);
+            subcategoryItems = getUniqueCatalogueItems(subcategoryItems);
+
+            if (subcategoryItems.length === 0) {
+                continue;
+            }
+
             const subLi = document.createElement("li");
             subLi.classList.add("subcategory");
 
@@ -27,17 +59,8 @@ function initMenu(dataCatalogue, container) {
 
             subA.addEventListener("click", (e) => {
                 e.stopPropagation();
-                container.querySelectorAll(".subcategory a.selected").forEach(a => a.classList.remove("selected"));
+                clearSelectedCatalogueThemes();
                 subA.classList.add("selected");
-                let subcategoryItems = dataCatalogue[category][subcategory];
-                // Overwrite subcategoryItems that have a unique catalogue_page
-                const uniqueCataloguePages = new Map();
-                subcategoryItems.forEach(item => {
-                    if (item.catalogue_page) {
-                        uniqueCataloguePages.set(item.catalogue_page, item);
-                    }
-                });
-                subcategoryItems = Array.from(uniqueCataloguePages.values());
 
                 openCataloguePanel(subcategoryItems);
                 document.getElementById("OpenDataButton").classList.add("inactive");
@@ -47,13 +70,15 @@ function initMenu(dataCatalogue, container) {
 
             subUl.appendChild(subLi);
         }
-        categoryLi.appendChild(subUl);
-        container.appendChild(categoryLi);
+        if (subUl.children.length > 0) {
+            categoryLi.appendChild(subUl);
+            container.appendChild(categoryLi);
+        }
     }
 }
 
 // Toggle submenus on category click
-$(document).on("click", "#dynamic-populated-menu-catalogue-view > li.category", function (e) {
+$(document).on("click", ".project-menu > li.category", function (e) {
     const subUl = $(this).children("ul");
     if (subUl.length === 0) return;
 
@@ -209,8 +234,7 @@ document.getElementById("OpenDataButton").addEventListener("click", function () 
     const cataloguePanel = document.getElementById("catalogue-panel");
     cataloguePanel.innerHTML = openDataContent; // display open data content
     cataloguePanel.classList.add("no-grid");
-    document.querySelectorAll("#dynamic-populated-menu-catalogue-view .subcategory a.selected")
-        .forEach(a => a.classList.remove("selected"));
+    clearSelectedCatalogueThemes();
     this.classList.add("active");
     document.getElementById("OpenDataButton").classList.remove("inactive");
 });
