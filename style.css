@@ -185,6 +185,7 @@ button.info-link-button {
   background: #19486a;
   width: clamp(200px, 25vw, 450px);
   font-size: clamp(0.8rem, 1.2vw, 1.rem);
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
   display: flex;
   max-width: 100%;
   box-sizing: border-box;
@@ -795,9 +796,10 @@ button.info-link-button {
 .info-link-button{
   background-color: rgb(230, 238, 255);
   border-width: 0.01rem;
-  hover {
-    cursor: pointer;
-  }
+}
+
+.info-link-button:hover {
+  cursor: pointer;
 
 }
 

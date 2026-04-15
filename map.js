@@ -119,7 +119,10 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
             styles: '', // Use default style, predefined in layer
             transparent: true,
             attribution: "",
-            pane: 'overlayPane'
+            pane: 'overlayPane',
+            updateWhenIdle: true,
+            updateWhenZooming: false,
+            keepBuffer: 1
         }).addTo(map).setOpacity(opacityValue).bringToFront();
 
         // Update map label
