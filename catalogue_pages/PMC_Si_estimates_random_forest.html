@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.catalogueProductName = "PMC_Si_estimates_random_forest";
+        fetch("_template.html")
+            .then(response => response.text())
+            .then(html => {
+                document.open();
+                document.write(html);
+                document.close();
+            })
+            .catch(error => {
+                document.body.innerHTML = "<p>Unable to load catalogue page template.</p>";
+                console.error(error);
+            });
+    </script>
+</head>
+<body></body>
+</html>

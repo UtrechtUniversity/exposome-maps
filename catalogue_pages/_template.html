@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposome Maps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
+    <link rel="stylesheet" href="catalogue_pages_style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Lilita+One&family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-bar-logos">
+                <img src="images/EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE logo" class="sidebar-img">
+                <img src="images/ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL logo" class="sidebar-img">
+            </div>
+            <div id="title" class="title">
+                <span class="title-text" id="dataset-title">Dataset</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="page">
+        <h2 class="title">Details</h2>
+        <div id="metadata-section">
+            <div id="metadata-box"></div>
+            <img id="dataset-thumbnail" src="images/thumbnails/not_available.png" alt="Dataset thumbnail" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+        </div>
+
+        <h2 class="title">Surfaces</h2>
+        <table>
+            <tr>
+                <th>Surface ID</th>
+                <th>Description</th>
+                <th>Metadata</th>
+            </tr>
+            <tbody id="surface-table-body"></tbody>
+        </table>
+    </div>
+
+    <script>
+        const productName = window.catalogueProductName || new URLSearchParams(window.location.search).get("product") || "";
+        const specifiedKeys = [
+            "Category",
+            "Theme",
+            "Summary",
+            "File type",
+            "Time period",
+            "Frequency",
+            "Spatial resolution",
+            "Extent",
+            "Unit",
+            "CRS",
+            "No-data value",
+            "Owner"
+        ];
+
+        function formatDisplayName(name) {
+            return name
+                .replace(/PM2_5/g, "PM2.5")
+                .replace(/_/g, " ")
+                .replace(/\s+/g, " ")
+                .trim();
+        }
+
+        function findProductsByName(metadata, name) {
+            const matches = [];
+            for (const categoryKey in metadata) {
+                const categoryObj = metadata[categoryKey];
+                if (typeof categoryObj !== "object") continue;
+
+                for (const themeKey in categoryObj) {
+                    const list = categoryObj[themeKey];
+                    if (!Array.isArray(list)) continue;
+
+                    list.forEach(item => {
+                        if (item.catalogue_page === name) {
+                            matches.push(item);
+                        }
+                    });
+                }
+            }
+            return matches;
+        }
+
+        function populateMetadata(item) {
+            const metadataBox = document.getElementById("metadata-box");
+            metadataBox.innerHTML = "";
+
+            specifiedKeys.forEach(key => {
+                if (item[key] !== undefined && item[key] !== "") {
+                    const rowDiv = document.createElement("div");
+                    rowDiv.className = "metadata-row";
+
+                    const keyDiv = document.createElement("div");
+                    keyDiv.className = "metadata-key";
+                    keyDiv.textContent = key;
+
+                    const valueDiv = document.createElement("div");
+                    valueDiv.className = "metadata-value";
+                    valueDiv.textContent = item[key];
+
+                    rowDiv.appendChild(keyDiv);
+                    rowDiv.appendChild(valueDiv);
+                    metadataBox.appendChild(rowDiv);
+                }
+            });
+        }
+
+        function populateSurfaceTable(items) {
+            const body = document.getElementById("surface-table-body");
+            body.innerHTML = "";
+
+            items.forEach(item => {
+                const row = document.createElement("tr");
+
+                const idCell = document.createElement("td");
+                idCell.textContent = item["Surface ID"] ?? "";
+
+                const descriptionCell = document.createElement("td");
+                descriptionCell.textContent = item.Title || item.catalogue_page || "";
+
+                const linkCell = document.createElement("td");
+                const link = document.createElement("a");
+                link.href = item["Hosted XML file"] || item["Local path to XML file"] || "#";
+                link.target = "_blank";
+                link.textContent = link.href === "#" ? "Unavailable" : "Open metadata XML";
+                if (link.href === "#") {
+                    link.removeAttribute("href");
+                }
+                linkCell.appendChild(link);
+
+                row.appendChild(idCell);
+                row.appendChild(descriptionCell);
+                row.appendChild(linkCell);
+                body.appendChild(row);
+            });
+        }
+
+        function setThumbnail(item) {
+            const thumbnail = document.getElementById("dataset-thumbnail");
+            if (item.thumbnail) {
+                thumbnail.src = `images/thumbnails/${item.thumbnail}.png`;
+            }
+            thumbnail.alt = item.Title || "Dataset thumbnail";
+        }
+
+        fetch("../metadata.json")
+            .then(response => response.json())
+            .then(data => {
+                const products = findProductsByName(data, productName);
+                if (!products.length) {
+                    document.getElementById("dataset-title").textContent = formatDisplayName(productName || "Dataset");
+                    document.getElementById("metadata-box").textContent = "Metadata not found.";
+                    return;
+                }
+
+                const firstItem = products[0];
+                document.getElementById("dataset-title").textContent = `Dataset: ${formatDisplayName(productName)}`;
+                setThumbnail(firstItem);
+                populateMetadata(firstItem);
+                populateSurfaceTable(products);
+            })
+            .catch(error => {
+                console.error("Error loading metadata:", error);
+                document.getElementById("metadata-box").textContent = "Unable to load metadata.";
+            });
+    </script>
+</body>
+</html>
