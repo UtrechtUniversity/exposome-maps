@@ -1,4 +1,4 @@
-var map = L.map('map',{zoomControl:false}).setView([47.58, 6.06], 6);
+var map = L.map('map',{zoomControl:false,minZoom:6}).setView([47.58, 6.06], 6);
 window.currentDisplayedLayer = null;
 map.createPane('basemaps');
 
@@ -111,19 +111,49 @@ document.getElementById("showOnMapBtn").addEventListener("click", function() {
         if (window.currentDisplayedLayer) {
             map.removeLayer(window.currentDisplayedLayer);
         }
-        window.currentDisplayedLayer = L.tileLayer.wms(geoserverURL, {
+        const retryTileLayer = L.TileLayer.WMS.extend({
+            createTile: function (coords, done) {
+                const tile = document.createElement('img');
+
+                const url = this.getTileUrl(coords);
+                let attempts = 0;
+                const maxRetries = 10;
+
+                const loadTile = () => {
+                    attempts++;
+                    tile.src = url;
+                };
+
+                tile.onload = function () {
+                    done(null, tile);
+                };
+
+                tile.onerror = function () {
+                    if (attempts < maxRetries) {
+                        setTimeout(loadTile, 500 * attempts);
+                    } else {
+                        done(new Error('Tile failed after retries'), tile);
+                    }
+                };
+
+                loadTile();
+                return tile;
+            }
+        });
+
+        window.currentDisplayedLayer = new retryTileLayer(geoserverURL, {
             layers: `${geoserver_workspace}:${layerName}`,
             time: dateParameter,
-            format: 'image/png',
+            format: 'image/png8',
             version: '1.1.0',
-            styles: '', // Use default style, predefined in layer
+            styles: '',
             transparent: true,
-            attribution: "",
             pane: 'overlayPane',
-            updateWhenIdle: true,
-            updateWhenZooming: false,
-            keepBuffer: 1
-        }).addTo(map).setOpacity(opacityValue).bringToFront();
+            tileSize: 128,
+            keepBuffer:3,
+            updateWhenIdle: true, 
+            updateWhenZooming: false, 
+        }).addTo(map);
 
         // Update map label
         var mapLabel = document.getElementById("map-label");
