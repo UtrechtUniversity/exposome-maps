@@ -1619,7 +1619,7 @@
             },
             {
                 "Surface ID": 51,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Nitrogen dioxide along road networks Amsterdam",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1659,7 +1659,7 @@
             },
             {
                 "Surface ID": 52,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Black carbon along road networks Amsterdam ",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1699,7 +1699,7 @@
             },
             {
                 "Surface ID": 53,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Ultrafine particles along road networks Amsterdam",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1739,7 +1739,7 @@
             },
             {
                 "Surface ID": 54,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Ultrafine particles",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1779,7 +1779,7 @@
             },
             {
                 "Surface ID": 55,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Annual mean BC concentration",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1819,7 +1819,7 @@
             },
             {
                 "Surface ID": 58,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PM2.5 Cu estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1859,7 +1859,7 @@
             },
             {
                 "Surface ID": 59,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PMC Cu estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1899,7 +1899,7 @@
             },
             {
                 "Surface ID": 60,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PM2.5 Fe estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1939,7 +1939,7 @@
             },
             {
                 "Surface ID": 61,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PMC Fe estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1979,7 +1979,7 @@
             },
             {
                 "Surface ID": 62,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PM2.5 K estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2019,7 +2019,7 @@
             },
             {
                 "Surface ID": 63,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PMC K estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2059,7 +2059,7 @@
             },
             {
                 "Surface ID": 64,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PM2.5 mass",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2099,7 +2099,7 @@
             },
             {
                 "Surface ID": 65,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PM2.5 Ni estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2139,7 +2139,7 @@
             },
             {
                 "Surface ID": 66,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PM2.5 S estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2179,7 +2179,7 @@
             },
             {
                 "Surface ID": 67,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PM2.5 Si estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2219,7 +2219,7 @@
             },
             {
                 "Surface ID": 68,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PMC Si estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2259,7 +2259,7 @@
             },
             {
                 "Surface ID": 69,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PM2.5 V estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2299,7 +2299,7 @@
             },
             {
                 "Surface ID": 70,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PM2.5 Zn estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2339,7 +2339,7 @@
             },
             {
                 "Surface ID": 71,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "PMC Zn estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2707,7 +2707,7 @@
         "Pesticides": [
             {
                 "Surface ID": 56,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Area of crops within 50, 100, 250 and 500 buffers around BAG addresses",
                 "Category": "Physico-Chemical",
                 "Theme": "Pesticides",
@@ -2749,7 +2749,7 @@
         "Chemicals": [
             {
                 "Surface ID": 72,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Drinking water",
                 "Category": "Physico-Chemical",
                 "Theme": "Chemicals",
@@ -2791,7 +2791,7 @@
         "Weather": [
             {
                 "Surface ID": 73,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Local Climate Zones",
                 "Category": "Physico-Chemical",
                 "Theme": "Weather",
@@ -2833,7 +2833,7 @@
         "Electromagnetic fields": [
             {
                 "Surface ID": 74,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Power line voltage ",
                 "Category": "Physico-Chemical",
                 "Theme": "Electromagnetic fields",
@@ -2877,7 +2877,7 @@
         "Food landscape": [
             {
                 "Surface ID": 50,
-                "Project": "Exposome",
+                "Project": "ExposomeNL",
                 "Title": "Food facilities serving an address within rings of 0-500 , 500-1000 and 1000-1500m",
                 "Category": "Food",
                 "Theme": "Food landscape",
