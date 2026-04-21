@@ -1820,7 +1820,7 @@
             {
                 "Surface ID": 58,
                 "Project": "Exposome",
-                "Title": "PM2.5 Cu estimates with random forest model",
+                "Title": "PM2.5 Cu estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -1860,7 +1860,7 @@
             {
                 "Surface ID": 59,
                 "Project": "Exposome",
-                "Title": "PMC Cu estimates with random forest model",
+                "Title": "PMC Cu estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -1900,7 +1900,7 @@
             {
                 "Surface ID": 60,
                 "Project": "Exposome",
-                "Title": "PM2.5 Fe estimates with random forest model",
+                "Title": "PM2.5 Fe estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -1940,7 +1940,7 @@
             {
                 "Surface ID": 61,
                 "Project": "Exposome",
-                "Title": "PMC Fe estimates with random forest model",
+                "Title": "PMC Fe estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -1980,7 +1980,7 @@
             {
                 "Surface ID": 62,
                 "Project": "Exposome",
-                "Title": "PM2.5 K estimates with random forest model",
+                "Title": "PM2.5 K estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -2020,7 +2020,7 @@
             {
                 "Surface ID": 63,
                 "Project": "Exposome",
-                "Title": "PMC K estimates with random forest model",
+                "Title": "PMC K estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -2060,7 +2060,7 @@
             {
                 "Surface ID": 64,
                 "Project": "Exposome",
-                "Title": "PM2.5 mass estimates with random forest model",
+                "Title": "PM2.5 mass",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -2100,7 +2100,7 @@
             {
                 "Surface ID": 65,
                 "Project": "Exposome",
-                "Title": "PM2.5 Ni estimates with random forest model",
+                "Title": "PM2.5 Ni estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -2140,7 +2140,7 @@
             {
                 "Surface ID": 66,
                 "Project": "Exposome",
-                "Title": "PM2.5 S estimates with random forest model",
+                "Title": "PM2.5 S estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -2180,7 +2180,7 @@
             {
                 "Surface ID": 67,
                 "Project": "Exposome",
-                "Title": "PM2.5 Si estimates with random forest model",
+                "Title": "PM2.5 Si estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -2220,7 +2220,7 @@
             {
                 "Surface ID": 68,
                 "Project": "Exposome",
-                "Title": "PMC Si estimates with random forest model",
+                "Title": "PMC Si estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -2260,7 +2260,7 @@
             {
                 "Surface ID": 69,
                 "Project": "Exposome",
-                "Title": "PM2.5 V estimates with random forest model",
+                "Title": "PM2.5 V estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -2300,7 +2300,7 @@
             {
                 "Surface ID": 70,
                 "Project": "Exposome",
-                "Title": "PM2.5 Zn estimates with random forest model",
+                "Title": "PM2.5 Zn estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
@@ -2340,7 +2340,7 @@
             {
                 "Surface ID": 71,
                 "Project": "Exposome",
-                "Title": "PMC Zn estimates with random forest model",
+                "Title": "PMC Zn estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
                 "Summary": "No summary",
