@@ -83,19 +83,24 @@ function selectDateCleanup(dateStr) {
     if (length === 4) { // Yearly, add day and month
         return dateStr
     }
-    else if (length > 8) { // Monthly, convert month number
-        // Year is the last 4 characters of the string, month is everything before it
+    // Daily, also check that there are no letters in the string to avoid confusion with monthly format
+    else if (length === 10 && !/[a-zA-Z]/.test(dateStr)) { 
+        var parts = dateStr.split("-");
+        if (parts.length === 3) {
+            var day = parts[0].padStart(2, '0');
+            var month = parts[1].padStart(2, '0');
+            var year = parts[2];
+            return `${year}-${month}-${day}`;
+        } else {
+            console.warn("Unexpected date format:", dateStr);
+            return dateStr; // Return as is if format is unexpected
+        }
+    }
+    else {
         var year  = dateStr.substring(dateStr.length - 4);
         var month = monthMap[dateStr.substring(0, dateStr.length - 5)];
         return year + "-" + month
     }
-    // else {
-    //     var day = dateStr.substring(0, 2);
-    //     var month = dateStr.substring(3, 6);
-    //     month = monthMap[month];
-    //     var year = dateStr.substring(7, 11);
-    //     return year + "-" + month + "-" + day;
-    // }
 }
 
 // Add event listener for the show on map button. When clicked, it will fetch the selected layer
