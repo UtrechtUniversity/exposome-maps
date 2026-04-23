@@ -1,6 +1,6 @@
 const catalogueMenuTargets = [
-    { project: "Expanse", containerId: "dynamic-populated-menu-catalogue-view-expanse" },
-    { project: "ExposomeNL", containerId: "dynamic-populated-menu-catalogue-view-exposome" }
+    { project: "Europe", containerId: "dynamic-populated-menu-catalogue-view-expanse" },
+    { project: "Netherlands", containerId: "dynamic-populated-menu-catalogue-view-exposome" }
 ];
 
 window.dataCataloguePromise.then(data => {

@@ -22,7 +22,7 @@ function initMenu(dataCatalogue, container) {
 
         const subUl = document.createElement("ul");
         for (const subcategory in dataCatalogue[category]) {
-          const categoryItems = dataCatalogue[category][subcategory].filter(item => item.Project === "Expanse" && item.show_on_map === true);
+          const categoryItems = dataCatalogue[category][subcategory].filter(item => item.show_on_map === true);
           if (categoryItems.length === 0) {
             continue;
           }

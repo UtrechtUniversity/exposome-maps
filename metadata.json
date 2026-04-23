@@ -3,7 +3,7 @@
         "NDVI": [
             {
                 "Surface ID": 14,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Median NDVI within 300m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -37,13 +37,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NDV_MD3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml"
             },
             {
                 "Surface ID": 15,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Median NDVI within 500m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -77,13 +78,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NDV_MD5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml"
             },
             {
                 "Surface ID": 16,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Median NDVI within 1km",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -117,13 +119,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NDV_MD1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml"
             },
             {
                 "Surface ID": 17,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Standard deviation NDVI within 300m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -157,13 +160,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NDV_ST3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml"
             },
             {
                 "Surface ID": 18,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Standard deviation NDVI within 500m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -197,13 +201,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NDV_ST5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml"
             },
             {
                 "Surface ID": 19,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Standard deviation NDVI within 1km",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -237,13 +242,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NDV_ST1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml"
             },
             {
                 "Surface ID": 20,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Mean NDVI within 300m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -277,13 +283,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NDV_ME3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml"
             },
             {
                 "Surface ID": 21,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Mean NDVI within 500m",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -317,13 +324,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NDV_ME5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml"
             },
             {
                 "Surface ID": 22,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Mean NDVI within 1km",
                 "Category": "Built",
                 "Theme": "NDVI",
@@ -357,6 +365,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NDV_ME1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml"
@@ -365,7 +374,7 @@
         "MSAVI": [
             {
                 "Surface ID": 23,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Median MSAVI within 300m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -399,13 +408,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "MVI_MD3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml"
             },
             {
                 "Surface ID": 24,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Median MSAVI within 500m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -439,13 +449,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "MVI_MD5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml"
             },
             {
                 "Surface ID": 25,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Median MSAVI within 1km",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -479,13 +490,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "MVI_MD1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml"
             },
             {
                 "Surface ID": 26,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Standard deviation MSAVI within 300m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -519,13 +531,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "MVI_ST3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml"
             },
             {
                 "Surface ID": 27,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Standard deviation MSAVI within 500m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -559,13 +572,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "MVI_ST5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml"
             },
             {
                 "Surface ID": 28,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Standard deviation MSAVI within 1km",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -599,13 +613,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "MVI_ST1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml"
             },
             {
                 "Surface ID": 29,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Mean MSAVI within 300m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -639,13 +654,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "MVI_ME3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml"
             },
             {
                 "Surface ID": 30,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Mean MSAVI within 500m",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -679,13 +695,14 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "MVI_ME5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml"
             },
             {
                 "Surface ID": 31,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Mean MSAVI within 1km",
                 "Category": "Built",
                 "Theme": "MSAVI",
@@ -719,6 +736,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "MVI_ME1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml"
@@ -727,7 +745,7 @@
         "Green Space": [
             {
                 "Surface ID": 32,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Distance to nearest green space using CORINE",
                 "Category": "Built",
                 "Theme": "Green Space",
@@ -761,13 +779,14 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "GSC_DIS_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml"
             },
             {
                 "Surface ID": 33,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Distance to nearest green space using URBAN ATLAS",
                 "Category": "Built",
                 "Theme": "Green Space",
@@ -801,6 +820,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "GSU_DIS_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml"
@@ -809,7 +829,7 @@
         "Light at Night": [
             {
                 "Surface ID": 34,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Light-at-night 300m buffer",
                 "Category": "Built",
                 "Theme": "Light at Night",
@@ -843,13 +863,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "LAN_B03_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml"
             },
             {
                 "Surface ID": 35,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Light-at-night 500m buffer",
                 "Category": "Built",
                 "Theme": "Light at Night",
@@ -883,13 +904,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "LAN_B05_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml"
             },
             {
                 "Surface ID": 36,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Light-at-night 1000m buffer",
                 "Category": "Built",
                 "Theme": "Light at Night",
@@ -923,6 +945,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "LAN_B10_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml"
@@ -931,7 +954,7 @@
         "Imperviousness": [
             {
                 "Surface ID": 37,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Imperviousness 300m buffer",
                 "Category": "Built",
                 "Theme": "Imperviousness",
@@ -965,13 +988,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "IMP_B03_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml"
             },
             {
                 "Surface ID": 38,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Imperviousness 500m buffer",
                 "Category": "Built",
                 "Theme": "Imperviousness",
@@ -1005,13 +1029,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "IMP_B05_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml"
             },
             {
                 "Surface ID": 39,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Imperviousness 1000m buffer",
                 "Category": "Built",
                 "Theme": "Imperviousness",
@@ -1045,6 +1070,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "IMP_B10_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml"
@@ -1053,7 +1079,7 @@
         "Blue spaces": [
             {
                 "Surface ID": 40,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Distance to nearest blue space",
                 "Category": "Built",
                 "Theme": "Blue spaces",
@@ -1087,13 +1113,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "BSW_DIS_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml"
             },
             {
                 "Surface ID": 41,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Distance to nearest sea/ocean",
                 "Category": "Built",
                 "Theme": "Blue spaces",
@@ -1127,13 +1154,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "BSS_DIS_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_sea_ocean.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_sea_ocean.xml"
             },
             {
                 "Surface ID": 42,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Distance to nearest inland freshwater",
                 "Category": "Built",
                 "Theme": "Blue spaces",
@@ -1167,6 +1195,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "BSI_DIS_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml"
@@ -1175,7 +1204,7 @@
         "Walkability": [
             {
                 "Surface ID": 43,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Walkability 300m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
@@ -1209,13 +1238,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "WAL_B03_XX_XX_20_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml"
             },
             {
                 "Surface ID": 44,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Walkability 500m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
@@ -1249,13 +1279,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "WAL_B05_XX_XX_20_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml"
             },
             {
                 "Surface ID": 45,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Walkability 1000m buffer",
                 "Category": "Built",
                 "Theme": "Walkability",
@@ -1289,6 +1320,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "WAL_B10_XX_XX_20_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml"
@@ -1299,7 +1331,7 @@
         "Air pollution": [
             {
                 "Surface ID": 1,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Annual NO2 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1333,13 +1365,14 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NO2B25_AAV_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_NO2_25m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_NO2_25m.xml"
             },
             {
                 "Surface ID": 2,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Annual PM10 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1373,13 +1406,14 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "P10B25_AAV_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM10_25m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM10_25m.xml"
             },
             {
                 "Surface ID": 3,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Annual PM2.5 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1413,13 +1447,14 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "P25B25_AAV_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM25_25m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM25_25m.xml"
             },
             {
                 "Surface ID": 4,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Annual O3 25m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1453,13 +1488,14 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "OZOB25_AAV_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_O3_25m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_O3_25m.xml"
             },
             {
                 "Surface ID": 46,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Monthly NO2 100m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1493,13 +1529,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "NO2B100_MAV_XX_%month%_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_100m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_100m.xml"
             },
             {
                 "Surface ID": 47,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Monthly PM10 100m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1533,13 +1570,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "P10B100_MAV_XX_%month%_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_100m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_100m.xml"
             },
             {
                 "Surface ID": 48,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Monthly PM2.5 100m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1573,13 +1611,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "P25B100_MAV_XX_%month%_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_100m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_100m.xml"
             },
             {
                 "Surface ID": 49,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Monthly O3 100m",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1613,13 +1652,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "OZOB100_MAV_XX_%month%_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_100m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_100m.xml"
             },
             {
                 "Surface ID": 51,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Nitrogen dioxide along road networks Amsterdam",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1653,13 +1693,14 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 52,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Black carbon along road networks Amsterdam ",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1693,13 +1734,14 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 53,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Ultrafine particles along road networks Amsterdam",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1733,13 +1775,14 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 54,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Ultrafine particles",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1773,13 +1816,14 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 55,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Annual mean BC concentration",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1813,13 +1857,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 58,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PM2.5 Cu estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1853,13 +1898,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 59,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PMC Cu estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1893,13 +1939,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 60,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PM2.5 Fe estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1933,13 +1980,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 61,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PMC Fe estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -1973,13 +2021,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 62,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PM2.5 K estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2013,13 +2062,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 63,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PMC K estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2053,13 +2103,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 64,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PM2.5 mass",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2093,13 +2144,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 65,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PM2.5 Ni estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2133,13 +2185,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 66,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PM2.5 S estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2173,13 +2226,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 67,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PM2.5 Si estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2213,13 +2267,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 68,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PMC Si estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2253,13 +2308,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 69,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PM2.5 V estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2293,13 +2349,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 70,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PM2.5 Zn estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2333,13 +2390,14 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
             },
             {
                 "Surface ID": 71,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "PMC Zn estimates",
                 "Category": "Physico-Chemical",
                 "Theme": "Air pollution",
@@ -2373,6 +2431,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2381,7 +2440,7 @@
         "Temperature": [
             {
                 "Surface ID": 5,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Yearly average temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -2415,13 +2474,14 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "TMP_AVG_XX_XX_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml"
             },
             {
                 "Surface ID": 9,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Monthly average temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -2455,13 +2515,14 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "TEMP_AVG_XX_%mo%_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_average_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_average_temperature.xml"
             },
             {
                 "Surface ID": 6,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Daily average temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -2495,13 +2556,14 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "TMP_AVG_%day%_%mo%_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml"
             },
             {
                 "Surface ID": 7,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Daily minimum temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -2535,13 +2597,14 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "TMP_MIN_%day%_%mo%_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_minimum_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_minimum_temperature.xml"
             },
             {
                 "Surface ID": 8,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Daily maximum temperature",
                 "Category": "Physico-Chemical",
                 "Theme": "Temperature",
@@ -2575,6 +2638,7 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "TMP_MAX_%day%_%mo%_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_maximum_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_maximum_temperature.xml"
@@ -2583,7 +2647,7 @@
         "Urbanicity": [
             {
                 "Surface ID": 10,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Urban-Rural indicator",
                 "Category": "Physico-Chemical",
                 "Theme": "Urbanicity",
@@ -2617,6 +2681,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
+                "reference_papers": "",
                 "file_name": "UR_B15_XX_XX_15_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Urban_Rural_indicator.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Urban_Rural_indicator.xml"
@@ -2625,7 +2690,7 @@
         "UV radiation": [
             {
                 "Surface ID": 12,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Daily mean of downward UV radiation at the surface",
                 "Category": "Physico-Chemical",
                 "Theme": "UV radiation",
@@ -2659,13 +2724,14 @@
                 "Spatial resolution as integer": "27",
                 "Spatial resolution unit": "km",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "UV_AVG_%day%_%month%_%year%_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_mean_of_downward_UV_radiation_at_the_surface.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_mean_of_downward_UV_radiation_at_the_surface.xml"
             },
             {
                 "Surface ID": 13,
-                "Project": "Expanse",
+                "Project": "Europe",
                 "Title": "Daily max of downward UV radiation at the surface",
                 "Category": "Physico-Chemical",
                 "Theme": "UV radiation",
@@ -2699,6 +2765,7 @@
                 "Spatial resolution as integer": "27",
                 "Spatial resolution unit": "km",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "UV_MAX_%day%_%month%_%year%_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_max_of_downward_UV_radiation_at_the_surface.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_max_of_downward_UV_radiation_at_the_surface.xml"
@@ -2707,7 +2774,7 @@
         "Pesticides": [
             {
                 "Surface ID": 56,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Area of crops within 50, 100, 250 and 500 buffers around BAG addresses",
                 "Category": "Physico-Chemical",
                 "Theme": "Pesticides",
@@ -2741,6 +2808,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2749,7 +2817,7 @@
         "Chemicals": [
             {
                 "Surface ID": 72,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Drinking water",
                 "Category": "Physico-Chemical",
                 "Theme": "Chemicals",
@@ -2783,6 +2851,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2791,7 +2860,7 @@
         "Weather": [
             {
                 "Surface ID": 73,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Local Climate Zones",
                 "Category": "Physico-Chemical",
                 "Theme": "Weather",
@@ -2825,6 +2894,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2833,7 +2903,7 @@
         "Electromagnetic fields": [
             {
                 "Surface ID": 74,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Power line voltage ",
                 "Category": "Physico-Chemical",
                 "Theme": "Electromagnetic fields",
@@ -2867,6 +2937,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2877,7 +2948,7 @@
         "Food landscape": [
             {
                 "Surface ID": 50,
-                "Project": "ExposomeNL",
+                "Project": "Netherlands",
                 "Title": "Food facilities serving an address within rings of 0-500 , 500-1000 and 1000-1500m",
                 "Category": "Food",
                 "Theme": "Food landscape",
@@ -2911,6 +2982,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
+                "reference_papers": "",
                 "file_name": "ServiceArea_BAG2015_Locatus20XX_TOP102015",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
