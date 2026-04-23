@@ -1,5 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
-const menuContainer = document.getElementById("dynamic-populated-menu");
+const mapMenuTargets = [
+    { project: "Europe", containerId: "dynamic-populated-menu" },
+    { project: "Netherlands", containerId: "dynamic-populated-menu-map-view-exposome" }
+];
+
+const disabledTooltip = document.createElement("div");
+disabledTooltip.className = "disabled-tooltip";
+disabledTooltip.textContent = "Not viewable on map";
+document.body.appendChild(disabledTooltip);
+
+function showDisabledTooltip(e) {
+  disabledTooltip.style.display = "block";
+  disabledTooltip.style.left = `${e.pageX + 12}px`;
+  disabledTooltip.style.top = `${e.pageY + 12}px`;
+}
+
+function moveDisabledTooltip(e) {
+  disabledTooltip.style.left = `${e.pageX + 12}px`;
+  disabledTooltip.style.top = `${e.pageY + 12}px`;
+}
+
+function hideDisabledTooltip() {
+  disabledTooltip.style.display = "none";
+}
 
 window.dataCataloguePromise.then(data => {
   // Drop the "UV radiation" key from key "Physico-Chemical" in the dataCatalogue for the map view
@@ -7,10 +30,15 @@ window.dataCataloguePromise.then(data => {
   if (data["Physico-Chemical"]) {
     delete data["Physico-Chemical"]["UV radiation"];
   }
-  initMenu(data, menuContainer);
+  mapMenuTargets.forEach(({ project, containerId }) => {
+    const container = document.getElementById(containerId);
+    if (container) {
+      initMenu(data, container, project);
+    }
+  });
 });
 
-function initMenu(dataCatalogue, container) {
+function initMenu(dataCatalogue, container, projectName) {
     for (const category in dataCatalogue) {
         const categoryLi = document.createElement("li");
         categoryLi.classList.add("sub-menu");
@@ -22,7 +50,8 @@ function initMenu(dataCatalogue, container) {
 
         const subUl = document.createElement("ul");
         for (const subcategory in dataCatalogue[category]) {
-          const categoryItems = dataCatalogue[category][subcategory].filter(item => item.show_on_map === true);
+          let categoryItems = dataCatalogue[category][subcategory].filter(item => item.Project === projectName);
+          
           if (categoryItems.length === 0) {
             continue;
           }
@@ -40,9 +69,19 @@ function initMenu(dataCatalogue, container) {
                 const productItem = document.createElement("div");
                 productItem.classList.add("product-item");
 
+                const isDisabled = item.show_on_map !== true;
+                if (isDisabled) {
+                  productItem.classList.add("disabled");
+                  productItem.addEventListener("mouseenter", showDisabledTooltip);
+                  productItem.addEventListener("mousemove", moveDisabledTooltip);
+                  productItem.addEventListener("mouseleave", hideDisabledTooltip);
+                }
+
                 const itemA = document.createElement("a");
                 itemA.textContent = item.Title;
-                itemA.itemData = item;
+                if (!isDisabled) {
+                  itemA.itemData = item;
+                }
 
                 const metadataIcon = document.createElement("span");
                 metadataIcon.classList.add("metadata-icon");
@@ -131,13 +170,14 @@ $(document).on("click", "#leftside-navigation li > a", function (e) {
   e.stopPropagation();
 });
 
-menuContainer.addEventListener("click", function(e) {
+$(document).on("click", "#sidebar .project-menu a", function(e) {
   const target = e.target;
 
   if (target.tagName === "A" && target.itemData) {
     e.stopPropagation();
 
-    menuContainer.querySelectorAll("a.selected").forEach(a => a.classList.remove("selected"));
+    // Clear selections from all menus
+    document.querySelectorAll("#sidebar .project-menu a.selected").forEach(a => a.classList.remove("selected"));
     target.classList.add("selected");
 
     // Store globally
@@ -151,7 +191,7 @@ menuContainer.addEventListener("click", function(e) {
 });
 // Return info about the selected product
 function getSelectedItem() {
-  const selected = menuContainer.querySelector("a.selected");
+  const selected = document.querySelector("#sidebar .project-menu a.selected");
   return selected ? selected.itemData : null;
 }
 

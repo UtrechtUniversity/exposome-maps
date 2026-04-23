@@ -386,6 +386,42 @@ button.info-link-button {
   width: 100%;
 }
 
+/* Disabled product items styling */
+.product-item.disabled a {
+  color: #c7d5df;
+  cursor: not-allowed;
+  opacity: 0.88;
+}
+
+.product-item.disabled a:hover {
+  color: #d6e2eb;
+}
+
+.product-item.disabled .metadata-icon {
+  cursor: pointer;
+  opacity: 0.72;
+}
+
+.product-item.disabled .metadata-icon:hover {
+  color: #d6e2eb;
+}
+
+.disabled-tooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  z-index: 2000;
+  background: rgba(9, 52, 82, 0.96);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 /* Make icon align to the right of the thing its in */
 .metadata-icon {
   font-size: 14px;
