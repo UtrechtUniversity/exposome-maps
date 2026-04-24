@@ -102,7 +102,8 @@
         "Unit",
         "CRS",
         "No-data value",
-        "Owner"
+        "Owner",
+        "References"
     ];
 
     const productName = "Annual_NO2_25m";
@@ -146,7 +147,7 @@
         metadataBox.innerHTML = "";
 
         for (const key of specifiedKeys) {
-            if (item[key] !== undefined) {
+            if (item[key] !== undefined && item[key] !== null && item[key] !== "") {
                 const rowDiv = document.createElement("div");
                 rowDiv.className = "metadata-row";
 
@@ -156,15 +157,8 @@
 
                 const valueDiv = document.createElement("div");
                 valueDiv.className = "metadata-value";
-                if (key === "Hosted XML file") {
-                    const link = document.createElement("a");
-                    link.href = item[key];
-                    link.textContent = "Download ISO XML";
-                    link.download = "";
-                    valueDiv.appendChild(link);
-                } else {
                 valueDiv.textContent = item[key];
-                }
+
 
                 rowDiv.appendChild(keyDiv);
                 rowDiv.appendChild(valueDiv);

@@ -60,7 +60,8 @@
             "Unit",
             "CRS",
             "No-data value",
-            "Owner"
+            "Owner",
+            "References"
         ];
 
         function formatDisplayName(name) {
@@ -96,7 +97,7 @@
             metadataBox.innerHTML = "";
 
             specifiedKeys.forEach(key => {
-                if (item[key] !== undefined && item[key] !== "") {
+                if (item[key] !== undefined && item[key] !== null && item[key] !== "" && item[key] !== "") {
                     const rowDiv = document.createElement("div");
                     rowDiv.className = "metadata-row";
 

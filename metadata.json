@@ -37,7 +37,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "NDV_MD3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml"
@@ -78,7 +78,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "NDV_MD5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml"
@@ -119,7 +119,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "NDV_MD1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml"
@@ -160,7 +160,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "NDV_ST3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml"
@@ -201,7 +201,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "NDV_ST5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml"
@@ -242,7 +242,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "NDV_ST1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml"
@@ -283,7 +283,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "NDV_ME3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml"
@@ -324,7 +324,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "NDV_ME5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml"
@@ -365,7 +365,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "NDV_ME1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml"
@@ -408,7 +408,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "MVI_MD3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml"
@@ -449,7 +449,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "MVI_MD5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml"
@@ -490,7 +490,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "MVI_MD1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml"
@@ -531,7 +531,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "MVI_ST3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml"
@@ -572,7 +572,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "MVI_ST5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml"
@@ -613,7 +613,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "MVI_ST1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml"
@@ -654,7 +654,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "MVI_ME3_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml"
@@ -695,7 +695,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "MVI_ME5_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml"
@@ -736,7 +736,7 @@
                 "Spatial resolution as integer": "250",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "MVI_ME1_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml"
@@ -779,7 +779,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "GSC_DIS_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml"
@@ -820,7 +820,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "GSU_DIS_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml"
@@ -863,7 +863,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "LAN_B03_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml"
@@ -904,7 +904,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "LAN_B05_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml"
@@ -945,7 +945,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "LAN_B10_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml"
@@ -988,7 +988,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "IMP_B03_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml"
@@ -1029,7 +1029,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "IMP_B05_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml"
@@ -1070,7 +1070,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "IMP_B10_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml"
@@ -1113,7 +1113,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "BSW_DIS_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml"
@@ -1154,7 +1154,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "BSI_DIS_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml"
@@ -1197,7 +1197,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "WAL_B03_XX_XX_20_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml"
@@ -1238,7 +1238,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "WAL_B05_XX_XX_20_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml"
@@ -1279,7 +1279,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "WAL_B10_XX_XX_20_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml"
@@ -1324,7 +1324,7 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107485, https://doi.org/10.1016/j.scitotenv.2024.170550",
                 "file_name": "NO2B25_AAV_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_NO2_25m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_NO2_25m.xml"
@@ -1365,7 +1365,7 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107485, https://doi.org/10.1016/j.scitotenv.2024.170550",
                 "file_name": "P10B25_AAV_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM10_25m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM10_25m.xml"
@@ -1406,7 +1406,7 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107485, https://doi.org/10.1016/j.scitotenv.2024.170550",
                 "file_name": "P25B25_AAV_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM25_25m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM25_25m.xml"
@@ -1447,7 +1447,7 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107485, https://doi.org/10.1016/j.scitotenv.2024.170550",
                 "file_name": "OZOB25_AAV_XX_XX_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_O3_25m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_O3_25m.xml"
@@ -1488,7 +1488,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107485, https://doi.org/10.1016/j.scitotenv.2024.170550",
                 "file_name": "NO2B100_MAV_XX_%month%_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_100m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_100m.xml"
@@ -1529,7 +1529,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107485, https://doi.org/10.1016/j.scitotenv.2024.170550",
                 "file_name": "P10B100_MAV_XX_%month%_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_100m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_100m.xml"
@@ -1570,7 +1570,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107485, https://doi.org/10.1016/j.scitotenv.2024.170550",
                 "file_name": "P25B100_MAV_XX_%month%_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_100m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_100m.xml"
@@ -1611,7 +1611,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107485, https://doi.org/10.1016/j.scitotenv.2024.170550",
                 "file_name": "OZOB100_MAV_XX_%month%_%yr%_v2",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_100m.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_100m.xml"
@@ -1652,7 +1652,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107575",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -1693,7 +1693,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107575",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -1734,7 +1734,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2022.107575",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -1775,7 +1775,7 @@
                 "Spatial resolution as integer": "25",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2021.106569",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -1816,7 +1816,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.envint.2018.07.036",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -1857,7 +1857,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -1898,7 +1898,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -1939,7 +1939,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -1980,7 +1980,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2021,7 +2021,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2062,7 +2062,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2103,7 +2103,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2144,7 +2144,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2185,7 +2185,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2226,7 +2226,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2267,7 +2267,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2308,7 +2308,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2349,7 +2349,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2390,7 +2390,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://pubs.acs.org/doi/10.1021/acs.est.0c06595",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2433,7 +2433,7 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.scitotenv.2024.172454",
                 "file_name": "TMP_AVG_XX_XX_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml"
@@ -2474,7 +2474,7 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.scitotenv.2024.172454",
                 "file_name": "TEMP_AVG_XX_%mo%_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_average_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_average_temperature.xml"
@@ -2515,7 +2515,7 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.scitotenv.2024.172454",
                 "file_name": "TMP_AVG_%day%_%mo%_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml"
@@ -2556,7 +2556,7 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.scitotenv.2024.172454",
                 "file_name": "TMP_MIN_%day%_%mo%_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_minimum_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_minimum_temperature.xml"
@@ -2597,7 +2597,7 @@
                 "Spatial resolution as integer": "1",
                 "Spatial resolution unit": "km",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.scitotenv.2024.172454",
                 "file_name": "TMP_MAX_%day%_%mo%_%yr%_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_maximum_temperature.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_maximum_temperature.xml"
@@ -2640,7 +2640,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": true,
-                "reference_papers": "",
+                "References": "DOI:10.2760/19817",
                 "file_name": "UR_B15_XX_XX_15_v3.tif",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Urban_Rural_indicator.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Urban_Rural_indicator.xml"
@@ -2683,7 +2683,7 @@
                 "Spatial resolution as integer": "27",
                 "Spatial resolution unit": "km",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "UV_AVG_%day%_%month%_%year%_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_mean_of_downward_UV_radiation_at_the_surface.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_mean_of_downward_UV_radiation_at_the_surface.xml"
@@ -2724,7 +2724,7 @@
                 "Spatial resolution as integer": "27",
                 "Spatial resolution unit": "km",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "UV_MAX_%day%_%month%_%year%_v3",
                 "Local path to XML file": "C:/Users/5298954/Documents/Github_Repos/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_max_of_downward_UV_radiation_at_the_surface.xml",
                 "Hosted XML file": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_max_of_downward_UV_radiation_at_the_surface.xml"
@@ -2767,7 +2767,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.scitotenv.2022.152932",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2810,7 +2810,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2853,7 +2853,7 @@
                 "Spatial resolution as integer": "100",
                 "Spatial resolution unit": "m",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1371/journal.pone.0214474, https://doi.org/10.6084/m9.figshare.13322450",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2896,7 +2896,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "",
                 "file_name": "",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
@@ -2941,7 +2941,7 @@
                 "Spatial resolution as integer": "",
                 "Spatial resolution unit": "",
                 "show_on_map": false,
-                "reference_papers": "",
+                "References": "https://doi.org/10.1016/j.healthplace.2023.103075",
                 "file_name": "ServiceArea_BAG2015_Locatus20XX_TOP102015",
                 "Local path to XML file": "",
                 "Hosted XML file": ""
