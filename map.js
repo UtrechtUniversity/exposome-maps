@@ -53,7 +53,6 @@ lightLayer.bringToBack();
 
 // Prepare dates to be used as parameters for WMS requests
 function selectDateCleanup(dateStr) {
-    console.log("Selected date string:", dateStr);
     var length = String(dateStr).length;
     var monthMap = {
     "Jan": "01",
@@ -92,7 +91,6 @@ function selectDateCleanup(dateStr) {
             var year = parts[2];
             return `${year}-${month}-${day}`;
         } else {
-            console.warn("Unexpected date format:", dateStr);
             return dateStr; // Return as is if format is unexpected
         }
     }
@@ -107,10 +105,7 @@ function selectDateCleanup(dateStr) {
 document.getElementById("showOnMapBtn").addEventListener("click", function() {
     if (window.selectedItem) {        
         var layerName = window.selectedItem.geoserver_layer;
-        console.log("Layer name:", layerName);
         var dateParameter = selectDateCleanup(window.selectedDate);
-        console.log("Selected date:", window.selectedDate);
-        console.log("Date parameter for WMS request:", dateParameter);
         var style = window.selectedItem.geoserver_style
 
         if (window.currentDisplayedLayer) {
@@ -208,7 +203,6 @@ map.on('click', function(e) {
         return;
     }
     var layerName = window.currentDisplayedLayer.options.layers;
-    console.log("Layer name:", layerName);
 
     var bbox = map.getBounds().toBBoxString();
     var point = map.latLngToContainerPoint(e.latlng);
@@ -226,11 +220,9 @@ map.on('click', function(e) {
                     if (Math.abs(data.features[0].properties.GRAY_INDEX + 3.3999999521443642e+38) < 1e+30 || Math.abs(data.features[0].properties.GRAY_INDEX + 3.4028234663852886e+38) < 1e+30) return;
                     var popupContent = '';
                     var grayIndex = null;
-                    console.log(data);
                     
                     grayIndex = data.features[0].properties.GRAY_INDEX
                     if (!grayIndex) return;
-                    console.log(grayIndex)
                     popupContent = `${Math.round(grayIndex * 10) / 10}`;
 
                     L.popup()
@@ -241,7 +233,6 @@ map.on('click', function(e) {
                     console.error('Couldnt fetch value:', error);
                 });
 
-    console.log("GetFeatureInfo URL: ", requestURL);
 });
 
 // Opacity slider control
@@ -253,32 +244,3 @@ slider.addEventListener("input", function() {
     }
 });
 
-
-//     if (activeLayer.size > 0) {
-//         var point = map.latLngToContainerPoint(e.latlng);
-
-
-//         //request data for active layer(skip basemaps)
-//         activeLayers.forEach(function(layer) {
-//             if (layer.options.isBasemap) {
-//                 return;
-//             }
-
-//             var layerName = layer.options.layers;
-//             var bbox = map.getBounds().toBBoxString();
-
-//             var requestUrl = `${geoServerUrl}?service=WMS&version=1.1.1&request=GetFeatureInfo&layers=${layerName}&query_layers=${layerName}&INFO_FORMAT=application/json&x=${x}&y=${y}&SRS=EPSG:4326&WIDTH=${map.getSize().x}&HEIGHT=${map.getSize().y}&bbox=${bbox}&_=${Date.now()}`;
-
-//             fetch(requestUrl)
-//                 .then(response => {
-//                     if (!response.ok) {
-//                         throw new Error('No network response');
-//                     }
-//                     return response.json();
-//                 })
-//                 .catch(error => {
-//                     // console.error('Fetch error:', error);
-//                 });
-//         });
-//     }
-// });
