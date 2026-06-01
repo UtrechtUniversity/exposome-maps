@@ -35,7 +35,7 @@
 
             <div id="title" class="title">
                 <span class="title-text">
-                    Dataset: Monthly NO2
+                    Dataset: Monthly Maximum Temperature
                 </span>
             </div>
         </div>
@@ -47,7 +47,8 @@
             
             <div id="metadata-box"> 
             </div>
-            <img src="images/thumbnails/no2_monthly.png" alt="NO2 example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+            <img src="images/thumbnails/monthly_max_temp.png" alt="Monthly maximum temperature example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+
         </div>
 
         <h2 class="title">Surfaces</h2>
@@ -69,11 +70,13 @@
             <th>Metadata</th>
         </tr>
         <tr>
-            <td>46</td>
-            <td>Monthly NO2, 100m resolution</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_100m.xml" target="_blank">Open metadata XML</a></td>
+            <td>76</td>
+            <td>Monthly maximum temperature</td>
+            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_maximum_temperature.xml" target="_blank">Open metadata XML</a></td>
         </tr>
         </table>
+
+
 
 
     </div>
@@ -90,7 +93,6 @@
         "Theme",
         "Summary",
         "File type",
-        "Temporal resolution",
         "Time period",
         "Frequency",
         "Spatial resolution",
@@ -102,7 +104,7 @@
         "References"
     ];
 
-    const productName = "Monthly_NO2_100m";
+    const productName = "Monthly_maximum_temperature";
 
     fetch("../metadata.json")
         .then(response => response.json())
