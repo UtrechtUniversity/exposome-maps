@@ -1,3 +1,6 @@
+const apiKey = window.API_KEY;
+console.log("API Key:", apiKey);
+
 var map = L.map('map',{zoomControl:false,minZoom:6}).setView([47.58, 6.06], 6);
 window.currentDisplayedLayer = null;
 map.createPane('basemaps');
@@ -18,13 +21,13 @@ var osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     isBasemap: true,
     pane: 'basemaps'
 });
-var darkLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a>OpenStreetMap</a> contributors &copy; <a>CARTO</a>',
+var darkLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=' + apiKey, {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
     isBasemap: true,
     pane: 'basemaps'
 });
-var lightLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a>OpenStreetMap</a> contributors &copy; <a>CARTO</a>',
+var lightLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=' + apiKey, {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
     isBasemap: true,
     pane: 'basemaps'
 });
