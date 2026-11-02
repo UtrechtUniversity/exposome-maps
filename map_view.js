@@ -108,7 +108,6 @@ function initMenu(dataCatalogue, container, projectName) {
                       "Unit",
                       "CRS",
                       "No-data value",
-                      "Owner",
                       "Comments"].forEach(key => {
                         if (item[key]) {
                             const row = document.createElement("div");
