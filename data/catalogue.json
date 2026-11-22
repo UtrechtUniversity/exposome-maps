@@ -1,0 +1,7880 @@
+{
+ "surfaces": [
+  {
+   "id": 14,
+   "project": "Europe",
+   "title": "Median NDVI within 300m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "NDVI",
+   "themeKey": "NDVI",
+   "page": "Median_NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "NDVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NDV_MD3",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 15,
+   "project": "Europe",
+   "title": "Median NDVI within 500m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "NDVI",
+   "themeKey": "NDVI",
+   "page": "Median_NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "NDVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NDV_MD5",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 16,
+   "project": "Europe",
+   "title": "Median NDVI within 1km",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "NDVI",
+   "themeKey": "NDVI",
+   "page": "Median_NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "NDVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NDV_MD1",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 17,
+   "project": "Europe",
+   "title": "Standard deviation NDVI within 300m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "NDVI",
+   "themeKey": "NDVI",
+   "page": "Standard_deviation_NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "NDVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NDV_ST3",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 18,
+   "project": "Europe",
+   "title": "Standard deviation NDVI within 500m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "NDVI",
+   "themeKey": "NDVI",
+   "page": "Standard_deviation_NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "NDVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NDV_ST5",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 19,
+   "project": "Europe",
+   "title": "Standard deviation NDVI within 1km",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "NDVI",
+   "themeKey": "NDVI",
+   "page": "Standard_deviation_NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "NDVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NDV_ST1",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 20,
+   "project": "Europe",
+   "title": "Mean NDVI within 300m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "NDVI",
+   "themeKey": "NDVI",
+   "page": "Mean_NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "NDVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NDV_ME3",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 21,
+   "project": "Europe",
+   "title": "Mean NDVI within 500m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "NDVI",
+   "themeKey": "NDVI",
+   "page": "Mean_NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "NDVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NDV_ME5",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 22,
+   "project": "Europe",
+   "title": "Mean NDVI within 1km",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "NDVI",
+   "themeKey": "NDVI",
+   "page": "Mean_NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "NDVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NDV_ME1",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 23,
+   "project": "Europe",
+   "title": "Median MSAVI within 300m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "MSAVI",
+   "themeKey": "MSAVI",
+   "page": "Median_MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "MSAVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "MVI_MD3",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 24,
+   "project": "Europe",
+   "title": "Median MSAVI within 500m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "MSAVI",
+   "themeKey": "MSAVI",
+   "page": "Median_MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "MSAVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "MVI_MD5",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 25,
+   "project": "Europe",
+   "title": "Median MSAVI within 1km",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "MSAVI",
+   "themeKey": "MSAVI",
+   "page": "Median_MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "MSAVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "MVI_MD1",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 26,
+   "project": "Europe",
+   "title": "Standard deviation MSAVI within 300m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "MSAVI",
+   "themeKey": "MSAVI",
+   "page": "Standard_deviation_MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "MSAVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "MVI_ST3",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 27,
+   "project": "Europe",
+   "title": "Standard deviation MSAVI within 500m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "MSAVI",
+   "themeKey": "MSAVI",
+   "page": "Standard_deviation_MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "MSAVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "MVI_ST5",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 28,
+   "project": "Europe",
+   "title": "Standard deviation MSAVI within 1km",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "MSAVI",
+   "themeKey": "MSAVI",
+   "page": "Standard_deviation_MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "MSAVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "MVI_ST1",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 29,
+   "project": "Europe",
+   "title": "Mean MSAVI within 300m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "MSAVI",
+   "themeKey": "MSAVI",
+   "page": "Mean_MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "MSAVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "MVI_ME3",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 30,
+   "project": "Europe",
+   "title": "Mean MSAVI within 500m",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "MSAVI",
+   "themeKey": "MSAVI",
+   "page": "Mean_MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "MSAVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "MVI_ME5",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 31,
+   "project": "Europe",
+   "title": "Mean MSAVI within 1km",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "MSAVI",
+   "themeKey": "MSAVI",
+   "page": "Mean_MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "250x250m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "MSAVI"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "250x250m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "MVI_ME1",
+    "style": "NDVI",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 32,
+   "project": "Europe",
+   "title": "Distance to nearest green space using CORINE",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Green Space",
+   "themeKey": "Green Space",
+   "page": "Distance_to_nearest_green_space_using_CORINE",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2018",
+   "coverage": "2000, 2006, 2012, 2018",
+   "spatialResolution": "100x100m",
+   "unit": "m",
+   "noData": 65535.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Green Space"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2018"
+    ],
+    [
+     "Frequency",
+     "Every 6 years"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "m"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "65535"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "GSC_DIS",
+    "style": "GSC",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2006",
+     "2012",
+     "2018"
+    ]
+   }
+  },
+  {
+   "id": 33,
+   "project": "Europe",
+   "title": "Distance to nearest green space using URBAN ATLAS",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Green Space",
+   "themeKey": "Green Space",
+   "page": "Distance_to_nearest_green_space_using_URBAN_ATLAS",
+   "temporalResolution": "Annual",
+   "period": "2006 - 2018",
+   "coverage": "2006, 2012, 2018",
+   "spatialResolution": "0.25/1 ha",
+   "unit": "m",
+   "noData": 65535.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Green Space"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2006 - 2018"
+    ],
+    [
+     "Frequency",
+     "Every 6 years"
+    ],
+    [
+     "Spatial resolution",
+     "0.25/1 ha"
+    ],
+    [
+     "Extent",
+     "EU Urban agglomerations"
+    ],
+    [
+     "Unit",
+     "m"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "65535"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "GSU_DIS",
+    "style": "GSU",
+    "basemap": null,
+    "times": [
+     "2006",
+     "2012",
+     "2018"
+    ]
+   }
+  },
+  {
+   "id": 34,
+   "project": "Europe",
+   "title": "Light-at-night 300m buffer",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Light at Night",
+   "themeKey": "Light at Night",
+   "page": "Light_at_night",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "100x100m",
+   "unit": "RAD",
+   "noData": 255.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Light at Night"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "RAD"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "255"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Comments",
+     "Note on interpretation: these maps do not correlate with actual exposure but can only serve as a proxy for urbanization."
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "LAN_B03",
+    "style": "LAN",
+    "basemap": "dark",
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 35,
+   "project": "Europe",
+   "title": "Light-at-night 500m buffer",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Light at Night",
+   "themeKey": "Light at Night",
+   "page": "Light_at_night",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "100x100m",
+   "unit": "RAD",
+   "noData": 255.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Light at Night"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "RAD"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "255"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Comments",
+     "Note on interpretation: these maps do not correlate with actual exposure but can only serve as a proxy for urbanization."
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "LAN_B05",
+    "style": "LAN",
+    "basemap": "dark",
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 36,
+   "project": "Europe",
+   "title": "Light-at-night 1000m buffer",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Light at Night",
+   "themeKey": "Light at Night",
+   "page": "Light_at_night",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "coverage": "2000, 2005, 2010, 2015, 2020",
+   "spatialResolution": "100x100m",
+   "unit": "RAD",
+   "noData": 255.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Light at Night"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "RAD"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "255"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Comments",
+     "Note on interpretation: these maps do not correlate with actual exposure but can only serve as a proxy for urbanization."
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "LAN_B10",
+    "style": "LAN",
+    "basemap": "dark",
+    "times": [
+     "2000",
+     "2005",
+     "2010",
+     "2015",
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 37,
+   "project": "Europe",
+   "title": "Imperviousness 300m buffer",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Imperviousness",
+   "themeKey": "Imperviousness",
+   "page": "Imperviousness",
+   "temporalResolution": "Annual",
+   "period": "2006 - 2018",
+   "coverage": "2006, 2009, 2012, 2015, 2018",
+   "spatialResolution": "100x100m",
+   "unit": "%",
+   "noData": 255.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Imperviousness"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2006 - 2018"
+    ],
+    [
+     "Frequency",
+     "Every 3 years"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "%"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "255"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "IMP_B03",
+    "style": "IMP",
+    "basemap": null,
+    "times": [
+     "2006",
+     "2009",
+     "2012",
+     "2015",
+     "2018"
+    ]
+   }
+  },
+  {
+   "id": 38,
+   "project": "Europe",
+   "title": "Imperviousness 500m buffer",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Imperviousness",
+   "themeKey": "Imperviousness",
+   "page": "Imperviousness",
+   "temporalResolution": "Annual",
+   "period": "2006 - 2018",
+   "coverage": "2006, 2009, 2012, 2015, 2018",
+   "spatialResolution": "100x100m",
+   "unit": "%",
+   "noData": 255.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Imperviousness"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2006 - 2018"
+    ],
+    [
+     "Frequency",
+     "Every 3 years"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "%"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "255"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "IMP_B05",
+    "style": "IMP",
+    "basemap": null,
+    "times": [
+     "2006",
+     "2009",
+     "2012",
+     "2015",
+     "2018"
+    ]
+   }
+  },
+  {
+   "id": 39,
+   "project": "Europe",
+   "title": "Imperviousness 1000m buffer",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Imperviousness",
+   "themeKey": "Imperviousness",
+   "page": "Imperviousness",
+   "temporalResolution": "Annual",
+   "period": "2006 - 2018",
+   "coverage": "2006, 2009, 2012, 2015, 2018",
+   "spatialResolution": "100x100m",
+   "unit": "%",
+   "noData": 255.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Imperviousness"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2006 - 2018"
+    ],
+    [
+     "Frequency",
+     "Every 3 years"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "%"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "255"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "IMP_B10",
+    "style": "IMP",
+    "basemap": null,
+    "times": [
+     "2006",
+     "2009",
+     "2012",
+     "2015",
+     "2018"
+    ]
+   }
+  },
+  {
+   "id": 40,
+   "project": "Europe",
+   "title": "Distance to nearest blue space",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Blue spaces",
+   "themeKey": "Blue spaces",
+   "page": "Distance_to_nearest_blue_space",
+   "temporalResolution": "Annual",
+   "period": "2013",
+   "coverage": "2013",
+   "spatialResolution": "100x100m",
+   "unit": "m",
+   "noData": 32767.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Blue spaces"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2013"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "m"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "32767"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "BSW_DIS",
+    "style": "BSW",
+    "basemap": null,
+    "times": [
+     "2013"
+    ]
+   }
+  },
+  {
+   "id": 42,
+   "project": "Europe",
+   "title": "Distance to nearest inland freshwater",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Blue spaces",
+   "themeKey": "Blue spaces",
+   "page": "Distance_to_nearest_inland_freshwater",
+   "temporalResolution": "Annual",
+   "period": "2013",
+   "coverage": "2013",
+   "spatialResolution": "100x100m",
+   "unit": "m",
+   "noData": 65535.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Blue spaces"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2013"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "m"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "65535"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "BSI_DIS",
+    "style": "BSI",
+    "basemap": null,
+    "times": [
+     "2013"
+    ]
+   }
+  },
+  {
+   "id": 43,
+   "project": "Europe",
+   "title": "Walkability 300m buffer",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Walkability",
+   "themeKey": "Walkability",
+   "page": "Walkability",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "coverage": "2020",
+   "spatialResolution": "100x100m",
+   "unit": "",
+   "noData": 9999.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Walkability"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2020"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "9999"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "WAL_B03",
+    "style": "WAL",
+    "basemap": null,
+    "times": [
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 44,
+   "project": "Europe",
+   "title": "Walkability 500m buffer",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Walkability",
+   "themeKey": "Walkability",
+   "page": "Walkability",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "coverage": "2020",
+   "spatialResolution": "100x100m",
+   "unit": "",
+   "noData": 9999.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Walkability"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2020"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "9999"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "WAL_B05",
+    "style": "WAL",
+    "basemap": null,
+    "times": [
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 45,
+   "project": "Europe",
+   "title": "Walkability 1000m buffer",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Walkability",
+   "themeKey": "Walkability",
+   "page": "Walkability",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "coverage": "2020",
+   "spatialResolution": "100x100m",
+   "unit": "",
+   "noData": 9999.0,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml",
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Walkability"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2020"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "index"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "9999"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "WAL_B10",
+    "style": "WAL",
+    "basemap": null,
+    "times": [
+     "2020"
+    ]
+   }
+  },
+  {
+   "id": 1,
+   "project": "Europe",
+   "title": "Annual NO2 25m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Annual_NO2_25m",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2023",
+   "coverage": "2000 - 2023",
+   "spatialResolution": "25x25m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_NO2_25m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2023"
+    ],
+    [
+     "Frequency",
+     "Every year"
+    ],
+    [
+     "Spatial resolution",
+     "25x25m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.envint.2022.107485"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NO2B25_AAV",
+    "style": "NO2",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2013",
+     "2019",
+     "2020",
+     "2021",
+     "2022",
+     "2023"
+    ]
+   }
+  },
+  {
+   "id": 2,
+   "project": "Europe",
+   "title": "Annual PM10 25m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Annual_PM10_25m",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2023",
+   "coverage": "2000 - 2023",
+   "spatialResolution": "25x25m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM10_25m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2023"
+    ],
+    [
+     "Frequency",
+     "Every year"
+    ],
+    [
+     "Spatial resolution",
+     "25x25m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.envint.2022.107485"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "P10B25_AAV",
+    "style": "P10",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2013",
+     "2019",
+     "2020",
+     "2021",
+     "2022",
+     "2023"
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "project": "Europe",
+   "title": "Annual PM2.5 25m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Annual_PM2.5_25m",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2023",
+   "coverage": "2000 - 2023",
+   "spatialResolution": "25x25m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM25_25m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2023"
+    ],
+    [
+     "Frequency",
+     "Every year"
+    ],
+    [
+     "Spatial resolution",
+     "25x25m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.envint.2022.107485"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "P25B25_AAV",
+    "style": "P25",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2013",
+     "2019",
+     "2020",
+     "2021",
+     "2022",
+     "2023"
+    ]
+   }
+  },
+  {
+   "id": 4,
+   "project": "Europe",
+   "title": "Annual O3 25m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Annual_O3_25m",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2023",
+   "coverage": "2000 - 2023",
+   "spatialResolution": "25x25m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_O3_25m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2000 - 2023"
+    ],
+    [
+     "Frequency",
+     "Every year"
+    ],
+    [
+     "Spatial resolution",
+     "25x25m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.envint.2022.107485"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "OZOB25_AAV",
+    "style": "OZO",
+    "basemap": null,
+    "times": [
+     "2000",
+     "2013",
+     "2019",
+     "2020",
+     "2021",
+     "2022",
+     "2023"
+    ]
+   }
+  },
+  {
+   "id": 46,
+   "project": "Europe",
+   "title": "Monthly NO2 100m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Monthly_NO2_100m",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "coverage": "2000 - 2019",
+   "spatialResolution": "100x100m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_100m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2000 - 2019"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Austria, Belgium, Czechia, Denmark, Germnay, Italy, Liechtenstein, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.170550"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "4-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NO2B100_MAV",
+    "style": "NO2",
+    "basemap": null,
+    "times": [
+     "2019-01",
+     "2019-06",
+     "2019-12"
+    ]
+   }
+  },
+  {
+   "id": 47,
+   "project": "Europe",
+   "title": "Monthly PM10 100m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Monthly_PM10_100m",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "coverage": "2000 - 2019",
+   "spatialResolution": "100x100m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_100m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2000 - 2019"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Austria, Belgium, Czechia, Denmark, Germnay, Italy, Liechtenstein, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.170550"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "4-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "P10B100_MAV",
+    "style": "P10",
+    "basemap": null,
+    "times": [
+     "2019-01",
+     "2019-06",
+     "2019-12"
+    ]
+   }
+  },
+  {
+   "id": 48,
+   "project": "Europe",
+   "title": "Monthly PM2.5 100m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Monthly_PM2.5_100m",
+   "temporalResolution": "Monthly",
+   "period": "2006 - 2019",
+   "coverage": "2006 - 2019",
+   "spatialResolution": "100x100m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_100m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2006 - 2019"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Austria, Belgium, Czechia, Denmark, Germnay, Italy, Liechtenstein, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.170550"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "4-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "P25B100_MAV",
+    "style": "P25",
+    "basemap": null,
+    "times": [
+     "2019-01",
+     "2019-06",
+     "2019-12"
+    ]
+   }
+  },
+  {
+   "id": 49,
+   "project": "Europe",
+   "title": "Monthly O3 100m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Monthly_O3_100m",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "coverage": "2000 - 2019",
+   "spatialResolution": "100x100m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_100m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2000 - 2019"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Austria, Belgium, Czechia, Denmark, Germnay, Italy, Liechtenstein, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.170550"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "4-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "OZOB100_MAV",
+    "style": "OZO",
+    "basemap": null,
+    "times": [
+     "2019-01",
+     "2019-06",
+     "2019-12"
+    ]
+   }
+  },
+  {
+   "id": 80,
+   "project": "Europe",
+   "title": "Monthly NO2 25m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Monthly_NO2_25m",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "coverage": "2000 - 2019",
+   "spatialResolution": "25x25m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_25m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2000 - 2019"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "25x25m"
+    ],
+    [
+     "Extent",
+     "Czechia, Estonia, France, Germany, Greece, Italy, Netherlands, Poland, Spain, Sweden, Switzerland, United Kingdom,"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.170550"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "4-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "NO2B25_MAV",
+    "style": "NO2",
+    "basemap": null,
+    "times": [
+     "2019-01",
+     "2019-06",
+     "2019-12"
+    ]
+   }
+  },
+  {
+   "id": 81,
+   "project": "Europe",
+   "title": "Monthly PM10 25m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Monthly_PM10_25m",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "coverage": "2000 - 2019",
+   "spatialResolution": "25x25m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_25m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2000 - 2019"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "25x25m"
+    ],
+    [
+     "Extent",
+     "Czechia, Estonia, France, Germany, Greece, Italy, Netherlands, Poland, Spain, Sweden, Switzerland, United Kingdom,"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.170550"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "4-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "P10B25_MAV",
+    "style": "P10",
+    "basemap": null,
+    "times": [
+     "2019-01",
+     "2019-06",
+     "2019-12"
+    ]
+   }
+  },
+  {
+   "id": 82,
+   "project": "Europe",
+   "title": "Monthly PM2.5 25m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Monthly_PM2.5_25m",
+   "temporalResolution": "Monthly",
+   "period": "2006 - 2019",
+   "coverage": "2006 - 2019",
+   "spatialResolution": "25x25m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_25m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2006 - 2019"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "25x25m"
+    ],
+    [
+     "Extent",
+     "Czechia, Estonia, France, Germany, Greece, Italy, Netherlands, Poland, Spain, Sweden, Switzerland, United Kingdom,"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.170550"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "4-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "P25B25_MAV",
+    "style": "P25",
+    "basemap": null,
+    "times": [
+     "2019-01",
+     "2019-06",
+     "2019-12"
+    ]
+   }
+  },
+  {
+   "id": 83,
+   "project": "Europe",
+   "title": "Monthly O3 25m",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Monthly_O3_25m",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "coverage": "2000 - 2019",
+   "spatialResolution": "25x25m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_25m.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2000 - 2019"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "25x25m"
+    ],
+    [
+     "Extent",
+     "Czechia, Estonia, France, Germany, Greece, Italy, Netherlands, Poland, Spain, Sweden, Switzerland, United Kingdom,"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.170550"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "4-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "OZOB25_MAV",
+    "style": "OZO",
+    "basemap": null,
+    "times": [
+     "2019-01",
+     "2019-06",
+     "2019-12"
+    ]
+   }
+  },
+  {
+   "id": 51,
+   "project": "Netherlands",
+   "title": "Nitrogen dioxide along road networks Amsterdam",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Nitrogen_dioxide_roads",
+   "temporalResolution": "Annual",
+   "period": "2019-2020",
+   "coverage": "2019-2020",
+   "spatialResolution": "",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "ESRI Shapefile (polyline)"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2019-2020"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Extent",
+     "Amsterdam"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "Owner",
+     "Jules Kerckhoffs"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.envint.2022.107575"
+    ],
+    [
+     "Source project",
+     "Exposome-NL"
+    ],
+    [
+     "Metadata last updated",
+     "15-4-2026"
+    ],
+    [
+     "Dataset last revised",
+     "15-4-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 52,
+   "project": "Netherlands",
+   "title": "Black carbon along road networks Amsterdam",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Black_carbon_roads",
+   "temporalResolution": "Annual",
+   "period": "2019-2020",
+   "coverage": "2019-2020",
+   "spatialResolution": "",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "ESRI Shapefile (polyline)"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2019-2020"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Extent",
+     "Amsterdam"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "Owner",
+     "Jules Kerckhoffs"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.envint.2022.107575"
+    ],
+    [
+     "Source project",
+     "Exposome-NL"
+    ],
+    [
+     "Metadata last updated",
+     "15-4-2026"
+    ],
+    [
+     "Dataset last revised",
+     "15-4-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 53,
+   "project": "Netherlands",
+   "title": "Ultrafine particles along road networks Amsterdam",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Ultrafine_particles_roads",
+   "temporalResolution": "Annual",
+   "period": "2019-2020",
+   "coverage": "2019-2020",
+   "spatialResolution": "",
+   "unit": "particles/cm³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "ESRI Shapefile (polyline)"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2019-2020"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Extent",
+     "Amsterdam"
+    ],
+    [
+     "Unit",
+     "particles/cm³"
+    ],
+    [
+     "Owner",
+     "Jules Kerckhoffs"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.envint.2022.107575"
+    ],
+    [
+     "Source project",
+     "Exposome-NL"
+    ],
+    [
+     "Metadata last updated",
+     "15-4-2026"
+    ],
+    [
+     "Dataset last revised",
+     "15-4-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 54,
+   "project": "Netherlands",
+   "title": "Ultrafine particles",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Ultrafine_particles",
+   "temporalResolution": "Annual",
+   "period": "2016-2017",
+   "coverage": "2016-2017",
+   "spatialResolution": "25x25m",
+   "unit": "particles/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2016-2017"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "25x25m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "particles/m³"
+    ],
+    [
+     "CRS",
+     "Amersfoort / RD New (EPSG: 28992)"
+    ],
+    [
+     "Owner",
+     "Jules Kerckhoffs"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.envint.2021.106569"
+    ],
+    [
+     "Source project",
+     "Exposome-NL"
+    ],
+    [
+     "Metadata last updated",
+     "4-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "4-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 55,
+   "project": "Netherlands",
+   "title": "Annual mean BC concentration",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "Annual_mean_BC_concentration",
+   "temporalResolution": "Annual",
+   "period": "2010",
+   "coverage": "2010",
+   "spatialResolution": "100x100m",
+   "unit": "m⁻¹",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2010"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "m⁻¹"
+    ],
+    [
+     "CRS",
+     "Amersfoort / RD New (EPSG: 28992)"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.envint.2018.07.036"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Metadata last updated",
+     "18-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "18-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 58,
+   "project": "Netherlands",
+   "title": "PM2.5 Cu estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PM2_5_Cu_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 59,
+   "project": "Netherlands",
+   "title": "PMC Cu estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PMC_Cu_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 60,
+   "project": "Netherlands",
+   "title": "PM2.5 Fe estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PM2_5_Fe_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 61,
+   "project": "Netherlands",
+   "title": "PMC Fe estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PMC_Fe_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 62,
+   "project": "Netherlands",
+   "title": "PM2.5 K estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PM2_5_K_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 63,
+   "project": "Netherlands",
+   "title": "PMC K estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PMC_K_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 64,
+   "project": "Netherlands",
+   "title": "PM2.5 mass",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PM2_5_mass_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "µg/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "µg/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 65,
+   "project": "Netherlands",
+   "title": "PM2.5 Ni estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PM2_5_Ni_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 66,
+   "project": "Netherlands",
+   "title": "PM2.5 S estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PM2_5_S_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 67,
+   "project": "Netherlands",
+   "title": "PM2.5 Si estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PM2_5_Si_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 68,
+   "project": "Netherlands",
+   "title": "PMC Si estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PMC_Si_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 69,
+   "project": "Netherlands",
+   "title": "PM2.5 V estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PM2_5_V_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 70,
+   "project": "Netherlands",
+   "title": "PM2.5 Zn estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PM2_5_Zn_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 71,
+   "project": "Netherlands",
+   "title": "PMC Zn estimates",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "PMC_Zn_estimates",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "coverage": "2008-2011",
+   "spatialResolution": "100x100m",
+   "unit": "ng/m³",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2008-2011"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "ng/m³"
+    ],
+    [
+     "Owner",
+     "Gerard Hoek"
+    ],
+    [
+     "References",
+     "https://pubs.acs.org/doi/10.1021/acs.est.0c06595"
+    ],
+    [
+     "Source project",
+     "ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)"
+    ],
+    [
+     "Comments",
+     "Data collected between October 2008 and April 2011"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 5,
+   "project": "Europe",
+   "title": "Yearly average temperature",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Temperature",
+   "themeKey": "Temperature",
+   "page": "Annual_average_temperature",
+   "temporalResolution": "Annual",
+   "period": "2003 - 2024",
+   "coverage": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "unit": "°C",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Temperature"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2003 - 2024"
+    ],
+    [
+     "Frequency",
+     "Every year"
+    ],
+    [
+     "Spatial resolution",
+     "1x1km"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "°C"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.172454"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "1-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "1-6-2026"
+    ]
+   ],
+   "map": {
+    "layer": "TMP_AVG_YEARLY",
+    "style": "TEMP",
+    "basemap": null,
+    "times": [
+     "2003",
+     "2004",
+     "2005",
+     "2006",
+     "2007",
+     "2008",
+     "2009",
+     "2010",
+     "2011",
+     "2012",
+     "2013",
+     "2014",
+     "2015",
+     "2016",
+     "2017",
+     "2018",
+     "2019",
+     "2020",
+     "2021",
+     "2022",
+     "2023",
+     "2024"
+    ]
+   }
+  },
+  {
+   "id": 9,
+   "project": "Europe",
+   "title": "Monthly average temperature",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Temperature",
+   "themeKey": "Temperature",
+   "page": "Monthly_average_temperature",
+   "temporalResolution": "Monthly",
+   "period": "2003 - 2024",
+   "coverage": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "unit": "°C",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_average_temperature.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Temperature"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2003 - 2024"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "1x1km"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "°C"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.172454"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "1-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "1-6-2026"
+    ]
+   ],
+   "map": {
+    "layer": "TEMP_AVG_MONTHLY",
+    "style": "TEMP",
+    "basemap": null,
+    "times": [
+     "2020-01",
+     "2020-06",
+     "2020-12",
+     "2021-01",
+     "2021-06",
+     "2021-10",
+     "2022-01",
+     "2022-06",
+     "2022-10",
+     "2023-01",
+     "2023-06",
+     "2023-10",
+     "2024-01",
+     "2024-06",
+     "2024-10"
+    ]
+   }
+  },
+  {
+   "id": 75,
+   "project": "Europe",
+   "title": "Monthly minimum temperature",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Temperature",
+   "themeKey": "Temperature",
+   "page": "Monthly_minimum_temperature",
+   "temporalResolution": "Monthly",
+   "period": "2003 - 2024",
+   "coverage": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "unit": "°C",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_minimum_temperature.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Temperature"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2003 - 2024"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "1x1km"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "°C"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "1-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "1-6-2026"
+    ]
+   ],
+   "map": {
+    "layer": "TEMP_MIN_MONTHLY",
+    "style": "TEMP",
+    "basemap": null,
+    "times": [
+     "2021-01",
+     "2021-06",
+     "2021-10",
+     "2022-01",
+     "2022-06",
+     "2022-10",
+     "2023-01",
+     "2023-06",
+     "2023-10",
+     "2024-01",
+     "2024-06",
+     "2024-10"
+    ]
+   }
+  },
+  {
+   "id": 76,
+   "project": "Europe",
+   "title": "Monthly maximum temperature",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Temperature",
+   "themeKey": "Temperature",
+   "page": "Monthly_maximum_temperature",
+   "temporalResolution": "Monthly",
+   "period": "2003 - 2024",
+   "coverage": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "unit": "°C",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_maximum_temperature.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Temperature"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Monthly"
+    ],
+    [
+     "Time period",
+     "2003 - 2024"
+    ],
+    [
+     "Frequency",
+     "Every month"
+    ],
+    [
+     "Spatial resolution",
+     "1x1km"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "°C"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "1-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "1-6-2026"
+    ]
+   ],
+   "map": {
+    "layer": "TEMP_MAX_MONTHLY",
+    "style": "TEMP",
+    "basemap": null,
+    "times": [
+     "2021-01",
+     "2021-06",
+     "2021-10",
+     "2022-01",
+     "2022-06",
+     "2022-10",
+     "2023-01",
+     "2023-06",
+     "2023-10",
+     "2024-01",
+     "2024-06",
+     "2024-10"
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "project": "Europe",
+   "title": "Daily average temperature",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Temperature",
+   "themeKey": "Temperature",
+   "page": "Daily_average_temperature",
+   "temporalResolution": "Daily",
+   "period": "2003 - 2024",
+   "coverage": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "unit": "°C",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Temperature"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Daily"
+    ],
+    [
+     "Time period",
+     "2003 - 2024"
+    ],
+    [
+     "Frequency",
+     "Every day"
+    ],
+    [
+     "Spatial resolution",
+     "1x1km"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "°C"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.172454"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "1-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "1-6-2026"
+    ]
+   ],
+   "map": {
+    "layer": "TMP_AVG_DAILY",
+    "style": "TEMP",
+    "basemap": null,
+    "times": [
+     "2024-08-01",
+     "2024-08-02",
+     "2024-08-03",
+     "2024-08-04",
+     "2024-08-05",
+     "2024-08-06",
+     "2024-08-07",
+     "2024-08-08",
+     "2024-08-09",
+     "2024-08-10",
+     "2024-08-11",
+     "2024-08-12",
+     "2024-08-13",
+     "2024-08-14",
+     "2024-08-15",
+     "2024-08-16",
+     "2024-08-17",
+     "2024-08-18",
+     "2024-08-19",
+     "2024-08-20",
+     "2024-08-21",
+     "2024-08-22",
+     "2024-08-23",
+     "2024-08-24",
+     "2024-08-25",
+     "2024-08-26",
+     "2024-08-27",
+     "2024-08-28",
+     "2024-08-29",
+     "2024-08-30",
+     "2024-08-31"
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "project": "Europe",
+   "title": "Daily minimum temperature",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Temperature",
+   "themeKey": "Temperature",
+   "page": "Daily_minimum_temperature",
+   "temporalResolution": "Daily",
+   "period": "2003 - 2024",
+   "coverage": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "unit": "°C",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_minimum_temperature.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Temperature"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Daily"
+    ],
+    [
+     "Time period",
+     "2003 - 2024"
+    ],
+    [
+     "Frequency",
+     "Every day"
+    ],
+    [
+     "Spatial resolution",
+     "1x1km"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "°C"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.172454"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "1-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "1-6-2026"
+    ]
+   ],
+   "map": {
+    "layer": "TMP_MIN_DAILY",
+    "style": "TEMP",
+    "basemap": null,
+    "times": [
+     "2024-08-01",
+     "2024-08-02",
+     "2024-08-03",
+     "2024-08-04",
+     "2024-08-05",
+     "2024-08-06",
+     "2024-08-07",
+     "2024-08-08",
+     "2024-08-09",
+     "2024-08-10",
+     "2024-08-11",
+     "2024-08-12",
+     "2024-08-13",
+     "2024-08-14",
+     "2024-08-15",
+     "2024-08-16",
+     "2024-08-17",
+     "2024-08-18",
+     "2024-08-19",
+     "2024-08-20",
+     "2024-08-21",
+     "2024-08-22",
+     "2024-08-23",
+     "2024-08-24",
+     "2024-08-25",
+     "2024-08-26",
+     "2024-08-27",
+     "2024-08-28",
+     "2024-08-29",
+     "2024-08-30",
+     "2024-08-31"
+    ]
+   }
+  },
+  {
+   "id": 8,
+   "project": "Europe",
+   "title": "Daily maximum temperature",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Temperature",
+   "themeKey": "Temperature",
+   "page": "Daily_maximum_temperature",
+   "temporalResolution": "Daily",
+   "period": "2003 - 2024",
+   "coverage": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "unit": "°C",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_maximum_temperature.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Temperature"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Daily"
+    ],
+    [
+     "Time period",
+     "2003 - 2024"
+    ],
+    [
+     "Frequency",
+     "Every day"
+    ],
+    [
+     "Spatial resolution",
+     "1x1km"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "°C"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2024.172454"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "1-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "1-6-2026"
+    ]
+   ],
+   "map": {
+    "layer": "TMP_MAX_DAILY",
+    "style": "TEMP",
+    "basemap": null,
+    "times": [
+     "2024-08-01",
+     "2024-08-02",
+     "2024-08-03",
+     "2024-08-04",
+     "2024-08-05",
+     "2024-08-06",
+     "2024-08-07",
+     "2024-08-08",
+     "2024-08-09",
+     "2024-08-10",
+     "2024-08-11",
+     "2024-08-12",
+     "2024-08-13",
+     "2024-08-14",
+     "2024-08-15",
+     "2024-08-16",
+     "2024-08-17",
+     "2024-08-18",
+     "2024-08-19",
+     "2024-08-20",
+     "2024-08-21",
+     "2024-08-22",
+     "2024-08-23",
+     "2024-08-24",
+     "2024-08-25",
+     "2024-08-26",
+     "2024-08-27",
+     "2024-08-28",
+     "2024-08-29",
+     "2024-08-30",
+     "2024-08-31"
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "project": "Europe",
+   "title": "Urban-Rural indicator",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Urbanicity",
+   "themeKey": "Urbanicity",
+   "page": "Urban_Rural_indicator",
+   "temporalResolution": "Annual",
+   "period": "2015",
+   "coverage": "2015",
+   "spatialResolution": "100x100m",
+   "unit": "",
+   "noData": -3.4e+38,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Urban_Rural_indicator.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Urbanicity"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2015"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "-3.40E+38"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "DOI:10.2760/19817"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "6-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": {
+    "layer": "UR_B15",
+    "style": "UR",
+    "basemap": null,
+    "times": [
+     "2015"
+    ]
+   }
+  },
+  {
+   "id": 12,
+   "project": "Europe",
+   "title": "Daily mean of downward UV radiation at the surface",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "UV radiation",
+   "themeKey": "UV radiation",
+   "page": "Daily_mean_of_downward_UV_radiation_at_the_surface",
+   "temporalResolution": "Daily",
+   "period": "2000 - 2022",
+   "coverage": "2000 - 2022",
+   "spatialResolution": "27x27km",
+   "unit": "J/m²",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_mean_of_downward_UV_radiation_at_the_surface.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "UV radiation"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Daily"
+    ],
+    [
+     "Time period",
+     "2000 - 2022"
+    ],
+    [
+     "Frequency",
+     "Every day"
+    ],
+    [
+     "Spatial resolution",
+     "27x27km"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "J/m²"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "26-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 13,
+   "project": "Europe",
+   "title": "Daily max of downward UV radiation at the surface",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "UV radiation",
+   "themeKey": "UV radiation",
+   "page": "Daily_max_of_downward_UV_radiation_at_the_surface",
+   "temporalResolution": "Daily",
+   "period": "2000 - 2022",
+   "coverage": "2000 - 2022",
+   "spatialResolution": "27x27km",
+   "unit": "J/m²",
+   "noData": null,
+   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_max_of_downward_UV_radiation_at_the_surface.xml",
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "UV radiation"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Daily"
+    ],
+    [
+     "Time period",
+     "2000 - 2022"
+    ],
+    [
+     "Frequency",
+     "Every day"
+    ],
+    [
+     "Spatial resolution",
+     "27x27km"
+    ],
+    [
+     "Extent",
+     "Full EU"
+    ],
+    [
+     "Unit",
+     "J/m²"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "No-data value",
+     "NaN"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "26-2-2026"
+    ],
+    [
+     "Dataset last revised",
+     "8-1-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 56,
+   "project": "Netherlands",
+   "title": "Area of crops within 50 100 250 and 500 buffers around BAG addresses",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Pesticides",
+   "themeKey": "Pesticides",
+   "page": "Area_of_crops_BAG",
+   "temporalResolution": "Annual",
+   "period": "2005-2022",
+   "coverage": "2005-2022",
+   "spatialResolution": "",
+   "unit": "",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Pesticides"
+    ],
+    [
+     "File type",
+     "RDA"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2005-2022"
+    ],
+    [
+     "Frequency",
+     "Every year"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Owner",
+     "Anke Huss"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.scitotenv.2022.152932"
+    ],
+    [
+     "Metadata last updated",
+     "18-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "18-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 50,
+   "project": "Netherlands",
+   "title": "Food facilities serving an address within rings of 0-500 500-1000 and 1000-1500m",
+   "category": "Food",
+   "categoryKey": "Food",
+   "theme": "Food landscape",
+   "themeKey": "Food landscape",
+   "page": "Food_facilities",
+   "temporalResolution": "Annual",
+   "period": "2005 - 2020",
+   "coverage": "2005, 2010, 2015, 2020",
+   "spatialResolution": "",
+   "unit": "Number of facilities",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Food"
+    ],
+    [
+     "Theme",
+     "Food landscape"
+    ],
+    [
+     "File type",
+     "CSV"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2005 - 2020"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Unit",
+     "Number of facilities"
+    ],
+    [
+     "CRS",
+     "Amersfoort / RD New (EPSG: 28992)"
+    ],
+    [
+     "Owner",
+     "Jeroen Lakervaeld"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.healthplace.2023.103075"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Metadata last updated",
+     "20-3-2026"
+    ],
+    [
+     "Dataset last revised",
+     "20-3-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 77,
+   "project": "Europe",
+   "title": "Count of fast food outlets in a 800m buffer",
+   "category": "Food",
+   "categoryKey": "Food",
+   "theme": "Food landscape",
+   "themeKey": "Food landscape",
+   "page": "Count_of_fast_food_outlets_in_a_800m_buffer",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "coverage": "2020",
+   "spatialResolution": "100x100m",
+   "unit": "",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Food"
+    ],
+    [
+     "Theme",
+     "Food landscape"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2020"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands, Spain, Switzerland"
+    ],
+    [
+     "Unit",
+     "Count"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.healthplace.2023.103075"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Comments",
+     "Data must not be linked to endpoints from before 2019."
+    ],
+    [
+     "Metadata last updated",
+     "9-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "9-6-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 78,
+   "project": "Europe",
+   "title": "Count of restaurants in a 800m buffer",
+   "category": "Food",
+   "categoryKey": "Food",
+   "theme": "Food landscape",
+   "themeKey": "Food landscape",
+   "page": "Count_of_restaurants_in_a_800m_buffer",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "coverage": "2020",
+   "spatialResolution": "100x100m",
+   "unit": "",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Food"
+    ],
+    [
+     "Theme",
+     "Food landscape"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2020"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands, Spain, Switzerland"
+    ],
+    [
+     "Unit",
+     "Count"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.healthplace.2023.103075"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Comments",
+     "Data must not be linked to endpoints from before 2019."
+    ],
+    [
+     "Metadata last updated",
+     "9-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "9-6-2026"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": 79,
+   "project": "Europe",
+   "title": "Count of supermarkets in a 800m buffer",
+   "category": "Food",
+   "categoryKey": "Food",
+   "theme": "Food landscape",
+   "themeKey": "Food landscape",
+   "page": "Count_of_supermarkets_in_a_800m_buffer",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "coverage": "2020",
+   "spatialResolution": "100x100m",
+   "unit": "",
+   "noData": null,
+   "xml": null,
+   "details": [
+    [
+     "Category",
+     "Food"
+    ],
+    [
+     "Theme",
+     "Food landscape"
+    ],
+    [
+     "File type",
+     "TIF"
+    ],
+    [
+     "Temporal resolution",
+     "Annual"
+    ],
+    [
+     "Time period",
+     "2020"
+    ],
+    [
+     "Frequency",
+     "Once"
+    ],
+    [
+     "Spatial resolution",
+     "100x100m"
+    ],
+    [
+     "Extent",
+     "Netherlands, Spain, Switzerland"
+    ],
+    [
+     "Unit",
+     "Count"
+    ],
+    [
+     "CRS",
+     "ETRS89-extended / LAEA Europe (EPSG: 3035)"
+    ],
+    [
+     "Owner",
+     "Kees de Hoogh"
+    ],
+    [
+     "References",
+     "https://doi.org/10.1016/j.healthplace.2023.103075"
+    ],
+    [
+     "Source project",
+     "EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)"
+    ],
+    [
+     "Comments",
+     "Data must not be linked to endpoints from before 2019."
+    ],
+    [
+     "Metadata last updated",
+     "9-6-2026"
+    ],
+    [
+     "Dataset last revised",
+     "9-6-2026"
+    ]
+   ],
+   "map": null
+  }
+ ],
+ "datasets": [
+  {
+   "page": "Median_NDVI",
+   "title": "Median Normalized Difference Vegetation Index (NDVI)",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "spatialResolution": "250x250m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "median_ndvi",
+   "surfaces": [
+    14,
+    15,
+    16
+   ],
+   "mapLayer": "NDV_MD3"
+  },
+  {
+   "page": "Standard_deviation_NDVI",
+   "title": "Standard deviation NDVI (Normalized Difference Vegetation Index)",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "spatialResolution": "250x250m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "sd_ndvi",
+   "surfaces": [
+    17,
+    18,
+    19
+   ],
+   "mapLayer": "NDV_ST3"
+  },
+  {
+   "page": "Mean_NDVI",
+   "title": "Mean Normalized Difference Vegetation Index (NDVI)",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "NDVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "spatialResolution": "250x250m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "mean_ndvi",
+   "surfaces": [
+    20,
+    21,
+    22
+   ],
+   "mapLayer": "NDV_ME3"
+  },
+  {
+   "page": "Median_MSAVI",
+   "title": "Median MSAVI (Modified Soil Adjusted Vegetation Index)",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "spatialResolution": "250x250m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "median_msavi",
+   "surfaces": [
+    23,
+    24,
+    25
+   ],
+   "mapLayer": "MVI_MD3"
+  },
+  {
+   "page": "Standard_deviation_MSAVI",
+   "title": "Standard deviation MSAVI (Modified Soil Adjusted Vegetation Index)",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "spatialResolution": "250x250m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "sd_msavi",
+   "surfaces": [
+    26,
+    27,
+    28
+   ],
+   "mapLayer": "MVI_ST3"
+  },
+  {
+   "page": "Mean_MSAVI",
+   "title": "Mean MSAVI (Modified Soil Adjusted Vegetation Index)",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "MSAVI",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "spatialResolution": "250x250m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "mean_msavi",
+   "surfaces": [
+    29,
+    30,
+    31
+   ],
+   "mapLayer": "MVI_ME3"
+  },
+  {
+   "page": "Distance_to_nearest_green_space_using_CORINE",
+   "title": "Distance to nearest green space using CORINE",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "Green Space",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2018",
+   "spatialResolution": "100x100m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "corine_greenspace",
+   "surfaces": [
+    32
+   ],
+   "mapLayer": "GSC_DIS"
+  },
+  {
+   "page": "Distance_to_nearest_green_space_using_URBAN_ATLAS",
+   "title": "Distance to nearest green space using URBAN ATLAS",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "Green Space",
+   "temporalResolution": "Annual",
+   "period": "2006 - 2018",
+   "spatialResolution": "0.25/1 ha",
+   "extent": "EU Urban agglomerations",
+   "summary": "",
+   "thumbnail": "urban_greenspace",
+   "surfaces": [
+    33
+   ],
+   "mapLayer": "GSU_DIS"
+  },
+  {
+   "page": "Light_at_night",
+   "title": "Light at night",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "Light at Night",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2020",
+   "spatialResolution": "100x100m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "light_at_night",
+   "surfaces": [
+    34,
+    35,
+    36
+   ],
+   "mapLayer": "LAN_B03"
+  },
+  {
+   "page": "Imperviousness",
+   "title": "Imperviousness",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "Imperviousness",
+   "temporalResolution": "Annual",
+   "period": "2006 - 2018",
+   "spatialResolution": "100x100m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "imperviousness",
+   "surfaces": [
+    37,
+    38,
+    39
+   ],
+   "mapLayer": "IMP_B03"
+  },
+  {
+   "page": "Distance_to_nearest_blue_space",
+   "title": "Distance to nearest blue space",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "Blue spaces",
+   "temporalResolution": "Annual",
+   "period": "2013",
+   "spatialResolution": "100x100m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "nearest_blue",
+   "surfaces": [
+    40
+   ],
+   "mapLayer": "BSW_DIS"
+  },
+  {
+   "page": "Distance_to_nearest_inland_freshwater",
+   "title": "Distance to nearest inland freshwater",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "Blue spaces",
+   "temporalResolution": "Annual",
+   "period": "2013",
+   "spatialResolution": "100x100m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "nearest_freshwater",
+   "surfaces": [
+    42
+   ],
+   "mapLayer": "BSI_DIS"
+  },
+  {
+   "page": "Walkability",
+   "title": "Walkability",
+   "project": "Europe",
+   "category": "Built",
+   "theme": "Walkability",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "spatialResolution": "100x100m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "walkability",
+   "surfaces": [
+    43,
+    44,
+    45
+   ],
+   "mapLayer": "WAL_B03"
+  },
+  {
+   "page": "Annual_NO2_25m",
+   "title": "Annual NO2 – 25 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2023",
+   "spatialResolution": "25x25m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "no2",
+   "surfaces": [
+    1
+   ],
+   "mapLayer": "NO2B25_AAV"
+  },
+  {
+   "page": "Annual_PM10_25m",
+   "title": "Annual PM10 (Particulate Matter 10) – 25 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2023",
+   "spatialResolution": "25x25m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "pm10",
+   "surfaces": [
+    2
+   ],
+   "mapLayer": "P10B25_AAV"
+  },
+  {
+   "page": "Annual_PM2.5_25m",
+   "title": "Annual PM2.5 (Particulate Matter 2.5) – 25 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2023",
+   "spatialResolution": "25x25m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "pm25",
+   "surfaces": [
+    3
+   ],
+   "mapLayer": "P25B25_AAV"
+  },
+  {
+   "page": "Annual_O3_25m",
+   "title": "Annual O3 (Ozone) – 25 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2000 - 2023",
+   "spatialResolution": "25x25m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "o3",
+   "surfaces": [
+    4
+   ],
+   "mapLayer": "OZOB25_AAV"
+  },
+  {
+   "page": "Monthly_NO2_100m",
+   "title": "Monthly NO2 – 100 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "spatialResolution": "100x100m",
+   "extent": "Austria, Belgium, Czechia, Denmark, Germnay, Italy, Liechtenstein, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom",
+   "summary": "",
+   "thumbnail": "no2_monthly",
+   "surfaces": [
+    46
+   ],
+   "mapLayer": "NO2B100_MAV"
+  },
+  {
+   "page": "Monthly_PM10_100m",
+   "title": "Monthly PM10 (Particulate Matter 10) – 100 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "spatialResolution": "100x100m",
+   "extent": "Austria, Belgium, Czechia, Denmark, Germnay, Italy, Liechtenstein, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom",
+   "summary": "",
+   "thumbnail": "pm10_monthly",
+   "surfaces": [
+    47
+   ],
+   "mapLayer": "P10B100_MAV"
+  },
+  {
+   "page": "Monthly_PM2.5_100m",
+   "title": "Monthly PM2.5 (Particulate Matter 2.5) – 100 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Monthly",
+   "period": "2006 - 2019",
+   "spatialResolution": "100x100m",
+   "extent": "Austria, Belgium, Czechia, Denmark, Germnay, Italy, Liechtenstein, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom",
+   "summary": "",
+   "thumbnail": "pm25_monthly",
+   "surfaces": [
+    48
+   ],
+   "mapLayer": "P25B100_MAV"
+  },
+  {
+   "page": "Monthly_O3_100m",
+   "title": "Monthly O3 (Ozone) – 100 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "spatialResolution": "100x100m",
+   "extent": "Austria, Belgium, Czechia, Denmark, Germnay, Italy, Liechtenstein, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom",
+   "summary": "",
+   "thumbnail": "o3_monthly",
+   "surfaces": [
+    49
+   ],
+   "mapLayer": "OZOB100_MAV"
+  },
+  {
+   "page": "Monthly_NO2_25m",
+   "title": "Monthly NO2 – 25 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "spatialResolution": "25x25m",
+   "extent": "Czechia, Estonia, France, Germany, Greece, Italy, Netherlands, Poland, Spain, Sweden, Switzerland, United Kingdom,",
+   "summary": "",
+   "thumbnail": "no2_monthly",
+   "surfaces": [
+    80
+   ],
+   "mapLayer": "NO2B25_MAV"
+  },
+  {
+   "page": "Monthly_PM10_25m",
+   "title": "Monthly PM10 (Particulate Matter 10) – 25 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "spatialResolution": "25x25m",
+   "extent": "Czechia, Estonia, France, Germany, Greece, Italy, Netherlands, Poland, Spain, Sweden, Switzerland, United Kingdom,",
+   "summary": "",
+   "thumbnail": "pm10_monthly",
+   "surfaces": [
+    81
+   ],
+   "mapLayer": "P10B25_MAV"
+  },
+  {
+   "page": "Monthly_PM2.5_25m",
+   "title": "Monthly PM2.5 (Particulate Matter 2.5) – 25 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Monthly",
+   "period": "2006 - 2019",
+   "spatialResolution": "25x25m",
+   "extent": "Czechia, Estonia, France, Germany, Greece, Italy, Netherlands, Poland, Spain, Sweden, Switzerland, United Kingdom,",
+   "summary": "",
+   "thumbnail": "pm25_monthly",
+   "surfaces": [
+    82
+   ],
+   "mapLayer": "P25B25_MAV"
+  },
+  {
+   "page": "Monthly_O3_25m",
+   "title": "Monthly O3 (Ozone) – 25 m",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Monthly",
+   "period": "2000 - 2019",
+   "spatialResolution": "25x25m",
+   "extent": "Czechia, Estonia, France, Germany, Greece, Italy, Netherlands, Poland, Spain, Sweden, Switzerland, United Kingdom,",
+   "summary": "",
+   "thumbnail": "o3_monthly",
+   "surfaces": [
+    83
+   ],
+   "mapLayer": "OZOB25_MAV"
+  },
+  {
+   "page": "Nitrogen_dioxide_roads",
+   "title": "Nitrogen dioxide roads",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2019-2020",
+   "spatialResolution": "",
+   "extent": "Amsterdam",
+   "summary": "",
+   "thumbnail": "Nitrogen_dioxide_roads",
+   "surfaces": [
+    51
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Black_carbon_roads",
+   "title": "Black carbon roads",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2019-2020",
+   "spatialResolution": "",
+   "extent": "Amsterdam",
+   "summary": "",
+   "thumbnail": "Black_carbon_roads",
+   "surfaces": [
+    52
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Ultrafine_particles_roads",
+   "title": "Ultrafine particles roads",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2019-2020",
+   "spatialResolution": "",
+   "extent": "Amsterdam",
+   "summary": "",
+   "thumbnail": "Ultrafine_particles_roads",
+   "surfaces": [
+    53
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Ultrafine_particles",
+   "title": "Ultrafine particles",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2016-2017",
+   "spatialResolution": "25x25m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "not_available",
+   "surfaces": [
+    54
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Annual_mean_BC_concentration",
+   "title": "Annual mean BC concentration",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2010",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "Annual_mean_BC_concentration",
+   "surfaces": [
+    55
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PM2_5_Cu_estimates",
+   "title": "PM2.5 Cu estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PM2_5_Cu_estimates_random_forest",
+   "surfaces": [
+    58
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PMC_Cu_estimates",
+   "title": "PMC Cu estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PMC_Cu_estimates_random_forest",
+   "surfaces": [
+    59
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PM2_5_Fe_estimates",
+   "title": "PM2.5 Fe estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PM2_5_Fe_estimates_random_forest",
+   "surfaces": [
+    60
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PMC_Fe_estimates",
+   "title": "PMC Fe estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PMC_Fe_estimates_random_forest",
+   "surfaces": [
+    61
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PM2_5_K_estimates",
+   "title": "PM2.5 K estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PM2_5_K_estimates_random_forest",
+   "surfaces": [
+    62
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PMC_K_estimates",
+   "title": "PMC K estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PMC_K_estimates_random_forest",
+   "surfaces": [
+    63
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PM2_5_mass_estimates",
+   "title": "PM2.5 mass estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PM2_5_mass_estimates_random_forest",
+   "surfaces": [
+    64
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PM2_5_Ni_estimates",
+   "title": "PM2.5 Ni estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PM2_5_Ni_estimates_random_forest",
+   "surfaces": [
+    65
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PM2_5_S_estimates",
+   "title": "PM2.5 S estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PM2_5_S_estimates_random_forest",
+   "surfaces": [
+    66
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PM2_5_Si_estimates",
+   "title": "PM2.5 Si estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PM2_5_Si_estimates_random_forest",
+   "surfaces": [
+    67
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PMC_Si_estimates",
+   "title": "PMC Si estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PMC_Si_estimates_random_forest",
+   "surfaces": [
+    68
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PM2_5_V_estimates",
+   "title": "PM2.5 V estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PM2_5_V_estimates_random_forest",
+   "surfaces": [
+    69
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PM2_5_Zn_estimates",
+   "title": "PM2.5 Zn estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PM2_5_Zn_estimates_random_forest",
+   "surfaces": [
+    70
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "PMC_Zn_estimates",
+   "title": "PMC Zn estimates",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "Annual",
+   "period": "2008-2011",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "PMC_Zn_estimates_random_forest",
+   "surfaces": [
+    71
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Annual_average_temperature",
+   "title": "Annual Average Temperature",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Temperature",
+   "temporalResolution": "Annual",
+   "period": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "yearly_avg_temp",
+   "surfaces": [
+    5
+   ],
+   "mapLayer": "TMP_AVG_YEARLY"
+  },
+  {
+   "page": "Monthly_average_temperature",
+   "title": "Monthly Average Temperature",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Temperature",
+   "temporalResolution": "Monthly",
+   "period": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "monthly_avg_temp",
+   "surfaces": [
+    9
+   ],
+   "mapLayer": "TEMP_AVG_MONTHLY"
+  },
+  {
+   "page": "Monthly_minimum_temperature",
+   "title": "Monthly Minimum Temperature",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Temperature",
+   "temporalResolution": "Monthly",
+   "period": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "not_available",
+   "surfaces": [
+    75
+   ],
+   "mapLayer": "TEMP_MIN_MONTHLY"
+  },
+  {
+   "page": "Monthly_maximum_temperature",
+   "title": "Monthly Maximum Temperature",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Temperature",
+   "temporalResolution": "Monthly",
+   "period": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "not_available",
+   "surfaces": [
+    76
+   ],
+   "mapLayer": "TEMP_MAX_MONTHLY"
+  },
+  {
+   "page": "Daily_average_temperature",
+   "title": "Daily Average Temperature",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Temperature",
+   "temporalResolution": "Daily",
+   "period": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "daily_average_temperature",
+   "surfaces": [
+    6
+   ],
+   "mapLayer": "TMP_AVG_DAILY"
+  },
+  {
+   "page": "Daily_minimum_temperature",
+   "title": "Daily Minimum Temperature",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Temperature",
+   "temporalResolution": "Daily",
+   "period": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "daily_minimum_temperature",
+   "surfaces": [
+    7
+   ],
+   "mapLayer": "TMP_MIN_DAILY"
+  },
+  {
+   "page": "Daily_maximum_temperature",
+   "title": "Daily Maximum Temperature",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Temperature",
+   "temporalResolution": "Daily",
+   "period": "2003 - 2024",
+   "spatialResolution": "1x1km",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "daily_maximum_temperature",
+   "surfaces": [
+    8
+   ],
+   "mapLayer": "TMP_MAX_DAILY"
+  },
+  {
+   "page": "Urban_Rural_indicator",
+   "title": "Urban-Rural indicator",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "Urbanicity",
+   "temporalResolution": "Annual",
+   "period": "2015",
+   "spatialResolution": "100x100m",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "urbanicity",
+   "surfaces": [
+    10
+   ],
+   "mapLayer": "UR_B15"
+  },
+  {
+   "page": "Daily_mean_of_downward_UV_radiation_at_the_surface",
+   "title": "Daily mean of downward UV radiation at the surface",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "UV radiation",
+   "temporalResolution": "Daily",
+   "period": "2000 - 2022",
+   "spatialResolution": "27x27km",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "mean_uv",
+   "surfaces": [
+    12
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Daily_max_of_downward_UV_radiation_at_the_surface",
+   "title": "Daily max of downward UV radiation at the surface",
+   "project": "Europe",
+   "category": "Physico-Chemical",
+   "theme": "UV radiation",
+   "temporalResolution": "Daily",
+   "period": "2000 - 2022",
+   "spatialResolution": "27x27km",
+   "extent": "Full EU",
+   "summary": "",
+   "thumbnail": "max_uv",
+   "surfaces": [
+    13
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Area_of_crops_BAG",
+   "title": "Area of crops BAG",
+   "project": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Pesticides",
+   "temporalResolution": "Annual",
+   "period": "2005-2022",
+   "spatialResolution": "",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "not_available",
+   "surfaces": [
+    56
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Food_facilities",
+   "title": "Food facilities",
+   "project": "Netherlands",
+   "category": "Food",
+   "theme": "Food landscape",
+   "temporalResolution": "Annual",
+   "period": "2005 - 2020",
+   "spatialResolution": "",
+   "extent": "Netherlands",
+   "summary": "",
+   "thumbnail": "not_available",
+   "surfaces": [
+    50
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Count_of_fast_food_outlets_in_a_800m_buffer",
+   "title": "Count of fast food outlets in a 800m buffer",
+   "project": "Europe",
+   "category": "Food",
+   "theme": "Food landscape",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands, Spain, Switzerland",
+   "summary": "",
+   "thumbnail": "not_available",
+   "surfaces": [
+    77
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Count_of_restaurants_in_a_800m_buffer",
+   "title": "Count of restaurants in a 800m buffer",
+   "project": "Europe",
+   "category": "Food",
+   "theme": "Food landscape",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands, Spain, Switzerland",
+   "summary": "",
+   "thumbnail": "not_available",
+   "surfaces": [
+    78
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "Count_of_supermarkets_in_a_800m_buffer",
+   "title": "Count of supermarkets in a 800m buffer",
+   "project": "Europe",
+   "category": "Food",
+   "theme": "Food landscape",
+   "temporalResolution": "Annual",
+   "period": "2020",
+   "spatialResolution": "100x100m",
+   "extent": "Netherlands, Spain, Switzerland",
+   "summary": "",
+   "thumbnail": "not_available",
+   "surfaces": [
+    79
+   ],
+   "mapLayer": null
+  }
+ ]
+}

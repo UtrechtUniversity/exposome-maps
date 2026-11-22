@@ -1,22 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        window.catalogueProductName = "PM2_5_Cu_estimates";
-        fetch("_template.html")
-            .then(response => response.text())
-            .then(html => {
-                document.open();
-                document.write(html);
-                document.close();
-            })
-            .catch(error => {
-                document.body.innerHTML = "<p>Unable to load catalogue page template.</p>";
-                console.error(error);
-            });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PM2.5 Cu estimates · Exposome Maps</title>
+  <meta name="description" content="PM2.5 Cu estimates – Air pollution exposure dataset (Netherlands, 2008-2011) in the Exposome Maps catalogue.">
+  <meta property="og:title" content="PM2.5 Cu estimates · Exposome Maps">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/thumbnails/PM2_5_Cu_estimates_random_forest.png">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/dataset.css">
 </head>
-<body></body>
+<body class="dataset-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html">Exposome Maps</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../index.html#view=map">Map</a>
+      <a href="../index.html#view=catalogue" aria-current="page">Catalogue</a>
+      <a href="../index.html#view=open-data">Open data</a>
+    </nav>
+    <div class="brand-logos">
+      <img src="../images/ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL" width="132" height="32">
+      <img src="../images/EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE" width="147" height="32">
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../index.html#view=catalogue">Catalogue</a></li>
+        <li>Physico-Chemical</li>
+        <li>Air pollution</li>
+      </ol>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">Physico-Chemical · Air pollution</p>
+        <h1>PM2.5 Cu estimates</h1>
+        <ul class="facts" aria-label="Key facts">
+          <li><span class="facts__label">Region</span> Netherlands</li>
+          <li><span class="facts__label">Period</span> 2008-2011</li>
+          <li><span class="facts__label">Time step</span> Annual</li>
+          <li><span class="facts__label">Resolution</span> 100x100m</li>
+          <li><span class="facts__label">Surfaces</span> 1</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--secondary" href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">Request data access</a>
+        </div>
+      </div>
+      <figure class="hero__figure">
+        <img src="images/thumbnails/PM2_5_Cu_estimates_random_forest.png" alt="Example map of PM2.5 Cu estimates" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="details-heading">
+      <h2 id="details-heading">Details</h2>
+      <dl class="details">
+        <div class="details__row">
+          <dt>Category</dt>
+          <dd>Physico-Chemical</dd>
+        </div>
+        <div class="details__row">
+          <dt>Theme</dt>
+          <dd>Air pollution</dd>
+        </div>
+        <div class="details__row">
+          <dt>File type</dt>
+          <dd>TIF</dd>
+        </div>
+        <div class="details__row">
+          <dt>Temporal resolution</dt>
+          <dd>Annual</dd>
+        </div>
+        <div class="details__row">
+          <dt>Time period</dt>
+          <dd>2008-2011</dd>
+        </div>
+        <div class="details__row">
+          <dt>Frequency</dt>
+          <dd>Once</dd>
+        </div>
+        <div class="details__row">
+          <dt>Spatial resolution</dt>
+          <dd>100x100m</dd>
+        </div>
+        <div class="details__row">
+          <dt>Extent</dt>
+          <dd>Netherlands</dd>
+        </div>
+        <div class="details__row">
+          <dt>Unit</dt>
+          <dd>ng/m³</dd>
+        </div>
+        <div class="details__row">
+          <dt>Owner</dt>
+          <dd>Gerard Hoek</dd>
+        </div>
+        <div class="details__row">
+          <dt>References</dt>
+          <dd>https://pubs.acs.org/doi/10.1021/acs.est.0c06595</dd>
+        </div>
+        <div class="details__row">
+          <dt>Source project</dt>
+          <dd>ELAPSE (Effects of Low-Level Air Pollution: A Study in Europe)</dd>
+        </div>
+        <div class="details__row">
+          <dt>Comments</dt>
+          <dd>Data collected between October 2008 and April 2011</dd>
+        </div>
+        <div class="details__row">
+          <dt>Metadata last updated</dt>
+          <dd>20-3-2026</dd>
+        </div>
+        <div class="details__row">
+          <dt>Dataset last revised</dt>
+          <dd>20-3-2026</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="surfaces-heading">
+      <h2 id="surfaces-heading">Surfaces</h2>
+      <p class="section__intro">Each surface is a separate data layer of this dataset.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Surface</th>
+              <th scope="col">Resolution</th>
+              <th scope="col">Time coverage</th>
+              <th scope="col">Map</th>
+              <th scope="col">Metadata</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>58</td>
+              <td>PM2.5 Cu estimates</td>
+              <td>100x100m</td>
+              <td>2008-2011</td>
+              <td>
+<span class="muted">Catalogue only</span>              </td>
+              <td>
+<span class="muted">Unavailable</span>              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <section class="section callout" aria-labelledby="access-heading">
+      <h2 id="access-heading">Data access</h2>
+      <p>
+        To request access, complete the <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">data access request form</a>
+        and send it to <a href="mailto:expanse@uu.nl">expanse@uu.nl</a>.
+        Requests are assessed under the <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/">Data Access and Publication Policy</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Exposome Maps · ExposomeNL &amp; EXPANSE</span>
+    <nav aria-label="Footer">
+      <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/">Data access policy</a>
+      <a href="mailto:expanse@uu.nl">Contact</a>
+    </nav>
+  </footer>
+</body>
 </html>

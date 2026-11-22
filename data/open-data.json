@@ -1,0 +1,64 @@
+{
+  "intro": "Exposome studies frequently use openly available datasets to explore the interactions between environmental exposures and health outcomes, or as inputs for the modelling of more complex exposures. Below is a partial list of open datasets that have been used in EXPANSE and ExposomeNL studies, and data platforms that provide access to even more exposome-related datasets.",
+  "sections": [
+    {
+      "title": "Datasets",
+      "items": [
+        {
+          "name": "Species diversity",
+          "description": "Species diversity per kilometre",
+          "source": "Nationale Databank Flora & Fauna (Nationaal Georegister)",
+          "url": "https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/22833e30-8815-4b41-9af1-2a6b99b75130",
+          "extent": "Netherlands"
+        },
+        {
+          "name": "Urban heat island effect",
+          "description": "Temperature difference between the city and the countryside",
+          "source": "Atlas Natuurlijk Kapitaal (Nationaal Georegister)",
+          "url": "https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/c9aa9109-3f32-4f65-84e5-bb1c9ebdfbec",
+          "extent": "Netherlands"
+        },
+        {
+          "name": "Methane (CH4)",
+          "description": "Atmospheric CH4 observations derived from satellite radiances",
+          "source": "Copernicus Browser",
+          "url": "https://browser.dataspace.copernicus.eu/?zoom=5&lat=50.16282&lng=20.78613&themeId=DEFAULT-THEME&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE",
+          "extent": "Global"
+        },
+        {
+          "name": "National noise level",
+          "description": "Calculated noise exposure",
+          "source": "National Institute for Public Health and the Environment (Nationaal Georegister)",
+          "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/api/records/68711fca-7589-4b83-829c-42550803c287",
+          "extent": "Netherlands"
+        },
+        {
+          "name": "Light intensity at night",
+          "description": "Remote sensing night-time lights composites from VIIRS",
+          "source": "Earth Observation Group, Payne Institute",
+          "url": "https://eogdata.mines.edu/products/vnl/#introduction",
+          "extent": "Global"
+        }
+      ]
+    },
+    {
+      "title": "Data platforms",
+      "items": [
+        {
+          "name": "Climate Data Store",
+          "description": "Data catalogue containing datasets about Earth's past, present and future climate",
+          "source": "Copernicus Climate Change Service (C3S)",
+          "url": "https://cds.climate.copernicus.eu/datasets",
+          "extent": "Global"
+        },
+        {
+          "name": "Atlas of the Living Environment (Atlas Leefomgeving)",
+          "description": "Data catalogue and information site with datasets on environmental themes in the Netherlands",
+          "source": "Atlas Leefomgeving",
+          "url": "https://www.atlasleefomgeving.nl/",
+          "extent": "Netherlands"
+        }
+      ]
+    }
+  ]
+}

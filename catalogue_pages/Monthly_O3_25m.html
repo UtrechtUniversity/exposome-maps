@@ -1,172 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exposome Maps</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
-
-    <link rel="stylesheet" href="catalogue_pages_style.css">
-
-    <!--external scripts-->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Lilita+One&family=Pangolin&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monthly O3 (Ozone) – 25 m · Exposome Maps</title>
+  <meta name="description" content="Monthly O3 (Ozone) – 25 m – Air pollution exposure dataset (Europe, 2000 - 2019) in the Exposome Maps catalogue.">
+  <meta property="og:title" content="Monthly O3 (Ozone) – 25 m · Exposome Maps">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/thumbnails/o3_monthly.png">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/dataset.css">
 </head>
-<body>
-    <div id="top-bar">
-        <div class="top-bar-inner">
-            <div class="top-bar-logos">
-                <img src="images/EXPANSE_logo_1380x300_noborder.png"
-                    alt="EXPANSE logo"
-                    class="sidebar-img">
+<body class="dataset-page">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-                <img src="images/ExposomeNL_logo_1320x320_noborder.png"
-                    alt="ExposomeNL logo"
-                    class="sidebar-img">
-            </div>
-
-            <div id="title" class="title">
-                <span class="title-text">
-                    Dataset: Monthly O3 (Ozone)
-                </span>
-            </div>
-        </div>
+  <header class="site-header">
+    <a class="brand" href="../index.html">Exposome Maps</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../index.html#view=map">Map</a>
+      <a href="../index.html#view=catalogue" aria-current="page">Catalogue</a>
+      <a href="../index.html#view=open-data">Open data</a>
+    </nav>
+    <div class="brand-logos">
+      <img src="../images/ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL" width="132" height="32">
+      <img src="../images/EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE" width="147" height="32">
     </div>
+  </header>
 
-    <div id="page">
-        <h2 class="title">Details</h2>
-        <div id="metadata-section">
-            
-            <div id="metadata-box"> 
-            </div>
-            <img src="images/thumbnails/o3_monthly.png" alt="O3 example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+  <main id="main" class="page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../index.html#view=catalogue">Catalogue</a></li>
+        <li>Physico-Chemical</li>
+        <li>Air pollution</li>
+      </ol>
+    </nav>
 
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">Physico-Chemical · Air pollution</p>
+        <h1>Monthly O3 (Ozone) – 25 m</h1>
+        <ul class="facts" aria-label="Key facts">
+          <li><span class="facts__label">Region</span> Europe</li>
+          <li><span class="facts__label">Period</span> 2000 - 2019</li>
+          <li><span class="facts__label">Time step</span> Monthly</li>
+          <li><span class="facts__label">Resolution</span> 25x25m</li>
+          <li><span class="facts__label">Surfaces</span> 1</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--primary" href="../index.html#view=map&amp;layer=OZOB25_MAV">View on map</a>
+          <a class="btn btn--secondary" href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">Request data access</a>
+          <a class="btn btn--ghost" href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_25m.xml">Metadata (XML)</a>
         </div>
+      </div>
+      <figure class="hero__figure">
+        <img src="images/thumbnails/o3_monthly.png" alt="Example map of Monthly O3 (Ozone) – 25 m" loading="lazy">
+      </figure>
+    </section>
 
-        <h2 class="title">Surfaces</h2>
-                
-        <style>
-            table {
-                margin-left: 0;
-                text-align: left;
-                border-collapse: collapse;
-            }
-            th, td {
-                padding: 8px 24px; /* horizontal padding gives space between columns */
-            }
-        </style>        
-        <table>
-        <tr>
-            <th>Surface ID</th>
-            <th>Description</th>
-            <th>Metadata</th>
-        </tr>
-        <tr>
-            <td>49</td>
-            <td>Monthly O3, 25m resolution</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_25m.xml" target="_blank">Open metadata XML</a></td>
-        </tr>
+    <section class="section" aria-labelledby="details-heading">
+      <h2 id="details-heading">Details</h2>
+      <dl class="details">
+        <div class="details__row">
+          <dt>Category</dt>
+          <dd>Physico-Chemical</dd>
+        </div>
+        <div class="details__row">
+          <dt>Theme</dt>
+          <dd>Air pollution</dd>
+        </div>
+        <div class="details__row">
+          <dt>File type</dt>
+          <dd>TIF</dd>
+        </div>
+        <div class="details__row">
+          <dt>Temporal resolution</dt>
+          <dd>Monthly</dd>
+        </div>
+        <div class="details__row">
+          <dt>Time period</dt>
+          <dd>2000 - 2019</dd>
+        </div>
+        <div class="details__row">
+          <dt>Frequency</dt>
+          <dd>Every month</dd>
+        </div>
+        <div class="details__row">
+          <dt>Spatial resolution</dt>
+          <dd>25x25m</dd>
+        </div>
+        <div class="details__row">
+          <dt>Extent</dt>
+          <dd>Czechia, Estonia, France, Germany, Greece, Italy, Netherlands, Poland, Spain, Sweden, Switzerland, United Kingdom,</dd>
+        </div>
+        <div class="details__row">
+          <dt>Unit</dt>
+          <dd>µg/m³</dd>
+        </div>
+        <div class="details__row">
+          <dt>CRS</dt>
+          <dd>ETRS89-extended / LAEA Europe (EPSG: 3035)</dd>
+        </div>
+        <div class="details__row">
+          <dt>No-data value</dt>
+          <dd>NaN</dd>
+        </div>
+        <div class="details__row">
+          <dt>Owner</dt>
+          <dd>Kees de Hoogh</dd>
+        </div>
+        <div class="details__row">
+          <dt>References</dt>
+          <dd>https://doi.org/10.1016/j.scitotenv.2024.170550</dd>
+        </div>
+        <div class="details__row">
+          <dt>Source project</dt>
+          <dd>EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)</dd>
+        </div>
+        <div class="details__row">
+          <dt>Metadata last updated</dt>
+          <dd>4-3-2026</dd>
+        </div>
+        <div class="details__row">
+          <dt>Dataset last revised</dt>
+          <dd>8-1-2026</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="surfaces-heading">
+      <h2 id="surfaces-heading">Surfaces</h2>
+      <p class="section__intro">Each surface is a separate data layer of this dataset.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Surface</th>
+              <th scope="col">Resolution</th>
+              <th scope="col">Time coverage</th>
+              <th scope="col">Map</th>
+              <th scope="col">Metadata</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>83</td>
+              <td>Monthly O3 25m</td>
+              <td>25x25m</td>
+              <td>2000 - 2019</td>
+              <td>
+<a href="../index.html#view=map&amp;layer=OZOB25_MAV">View</a>              </td>
+              <td>
+<a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_25m.xml">XML</a>              </td>
+            </tr>
+          </tbody>
         </table>
+      </div>
+    </section>
 
- 
-    </div>
 
+    <section class="section callout" aria-labelledby="access-heading">
+      <h2 id="access-heading">Data access</h2>
+      <p>
+        To request access, complete the <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">data access request form</a>
+        and send it to <a href="mailto:expanse@uu.nl">expanse@uu.nl</a>.
+        Requests are assessed under the <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/">Data Access and Publication Policy</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Exposome Maps · ExposomeNL &amp; EXPANSE</span>
+    <nav aria-label="Footer">
+      <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/">Data access policy</a>
+      <a href="mailto:expanse@uu.nl">Contact</a>
+    </nav>
+  </footer>
 </body>
-    <script>
-        const metadataBox = document.getElementById("metadata-box");
-        const metadataContent = document.createElement("div");
-
-    </script>
-    <script>
-    const specifiedKeys = [
-        "Category",
-        "Theme",
-        "Summary",
-        "File type",
-        "Temporal resolution",
-        "Time period",
-        "Frequency",
-        "Spatial resolution",
-        "Extent",
-        "Unit",
-        "CRS",
-        "No-data value",
-        "Owner",
-        "References",
-        "Source project",
-        "Comments"
-    ];
-
-    
-
-    const productName = "Monthly_O3_25m";
-
-    fetch("../metadata.json")
-        .then(response => response.json())
-        .then(data => {
-            console.log("Metadata loaded:", data, productName);
-            const product = findProductByName(data, productName);
-
-            if (!product) {
-                console.error("Product not found:", productName);
-                return;
-            }
-
-            populateMetadata(product);
-        })
-        .catch(error => console.error("Error loading metadata:", error));
-
-    function findProductByName(metadata, productName) {
-        for (const categoryKey in metadata) {
-            const categoryObj = metadata[categoryKey];
-            if (typeof categoryObj !== "object") continue;
-
-            for (const themeKey in categoryObj) {
-                const list = categoryObj[themeKey];
-                if (!Array.isArray(list)) continue;
-
-                const match = list.find(
-                    item => item.catalogue_page=== productName
-                );
-
-                if (match) return match;
-            }
-        }
-        return null;
-    }
-
-    function populateMetadata(item) {
-        const metadataBox = document.getElementById("metadata-box");
-        metadataBox.innerHTML = "";
-
-        for (const key of specifiedKeys) {
-            if (item[key] !== undefined && item[key] !== null && item[key] !== "") {
-                const rowDiv = document.createElement("div");
-                rowDiv.className = "metadata-row";
-
-                const keyDiv = document.createElement("div");
-                keyDiv.className = "metadata-key";
-                keyDiv.textContent = key;
-
-                const valueDiv = document.createElement("div");
-                valueDiv.className = "metadata-value";
-                valueDiv.textContent = item[key];
-
-
-                rowDiv.appendChild(keyDiv);
-                rowDiv.appendChild(valueDiv);
-                metadataBox.appendChild(rowDiv);
-            }
-        }
-    }
-
-    </script>
-
+</html>
