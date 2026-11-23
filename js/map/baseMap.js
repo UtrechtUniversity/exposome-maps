@@ -4,9 +4,12 @@ import { MAP_VIEW } from "../config.js";
 import { ICONS, icon } from "../util.js";
 
 const OSM = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-const STADIA =
-  '&copy; <a href="https://www.stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> ' +
-  OSM;
+// Esri Light/Dark Gray Canvas: "Powered by Esri" plus the service's own copyright text
+// (copyrightText from the MapServer metadata).
+const ESRI =
+  'Powered by <a href="https://www.esri.com/">Esri</a> | ' +
+  "Esri, HERE, Garmin, &copy; OpenStreetMap contributors, and the GIS user community";
+const ESRI_TILES = "https://services.arcgisonline.com/arcgis/rest/services/Canvas";
 
 export function createBaseMap(element) {
   const map = L.map(element, {
@@ -22,12 +25,12 @@ export function createBaseMap(element) {
   map.createPane("data").style.zIndex = 350;
 
   const basemaps = {
-    light: L.tileLayer("https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png", {
-      attribution: STADIA,
+    light: L.tileLayer(`${ESRI_TILES}/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
+      attribution: ESRI,
       pane: "basemaps",
     }),
-    dark: L.tileLayer("https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png", {
-      attribution: STADIA,
+    dark: L.tileLayer(`${ESRI_TILES}/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
+      attribution: ESRI,
       pane: "basemaps",
     }),
     osm: L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
