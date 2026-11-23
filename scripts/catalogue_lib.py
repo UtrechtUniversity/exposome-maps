@@ -1,8 +1,13 @@
-"""Shared helpers: load metadata.json, normalise it and validate it.
+"""Shared helpers: load, normalise and validate the catalogue sources.
 
-metadata.json stays the single source of truth (it is edited by hand or exported
-from the metadata spreadsheet). Everything the website reads is derived from it
-by scripts/build.py.
+Two kinds of source feed the catalogue:
+
+* metadata.json — Utrecht University (IRAS) datasets, edited by hand or exported
+  from the metadata spreadsheet. These are obtained through the UU request form.
+* sources/*.json — external metadata sources in the format described by
+  sources/source.schema.json (written by converters). These link to the provider.
+
+Everything the website reads is derived from them by scripts/build.py.
 """
 
 from __future__ import annotations
@@ -15,6 +20,8 @@ from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 
+from jsonschema import Draft202012Validator
+
 ROOT = Path(__file__).resolve().parent.parent
 METADATA_FILE = ROOT / "metadata.json"
 TITLES_FILE = ROOT / "content" / "dataset_titles.json"
@@ -22,6 +29,18 @@ METHODOLOGY_DIR = ROOT / "content" / "methodology"
 PAGES_DIR = ROOT / "catalogue_pages"
 THUMBNAIL_DIR = PAGES_DIR / "images" / "thumbnails"
 FALLBACK_THUMBNAIL = "not_available"
+SOURCES_DIR = ROOT / "sources"
+SOURCE_SCHEMA_FILE = SOURCES_DIR / "source.schema.json"
+
+# How UU datasets are obtained.
+REQUEST_FORM_URL = "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/"
+UU_SOURCE_ID = "uu"
+UU_ACCESS = {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": REQUEST_FORM_URL,
+    "license": "",
+}
 
 REQUIRED_FIELDS = [
     "Surface ID", "Project", "Title", "Category", "Theme",
@@ -153,7 +172,10 @@ def methodology_file(page: str, theme: str) -> Path | None:
 
 
 def thumbnail_name(name: str) -> str:
+    """A thumbnail file name in THUMBNAIL_DIR (without .png), an https URL, or the placeholder."""
     name = clean(name)
+    if name.startswith("https://"):
+        return name
     if name and (THUMBNAIL_DIR / f"{name}.png").exists():
         return name
     return FALLBACK_THUMBNAIL
@@ -220,7 +242,9 @@ def normalise_surface(item: dict) -> dict:
     xml = clean(item.get("Hosted XML file"))
     return {
         "id": item.get("Surface ID"),
-        "project": clean(item.get("Project")),
+        "source": UU_SOURCE_ID,
+        "access": UU_ACCESS,
+        "region": clean(item.get("Project")),
         "title": clean(item.get("Title")),
         "category": clean(item.get("Category")) or item["_category_key"],
         "categoryKey": item["_category_key"],
@@ -233,18 +257,32 @@ def normalise_surface(item: dict) -> dict:
         "spatialResolution": clean(item.get("Spatial resolution")),
         "unit": display_unit(item.get("Unit")),
         "noData": parse_number(item.get("No-data value")),
-        "xml": xml if xml.startswith("http") else None,
+        "metadataUrl": xml if xml.startswith("http") else None,
         "details": details(item),
         "map": {
             "layer": clean(item.get("geoserver_layer")),
             "style": clean(item.get("geoserver_style")),
             "basemap": clean(item.get("default_basemap")) or None,
             "times": map_times(item),
+            "url": None,        # null = UU GeoServer from js/config.js
+            "legendUrl": None,  # null = "<style>_legend" rule
         } if show_on_map else None,
     }
 
 
-def build_catalogue(raw: list[dict]) -> dict:
+def build_catalogue(raw: list[dict], sources: list[dict] | None = None) -> dict:
+    """Merge UU metadata and (validated) external sources into the website catalogue."""
+    uu = build_uu_catalogue(raw)
+    surfaces, datasets = uu["surfaces"], uu["datasets"]
+    for source in sources or []:
+        for entry in source["data"]["datasets"]:
+            surface, dataset = normalise_external(entry, source["data"]["source"])
+            surfaces.append(surface)
+            datasets.append(dataset)
+    return {"surfaces": surfaces, "datasets": datasets}
+
+
+def build_uu_catalogue(raw: list[dict]) -> dict:
     titles = load_titles()
     surfaces = [normalise_surface(item) for item in raw]
     raw_by_id = {item.get("Surface ID"): item for item in raw}
@@ -257,7 +295,9 @@ def build_catalogue(raw: list[dict]) -> dict:
             datasets[page] = {
                 "page": page,
                 "title": titles.get(page) or format_page_title(page),
-                "project": surface["project"],
+                "source": UU_SOURCE_ID,
+                "access": UU_ACCESS,
+                "region": surface["region"],
                 "category": surface["category"],
                 "theme": surface["theme"],
                 "temporalResolution": surface["temporalResolution"],
@@ -275,6 +315,157 @@ def build_catalogue(raw: list[dict]) -> dict:
             dataset["mapLayer"] = surface["map"]["layer"]
 
     return {"surfaces": surfaces, "datasets": list(datasets.values())}
+
+
+# --------------------------------------------------------------------------- #
+# External sources (sources/*.json)
+# --------------------------------------------------------------------------- #
+
+def load_sources() -> list[dict]:
+    """Read sources/*.json (files starting with "_" are skipped).
+
+    Returns [{"path": Path, "data": dict | None, "error": str | None}].
+    """
+    sources = []
+    for path in sorted(SOURCES_DIR.glob("*.json")):
+        if path.name.startswith("_") or path == SOURCE_SCHEMA_FILE:
+            continue
+        try:
+            data, error = json.loads(path.read_text(encoding="utf-8")), None
+        except json.JSONDecodeError as exc:
+            data, error = None, f"invalid JSON: {exc}"
+        sources.append({"path": path, "data": data, "error": error})
+    return sources
+
+
+def normalise_external(entry: dict, source: dict) -> tuple[dict, dict]:
+    """One external dataset -> (surface, dataset), in the same shape as UU entries."""
+    ds_id = entry["id"]
+    access = {
+        "type": "external",
+        "provider": clean(entry["provider"]),
+        "url": entry["access_url"],
+        "license": clean(entry.get("license")),
+    }
+    summary = clean(entry.get("summary"))
+    rows = [
+        ("Category", entry.get("category")),
+        ("Theme", entry.get("theme")),
+        ("Summary", summary),
+        ("Provider", entry.get("provider")),
+        ("Licence", entry.get("license")),
+        ("Temporal resolution", entry.get("temporal_resolution")),
+        ("Time period", entry.get("period")),
+        ("Spatial resolution", entry.get("spatial_resolution")),
+        ("Extent", entry.get("extent")),
+        ("Unit", entry.get("unit")),
+        ("Keywords", ", ".join(entry.get("keywords") or [])),
+        ("References", entry.get("references")),
+        ("Metadata source", source.get("name")),
+    ]
+    details = [[label, clean(value)] for label, value in rows if not is_placeholder(value)]
+
+    map_config = entry.get("map")
+    surface = {
+        "id": ds_id,
+        "source": source["id"],
+        "access": access,
+        "region": clean(entry["region"]),
+        "title": clean(entry["title"]),
+        "category": clean(entry["category"]),
+        "categoryKey": clean(entry["category"]),
+        "theme": clean(entry["theme"]),
+        "themeKey": clean(entry["theme"]),
+        "page": ds_id,
+        "temporalResolution": clean(entry.get("temporal_resolution")),
+        "period": clean(entry.get("period")),
+        "coverage": clean(entry.get("period")),
+        "spatialResolution": clean(entry.get("spatial_resolution")),
+        "unit": display_unit(entry.get("unit")),
+        "noData": None,
+        "metadataUrl": entry.get("metadata_url"),
+        "details": details,
+        "map": {
+            "layer": map_config["layer"],
+            "style": clean(map_config.get("style")),
+            "basemap": None,
+            "times": list(map_config["times"]),
+            "url": map_config["wms_url"],
+            "legendUrl": map_config.get("legend_url"),
+        } if map_config else None,
+    }
+    dataset = {
+        "page": ds_id,
+        "title": surface["title"],
+        "source": source["id"],
+        "access": access,
+        "region": surface["region"],
+        "category": surface["category"],
+        "theme": surface["theme"],
+        "temporalResolution": surface["temporalResolution"],
+        "period": surface["period"],
+        "spatialResolution": surface["spatialResolution"],
+        "extent": clean(entry.get("extent")),
+        "summary": summary,
+        "thumbnail": thumbnail_name(entry.get("thumbnail")),
+        "surfaces": [ds_id],
+        "mapLayer": map_config["layer"] if map_config else None,
+    }
+    return surface, dataset
+
+
+def validate_sources(sources: list[dict], raw: list[dict], report) -> None:
+    """Schema-check each source file and check ids against each other and the UU data.
+
+    Invalid files are removed from `sources`, so the build only merges valid ones.
+    """
+    schema = json.loads(SOURCE_SCHEMA_FILE.read_text(encoding="utf-8"))
+    validator = Draft202012Validator(schema)
+    known_categories = {clean(i.get("Category")) for i in raw}
+    # Page file names must be unique case-insensitively (Windows/macOS file systems).
+    taken = {clean(i.get("catalogue_page")).lower(): "metadata.json" for i in raw}
+    layers = {clean(i.get("geoserver_layer")): "metadata.json" for i in raw if i.get("show_on_map") is True}
+    seen_source_ids = {UU_SOURCE_ID: "metadata.json"}
+
+    for source in sources:
+        where = f"sources/{source['path'].name}"
+        if source["error"]:
+            report.error(where, source["error"])
+            continue
+        data = source["data"]
+        schema_errors = sorted(validator.iter_errors(data), key=lambda e: list(map(str, e.absolute_path)))
+        for err in schema_errors:
+            location = "/".join(str(p) for p in err.absolute_path) or "(root)"
+            report.error(where, f"{location}: {err.message}")
+        if schema_errors:
+            source["error"] = "schema errors"
+            continue
+
+        source_id = data["source"]["id"]
+        if source_id in seen_source_ids:
+            report.error(where, f"source id '{source_id}' is already used by {seen_source_ids[source_id]}")
+        seen_source_ids[source_id] = where
+
+        for entry in data["datasets"]:
+            ds_where = f"{where} > {entry['id']}"
+            key = entry["id"].lower()
+            if key in taken:
+                report.error(ds_where, f"dataset id clashes with a dataset in {taken[key]}")
+            taken[key] = where
+            layer = (entry.get("map") or {}).get("layer")
+            if layer:
+                if layer in layers:
+                    report.error(ds_where, f"map layer '{layer}' is also used in {layers[layer]}")
+                layers[layer] = where
+            if clean(entry["category"]) not in known_categories:
+                known = ", ".join(sorted(c for c in known_categories if c))
+                report.warn(ds_where, f"category '{entry['category']}' is new (known: {known})")
+            if is_placeholder(entry.get("summary")):
+                report.warn(ds_where, "no summary")
+            if is_placeholder(entry.get("license")):
+                report.warn(ds_where, "no licence given")
+
+    sources[:] = [s for s in sources if not s["error"]]
 
 
 # --------------------------------------------------------------------------- #

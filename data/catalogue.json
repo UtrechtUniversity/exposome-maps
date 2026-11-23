@@ -2,7 +2,14 @@
  "surfaces": [
   {
    "id": 14,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Median NDVI within 300m",
    "category": "Built",
    "categoryKey": "Built",
@@ -15,7 +22,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml",
    "details": [
     [
      "Category",
@@ -88,12 +95,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 15,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Median NDVI within 500m",
    "category": "Built",
    "categoryKey": "Built",
@@ -106,7 +122,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml",
    "details": [
     [
      "Category",
@@ -179,12 +195,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 16,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Median NDVI within 1km",
    "category": "Built",
    "categoryKey": "Built",
@@ -197,7 +222,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml",
    "details": [
     [
      "Category",
@@ -270,12 +295,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 17,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Standard deviation NDVI within 300m",
    "category": "Built",
    "categoryKey": "Built",
@@ -288,7 +322,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_300m.xml",
    "details": [
     [
      "Category",
@@ -361,12 +395,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 18,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Standard deviation NDVI within 500m",
    "category": "Built",
    "categoryKey": "Built",
@@ -379,7 +422,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_500m.xml",
    "details": [
     [
      "Category",
@@ -452,12 +495,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 19,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Standard deviation NDVI within 1km",
    "category": "Built",
    "categoryKey": "Built",
@@ -470,7 +522,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_NDVI_within_1km.xml",
    "details": [
     [
      "Category",
@@ -543,12 +595,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 20,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Mean NDVI within 300m",
    "category": "Built",
    "categoryKey": "Built",
@@ -561,7 +622,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_300m.xml",
    "details": [
     [
      "Category",
@@ -634,12 +695,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 21,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Mean NDVI within 500m",
    "category": "Built",
    "categoryKey": "Built",
@@ -652,7 +722,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_500m.xml",
    "details": [
     [
      "Category",
@@ -725,12 +795,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 22,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Mean NDVI within 1km",
    "category": "Built",
    "categoryKey": "Built",
@@ -743,7 +822,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_NDVI_within_1km.xml",
    "details": [
     [
      "Category",
@@ -816,12 +895,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 23,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Median MSAVI within 300m",
    "category": "Built",
    "categoryKey": "Built",
@@ -834,7 +922,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_300m.xml",
    "details": [
     [
      "Category",
@@ -907,12 +995,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 24,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Median MSAVI within 500m",
    "category": "Built",
    "categoryKey": "Built",
@@ -925,7 +1022,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_500m.xml",
    "details": [
     [
      "Category",
@@ -998,12 +1095,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 25,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Median MSAVI within 1km",
    "category": "Built",
    "categoryKey": "Built",
@@ -1016,7 +1122,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_MSAVI_within_1km.xml",
    "details": [
     [
      "Category",
@@ -1089,12 +1195,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 26,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Standard deviation MSAVI within 300m",
    "category": "Built",
    "categoryKey": "Built",
@@ -1107,7 +1222,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_300m.xml",
    "details": [
     [
      "Category",
@@ -1180,12 +1295,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 27,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Standard deviation MSAVI within 500m",
    "category": "Built",
    "categoryKey": "Built",
@@ -1198,7 +1322,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_500m.xml",
    "details": [
     [
      "Category",
@@ -1271,12 +1395,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 28,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Standard deviation MSAVI within 1km",
    "category": "Built",
    "categoryKey": "Built",
@@ -1289,7 +1422,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Standard_deviation_MSAVI_within_1km.xml",
    "details": [
     [
      "Category",
@@ -1362,12 +1495,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 29,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Mean MSAVI within 300m",
    "category": "Built",
    "categoryKey": "Built",
@@ -1380,7 +1522,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_300m.xml",
    "details": [
     [
      "Category",
@@ -1453,12 +1595,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 30,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Mean MSAVI within 500m",
    "category": "Built",
    "categoryKey": "Built",
@@ -1471,7 +1622,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_500m.xml",
    "details": [
     [
      "Category",
@@ -1544,12 +1695,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 31,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Mean MSAVI within 1km",
    "category": "Built",
    "categoryKey": "Built",
@@ -1562,7 +1722,7 @@
    "spatialResolution": "250x250m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Mean_MSAVI_within_1km.xml",
    "details": [
     [
      "Category",
@@ -1635,12 +1795,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 32,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Distance to nearest green space using CORINE",
    "category": "Built",
    "categoryKey": "Built",
@@ -1653,7 +1822,7 @@
    "spatialResolution": "100x100m",
    "unit": "m",
    "noData": 65535.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_CORINE.xml",
    "details": [
     [
      "Category",
@@ -1725,12 +1894,21 @@
      "2006",
      "2012",
      "2018"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 33,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Distance to nearest green space using URBAN ATLAS",
    "category": "Built",
    "categoryKey": "Built",
@@ -1743,7 +1921,7 @@
    "spatialResolution": "0.25/1 ha",
    "unit": "m",
    "noData": 65535.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_green_space_using_URBAN_ATLAS.xml",
    "details": [
     [
      "Category",
@@ -1814,12 +1992,21 @@
      "2006",
      "2012",
      "2018"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 34,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Light-at-night 300m buffer",
    "category": "Built",
    "categoryKey": "Built",
@@ -1832,7 +2019,7 @@
    "spatialResolution": "100x100m",
    "unit": "RAD",
    "noData": 255.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_300m_buffer.xml",
    "details": [
     [
      "Category",
@@ -1909,12 +2096,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 35,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Light-at-night 500m buffer",
    "category": "Built",
    "categoryKey": "Built",
@@ -1927,7 +2123,7 @@
    "spatialResolution": "100x100m",
    "unit": "RAD",
    "noData": 255.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_500m_buffer.xml",
    "details": [
     [
      "Category",
@@ -2004,12 +2200,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 36,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Light-at-night 1000m buffer",
    "category": "Built",
    "categoryKey": "Built",
@@ -2022,7 +2227,7 @@
    "spatialResolution": "100x100m",
    "unit": "RAD",
    "noData": 255.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Light_at_night_1000m_buffer.xml",
    "details": [
     [
      "Category",
@@ -2099,12 +2304,21 @@
      "2010",
      "2015",
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 37,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Imperviousness 300m buffer",
    "category": "Built",
    "categoryKey": "Built",
@@ -2117,7 +2331,7 @@
    "spatialResolution": "100x100m",
    "unit": "%",
    "noData": 255.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_300m_buffer.xml",
    "details": [
     [
      "Category",
@@ -2190,12 +2404,21 @@
      "2012",
      "2015",
      "2018"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 38,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Imperviousness 500m buffer",
    "category": "Built",
    "categoryKey": "Built",
@@ -2208,7 +2431,7 @@
    "spatialResolution": "100x100m",
    "unit": "%",
    "noData": 255.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_500m_buffer.xml",
    "details": [
     [
      "Category",
@@ -2281,12 +2504,21 @@
      "2012",
      "2015",
      "2018"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 39,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Imperviousness 1000m buffer",
    "category": "Built",
    "categoryKey": "Built",
@@ -2299,7 +2531,7 @@
    "spatialResolution": "100x100m",
    "unit": "%",
    "noData": 255.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Imperviousness_1000m_buffer.xml",
    "details": [
     [
      "Category",
@@ -2372,12 +2604,21 @@
      "2012",
      "2015",
      "2018"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 40,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Distance to nearest blue space",
    "category": "Built",
    "categoryKey": "Built",
@@ -2390,7 +2631,7 @@
    "spatialResolution": "100x100m",
    "unit": "m",
    "noData": 32767.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_blue_space.xml",
    "details": [
     [
      "Category",
@@ -2459,12 +2700,21 @@
     "basemap": null,
     "times": [
      "2013"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 42,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Distance to nearest inland freshwater",
    "category": "Built",
    "categoryKey": "Built",
@@ -2477,7 +2727,7 @@
    "spatialResolution": "100x100m",
    "unit": "m",
    "noData": 65535.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Distance_to_nearest_inland_freshwater.xml",
    "details": [
     [
      "Category",
@@ -2546,12 +2796,21 @@
     "basemap": null,
     "times": [
      "2013"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 43,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Walkability 300m buffer",
    "category": "Built",
    "categoryKey": "Built",
@@ -2564,7 +2823,7 @@
    "spatialResolution": "100x100m",
    "unit": "",
    "noData": 9999.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_300m_buffer.xml",
    "details": [
     [
      "Category",
@@ -2633,12 +2892,21 @@
     "basemap": null,
     "times": [
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 44,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Walkability 500m buffer",
    "category": "Built",
    "categoryKey": "Built",
@@ -2651,7 +2919,7 @@
    "spatialResolution": "100x100m",
    "unit": "",
    "noData": 9999.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_500m_buffer.xml",
    "details": [
     [
      "Category",
@@ -2720,12 +2988,21 @@
     "basemap": null,
     "times": [
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 45,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Walkability 1000m buffer",
    "category": "Built",
    "categoryKey": "Built",
@@ -2738,7 +3015,7 @@
    "spatialResolution": "100x100m",
    "unit": "",
    "noData": 9999.0,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Walkability_1000m_buffer.xml",
    "details": [
     [
      "Category",
@@ -2807,12 +3084,21 @@
     "basemap": null,
     "times": [
      "2020"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 1,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Annual NO2 25m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -2825,7 +3111,7 @@
    "spatialResolution": "25x25m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_NO2_25m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_NO2_25m.xml",
    "details": [
     [
      "Category",
@@ -2904,12 +3190,21 @@
      "2021",
      "2022",
      "2023"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 2,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Annual PM10 25m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -2922,7 +3217,7 @@
    "spatialResolution": "25x25m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM10_25m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM10_25m.xml",
    "details": [
     [
      "Category",
@@ -3001,12 +3296,21 @@
      "2021",
      "2022",
      "2023"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 3,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Annual PM2.5 25m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3019,7 +3323,7 @@
    "spatialResolution": "25x25m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM25_25m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_PM25_25m.xml",
    "details": [
     [
      "Category",
@@ -3098,12 +3402,21 @@
      "2021",
      "2022",
      "2023"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 4,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Annual O3 25m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3116,7 +3429,7 @@
    "spatialResolution": "25x25m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_O3_25m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Annual_O3_25m.xml",
    "details": [
     [
      "Category",
@@ -3195,12 +3508,21 @@
      "2021",
      "2022",
      "2023"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 46,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly NO2 100m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3213,7 +3535,7 @@
    "spatialResolution": "100x100m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_100m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_100m.xml",
    "details": [
     [
      "Category",
@@ -3288,12 +3610,21 @@
      "2019-01",
      "2019-06",
      "2019-12"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 47,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly PM10 100m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3306,7 +3637,7 @@
    "spatialResolution": "100x100m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_100m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_100m.xml",
    "details": [
     [
      "Category",
@@ -3381,12 +3712,21 @@
      "2019-01",
      "2019-06",
      "2019-12"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 48,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly PM2.5 100m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3399,7 +3739,7 @@
    "spatialResolution": "100x100m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_100m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_100m.xml",
    "details": [
     [
      "Category",
@@ -3474,12 +3814,21 @@
      "2019-01",
      "2019-06",
      "2019-12"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 49,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly O3 100m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3492,7 +3841,7 @@
    "spatialResolution": "100x100m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_100m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_100m.xml",
    "details": [
     [
      "Category",
@@ -3567,12 +3916,21 @@
      "2019-01",
      "2019-06",
      "2019-12"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 80,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly NO2 25m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3585,7 +3943,7 @@
    "spatialResolution": "25x25m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_25m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_NO2_25m.xml",
    "details": [
     [
      "Category",
@@ -3660,12 +4018,21 @@
      "2019-01",
      "2019-06",
      "2019-12"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 81,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly PM10 25m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3678,7 +4045,7 @@
    "spatialResolution": "25x25m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_25m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM10_25m.xml",
    "details": [
     [
      "Category",
@@ -3753,12 +4120,21 @@
      "2019-01",
      "2019-06",
      "2019-12"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 82,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly PM2.5 25m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3771,7 +4147,7 @@
    "spatialResolution": "25x25m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_25m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_PM25_25m.xml",
    "details": [
     [
      "Category",
@@ -3846,12 +4222,21 @@
      "2019-01",
      "2019-06",
      "2019-12"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 83,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly O3 25m",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3864,7 +4249,7 @@
    "spatialResolution": "25x25m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_25m.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_O3_25m.xml",
    "details": [
     [
      "Category",
@@ -3939,12 +4324,21 @@
      "2019-01",
      "2019-06",
      "2019-12"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 51,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "Nitrogen dioxide along road networks Amsterdam",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -3957,7 +4351,7 @@
    "spatialResolution": "",
    "unit": "µg/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4016,7 +4410,14 @@
   },
   {
    "id": 52,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "Black carbon along road networks Amsterdam",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4029,7 +4430,7 @@
    "spatialResolution": "",
    "unit": "µg/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4088,7 +4489,14 @@
   },
   {
    "id": 53,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "Ultrafine particles along road networks Amsterdam",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4101,7 +4509,7 @@
    "spatialResolution": "",
    "unit": "particles/cm³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4160,7 +4568,14 @@
   },
   {
    "id": 54,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "Ultrafine particles",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4173,7 +4588,7 @@
    "spatialResolution": "25x25m",
    "unit": "particles/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4240,7 +4655,14 @@
   },
   {
    "id": 55,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "Annual mean BC concentration",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4253,7 +4675,7 @@
    "spatialResolution": "100x100m",
    "unit": "m⁻¹",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4320,7 +4742,14 @@
   },
   {
    "id": 58,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PM2.5 Cu estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4333,7 +4762,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4400,7 +4829,14 @@
   },
   {
    "id": 59,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PMC Cu estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4413,7 +4849,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4480,7 +4916,14 @@
   },
   {
    "id": 60,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PM2.5 Fe estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4493,7 +4936,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4560,7 +5003,14 @@
   },
   {
    "id": 61,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PMC Fe estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4573,7 +5023,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4640,7 +5090,14 @@
   },
   {
    "id": 62,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PM2.5 K estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4653,7 +5110,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4720,7 +5177,14 @@
   },
   {
    "id": 63,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PMC K estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4733,7 +5197,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4800,7 +5264,14 @@
   },
   {
    "id": 64,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PM2.5 mass",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4813,7 +5284,7 @@
    "spatialResolution": "100x100m",
    "unit": "µg/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4880,7 +5351,14 @@
   },
   {
    "id": 65,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PM2.5 Ni estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4893,7 +5371,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -4960,7 +5438,14 @@
   },
   {
    "id": 66,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PM2.5 S estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -4973,7 +5458,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -5040,7 +5525,14 @@
   },
   {
    "id": 67,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PM2.5 Si estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5053,7 +5545,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -5120,7 +5612,14 @@
   },
   {
    "id": 68,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PMC Si estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5133,7 +5632,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -5200,7 +5699,14 @@
   },
   {
    "id": 69,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PM2.5 V estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5213,7 +5719,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -5280,7 +5786,14 @@
   },
   {
    "id": 70,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PM2.5 Zn estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5293,7 +5806,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -5360,7 +5873,14 @@
   },
   {
    "id": 71,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "PMC Zn estimates",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5373,7 +5893,7 @@
    "spatialResolution": "100x100m",
    "unit": "ng/m³",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -5440,7 +5960,14 @@
   },
   {
    "id": 5,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Yearly average temperature",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5453,7 +5980,7 @@
    "spatialResolution": "1x1km",
    "unit": "°C",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Yearly_average_temperature.xml",
    "details": [
     [
      "Category",
@@ -5547,12 +6074,21 @@
      "2022",
      "2023",
      "2024"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 9,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly average temperature",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5565,7 +6101,7 @@
    "spatialResolution": "1x1km",
    "unit": "°C",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_average_temperature.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_average_temperature.xml",
    "details": [
     [
      "Category",
@@ -5652,12 +6188,21 @@
      "2024-01",
      "2024-06",
      "2024-10"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 75,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly minimum temperature",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5670,7 +6215,7 @@
    "spatialResolution": "1x1km",
    "unit": "°C",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_minimum_temperature.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_minimum_temperature.xml",
    "details": [
     [
      "Category",
@@ -5750,12 +6295,21 @@
      "2024-01",
      "2024-06",
      "2024-10"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 76,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Monthly maximum temperature",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5768,7 +6322,7 @@
    "spatialResolution": "1x1km",
    "unit": "°C",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_maximum_temperature.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Monthly_maximum_temperature.xml",
    "details": [
     [
      "Category",
@@ -5848,12 +6402,21 @@
      "2024-01",
      "2024-06",
      "2024-10"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 6,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Daily average temperature",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5866,7 +6429,7 @@
    "spatialResolution": "1x1km",
    "unit": "°C",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_average_temperature.xml",
    "details": [
     [
      "Category",
@@ -5969,12 +6532,21 @@
      "2024-08-29",
      "2024-08-30",
      "2024-08-31"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 7,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Daily minimum temperature",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -5987,7 +6559,7 @@
    "spatialResolution": "1x1km",
    "unit": "°C",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_minimum_temperature.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_minimum_temperature.xml",
    "details": [
     [
      "Category",
@@ -6090,12 +6662,21 @@
      "2024-08-29",
      "2024-08-30",
      "2024-08-31"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 8,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Daily maximum temperature",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -6108,7 +6689,7 @@
    "spatialResolution": "1x1km",
    "unit": "°C",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_maximum_temperature.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_maximum_temperature.xml",
    "details": [
     [
      "Category",
@@ -6211,12 +6792,21 @@
      "2024-08-29",
      "2024-08-30",
      "2024-08-31"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 10,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Urban-Rural indicator",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -6229,7 +6819,7 @@
    "spatialResolution": "100x100m",
    "unit": "",
    "noData": -3.4e+38,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Urban_Rural_indicator.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Urban_Rural_indicator.xml",
    "details": [
     [
      "Category",
@@ -6298,12 +6888,21 @@
     "basemap": null,
     "times": [
      "2015"
-    ]
+    ],
+    "url": null,
+    "legendUrl": null
    }
   },
   {
    "id": 12,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Daily mean of downward UV radiation at the surface",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -6316,7 +6915,7 @@
    "spatialResolution": "27x27km",
    "unit": "J/m²",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_mean_of_downward_UV_radiation_at_the_surface.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_mean_of_downward_UV_radiation_at_the_surface.xml",
    "details": [
     [
      "Category",
@@ -6383,7 +6982,14 @@
   },
   {
    "id": 13,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Daily max of downward UV radiation at the surface",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -6396,7 +7002,7 @@
    "spatialResolution": "27x27km",
    "unit": "J/m²",
    "noData": null,
-   "xml": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_max_of_downward_UV_radiation_at_the_surface.xml",
+   "metadataUrl": "https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Daily_max_of_downward_UV_radiation_at_the_surface.xml",
    "details": [
     [
      "Category",
@@ -6463,7 +7069,14 @@
   },
   {
    "id": 56,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "Area of crops within 50 100 250 and 500 buffers around BAG addresses",
    "category": "Physico-Chemical",
    "categoryKey": "Physico-Chemical",
@@ -6476,7 +7089,7 @@
    "spatialResolution": "",
    "unit": "",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -6527,7 +7140,14 @@
   },
   {
    "id": 50,
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "title": "Food facilities serving an address within rings of 0-500 500-1000 and 1000-1500m",
    "category": "Food",
    "categoryKey": "Food",
@@ -6540,7 +7160,7 @@
    "spatialResolution": "",
    "unit": "Number of facilities",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -6603,7 +7223,14 @@
   },
   {
    "id": 77,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Count of fast food outlets in a 800m buffer",
    "category": "Food",
    "categoryKey": "Food",
@@ -6616,7 +7243,7 @@
    "spatialResolution": "100x100m",
    "unit": "",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -6687,7 +7314,14 @@
   },
   {
    "id": 78,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Count of restaurants in a 800m buffer",
    "category": "Food",
    "categoryKey": "Food",
@@ -6700,7 +7334,7 @@
    "spatialResolution": "100x100m",
    "unit": "",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -6771,7 +7405,14 @@
   },
   {
    "id": 79,
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "title": "Count of supermarkets in a 800m buffer",
    "category": "Food",
    "categoryKey": "Food",
@@ -6784,7 +7425,7 @@
    "spatialResolution": "100x100m",
    "unit": "",
    "noData": null,
-   "xml": null,
+   "metadataUrl": null,
    "details": [
     [
      "Category",
@@ -6852,13 +7493,275 @@
     ]
    ],
    "map": null
+  },
+  {
+   "id": "species-diversity-nl",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "Nationale Databank Flora & Fauna (via Nationaal Georegister)",
+    "url": "https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/22833e30-8815-4b41-9af1-2a6b99b75130",
+    "license": ""
+   },
+   "region": "Netherlands",
+   "title": "Species diversity",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Biodiversity",
+   "themeKey": "Biodiversity",
+   "page": "species-diversity-nl",
+   "temporalResolution": "",
+   "period": "",
+   "coverage": "",
+   "spatialResolution": "",
+   "unit": "",
+   "noData": null,
+   "metadataUrl": null,
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Biodiversity"
+    ],
+    [
+     "Summary",
+     "Species diversity per kilometre."
+    ],
+    [
+     "Provider",
+     "Nationale Databank Flora & Fauna (via Nationaal Georegister)"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Metadata source",
+     "Curated open exposome datasets"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": "urban-heat-island-nl",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "Atlas Natuurlijk Kapitaal (via Nationaal Georegister)",
+    "url": "https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/c9aa9109-3f32-4f65-84e5-bb1c9ebdfbec",
+    "license": ""
+   },
+   "region": "Netherlands",
+   "title": "Urban heat island effect",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Temperature",
+   "themeKey": "Temperature",
+   "page": "urban-heat-island-nl",
+   "temporalResolution": "",
+   "period": "",
+   "coverage": "",
+   "spatialResolution": "",
+   "unit": "",
+   "noData": null,
+   "metadataUrl": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Temperature"
+    ],
+    [
+     "Summary",
+     "Temperature difference between the city and the countryside."
+    ],
+    [
+     "Provider",
+     "Atlas Natuurlijk Kapitaal (via Nationaal Georegister)"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Metadata source",
+     "Curated open exposome datasets"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": "methane-ch4-global",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "Copernicus Browser",
+    "url": "https://browser.dataspace.copernicus.eu/?zoom=5&lat=50.16282&lng=20.78613&themeId=DEFAULT-THEME&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE",
+    "license": ""
+   },
+   "region": "Global",
+   "title": "Methane (CH4)",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Air pollution",
+   "themeKey": "Air pollution",
+   "page": "methane-ch4-global",
+   "temporalResolution": "",
+   "period": "",
+   "coverage": "",
+   "spatialResolution": "",
+   "unit": "",
+   "noData": null,
+   "metadataUrl": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Air pollution"
+    ],
+    [
+     "Summary",
+     "Atmospheric CH4 observations derived from satellite radiances."
+    ],
+    [
+     "Provider",
+     "Copernicus Browser"
+    ],
+    [
+     "Extent",
+     "Global"
+    ],
+    [
+     "Metadata source",
+     "Curated open exposome datasets"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": "national-noise-level-nl",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "National Institute for Public Health and the Environment (RIVM)",
+    "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/api/records/68711fca-7589-4b83-829c-42550803c287",
+    "license": ""
+   },
+   "region": "Netherlands",
+   "title": "National noise level",
+   "category": "Physico-Chemical",
+   "categoryKey": "Physico-Chemical",
+   "theme": "Noise",
+   "themeKey": "Noise",
+   "page": "national-noise-level-nl",
+   "temporalResolution": "",
+   "period": "",
+   "coverage": "",
+   "spatialResolution": "",
+   "unit": "",
+   "noData": null,
+   "metadataUrl": null,
+   "details": [
+    [
+     "Category",
+     "Physico-Chemical"
+    ],
+    [
+     "Theme",
+     "Noise"
+    ],
+    [
+     "Summary",
+     "Calculated noise exposure."
+    ],
+    [
+     "Provider",
+     "National Institute for Public Health and the Environment (RIVM)"
+    ],
+    [
+     "Extent",
+     "Netherlands"
+    ],
+    [
+     "Metadata source",
+     "Curated open exposome datasets"
+    ]
+   ],
+   "map": null
+  },
+  {
+   "id": "night-lights-viirs-global",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "Earth Observation Group, Payne Institute",
+    "url": "https://eogdata.mines.edu/products/vnl/#introduction",
+    "license": ""
+   },
+   "region": "Global",
+   "title": "Light intensity at night",
+   "category": "Built",
+   "categoryKey": "Built",
+   "theme": "Light at Night",
+   "themeKey": "Light at Night",
+   "page": "night-lights-viirs-global",
+   "temporalResolution": "",
+   "period": "",
+   "coverage": "",
+   "spatialResolution": "",
+   "unit": "",
+   "noData": null,
+   "metadataUrl": null,
+   "details": [
+    [
+     "Category",
+     "Built"
+    ],
+    [
+     "Theme",
+     "Light at Night"
+    ],
+    [
+     "Summary",
+     "Remote sensing night-time lights composites from VIIRS."
+    ],
+    [
+     "Provider",
+     "Earth Observation Group, Payne Institute"
+    ],
+    [
+     "Extent",
+     "Global"
+    ],
+    [
+     "Metadata source",
+     "Curated open exposome datasets"
+    ]
+   ],
+   "map": null
   }
  ],
  "datasets": [
   {
    "page": "Median_NDVI",
    "title": "Median Normalized Difference Vegetation Index (NDVI)",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "NDVI",
    "temporalResolution": "Annual",
@@ -6877,7 +7780,14 @@
   {
    "page": "Standard_deviation_NDVI",
    "title": "Standard deviation NDVI (Normalized Difference Vegetation Index)",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "NDVI",
    "temporalResolution": "Annual",
@@ -6896,7 +7806,14 @@
   {
    "page": "Mean_NDVI",
    "title": "Mean Normalized Difference Vegetation Index (NDVI)",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "NDVI",
    "temporalResolution": "Annual",
@@ -6915,7 +7832,14 @@
   {
    "page": "Median_MSAVI",
    "title": "Median MSAVI (Modified Soil Adjusted Vegetation Index)",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "MSAVI",
    "temporalResolution": "Annual",
@@ -6934,7 +7858,14 @@
   {
    "page": "Standard_deviation_MSAVI",
    "title": "Standard deviation MSAVI (Modified Soil Adjusted Vegetation Index)",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "MSAVI",
    "temporalResolution": "Annual",
@@ -6953,7 +7884,14 @@
   {
    "page": "Mean_MSAVI",
    "title": "Mean MSAVI (Modified Soil Adjusted Vegetation Index)",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "MSAVI",
    "temporalResolution": "Annual",
@@ -6972,7 +7910,14 @@
   {
    "page": "Distance_to_nearest_green_space_using_CORINE",
    "title": "Distance to nearest green space using CORINE",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "Green Space",
    "temporalResolution": "Annual",
@@ -6989,7 +7934,14 @@
   {
    "page": "Distance_to_nearest_green_space_using_URBAN_ATLAS",
    "title": "Distance to nearest green space using URBAN ATLAS",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "Green Space",
    "temporalResolution": "Annual",
@@ -7006,7 +7958,14 @@
   {
    "page": "Light_at_night",
    "title": "Light at night",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "Light at Night",
    "temporalResolution": "Annual",
@@ -7025,7 +7984,14 @@
   {
    "page": "Imperviousness",
    "title": "Imperviousness",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "Imperviousness",
    "temporalResolution": "Annual",
@@ -7044,7 +8010,14 @@
   {
    "page": "Distance_to_nearest_blue_space",
    "title": "Distance to nearest blue space",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "Blue spaces",
    "temporalResolution": "Annual",
@@ -7061,7 +8034,14 @@
   {
    "page": "Distance_to_nearest_inland_freshwater",
    "title": "Distance to nearest inland freshwater",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "Blue spaces",
    "temporalResolution": "Annual",
@@ -7078,7 +8058,14 @@
   {
    "page": "Walkability",
    "title": "Walkability",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Built",
    "theme": "Walkability",
    "temporalResolution": "Annual",
@@ -7097,7 +8084,14 @@
   {
    "page": "Annual_NO2_25m",
    "title": "Annual NO2 – 25 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7114,7 +8108,14 @@
   {
    "page": "Annual_PM10_25m",
    "title": "Annual PM10 (Particulate Matter 10) – 25 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7131,7 +8132,14 @@
   {
    "page": "Annual_PM2.5_25m",
    "title": "Annual PM2.5 (Particulate Matter 2.5) – 25 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7148,7 +8156,14 @@
   {
    "page": "Annual_O3_25m",
    "title": "Annual O3 (Ozone) – 25 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7165,7 +8180,14 @@
   {
    "page": "Monthly_NO2_100m",
    "title": "Monthly NO2 – 100 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Monthly",
@@ -7182,7 +8204,14 @@
   {
    "page": "Monthly_PM10_100m",
    "title": "Monthly PM10 (Particulate Matter 10) – 100 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Monthly",
@@ -7199,7 +8228,14 @@
   {
    "page": "Monthly_PM2.5_100m",
    "title": "Monthly PM2.5 (Particulate Matter 2.5) – 100 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Monthly",
@@ -7216,7 +8252,14 @@
   {
    "page": "Monthly_O3_100m",
    "title": "Monthly O3 (Ozone) – 100 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Monthly",
@@ -7233,7 +8276,14 @@
   {
    "page": "Monthly_NO2_25m",
    "title": "Monthly NO2 – 25 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Monthly",
@@ -7250,7 +8300,14 @@
   {
    "page": "Monthly_PM10_25m",
    "title": "Monthly PM10 (Particulate Matter 10) – 25 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Monthly",
@@ -7267,7 +8324,14 @@
   {
    "page": "Monthly_PM2.5_25m",
    "title": "Monthly PM2.5 (Particulate Matter 2.5) – 25 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Monthly",
@@ -7284,7 +8348,14 @@
   {
    "page": "Monthly_O3_25m",
    "title": "Monthly O3 (Ozone) – 25 m",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Monthly",
@@ -7301,7 +8372,14 @@
   {
    "page": "Nitrogen_dioxide_roads",
    "title": "Nitrogen dioxide roads",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7318,7 +8396,14 @@
   {
    "page": "Black_carbon_roads",
    "title": "Black carbon roads",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7335,7 +8420,14 @@
   {
    "page": "Ultrafine_particles_roads",
    "title": "Ultrafine particles roads",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7352,7 +8444,14 @@
   {
    "page": "Ultrafine_particles",
    "title": "Ultrafine particles",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7369,7 +8468,14 @@
   {
    "page": "Annual_mean_BC_concentration",
    "title": "Annual mean BC concentration",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7386,7 +8492,14 @@
   {
    "page": "PM2_5_Cu_estimates",
    "title": "PM2.5 Cu estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7403,7 +8516,14 @@
   {
    "page": "PMC_Cu_estimates",
    "title": "PMC Cu estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7420,7 +8540,14 @@
   {
    "page": "PM2_5_Fe_estimates",
    "title": "PM2.5 Fe estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7437,7 +8564,14 @@
   {
    "page": "PMC_Fe_estimates",
    "title": "PMC Fe estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7454,7 +8588,14 @@
   {
    "page": "PM2_5_K_estimates",
    "title": "PM2.5 K estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7471,7 +8612,14 @@
   {
    "page": "PMC_K_estimates",
    "title": "PMC K estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7488,7 +8636,14 @@
   {
    "page": "PM2_5_mass_estimates",
    "title": "PM2.5 mass estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7505,7 +8660,14 @@
   {
    "page": "PM2_5_Ni_estimates",
    "title": "PM2.5 Ni estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7522,7 +8684,14 @@
   {
    "page": "PM2_5_S_estimates",
    "title": "PM2.5 S estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7539,7 +8708,14 @@
   {
    "page": "PM2_5_Si_estimates",
    "title": "PM2.5 Si estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7556,7 +8732,14 @@
   {
    "page": "PMC_Si_estimates",
    "title": "PMC Si estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7573,7 +8756,14 @@
   {
    "page": "PM2_5_V_estimates",
    "title": "PM2.5 V estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7590,7 +8780,14 @@
   {
    "page": "PM2_5_Zn_estimates",
    "title": "PM2.5 Zn estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7607,7 +8804,14 @@
   {
    "page": "PMC_Zn_estimates",
    "title": "PMC Zn estimates",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Air pollution",
    "temporalResolution": "Annual",
@@ -7624,7 +8828,14 @@
   {
    "page": "Annual_average_temperature",
    "title": "Annual Average Temperature",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Temperature",
    "temporalResolution": "Annual",
@@ -7641,7 +8852,14 @@
   {
    "page": "Monthly_average_temperature",
    "title": "Monthly Average Temperature",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Temperature",
    "temporalResolution": "Monthly",
@@ -7658,7 +8876,14 @@
   {
    "page": "Monthly_minimum_temperature",
    "title": "Monthly Minimum Temperature",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Temperature",
    "temporalResolution": "Monthly",
@@ -7675,7 +8900,14 @@
   {
    "page": "Monthly_maximum_temperature",
    "title": "Monthly Maximum Temperature",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Temperature",
    "temporalResolution": "Monthly",
@@ -7692,7 +8924,14 @@
   {
    "page": "Daily_average_temperature",
    "title": "Daily Average Temperature",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Temperature",
    "temporalResolution": "Daily",
@@ -7709,7 +8948,14 @@
   {
    "page": "Daily_minimum_temperature",
    "title": "Daily Minimum Temperature",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Temperature",
    "temporalResolution": "Daily",
@@ -7726,7 +8972,14 @@
   {
    "page": "Daily_maximum_temperature",
    "title": "Daily Maximum Temperature",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Temperature",
    "temporalResolution": "Daily",
@@ -7743,7 +8996,14 @@
   {
    "page": "Urban_Rural_indicator",
    "title": "Urban-Rural indicator",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "Urbanicity",
    "temporalResolution": "Annual",
@@ -7760,7 +9020,14 @@
   {
    "page": "Daily_mean_of_downward_UV_radiation_at_the_surface",
    "title": "Daily mean of downward UV radiation at the surface",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "UV radiation",
    "temporalResolution": "Daily",
@@ -7777,7 +9044,14 @@
   {
    "page": "Daily_max_of_downward_UV_radiation_at_the_surface",
    "title": "Daily max of downward UV radiation at the surface",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Physico-Chemical",
    "theme": "UV radiation",
    "temporalResolution": "Daily",
@@ -7794,7 +9068,14 @@
   {
    "page": "Area_of_crops_BAG",
    "title": "Area of crops BAG",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Physico-Chemical",
    "theme": "Pesticides",
    "temporalResolution": "Annual",
@@ -7811,7 +9092,14 @@
   {
    "page": "Food_facilities",
    "title": "Food facilities",
-   "project": "Netherlands",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Netherlands",
    "category": "Food",
    "theme": "Food landscape",
    "temporalResolution": "Annual",
@@ -7828,7 +9116,14 @@
   {
    "page": "Count_of_fast_food_outlets_in_a_800m_buffer",
    "title": "Count of fast food outlets in a 800m buffer",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Food",
    "theme": "Food landscape",
    "temporalResolution": "Annual",
@@ -7845,7 +9140,14 @@
   {
    "page": "Count_of_restaurants_in_a_800m_buffer",
    "title": "Count of restaurants in a 800m buffer",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Food",
    "theme": "Food landscape",
    "temporalResolution": "Annual",
@@ -7862,7 +9164,14 @@
   {
    "page": "Count_of_supermarkets_in_a_800m_buffer",
    "title": "Count of supermarkets in a 800m buffer",
-   "project": "Europe",
+   "source": "uu",
+   "access": {
+    "type": "request",
+    "provider": "Utrecht University (IRAS)",
+    "url": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "license": ""
+   },
+   "region": "Europe",
    "category": "Food",
    "theme": "Food landscape",
    "temporalResolution": "Annual",
@@ -7873,6 +9182,126 @@
    "thumbnail": "not_available",
    "surfaces": [
     79
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "species-diversity-nl",
+   "title": "Species diversity",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "Nationale Databank Flora & Fauna (via Nationaal Georegister)",
+    "url": "https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/22833e30-8815-4b41-9af1-2a6b99b75130",
+    "license": ""
+   },
+   "region": "Netherlands",
+   "category": "Built",
+   "theme": "Biodiversity",
+   "temporalResolution": "",
+   "period": "",
+   "spatialResolution": "",
+   "extent": "Netherlands",
+   "summary": "Species diversity per kilometre.",
+   "thumbnail": "not_available",
+   "surfaces": [
+    "species-diversity-nl"
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "urban-heat-island-nl",
+   "title": "Urban heat island effect",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "Atlas Natuurlijk Kapitaal (via Nationaal Georegister)",
+    "url": "https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/c9aa9109-3f32-4f65-84e5-bb1c9ebdfbec",
+    "license": ""
+   },
+   "region": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Temperature",
+   "temporalResolution": "",
+   "period": "",
+   "spatialResolution": "",
+   "extent": "Netherlands",
+   "summary": "Temperature difference between the city and the countryside.",
+   "thumbnail": "not_available",
+   "surfaces": [
+    "urban-heat-island-nl"
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "methane-ch4-global",
+   "title": "Methane (CH4)",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "Copernicus Browser",
+    "url": "https://browser.dataspace.copernicus.eu/?zoom=5&lat=50.16282&lng=20.78613&themeId=DEFAULT-THEME&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE",
+    "license": ""
+   },
+   "region": "Global",
+   "category": "Physico-Chemical",
+   "theme": "Air pollution",
+   "temporalResolution": "",
+   "period": "",
+   "spatialResolution": "",
+   "extent": "Global",
+   "summary": "Atmospheric CH4 observations derived from satellite radiances.",
+   "thumbnail": "not_available",
+   "surfaces": [
+    "methane-ch4-global"
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "national-noise-level-nl",
+   "title": "National noise level",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "National Institute for Public Health and the Environment (RIVM)",
+    "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/api/records/68711fca-7589-4b83-829c-42550803c287",
+    "license": ""
+   },
+   "region": "Netherlands",
+   "category": "Physico-Chemical",
+   "theme": "Noise",
+   "temporalResolution": "",
+   "period": "",
+   "spatialResolution": "",
+   "extent": "Netherlands",
+   "summary": "Calculated noise exposure.",
+   "thumbnail": "not_available",
+   "surfaces": [
+    "national-noise-level-nl"
+   ],
+   "mapLayer": null
+  },
+  {
+   "page": "night-lights-viirs-global",
+   "title": "Light intensity at night",
+   "source": "curated-open-data",
+   "access": {
+    "type": "external",
+    "provider": "Earth Observation Group, Payne Institute",
+    "url": "https://eogdata.mines.edu/products/vnl/#introduction",
+    "license": ""
+   },
+   "region": "Global",
+   "category": "Built",
+   "theme": "Light at Night",
+   "temporalResolution": "",
+   "period": "",
+   "spatialResolution": "",
+   "extent": "Global",
+   "summary": "Remote sensing night-time lights composites from VIIRS.",
+   "thumbnail": "not_available",
+   "surfaces": [
+    "night-lights-viirs-global"
    ],
    "mapLayer": null
   }

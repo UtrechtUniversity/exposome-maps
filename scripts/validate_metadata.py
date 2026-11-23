@@ -1,4 +1,4 @@
-"""Check metadata.json for errors and gaps.
+"""Check metadata.json and the external sources in sources/ for errors and gaps.
 
 Usage:  python scripts/validate_metadata.py [--strict]
 
@@ -7,12 +7,14 @@ Exits with status 1 on errors (or on warnings with --strict).
 
 import sys
 
-from catalogue_lib import load_raw, validate
+from catalogue_lib import load_raw, load_sources, validate, validate_sources
 
 
 def main() -> int:
     strict = "--strict" in sys.argv
-    report = validate(load_raw())
+    raw = load_raw()
+    report = validate(raw)
+    validate_sources(load_sources(), raw, report)
     for line in report.warnings:
         print(f"warning  {line}")
     for line in report.errors:

@@ -49,6 +49,22 @@
   color: var(--color-heading);
 }
 
+.hero--no-figure {
+  grid-template-columns: 1fr;
+}
+
+.hero--request {
+  border-top: 5px solid var(--color-uu);
+}
+
+.hero--external {
+  border-top: 5px solid var(--color-external);
+}
+
+.hero .lede {
+  margin-top: var(--space-3);
+}
+
 .lede {
   font-size: var(--text-lg);
   color: var(--color-text-muted);
@@ -174,6 +190,24 @@
   border-left: 4px solid var(--color-accent);
   border-radius: var(--radius-md);
   background: var(--color-accent-soft);
+}
+
+.callout--request {
+  border-left-color: var(--color-uu);
+  background: var(--color-uu-soft);
+}
+
+.callout--external {
+  border-left-color: var(--color-external);
+  background: var(--color-external-soft);
+}
+
+.callout--request h2 {
+  color: var(--color-uu-text);
+}
+
+.callout--external h2 {
+  color: var(--color-external-text);
 }
 
 .callout h2 {

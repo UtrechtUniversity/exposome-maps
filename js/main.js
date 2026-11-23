@@ -4,11 +4,13 @@ import { createCatalogue } from "./catalogue.js";
 import { createMetadataDialog, setupInfoDialog } from "./dialogs.js";
 import { loadCatalogue } from "./data.js";
 import { createMapView } from "./map/mapView.js";
-import { renderOpenData } from "./openData.js";
+import { renderPlatforms } from "./platforms.js";
 import { createTabs } from "./tabs.js";
 import { readHash, writeHash } from "./urlState.js";
 
-const VIEWS = ["map", "catalogue", "open-data"];
+const VIEWS = ["map", "catalogue", "platforms"];
+// Old links keep working: the "Open data" tab is now "Data platforms".
+const VIEW_ALIASES = { "open-data": "platforms" };
 
 function showBanner(message) {
   const banner = document.getElementById("app-banner");
@@ -32,7 +34,7 @@ async function main() {
     },
   });
 
-  renderOpenData(document.getElementById("open-data"));
+  renderPlatforms(document.getElementById("platforms"));
 
   let catalogue;
   try {
@@ -55,7 +57,8 @@ async function main() {
 
   function applyHash() {
     const params = readHash();
-    const view = VIEWS.includes(params.view) ? params.view : "map";
+    const requested = VIEW_ALIASES[params.view] ?? params.view;
+    const view = VIEWS.includes(requested) ? requested : "map";
     tabs.select(view); // show the map first so Leaflet has a size before moving it
     if (view === "map") {
       if (params.z && params.ll) mapView.setView(params.z, params.ll);

@@ -27,7 +27,7 @@ body.app {
 }
 
 .view--catalogue,
-.view--open-data {
+.view--platforms {
   overflow-y: auto;
 }
 
@@ -159,15 +159,10 @@ body.app {
   color: var(--color-heading);
 }
 
-.layer-card__meta {
-  margin: 0;
+.layer-card__time {
+  margin-left: var(--space-1);
+  font-weight: 500;
   color: var(--color-text-muted);
-}
-
-.layer-card__links {
-  display: flex;
-  gap: var(--space-4);
-  margin-top: 2px;
 }
 
 .toast {
@@ -192,22 +187,10 @@ body.app {
   font-size: var(--text-sm);
 }
 
-.leaflet-bar,
-.leaflet-control-layers {
+.leaflet-bar {
   border: 0 !important;
   border-radius: var(--radius-sm) !important;
   box-shadow: var(--shadow-md) !important;
-}
-
-.leaflet-control-layers-expanded {
-  padding: var(--space-2) var(--space-3);
-}
-
-/* Leaflet measures the list height once at start-up; three basemaps never need scrolling. */
-.leaflet-control-layers-scrollbar {
-  max-height: none !important;
-  overflow-y: visible;
-  padding-right: 0;
 }
 
 .leaflet-control-reset a {
@@ -320,12 +303,6 @@ body.app {
   font-variant-numeric: tabular-nums;
 }
 
-.legend-panel__note {
-  margin: var(--space-2) 0 0;
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-}
-
 /* ---------- Sidebar ---------- */
 
 .sidebar {
@@ -379,6 +356,7 @@ body.app {
   height: 100%;
   padding: var(--space-4) var(--space-4) var(--space-5) var(--space-5);
   overflow-y: auto;
+  scrollbar-gutter: stable; /* no layout shift when the scrollbar appears */
   transition: opacity var(--duration) var(--ease), visibility var(--duration);
 }
 
@@ -409,14 +387,11 @@ body.app {
   top: calc(-1 * var(--space-4));
   z-index: 2;
   margin: calc(-1 * var(--space-4)) calc(-1 * var(--space-4)) 0 calc(-1 * var(--space-5));
-  padding: var(--space-4) var(--space-4) var(--space-3) var(--space-5);
+  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-5);
   background: var(--color-brand-soft);
   border-bottom: 1px solid var(--color-border);
 }
 
-.panel--time .panel__heading {
-  margin-bottom: var(--space-2);
-}
 
 .panel__hint {
   margin: var(--space-2) 0 0;
@@ -426,9 +401,18 @@ body.app {
 
 .time-control {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto 1fr auto;
   gap: var(--space-2);
   align-items: center;
+}
+
+.time-control__label {
+  margin-right: var(--space-1);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
 }
 
 .time-control select,
@@ -447,154 +431,135 @@ body.app {
   cursor: pointer;
 }
 
-.toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-1);
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  cursor: pointer;
-}
-
-.toggle input {
-  accent-color: var(--color-brand);
-}
 
 /* Layer menu */
 
-.menu {
-  margin-top: var(--space-3);
-}
-
-.menu__project + .menu__project {
-  margin-top: var(--space-4);
-}
-
-.menu__project-title {
+.segmented {
   display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  margin: 0 0 var(--space-1);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  color: var(--color-heading);
+  margin: var(--space-3) 0;
+  padding: 3px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted);
+  border: 1px solid var(--color-border);
+  transition: opacity var(--duration) var(--ease);
 }
 
-.menu__project-title::after {
-  content: "";
+.segmented.is-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.segmented__option {
   flex: 1;
-  height: 1px;
-  background: var(--color-border);
+  min-height: 30px;
+  padding: 0 var(--space-3);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.menu summary {
+.segmented__option:hover {
+  color: var(--color-text);
+}
+
+.segmented__option[aria-pressed="true"] {
+  background: var(--color-surface);
+  color: var(--color-heading);
+  box-shadow: var(--shadow-sm);
+}
+
+.menu {
+  margin-top: var(--space-2);
+}
+
+/* Region headings only appear while searching across regions. */
+.menu__region-title {
+  display: none;
+  margin: var(--space-4) 0 var(--space-1);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.menu.is-filtering .menu__region-title {
+  display: block;
+}
+
+.menu__category {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.menu__category > summary {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: var(--space-2);
-  padding: var(--space-2) var(--space-1);
-  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-1);
   list-style: none;
-  cursor: pointer;
   font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
 }
 
-.menu summary::-webkit-details-marker {
+.menu__category > summary::-webkit-details-marker {
   display: none;
 }
 
-.menu summary::before {
+.menu__category > summary::after {
   content: "";
   flex: none;
   width: 7px;
   height: 7px;
-  margin: 0 var(--space-1);
+  margin-right: var(--space-1);
   border-right: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
-  transform: rotate(-45deg);
-  transition: transform var(--duration) var(--ease);
-  opacity: 0.6;
-}
-
-.menu details[open] > summary::before {
   transform: rotate(45deg);
+  opacity: 0.5;
+  transition: transform var(--duration) var(--ease);
 }
 
-.menu summary:hover {
-  background: var(--color-surface-muted);
+.menu__category[open] > summary::after {
+  transform: rotate(-135deg);
 }
 
-.menu__count {
-  margin-left: auto;
-  font-size: var(--text-xs);
-  font-weight: 500;
-  color: var(--color-text-muted);
-}
-
-.menu__category > summary {
-  font-size: var(--text-md);
-  color: var(--color-text);
-}
-
-.menu__theme {
-  margin-left: var(--space-3);
-}
-
-.menu__theme > summary {
-  font-size: var(--text-sm);
+.menu__category > summary:hover {
   color: var(--color-heading);
 }
 
-.menu__items {
-  margin: 0 0 var(--space-2) var(--space-5);
-  padding: 0;
-  list-style: none;
-  border-left: 2px solid var(--color-border);
+.menu__category-body {
+  padding: 0 0 var(--space-3);
+}
+
+.menu__theme + .menu__theme {
+  margin-top: var(--space-2);
+}
+
+.menu__theme-title {
+  margin: var(--space-1) 0 2px var(--space-1);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
 }
 
 .menu__item {
   display: flex;
   align-items: center;
-  gap: var(--space-1);
+  gap: 2px;
 }
 
-.menu__select,
-.menu__label {
+.menu__item > .menu__select,
+.menu__item > .menu__unavailable {
   flex: 1;
   min-width: 0;
-  padding: 6px var(--space-2);
-  border: 0;
-  border-left: 3px solid transparent;
-  margin-left: -2px;
-  background: none;
-  text-align: left;
-  font-size: var(--text-sm);
-  line-height: 1.35;
 }
 
-.menu__select {
-  cursor: pointer;
-  color: var(--color-text);
-}
-
-.menu__select:hover {
-  background: var(--color-surface-muted);
-}
-
-.menu__select[aria-pressed="true"] {
-  border-left-color: var(--color-accent);
-  background: var(--color-accent-soft);
-  color: var(--color-accent-text);
-  font-weight: 600;
-}
-
-.menu__label {
-  color: var(--color-text-muted);
-}
-
-.menu__label .badge {
-  margin-left: var(--space-1);
-}
-
+/* (i) metadata button next to each layer: quiet until hovered or focused. */
 .menu__info {
   flex: none;
   width: 28px;
@@ -602,15 +567,96 @@ body.app {
   border-color: transparent;
   background: none;
   color: var(--color-text-muted);
+  opacity: 0.7;
 }
 
-.menu__info:hover {
+.menu__info:hover,
+.menu__info:focus-visible {
+  opacity: 1;
   color: var(--color-link);
 }
 
 .menu__info svg {
   width: 16px;
   height: 16px;
+}
+
+.menu__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__select {
+  display: block;
+  width: 100%;
+  padding: 6px var(--space-2) 6px calc(var(--space-1) + 3px);
+  border: 0;
+  border-left: 3px solid transparent;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: none;
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu__select:hover {
+  background: var(--color-surface-muted);
+}
+
+.menu__select .access-dot,
+.menu__unavailable .access-dot {
+  width: 8px;
+  height: 8px;
+  margin-right: var(--space-2);
+  vertical-align: 1px;
+}
+
+.menu__unavailable {
+  display: block;
+  padding: 6px var(--space-2) 6px calc(var(--space-1) + 3px);
+  border-left: 3px solid transparent;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.35;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.menu-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-3);
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.menu-key li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu-key .access-dot {
+  width: 8px;
+  height: 8px;
+}
+
+.menu-key__unavailable {
+  opacity: 0.6;
+  font-weight: 600;
+}
+
+.menu__select[aria-pressed="true"] {
+  border-left-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent-text);
+  font-weight: 600;
 }
 
 /* ---------- Catalogue ---------- */
@@ -643,12 +689,30 @@ body.app {
 
 .filters {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3) var(--space-5);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);
+}
+
+.filters__primary,
+.filters__more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+}
+
+.filters__more {
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--color-border);
+  width: 100%;
+}
+
+.filters__toggle {
+  font-size: var(--text-sm);
 }
 
 .filter-group {
@@ -776,14 +840,28 @@ body.app {
 }
 
 .card__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-1) var(--space-3);
   margin: 0 0 var(--space-3);
-  padding: 0;
-  list-style: none;
   font-size: var(--text-xs);
   color: var(--color-text-muted);
+}
+
+.card__top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  min-width: 0;
+}
+
+.card__theme {
+  overflow: hidden;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--color-accent-text);
 }
 
 .card__actions {
@@ -800,18 +878,18 @@ body.app {
   color: var(--color-text-muted);
 }
 
-/* ---------- Open data ---------- */
+/* ---------- Data platforms ---------- */
 
-.open-data__section {
+.platforms__section {
   margin-top: var(--space-6);
 }
 
-.open-data__section h2 {
+.platforms__section h2 {
   font-size: var(--text-xl);
   color: var(--color-heading);
 }
 
-.open-data__section .data-table td:first-child {
+.platforms__section .data-table td:first-child {
   min-width: 180px;
   font-weight: 600;
 }
@@ -890,6 +968,7 @@ body.app {
   margin-top: var(--space-5);
 }
 
+/* Metadata drawer: slides in from the right. */
 .dialog--drawer {
   width: min(440px, 100vw);
   height: 100dvh;
@@ -931,6 +1010,7 @@ body.app {
   margin: 0;
   overflow-wrap: anywhere;
 }
+
 
 /* ---------- Flatpickr theme ---------- */
 
@@ -975,7 +1055,7 @@ body.app {
   }
 
   .sidebar[data-open="false"] .sidebar__toggle {
-    top: 64px; /* below the collapsed basemap switcher */
+    top: var(--space-3);
     left: -50px;
     width: 40px;
     height: 40px;
@@ -1006,6 +1086,7 @@ body.app {
     grid-template-columns: 1fr;
     gap: 0;
   }
+
 }
 
 /* ---------- Dark theme: third-party widgets ---------- */
@@ -1018,7 +1099,6 @@ body.app {
 }
 
 [data-theme="dark"] .leaflet-bar a,
-[data-theme="dark"] .leaflet-control-layers,
 [data-theme="dark"] .leaflet-popup-content-wrapper,
 [data-theme="dark"] .leaflet-popup-tip {
   background: var(--color-surface);
@@ -1036,10 +1116,6 @@ body.app {
 [data-theme="dark"] .leaflet-bar a.leaflet-disabled {
   background: var(--color-surface-muted);
   color: var(--color-text-muted);
-}
-
-[data-theme="dark"] .leaflet-control-layers-toggle {
-  filter: invert(1) hue-rotate(180deg);
 }
 
 [data-theme="dark"] .leaflet-container a.leaflet-popup-close-button {
@@ -1104,4 +1180,66 @@ body.app {
   background: var(--color-accent-strong);
   border-color: var(--color-accent-strong);
   color: #ffffff;
+}
+
+/* ---------- Access route colours in the app ---------- */
+
+.access-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.access-key li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.card--request {
+  border-top: 4px solid var(--color-uu);
+}
+
+.card--external {
+  border-top: 4px solid var(--color-external);
+}
+
+
+.card__summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.chip .access-dot {
+  margin-right: 2px;
+}
+
+.chip[aria-pressed="true"] .access-dot {
+  box-shadow: 0 0 0 2px var(--color-text-inverse);
+}
+
+.access-key--stacked {
+  flex-direction: column;
+  align-items: stretch;
+  padding-left: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+.access-key--stacked li {
+  display: block;
+}
+
+.access-key--stacked .access-badge {
+  margin-right: var(--space-2);
 }

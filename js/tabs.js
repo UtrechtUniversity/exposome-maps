@@ -1,4 +1,4 @@
-// Accessible tabs for the top-level views (Map / Catalogue / Open data).
+// Accessible tabs for the top-level views (Map / Catalogue / Data platforms).
 
 export function createTabs(tablist, { onChange }) {
   const tabs = [...tablist.querySelectorAll('[role="tab"]')];

@@ -1,15 +1,23 @@
-// Leaflet map with basemaps and standard controls.
+// Leaflet map with a theme-matched Esri basemap, place-name labels and standard controls.
+// There is no basemap switcher: light mode uses Esri Light Gray, dark mode Esri Dark Gray.
 
 import { MAP_VIEW } from "../config.js";
 import { ICONS, icon } from "../util.js";
 
-const OSM = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-// Esri Light/Dark Gray Canvas: "Powered by Esri" plus the service's own copyright text
-// (copyrightText from the MapServer metadata).
+// "Powered by Esri" plus the services' own copyright text (copyrightText in their metadata).
 const ESRI =
   'Powered by <a href="https://www.esri.com/">Esri</a> | ' +
   "Esri, HERE, Garmin, &copy; OpenStreetMap contributors, and the GIS user community";
 const ESRI_TILES = "https://services.arcgisonline.com/arcgis/rest/services/Canvas";
+
+// Base (land, water, roads) and Reference (place names, borders) tiles per theme.
+const THEMES = {
+  light: { base: "World_Light_Gray_Base", labels: "World_Light_Gray_Reference" },
+  dark: { base: "World_Dark_Gray_Base", labels: "World_Dark_Gray_Reference" },
+};
+
+const esriTiles = (service, pane) =>
+  L.tileLayer(`${ESRI_TILES}/${service}/MapServer/tile/{z}/{y}/{x}`, { attribution: ESRI, pane });
 
 export function createBaseMap(element) {
   const map = L.map(element, {
@@ -19,53 +27,36 @@ export function createBaseMap(element) {
     minZoom: MAP_VIEW.minZoom,
   });
 
-  // Basemaps live in their own pane under the data layers.
+  // Stacking: basemap < data layer < labels, so place names stay readable on top of the data.
   map.createPane("basemaps").style.zIndex = 150;
   map.getPane("basemaps").style.pointerEvents = "none";
   map.createPane("data").style.zIndex = 350;
+  map.createPane("labels").style.zIndex = 450;
+  map.getPane("labels").style.pointerEvents = "none";
 
-  const basemaps = {
-    light: L.tileLayer(`${ESRI_TILES}/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
-      attribution: ESRI,
-      pane: "basemaps",
-    }),
-    dark: L.tileLayer(`${ESRI_TILES}/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
-      attribution: ESRI,
-      pane: "basemaps",
-    }),
-    osm: L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: OSM,
-      pane: "basemaps",
-    }),
-  };
-  const themeBasemap = () => (document.documentElement.dataset.theme === "dark" ? "dark" : "light");
-  basemaps[themeBasemap()].addTo(map);
+  const layers = Object.fromEntries(
+    Object.entries(THEMES).map(([theme, services]) => [
+      theme,
+      [esriTiles(services.base, "basemaps"), esriTiles(services.labels, "labels")],
+    ]),
+  );
+  const currentTheme = () => (document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+
+  let shown = null;
+  function showTheme(theme) {
+    if (theme === shown) return;
+    if (shown) layers[shown].forEach((layer) => map.removeLayer(layer));
+    layers[theme].forEach((layer) => layer.addTo(map));
+    shown = theme;
+  }
+  showTheme(currentTheme());
+  window.addEventListener("themechange", () => showTheme(currentTheme()));
 
   L.control.zoom({ position: "topleft" }).addTo(map);
   createResetControl().addTo(map);
   L.control.scale({ position: "bottomright", imperial: false }).addTo(map);
-  L.control
-    .layers(
-      { "Light background": basemaps.light, "Dark background": basemaps.dark, OpenStreetMap: basemaps.osm },
-      {},
-      { position: "topright", collapsed: window.matchMedia("(max-width: 900px)").matches },
-    )
-    .addTo(map);
 
-  /** Switch basemap by key ("light" | "dark" | "osm"); the layer switcher follows. */
-  function setBasemap(key) {
-    const target = basemaps[key];
-    if (!target || map.hasLayer(target)) return;
-    Object.values(basemaps).forEach((layer) => map.removeLayer(layer));
-    target.addTo(map);
-  }
-
-  // Follow the site theme (light ↔ dark background) unless OpenStreetMap was chosen.
-  window.addEventListener("themechange", () => {
-    if (!map.hasLayer(basemaps.osm)) setBasemap(themeBasemap());
-  });
-
-  return { map, setBasemap };
+  return { map };
 }
 
 function createResetControl() {

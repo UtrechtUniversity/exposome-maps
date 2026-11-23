@@ -1,0 +1,66 @@
+{
+  "$schema": "./source.schema.json",
+  "source": {
+    "id": "curated-open-data",
+    "name": "Curated open exposome datasets",
+    "description": "Openly available datasets used in EXPANSE and ExposomeNL studies, curated by hand.",
+    "updated": "2026-11-23"
+  },
+  "datasets": [
+    {
+      "id": "species-diversity-nl",
+      "title": "Species diversity",
+      "summary": "Species diversity per kilometre.",
+      "category": "Built",
+      "theme": "Biodiversity",
+      "region": "Netherlands",
+      "extent": "Netherlands",
+      "provider": "Nationale Databank Flora & Fauna (via Nationaal Georegister)",
+      "access_url": "https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/22833e30-8815-4b41-9af1-2a6b99b75130"
+    },
+    {
+      "id": "urban-heat-island-nl",
+      "title": "Urban heat island effect",
+      "summary": "Temperature difference between the city and the countryside.",
+      "category": "Physico-Chemical",
+      "theme": "Temperature",
+      "region": "Netherlands",
+      "extent": "Netherlands",
+      "provider": "Atlas Natuurlijk Kapitaal (via Nationaal Georegister)",
+      "access_url": "https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/c9aa9109-3f32-4f65-84e5-bb1c9ebdfbec"
+    },
+    {
+      "id": "methane-ch4-global",
+      "title": "Methane (CH4)",
+      "summary": "Atmospheric CH4 observations derived from satellite radiances.",
+      "category": "Physico-Chemical",
+      "theme": "Air pollution",
+      "region": "Global",
+      "extent": "Global",
+      "provider": "Copernicus Browser",
+      "access_url": "https://browser.dataspace.copernicus.eu/?zoom=5&lat=50.16282&lng=20.78613&themeId=DEFAULT-THEME&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE"
+    },
+    {
+      "id": "national-noise-level-nl",
+      "title": "National noise level",
+      "summary": "Calculated noise exposure.",
+      "category": "Physico-Chemical",
+      "theme": "Noise",
+      "region": "Netherlands",
+      "extent": "Netherlands",
+      "provider": "National Institute for Public Health and the Environment (RIVM)",
+      "access_url": "https://www.nationaalgeoregister.nl/geonetwork/srv/api/records/68711fca-7589-4b83-829c-42550803c287"
+    },
+    {
+      "id": "night-lights-viirs-global",
+      "title": "Light intensity at night",
+      "summary": "Remote sensing night-time lights composites from VIIRS.",
+      "category": "Built",
+      "theme": "Light at Night",
+      "region": "Global",
+      "extent": "Global",
+      "provider": "Earth Observation Group, Payne Institute",
+      "access_url": "https://eogdata.mines.edu/products/vnl/#introduction"
+    }
+  ]
+}

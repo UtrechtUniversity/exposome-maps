@@ -1,7 +1,7 @@
 // Click on the map → value of the active layer at that point (WMS GetFeatureInfo).
 
-import { GEOSERVER_URL } from "../config.js";
 import { formatTime, formatValue, h } from "../util.js";
+import { wmsUrl } from "./dataLayer.js";
 
 // Values GeoServer returns for "no data" across the published rasters.
 const GENERIC_NO_DATA = [-9999, 65535];
@@ -22,7 +22,7 @@ function extractValue(data) {
 }
 
 /** Build a GetFeatureInfo request in the map's own CRS so it matches the rendered tiles. */
-function featureInfoUrl(map, layer, latlng, time) {
+function featureInfoUrl(map, layer, surface, latlng, time) {
   const crs = map.options.crs;
   const bounds = map.getBounds();
   const sw = crs.project(bounds.getSouthWest());
@@ -46,7 +46,7 @@ function featureInfoUrl(map, layer, latlng, time) {
     feature_count: "1",
   });
   if (time) params.set("time", time);
-  return `${GEOSERVER_URL}?${params}`;
+  return `${wmsUrl(surface)}?${params}`;
 }
 
 /** @param {() => ({layer, surface, time} | null)} getActive */
@@ -59,7 +59,7 @@ export function enableFeatureInfo(map, getActive) {
     const { layer, surface, time } = active;
     const id = ++requestId;
 
-    const context = h("span", { class: "value-popup__context" }, `${surface.title} · ${formatTime(time)}`);
+    const context = h("span", { class: "value-popup__context" }, [surface.title, formatTime(time)].filter(Boolean).join(" · "));
     const popup = L.popup({ maxWidth: 260 })
       .setLatLng(event.latlng)
       .setContent(h("div", { class: "value-popup" }, h("span", { class: "value-popup__context" }, "Loading value…")))
@@ -67,7 +67,7 @@ export function enableFeatureInfo(map, getActive) {
 
     let content;
     try {
-      const response = await fetch(featureInfoUrl(map, layer, event.latlng, time));
+      const response = await fetch(featureInfoUrl(map, layer, surface, event.latlng, time));
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const value = extractValue(await response.json());
       const text = isNoData(value, surface)
