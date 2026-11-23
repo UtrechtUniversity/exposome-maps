@@ -378,3 +378,67 @@ button {
 [data-theme="dark"] .theme-toggle__sun {
   display: block;
 }
+
+/* ---------- Access route: UU (request) vs external (provider) ---------- */
+
+.access-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  max-width: 100%;
+  margin: 0;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  overflow-wrap: anywhere;
+}
+
+.access-badge--request {
+  background: var(--color-uu);
+  color: var(--color-uu-ink);
+}
+
+.access-badge--external {
+  background: var(--color-external);
+  color: var(--color-external-ink);
+}
+
+.access-dot {
+  display: inline-block;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.access-dot--request {
+  background: var(--color-uu);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.access-dot--external {
+  background: var(--color-external);
+}
+
+.btn--request {
+  background: var(--color-uu);
+  color: var(--color-uu-ink);
+}
+
+.btn--request:hover {
+  background: var(--color-uu-strong);
+  color: var(--color-uu-ink);
+}
+
+.btn--external {
+  background: var(--color-external);
+  color: var(--color-external-ink);
+}
+
+.btn--external:hover {
+  background: var(--color-external-strong);
+  color: var(--color-external-ink);
+}

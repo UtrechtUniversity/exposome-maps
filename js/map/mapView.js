@@ -1,8 +1,7 @@
 // Map view: wires the base map, data layer, time control, layer menu and sidebar.
 
-import { MOBILE_QUERY, STORAGE_KEYS } from "../config.js";
-import { datasetUrl } from "../data.js";
-import { debounce, formatTime, storageGet, storageSet } from "../util.js";
+import { MOBILE_QUERY } from "../config.js";
+import { debounce, formatTime } from "../util.js";
 import { createBaseMap } from "./baseMap.js";
 import { createDataLayer } from "./dataLayer.js";
 import { enableFeatureInfo } from "./featureInfo.js";
@@ -16,7 +15,7 @@ const $ = (id) => document.getElementById(id);
  */
 export function createMapView({ catalogue, metadataDialog, onStateChange }) {
   const isMobile = () => window.matchMedia(MOBILE_QUERY).matches;
-  const { map, setBasemap } = createBaseMap($("map"));
+  const { map } = createBaseMap($("map"));
   let surface = null;
   let time = null;
 
@@ -34,7 +33,6 @@ export function createMapView({ catalogue, metadataDialog, onStateChange }) {
   }
 
   const dataLayer = createDataLayer(map, {
-    setBasemap,
     onLoading: () => {
       spinner.hidden = false;
     },
@@ -51,10 +49,8 @@ export function createMapView({ catalogue, metadataDialog, onStateChange }) {
     $("layer-card-body").hidden = !surface;
     if (!surface) return;
     $("layer-card-title").textContent = surface.title;
-    $("layer-card-meta").textContent = [formatTime(time), surface.unit, surface.project].filter(Boolean).join(" · ");
-    $("layer-card-details").href = datasetUrl(surface.page);
+    $("layer-card-time").textContent = formatTime(time);
   }
-  $("layer-card-metadata").addEventListener("click", () => surface && metadataDialog.open(surface));
 
   // ----- Time control -----
   const timeControl = createTimeControl({
@@ -62,7 +58,6 @@ export function createMapView({ catalogue, metadataDialog, onStateChange }) {
     picker: $("time-picker"),
     prev: $("time-prev"),
     next: $("time-next"),
-    hint: $("time-hint"),
     onChange(nextTime) {
       time = nextTime;
       dataLayer.show(surface, time);
@@ -73,7 +68,7 @@ export function createMapView({ catalogue, metadataDialog, onStateChange }) {
   });
 
   // ----- Menu -----
-  const menu = createLayerMenu($("layer-menu"), catalogue.surfaces, {
+  const menu = createLayerMenu($("layer-menu"), $("region-switch"), catalogue.surfaces, {
     onSelect: (s) => {
       selectSurface(s, time);
       if (isMobile()) setSidebarOpen(false);
@@ -82,18 +77,12 @@ export function createMapView({ catalogue, metadataDialog, onStateChange }) {
   });
 
   const filterInput = $("layer-filter");
-  const catalogueOnlyToggle = $("show-catalogue-only");
-  catalogueOnlyToggle.checked = storageGet(STORAGE_KEYS.showCatalogueOnly) === "1";
-  function applyFilter() {
-    const count = menu.filter(filterInput.value, { showCatalogueOnly: catalogueOnlyToggle.checked });
-    $("layer-filter-empty").hidden = count > 0;
-  }
-  filterInput.addEventListener("input", debounce(applyFilter, 120));
-  catalogueOnlyToggle.addEventListener("change", () => {
-    storageSet(STORAGE_KEYS.showCatalogueOnly, catalogueOnlyToggle.checked ? "1" : "0");
-    applyFilter();
-  });
-  applyFilter();
+  filterInput.addEventListener(
+    "input",
+    debounce(() => {
+      $("layer-filter-empty").hidden = menu.filter(filterInput.value) > 0;
+    }, 120),
+  );
 
   // ----- Sidebar -----
   const sidebar = $("map-sidebar");
@@ -125,7 +114,7 @@ export function createMapView({ catalogue, metadataDialog, onStateChange }) {
     time = timeControl.setSurface(surface, preferredTime);
     dataLayer.show(surface, time);
     map.closePopup();
-    menu.setSelected(surface.map.layer);
+    menu.setSelected(surface);
     updateLayerCard();
     emitState();
   }

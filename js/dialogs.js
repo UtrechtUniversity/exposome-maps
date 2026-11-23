@@ -1,8 +1,8 @@
-// "About" dialog (first visit only) and the metadata drawer. Both use native
+// "About" dialog (shown on the first visit) and the metadata drawer. Both use native
 // <dialog> + showModal(): focus trapping, Esc to close and backdrop come for free.
 
 import { INFO_URL, STORAGE_KEYS } from "./config.js";
-import { datasetUrl, mapUrl } from "./data.js";
+import { datasetUrl } from "./data.js";
 import { h, storageGet, storageSet } from "./util.js";
 
 function closeOnBackdropClick(dialog) {
@@ -41,6 +41,13 @@ export function setupInfoDialog(button) {
   }
 }
 
+// All metadata is shown, with the most useful facts first.
+const KEY_FIELDS = ["Summary", "Time period", "Spatial resolution", "Unit", "Extent", "Owner", "Provider"];
+
+function metaRows(rows) {
+  return rows.map(([label, value]) => h("div", {}, h("dt", {}, label), h("dd", {}, value)));
+}
+
 export function createMetadataDialog() {
   const dialog = document.getElementById("metadata-dialog");
   const eyebrow = document.getElementById("metadata-eyebrow");
@@ -50,22 +57,25 @@ export function createMetadataDialog() {
   closeOnBackdropClick(dialog);
 
   return {
-    /** @param {{showMapLink?: boolean}} options */
-    open(surface, { showMapLink = false } = {}) {
-      eyebrow.textContent = `${surface.project} · Surface ${surface.id}`;
+    open(surface) {
+      eyebrow.textContent = [surface.region, surface.theme].filter(Boolean).join(" · ");
       title.textContent = surface.title;
-      list.replaceChildren(
-        ...surface.details.map(([label, value]) => h("div", {}, h("dt", {}, label), h("dd", {}, value))),
-      );
-      actions.replaceChildren(
+
+      const key = KEY_FIELDS.map((label) => surface.details.find(([l]) => l === label)).filter(Boolean);
+      const rest = surface.details.filter(([label]) => !KEY_FIELDS.includes(label));
+      list.replaceChildren(...metaRows([...key, ...rest]));
+
+      const buttons = [
         h("a", { class: "btn btn--secondary btn--sm", href: datasetUrl(surface.page) }, "Dataset page"),
-        surface.xml
-          ? h("a", { class: "btn btn--ghost btn--sm", href: surface.xml, target: "_blank", rel: "noopener" }, "Metadata (XML)")
+        surface.metadataUrl
+          ? h(
+              "a",
+              { class: "btn btn--ghost btn--sm", href: surface.metadataUrl, target: "_blank", rel: "noopener" },
+              surface.access.type === "external" ? "Original metadata ↗" : "Metadata (XML)",
+            )
           : null,
-        showMapLink && surface.map
-          ? h("a", { class: "btn btn--primary btn--sm", href: mapUrl(surface.map.layer) }, "View on map")
-          : null,
-      );
+      ];
+      actions.replaceChildren(...buttons.filter(Boolean));
       if (!dialog.open) dialog.showModal();
     },
     close() {

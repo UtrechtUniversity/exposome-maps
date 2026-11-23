@@ -4,7 +4,7 @@
 
 import { formatTime, h } from "../util.js";
 
-export function createTimeControl({ panel, picker, prev, next, hint, onChange }) {
+export function createTimeControl({ panel, picker, prev, next, onChange }) {
   let times = [];
   let index = -1;
   let calendar = null;
@@ -76,11 +76,13 @@ export function createTimeControl({ panel, picker, prev, next, hint, onChange })
       index = times.includes(preferred) ? times.indexOf(preferred) : times.length - 1;
       render(surface.temporalResolution);
       syncUi();
-      hint.textContent =
+      // Availability as a tooltip instead of an extra line of text.
+      picker.title =
         times.length === 1
-          ? `Available for ${formatTime(times[0])} only.`
-          : `${times.length} dates available, ${formatTime(times[0])} – ${formatTime(times[times.length - 1])}.`;
-      panel.hidden = false;
+          ? `Only available for ${formatTime(times[0])}`
+          : `${times.length} dates, ${formatTime(times[0])} – ${formatTime(times[times.length - 1])}`;
+      // A single empty time means the layer has no time dimension: no date control.
+      panel.hidden = times.length === 1 && !times[0];
       return times[index];
     },
 

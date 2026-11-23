@@ -11,7 +11,7 @@
   <link rel="icon" href="../images/UU_favicon.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
   <script src="../js/theme.js"></script>
   <link rel="stylesheet" href="../css/tokens.css">
   <link rel="stylesheet" href="../css/base.css">
@@ -25,7 +25,7 @@
     <nav class="site-nav" aria-label="Main">
       <a href="../index.html#view=map">Map</a>
       <a href="../index.html#view=catalogue" aria-current="page">Catalogue</a>
-      <a href="../index.html#view=open-data">Open data</a>
+      <a href="../index.html#view=platforms">Data platforms</a>
     </nav>
     <div class="header-actions">
       <button type="button" class="btn btn--header theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
@@ -49,10 +49,11 @@
       </ol>
     </nav>
 
-    <section class="hero">
+    <section class="hero hero--request">
       <div class="hero__text">
         <p class="eyebrow">Physico-Chemical · Air pollution</p>
         <h1>PMC K estimates</h1>
+        <p class="access-badge access-badge--request">UU · On request</p>
         <ul class="facts" aria-label="Key facts">
           <li><span class="facts__label">Region</span> Netherlands</li>
           <li><span class="facts__label">Period</span> 2008-2011</li>
@@ -61,7 +62,7 @@
           <li><span class="facts__label">Surfaces</span> 1</li>
         </ul>
         <div class="actions">
-          <a class="btn btn--secondary" href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">Request data access</a>
+          <a class="btn btn--request" href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">Request data access</a>
         </div>
       </div>
       <figure class="hero__figure">
@@ -167,10 +168,11 @@
     </section>
 
 
-    <section class="section callout" aria-labelledby="access-heading">
-      <h2 id="access-heading">Data access</h2>
+    <section class="section callout callout--request" aria-labelledby="access-heading">
+      <h2 id="access-heading">Data access: on request from Utrecht University</h2>
       <p>
-        To request access, complete the <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">data access request form</a>
+        This dataset is made available by Utrecht University (IRAS). To request access, complete the
+        <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">data access request form</a>
         and send it to <a href="mailto:expanse@uu.nl">expanse@uu.nl</a>.
         Requests are assessed under the <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/">Data Access and Publication Policy</a>.
       </p>
@@ -178,9 +180,9 @@
   </main>
 
   <footer class="site-footer">
-    <span>Exposome Maps · ExposomeNL &amp; EXPANSE</span>
+    <span>Exposome Maps · Exposome data catalogue</span>
     <nav aria-label="Footer">
-      <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/">Data access policy</a>
+      <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/">UU data access policy</a>
       <a href="mailto:expanse@uu.nl">Contact</a>
     </nav>
   </footer>

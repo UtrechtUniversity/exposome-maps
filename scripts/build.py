@@ -19,7 +19,8 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
 from catalogue_lib import (
-    PAGES_DIR, ROOT, build_catalogue, load_raw, methodology_file, validate,
+    PAGES_DIR, REQUEST_FORM_URL, ROOT, build_catalogue, load_raw, load_sources,
+    methodology_file, validate, validate_sources,
 )
 
 CATALOGUE_JSON = ROOT / "data" / "catalogue.json"
@@ -27,7 +28,7 @@ TEMPLATES_DIR = ROOT / "templates"
 
 SITE = {
     "name": "Exposome Maps",
-    "request_form": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/",
+    "request_form": REQUEST_FORM_URL,
     "policy": "https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/",
     "contact": "expanse@uu.nl",
 }
@@ -47,13 +48,15 @@ def render_pages(catalogue: dict, raw: list[dict]) -> dict:
     outputs = {}
     for dataset in catalogue["datasets"]:
         surfaces = [surfaces_by_id[sid] for sid in dataset["surfaces"]]
-        method_path = methodology_file(dataset["page"], dataset["theme"])
+        is_uu = dataset["access"]["type"] == "request"
+        method_path = methodology_file(dataset["page"], dataset["theme"]) if is_uu else None
         methodology = Markup(method_path.read_text(encoding="utf-8")) if method_path else None
         html = template.render(
             site=SITE,
             dataset=dataset,
             surfaces=surfaces,
             details=surfaces[0]["details"],
+            is_uu=is_uu,
             methodology=methodology,
         )
         outputs[PAGES_DIR / f"{dataset['page']}.html"] = html
@@ -63,15 +66,17 @@ def render_pages(catalogue: dict, raw: list[dict]) -> dict:
 def main() -> int:
     check = "--check" in sys.argv
     raw = load_raw()
+    sources = load_sources()
 
     report = validate(raw)
+    validate_sources(sources, raw, report)
     if report.errors:
         for line in report.errors:
             print(f"ERROR    {line}")
         print("\nBuild stopped: fix the errors above (python scripts/validate_metadata.py for details).")
         return 1
 
-    catalogue = build_catalogue(raw)
+    catalogue = build_catalogue(raw, sources)
     outputs = {CATALOGUE_JSON: json.dumps(catalogue, ensure_ascii=False, indent=1) + "\n"}
     outputs.update(render_pages(catalogue, raw))
 

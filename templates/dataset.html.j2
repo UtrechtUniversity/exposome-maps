@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 {# Generated pages: edit this template, then run `python scripts/build.py`. #}
 <html lang="en">
+{% set thumbnail_src = dataset.thumbnail if dataset.thumbnail.startswith("https://") else "images/thumbnails/" ~ dataset.thumbnail ~ ".png" %}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ dataset.title }} · {{ site.name }}</title>
-  <meta name="description" content="{{ dataset.summary or (dataset.title ~ ' – ' ~ dataset.theme ~ ' exposure dataset (' ~ dataset.project ~ ', ' ~ dataset.period ~ ') in the ' ~ site.name ~ ' catalogue.') }}">
+  <meta name="description" content="{{ dataset.summary or (dataset.title ~ ' – ' ~ dataset.theme ~ ' exposure dataset (' ~ dataset.region ~ ', ' ~ dataset.period ~ ') in the ' ~ site.name ~ ' catalogue.') }}">
   <meta property="og:title" content="{{ dataset.title }} · {{ site.name }}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/thumbnails/{{ dataset.thumbnail }}.png">
+  <meta property="og:image" content="{{ thumbnail_src }}">
   <link rel="icon" href="../images/UU_favicon.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
   <script src="../js/theme.js"></script>
   <link rel="stylesheet" href="../css/tokens.css">
   <link rel="stylesheet" href="../css/base.css">
@@ -26,7 +27,7 @@
     <nav class="site-nav" aria-label="Main">
       <a href="../index.html#view=map">Map</a>
       <a href="../index.html#view=catalogue" aria-current="page">Catalogue</a>
-      <a href="../index.html#view=open-data">Open data</a>
+      <a href="../index.html#view=platforms">Data platforms</a>
     </nav>
     <div class="header-actions">
       <button type="button" class="btn btn--header theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
@@ -50,37 +51,59 @@
       </ol>
     </nav>
 
-    <section class="hero">
+    {% set has_thumbnail = dataset.thumbnail != "not_available" %}
+    <section class="hero hero--{{ dataset.access.type }}{% if not has_thumbnail %} hero--no-figure{% endif %}">
       <div class="hero__text">
         <p class="eyebrow">{{ dataset.category }} · {{ dataset.theme }}</p>
         <h1>{{ dataset.title }}</h1>
+        {% if is_uu %}
+        <p class="access-badge access-badge--request">UU · On request</p>
+        {% else %}
+        <p class="access-badge access-badge--external">External · {{ dataset.access.provider }}</p>
+        {% endif %}
         {% if dataset.summary %}
         <p class="lede">{{ dataset.summary }}</p>
         {% endif %}
         <ul class="facts" aria-label="Key facts">
-          <li><span class="facts__label">Region</span> {{ dataset.project }}</li>
+          <li><span class="facts__label">Region</span> {{ dataset.region }}</li>
           {% if dataset.period %}
           <li><span class="facts__label">Period</span> {{ dataset.period }}</li>
           {% endif %}
+          {% if dataset.temporalResolution %}
           <li><span class="facts__label">Time step</span> {{ dataset.temporalResolution }}</li>
+          {% endif %}
           {% if dataset.spatialResolution %}
           <li><span class="facts__label">Resolution</span> {{ dataset.spatialResolution }}</li>
           {% endif %}
+          {% if is_uu %}
           <li><span class="facts__label">Surfaces</span> {{ surfaces | length }}</li>
+          {% endif %}
         </ul>
         <div class="actions">
+          {% if is_uu %}
           {% if dataset.mapLayer %}
           <a class="btn btn--primary" href="../index.html#view=map&amp;layer={{ dataset.mapLayer | urlencode }}">View on map</a>
           {% endif %}
-          <a class="btn btn--secondary" href="{{ site.request_form }}">Request data access</a>
-          {% if surfaces | length == 1 and surfaces[0].xml %}
-          <a class="btn btn--ghost" href="{{ surfaces[0].xml }}">Metadata (XML)</a>
+          <a class="btn btn--request" href="{{ site.request_form }}">Request data access</a>
+          {% if surfaces | length == 1 and surfaces[0].metadataUrl %}
+          <a class="btn btn--ghost" href="{{ surfaces[0].metadataUrl }}">Metadata (XML)</a>
+          {% endif %}
+          {% else %}
+          <a class="btn btn--external" href="{{ dataset.access.url }}" target="_blank" rel="noopener">Go to data at {{ dataset.access.provider }} <span aria-hidden="true">↗</span></a>
+          {% if dataset.mapLayer %}
+          <a class="btn btn--primary" href="../index.html#view=map&amp;layer={{ dataset.mapLayer | urlencode }}">View on map</a>
+          {% endif %}
+          {% if surfaces[0].metadataUrl %}
+          <a class="btn btn--ghost" href="{{ surfaces[0].metadataUrl }}" target="_blank" rel="noopener">Original metadata <span aria-hidden="true">↗</span></a>
+          {% endif %}
           {% endif %}
         </div>
       </div>
+      {% if has_thumbnail %}
       <figure class="hero__figure">
-        <img src="images/thumbnails/{{ dataset.thumbnail }}.png" alt="Example map of {{ dataset.title }}" loading="lazy">
+        <img src="{{ thumbnail_src }}" alt="Example map of {{ dataset.title }}" loading="lazy">
       </figure>
+      {% endif %}
     </section>
 
     <section class="section" aria-labelledby="details-heading">
@@ -95,6 +118,7 @@
       </dl>
     </section>
 
+    {% if is_uu %}
     <section class="section" aria-labelledby="surfaces-heading">
       <h2 id="surfaces-heading">Surfaces</h2>
       <p class="section__intro">Each surface is a separate data layer of this dataset.</p>
@@ -121,7 +145,7 @@
                 {% if s.map %}<a href="../index.html#view=map&amp;layer={{ s.map.layer | urlencode }}">View</a>{% else %}<span class="muted">Catalogue only</span>{% endif %}
               </td>
               <td>
-                {% if s.xml %}<a href="{{ s.xml }}">XML</a>{% else %}<span class="muted">Unavailable</span>{% endif %}
+                {% if s.metadataUrl %}<a href="{{ s.metadataUrl }}">XML</a>{% else %}<span class="muted">Unavailable</span>{% endif %}
               </td>
             </tr>
             {% endfor %}
@@ -129,6 +153,7 @@
         </table>
       </div>
     </section>
+    {% endif %}
 
     {% if methodology %}
     <section class="section prose" aria-labelledby="methodology-heading">
@@ -137,20 +162,33 @@
     </section>
     {% endif %}
 
-    <section class="section callout" aria-labelledby="access-heading">
-      <h2 id="access-heading">Data access</h2>
+    {% if is_uu %}
+    <section class="section callout callout--request" aria-labelledby="access-heading">
+      <h2 id="access-heading">Data access: on request from Utrecht University</h2>
       <p>
-        To request access, complete the <a href="{{ site.request_form }}">data access request form</a>
+        This dataset is made available by Utrecht University (IRAS). To request access, complete the
+        <a href="{{ site.request_form }}">data access request form</a>
         and send it to <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.
         Requests are assessed under the <a href="{{ site.policy }}">Data Access and Publication Policy</a>.
       </p>
     </section>
+    {% else %}
+    <section class="section callout callout--external" aria-labelledby="access-heading">
+      <h2 id="access-heading">Data access: at {{ dataset.access.provider }}</h2>
+      <p>
+        This dataset is published and maintained by <strong>{{ dataset.access.provider }}</strong>{% if dataset.access.license %}
+        under the licence <em>{{ dataset.access.license }}</em>{% endif %}.
+        It is listed here for reference and is not distributed by Utrecht University:
+        <a href="{{ dataset.access.url }}" target="_blank" rel="noopener">access it at the provider</a>.
+      </p>
+    </section>
+    {% endif %}
   </main>
 
   <footer class="site-footer">
-    <span>{{ site.name }} · ExposomeNL &amp; EXPANSE</span>
+    <span>{{ site.name }} · Exposome data catalogue</span>
     <nav aria-label="Footer">
-      <a href="{{ site.policy }}">Data access policy</a>
+      <a href="{{ site.policy }}">UU data access policy</a>
       <a href="mailto:{{ site.contact }}">Contact</a>
     </nav>
   </footer>

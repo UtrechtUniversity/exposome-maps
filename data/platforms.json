@@ -1,0 +1,19 @@
+{
+  "intro": "Data platforms that give access to many more exposome-related datasets.",
+  "items": [
+    {
+      "name": "Climate Data Store",
+      "description": "Data catalogue containing datasets about Earth's past, present and future climate",
+      "source": "Copernicus Climate Change Service (C3S)",
+      "url": "https://cds.climate.copernicus.eu/datasets",
+      "extent": "Global"
+    },
+    {
+      "name": "Atlas of the Living Environment (Atlas Leefomgeving)",
+      "description": "Data catalogue and information site with datasets on environmental themes in the Netherlands",
+      "source": "Atlas Leefomgeving",
+      "url": "https://www.atlasleefomgeving.nl/",
+      "extent": "Netherlands"
+    }
+  ]
+}

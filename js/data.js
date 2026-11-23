@@ -1,6 +1,6 @@
 // Loading the generated catalogue (data/catalogue.json) and lookup helpers.
 
-import { DATA_URL, PAGES_PATH, PROJECT_ORDER, THUMBNAIL_PATH } from "./config.js";
+import { DATA_URL, PAGES_PATH, REGION_ORDER, THUMBNAIL_PATH } from "./config.js";
 
 export async function fetchJson(url) {
   const response = await fetch(url);
@@ -33,10 +33,10 @@ export function groupBy(items, keyFn) {
   return groups;
 }
 
-export function sortProjects(names) {
+export function sortRegions(names) {
   const rank = (name) => {
-    const i = PROJECT_ORDER.indexOf(name);
-    return i === -1 ? PROJECT_ORDER.length : i;
+    const i = REGION_ORDER.indexOf(name);
+    return i === -1 ? REGION_ORDER.length : i;
   };
   return [...names].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
 }
@@ -45,7 +45,9 @@ export function datasetUrl(page) {
   return `${PAGES_PATH}${encodeURIComponent(page)}.html`;
 }
 
+/** Thumbnail file name (in THUMBNAIL_PATH, without .png) or a full https URL. */
 export function thumbnailUrl(name) {
+  if (/^https:\/\//.test(name)) return name;
   return `${THUMBNAIL_PATH}${encodeURIComponent(name)}.png`;
 }
 

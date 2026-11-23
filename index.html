@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Exposome Maps</title>
-  <meta name="description" content="Explore and request environmental exposure (exposome) data layers from the ExposomeNL and EXPANSE projects: air pollution, green space, temperature, food environment and more.">
+  <meta name="description" content="Catalogue of exposome datasets: air pollution, green space, temperature, food environment and more. Datasets from Utrecht University (ExposomeNL, EXPANSE) can be requested; datasets from other providers link to where they are published.">
   <meta property="og:title" content="Exposome Maps">
-  <meta property="og:description" content="Interactive map and catalogue of exposome data layers from ExposomeNL and EXPANSE.">
+  <meta property="og:description" content="Interactive map and catalogue of exposome datasets from Utrecht University and other providers.">
   <meta property="og:type" content="website">
   <link rel="icon" href="images/UU_favicon.jpg" type="image/jpeg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css"
@@ -36,7 +36,7 @@
     <nav class="site-nav" role="tablist" aria-label="Views">
       <button type="button" role="tab" id="tab-map" data-view="map" aria-controls="view-map" aria-selected="true">Map</button>
       <button type="button" role="tab" id="tab-catalogue" data-view="catalogue" aria-controls="view-catalogue" aria-selected="false" tabindex="-1">Catalogue</button>
-      <button type="button" role="tab" id="tab-open-data" data-view="open-data" aria-controls="view-open-data" aria-selected="false" tabindex="-1">Open data</button>
+      <button type="button" role="tab" id="tab-platforms" data-view="platforms" aria-controls="view-platforms" aria-selected="false" tabindex="-1">Data platforms</button>
     </nav>
     <div class="header-actions">
       <button type="button" class="btn btn--header theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
@@ -64,16 +64,11 @@
         <div id="map" class="map" role="region" aria-label="Map"></div>
 
         <div class="layer-card" id="layer-card" aria-live="polite">
-          <p class="layer-card__empty" id="layer-card-empty">Choose a layer in the panel to show it on the map.</p>
+          <p class="layer-card__empty" id="layer-card-empty">Choose a layer in the panel to show it on the map</p>
           <div class="layer-card__body" id="layer-card-body" hidden>
             <div class="layer-card__heading">
               <span class="spinner" id="layer-spinner" role="status" hidden><span class="visually-hidden">Loading map tiles…</span></span>
-              <h2 class="layer-card__title" id="layer-card-title"></h2>
-            </div>
-            <p class="layer-card__meta" id="layer-card-meta"></p>
-            <div class="layer-card__links">
-              <a id="layer-card-details" href="#">Dataset details</a>
-              <button type="button" class="link-button" id="layer-card-metadata">Metadata</button>
+              <h2 class="layer-card__title"><span id="layer-card-title"></span> <span class="layer-card__time" id="layer-card-time"></span></h2>
             </div>
           </div>
         </div>
@@ -87,9 +82,9 @@
           <span class="visually-hidden">Toggle layer panel</span>
         </button>
         <div class="sidebar__body" id="sidebar-body">
-          <section class="panel panel--time" id="time-panel" aria-labelledby="time-heading" hidden>
-            <h2 class="panel__heading" id="time-heading">Date</h2>
+          <section class="panel panel--time" id="time-panel" aria-label="Date" hidden>
             <div class="time-control">
+              <span class="time-control__label" aria-hidden="true">Date</span>
               <button type="button" class="icon-btn" id="time-prev" aria-label="Previous date">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </button>
@@ -98,21 +93,20 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </button>
             </div>
-            <p class="panel__hint" id="time-hint"></p>
           </section>
 
           <section class="panel panel--layers" aria-labelledby="layers-heading">
-            <div class="panel__header">
-              <h2 class="panel__heading" id="layers-heading">Layers</h2>
-              <label class="toggle">
-                <input type="checkbox" id="show-catalogue-only">
-                <span>Show catalogue-only</span>
-              </label>
-            </div>
-            <label class="visually-hidden" for="layer-filter">Filter layers</label>
-            <input type="search" class="search-input" id="layer-filter" placeholder="Filter layers…" autocomplete="off">
+            <h2 class="panel__heading" id="layers-heading">Layers</h2>
+            <div class="segmented" id="region-switch" role="group" aria-label="Region"></div>
+            <ul class="menu-key" aria-label="Where the data comes from">
+              <li><span class="access-dot access-dot--request" aria-hidden="true"></span>UU · on request</li>
+              <li><span class="access-dot access-dot--external" aria-hidden="true"></span>External source</li>
+              <li><span class="menu-key__unavailable" aria-hidden="true">Aa</span>Not on the map</li>
+            </ul>
+            <label class="visually-hidden" for="layer-filter">Search layers</label>
+            <input type="search" class="search-input" id="layer-filter" placeholder="Search layers" autocomplete="off">
             <div id="layer-menu" class="menu"></div>
-            <p class="panel__hint" id="layer-filter-empty" hidden>No layers match your filter.</p>
+            <p class="panel__hint" id="layer-filter-empty" hidden>No layers match your search.</p>
           </section>
         </div>
       </aside>
@@ -124,7 +118,7 @@
         <header class="catalogue__header">
           <div>
             <h1 class="page-title">Data catalogue</h1>
-            <p class="page-intro">Browse all exposome datasets. Open a dataset for details, surfaces and data access, or view it on the map.</p>
+            <p class="page-intro">Browse exposome datasets from Utrecht University and other providers. Open a dataset for details and access, or view it on the map.</p>
           </div>
           <div class="catalogue__search">
             <label class="visually-hidden" for="catalogue-search">Search datasets</label>
@@ -132,7 +126,17 @@
           </div>
         </header>
 
-        <div class="filters" id="catalogue-filters" aria-label="Filters"></div>
+        <ul class="access-key" aria-label="How to get the data">
+          <li><span class="access-badge access-badge--request">UU · On request</span> Utrecht University data: request it with the data request form</li>
+          <li><span class="access-badge access-badge--external">External</span> Published by another organisation: go to the provider to access it</li>
+        </ul>
+
+        <div class="filters" id="catalogue-filters" aria-label="Filters">
+          <div class="filters__primary" id="catalogue-filters-primary"></div>
+          <div class="filters__more" id="catalogue-filters-more" hidden></div>
+          <button type="button" class="link-button filters__toggle" id="catalogue-filters-toggle"
+                  aria-expanded="false" aria-controls="catalogue-filters-more">More filters</button>
+        </div>
 
         <div class="catalogue__status">
           <p id="catalogue-count" aria-live="polite"></p>
@@ -144,21 +148,13 @@
       </div>
     </section>
 
-    <!-- ============ OPEN DATA VIEW ============ -->
-    <section class="view view--open-data" id="view-open-data" role="tabpanel" aria-labelledby="tab-open-data" hidden>
-      <div class="catalogue" id="open-data"></div>
+    <!-- ============ DATA PLATFORMS VIEW ============ -->
+    <section class="view view--platforms" id="view-platforms" role="tabpanel" aria-labelledby="tab-platforms" hidden>
+      <div class="catalogue" id="platforms"></div>
     </section>
   </main>
 
-  <!-- About dialog: content from info-page.html -->
-  <dialog class="dialog" id="info-dialog" aria-labelledby="info-title">
-    <form method="dialog" class="dialog__close-form">
-      <button class="dialog__close" aria-label="Close">&times;</button>
-    </form>
-    <div class="dialog__content" id="info-content" tabindex="-1" autofocus><p>Loading…</p></div>
-  </dialog>
-
-  <!-- Metadata dialog -->
+  <!-- Metadata drawer: opened with the (i) button next to each layer in the map menu -->
   <dialog class="dialog dialog--drawer" id="metadata-dialog" aria-labelledby="metadata-title">
     <form method="dialog" class="dialog__close-form">
       <button class="dialog__close" aria-label="Close">&times;</button>
@@ -170,5 +166,14 @@
       <div class="dialog__actions" id="metadata-actions"></div>
     </div>
   </dialog>
+
+  <!-- About dialog: content from info-page.html -->
+  <dialog class="dialog" id="info-dialog" aria-labelledby="info-title">
+    <form method="dialog" class="dialog__close-form">
+      <button class="dialog__close" aria-label="Close">&times;</button>
+    </form>
+    <div class="dialog__content" id="info-content" tabindex="-1" autofocus><p>Loading…</p></div>
+  </dialog>
+
 </body>
 </html>

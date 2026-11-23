@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://exposome.uu.nl/schemas/source.schema.json",
+  "title": "Exposome Maps external metadata source",
+  "description": "One file per external metadata source. Converters write files in this format into sources/; scripts/build.py merges them into the catalogue. See sources/README.md.",
+  "type": "object",
+  "required": ["source", "datasets"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "source": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/slug", "description": "Short unique id of this source, e.g. 'nationaal-georegister'." },
+        "name": { "type": "string", "minLength": 1, "description": "Human-readable name of the source." },
+        "description": { "type": "string" },
+        "url": { "$ref": "#/$defs/httpsUrl", "description": "Where the source metadata came from." },
+        "updated": { "type": "string", "format": "date", "description": "Date the file was generated (YYYY-MM-DD)." }
+      }
+    },
+    "datasets": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dataset" }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$",
+      "maxLength": 100
+    },
+    "httpsUrl": {
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "dataset": {
+      "type": "object",
+      "required": ["id", "title", "category", "theme", "region", "provider", "access_url"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/slug", "description": "Unique across all sources; becomes catalogue_pages/<id>.html." },
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "description": "One or two sentences shown on cards and the dataset page." },
+        "category": { "type": "string", "minLength": 1, "description": "Exposome category, e.g. Built, Physico-Chemical, Food." },
+        "theme": { "type": "string", "minLength": 1, "description": "Theme within the category, e.g. Air pollution." },
+        "region": { "type": "string", "minLength": 1, "description": "Region used for filtering, e.g. Netherlands, Europe, Global." },
+        "extent": { "type": "string", "description": "Free-text spatial extent." },
+        "provider": { "type": "string", "minLength": 1, "description": "Organisation that publishes the data." },
+        "access_url": { "$ref": "#/$defs/httpsUrl", "description": "Page where users can access or download the data." },
+        "license": { "type": "string" },
+        "temporal_resolution": { "type": "string", "description": "e.g. Annual, Monthly, Daily, Once." },
+        "period": { "type": "string", "description": "e.g. 2000 - 2020." },
+        "spatial_resolution": { "type": "string", "description": "e.g. 100x100m." },
+        "unit": { "type": "string" },
+        "keywords": { "type": "array", "items": { "type": "string" } },
+        "references": { "type": "string" },
+        "metadata_url": { "$ref": "#/$defs/httpsUrl", "description": "Link to the full original metadata record." },
+        "thumbnail": {
+          "type": "string",
+          "description": "File name (without .png) in catalogue_pages/images/thumbnails/, or an https URL."
+        },
+        "map": {
+          "type": "object",
+          "description": "Optional: show the dataset on the map from the provider's own WMS.",
+          "required": ["wms_url", "layer", "times"],
+          "additionalProperties": false,
+          "properties": {
+            "wms_url": { "$ref": "#/$defs/httpsUrl" },
+            "layer": { "type": "string", "minLength": 1, "description": "Full WMS layer name." },
+            "style": { "type": "string" },
+            "legend_url": { "$ref": "#/$defs/httpsUrl" },
+            "times": {
+              "type": "array",
+              "description": "WMS TIME values (YYYY, YYYY-MM or YYYY-MM-DD). Use [\"\"] for a layer without time.",
+              "items": { "type": "string" },
+              "minItems": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

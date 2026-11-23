@@ -32,12 +32,23 @@ const RetryingWMS = L.TileLayer.WMS.extend({
   },
 });
 
-export function qualifiedLayerName(surface) {
-  return `${GEOSERVER_WORKSPACE}:${surface.map.layer}`;
+/** WMS endpoint: the provider's own (external layers) or the UU GeoServer. */
+export function wmsUrl(surface) {
+  return surface.map.url || GEOSERVER_URL;
 }
 
-/** Legend graphic URL. Rule: the legend style is always the layer style + "_legend". */
+/** UU layers live in the GeoServer workspace; external layers use their full name as given. */
+export function qualifiedLayerName(surface) {
+  return surface.map.url ? surface.map.layer : `${GEOSERVER_WORKSPACE}:${surface.map.layer}`;
+}
+
+/**
+ * Legend graphic URL. External layers may give their own; for UU layers the rule is:
+ * the legend style is always the layer style + "_legend".
+ */
 export function legendUrl(surface) {
+  if (surface.map.legendUrl) return surface.map.legendUrl;
+  if (surface.map.url) return null; // external layer without a legend
   const params = new URLSearchParams({
     service: "WMS",
     version: "1.3.0",
@@ -51,9 +62,9 @@ export function legendUrl(surface) {
 
 /**
  * @param {L.Map} map
- * @param {{setBasemap: Function, onLoading: Function, onLoad: Function, onTileErrors: Function}} hooks
+ * @param {{onLoading: Function, onLoad: Function, onTileErrors: Function}} hooks
  */
-export function createDataLayer(map, { setBasemap, onLoading, onLoad, onTileErrors }) {
+export function createDataLayer(map, { onLoading, onLoad, onTileErrors }) {
   let layer = null;
   let surface = null;
   let time = null;
@@ -84,10 +95,10 @@ export function createDataLayer(map, { setBasemap, onLoading, onLoad, onTileErro
     time = nextTime;
     tileErrors = 0;
 
-    // styles: "" renders with the layer's own (default) style in GeoServer.
-    layer = new RetryingWMS(GEOSERVER_URL, {
+    // styles: "" renders with the layer's own (default) style on the server.
+    layer = new RetryingWMS(wmsUrl(surface), {
       layers: qualifiedLayerName(surface),
-      time,
+      ...(time ? { time } : {}), // layers without a time dimension get no TIME parameter
       styles: "",
       format: "image/png8",
       version: "1.1.0",
@@ -107,7 +118,6 @@ export function createDataLayer(map, { setBasemap, onLoading, onLoad, onTileErro
     });
     layer.addTo(map);
 
-    if (surface.map.basemap) setBasemap(surface.map.basemap);
     legend.update(surface);
     if (!legendShown) {
       legend.control.addTo(map);
@@ -148,7 +158,6 @@ function createLegendControl({ onOpacity }) {
     { class: "legend-panel__body", id: "legend-body" },
     img,
     h("div", { class: "opacity-control" }, h("label", { for: "opacity-slider" }, "Opacity"), slider, output),
-    h("p", { class: "legend-panel__note" }, "Reprojected for display; values may differ slightly from the source data."),
   );
   const collapse = h(
     "button",
@@ -193,7 +202,9 @@ function createLegendControl({ onOpacity }) {
       if (surface.unit) title.append(h("span", { class: "legend-panel__unit" }, surface.unit));
       img.hidden = false;
       img.alt = `Legend for ${surface.title}`;
-      img.src = legendUrl(surface);
+      const url = legendUrl(surface);
+      img.hidden = !url;
+      if (url) img.src = url;
     },
   };
 }
