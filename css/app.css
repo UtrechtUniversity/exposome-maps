@@ -1073,6 +1073,7 @@ body.app {
   border-top-color: var(--color-surface);
 }
 
+[data-theme="dark"] .flatpickr-current-month input.cur-year,
 [data-theme="dark"] .flatpickr-months .flatpickr-month,
 [data-theme="dark"] .flatpickr-current-month .flatpickr-monthDropdown-months,
 [data-theme="dark"] span.flatpickr-weekday,
