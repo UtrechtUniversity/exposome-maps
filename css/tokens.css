@@ -1,6 +1,8 @@
 /* Design tokens shared by the app (index.html) and the dataset pages.
    Change colours, radii and spacing here only. */
 :root {
+  color-scheme: light;
+
   /* Brand */
   --color-brand: #0f5e8f;
   --color-brand-strong: #0a3f62;
@@ -8,6 +10,12 @@
   --color-accent: #f47c20;          /* decorative only (lines, dots) */
   --color-accent-strong: #b84f0d;   /* text/background with white: WCAG AA */
   --color-accent-soft: #fff1e6;
+
+  /* Text roles (separate from fills so dark mode can lighten them) */
+  --color-heading: var(--color-brand-strong);
+  --color-link: var(--color-brand);
+  --color-accent-text: var(--color-accent-strong);
+  --header-bg: linear-gradient(100deg, var(--color-brand-strong) 0%, var(--color-brand) 100%);
 
   /* Neutrals */
   --color-bg: #f4f6f9;
@@ -18,6 +26,8 @@
   --color-text-inverse: #ffffff;
   --color-border: #d9e1e8;
   --color-border-strong: #b9c6d3;
+  --color-surface-overlay: rgba(255, 255, 255, 0.96); /* panels floating on the map */
+  --color-map-bg: #dfe6ec;
 
   /* Feedback */
   --color-danger: #b42318;
@@ -66,4 +76,34 @@
   --z-sidebar: 900;
   --z-header: 1000;
   --z-toast: 1100;
+}
+
+/* Dark theme: set by js/theme.js as <html data-theme="dark">. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-brand-soft: #1a3347;
+  --color-accent-soft: #3a2616;
+
+  --color-heading: #a6d1f0;
+  --color-link: #74b9e8;
+  --color-accent-text: #f6a364;
+  --header-bg: linear-gradient(100deg, #061b2c 0%, #0b3555 100%);
+
+  --color-bg: #0e151d;
+  --color-surface: #17212c;
+  --color-surface-muted: #202c39;
+  --color-surface-overlay: rgba(23, 33, 44, 0.95);
+  --color-map-bg: #1b232c;
+  --color-text: #e2e8ef;
+  --color-text-muted: #a2b0be;
+  --color-border: #2b3947;
+  --color-border-strong: #44566b;
+
+  --color-danger: #ff9b90;
+  --color-danger-soft: #3a1a17;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
 }

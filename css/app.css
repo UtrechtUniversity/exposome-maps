@@ -43,7 +43,7 @@ body.app {
   padding: 0;
   border: 0;
   background: none;
-  color: var(--color-brand);
+  color: var(--color-link);
   font-size: inherit;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -51,7 +51,7 @@ body.app {
 }
 
 .link-button:hover {
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .eyebrow {
@@ -60,7 +60,7 @@ body.app {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-accent-strong);
+  color: var(--color-accent-text);
 }
 
 .badge {
@@ -123,7 +123,7 @@ body.app {
   position: absolute;
   z-index: 0; /* own stacking context: Leaflet's z-indexes stay below the sidebar */
   inset: 0;
-  background: #dfe6ec;
+  background: var(--color-map-bg);
   font-family: var(--font-sans);
 }
 
@@ -137,7 +137,7 @@ body.app {
   max-width: min(520px, calc(100% - 120px));
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.96);
+  background: var(--color-surface-overlay);
   box-shadow: var(--shadow-md);
   font-size: var(--text-sm);
 }
@@ -156,7 +156,7 @@ body.app {
 .layer-card__title {
   margin: 0;
   font-size: var(--text-md);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .layer-card__meta {
@@ -233,7 +233,7 @@ body.app {
   display: block;
   font-size: var(--text-lg);
   font-weight: 700;
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .value-popup__context {
@@ -249,7 +249,7 @@ body.app {
   max-width: calc(100vw - 32px);
   padding: var(--space-3);
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.97);
+  background: var(--color-surface-overlay);
   box-shadow: var(--shadow-md);
   font-size: var(--text-sm);
 }
@@ -265,7 +265,7 @@ body.app {
   margin: 0;
   font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .legend-panel__unit {
@@ -356,7 +356,7 @@ body.app {
   border: 1px solid var(--color-border);
   border-radius: 50%;
   background: var(--color-surface);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
   box-shadow: var(--shadow-md);
   cursor: pointer;
 }
@@ -477,7 +477,7 @@ body.app {
   margin: 0 0 var(--space-1);
   font-size: var(--text-sm);
   font-weight: 700;
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .menu__project-title::after {
@@ -541,7 +541,7 @@ body.app {
 
 .menu__theme > summary {
   font-size: var(--text-sm);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .menu__items {
@@ -583,7 +583,7 @@ body.app {
 .menu__select[aria-pressed="true"] {
   border-left-color: var(--color-accent);
   background: var(--color-accent-soft);
-  color: var(--color-accent-strong);
+  color: var(--color-accent-text);
   font-weight: 600;
 }
 
@@ -605,7 +605,7 @@ body.app {
 }
 
 .menu__info:hover {
-  color: var(--color-brand);
+  color: var(--color-link);
 }
 
 .menu__info svg {
@@ -632,7 +632,7 @@ body.app {
 .page-title {
   margin: 0 0 var(--space-1);
   font-size: var(--text-2xl);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .page-intro {
@@ -767,7 +767,7 @@ body.app {
 }
 
 .card__title a {
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
   text-decoration: none;
 }
 
@@ -808,7 +808,7 @@ body.app {
 
 .open-data__section h2 {
   font-size: var(--text-xl);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .open-data__section .data-table td:first-child {
@@ -870,7 +870,7 @@ body.app {
 .dialog__content h3 {
   margin-top: var(--space-5);
   font-size: var(--text-lg);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .dialog__content li {
@@ -880,7 +880,7 @@ body.app {
 .dialog__title {
   padding-right: var(--space-6);
   font-size: var(--text-xl);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .dialog__actions {
@@ -924,7 +924,7 @@ body.app {
 
 .meta-list dt {
   font-weight: 600;
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .meta-list dd {
@@ -1006,4 +1006,101 @@ body.app {
     grid-template-columns: 1fr;
     gap: 0;
   }
+}
+
+/* ---------- Dark theme: third-party widgets ---------- */
+
+/* GeoServer legends are dark text on transparent: keep them on a light chip. */
+[data-theme="dark"] .legend-panel__img {
+  padding: var(--space-1);
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+}
+
+[data-theme="dark"] .leaflet-bar a,
+[data-theme="dark"] .leaflet-control-layers,
+[data-theme="dark"] .leaflet-popup-content-wrapper,
+[data-theme="dark"] .leaflet-popup-tip {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+[data-theme="dark"] .leaflet-bar a {
+  border-bottom-color: var(--color-border);
+}
+
+[data-theme="dark"] .leaflet-bar a:hover {
+  background: var(--color-surface-muted);
+}
+
+[data-theme="dark"] .leaflet-bar a.leaflet-disabled {
+  background: var(--color-surface-muted);
+  color: var(--color-text-muted);
+}
+
+[data-theme="dark"] .leaflet-control-layers-toggle {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+[data-theme="dark"] .leaflet-container a.leaflet-popup-close-button {
+  color: var(--color-text-muted);
+}
+
+[data-theme="dark"] .leaflet-control-attribution,
+[data-theme="dark"] .leaflet-control-scale-line {
+  background: rgba(23, 33, 44, 0.8);
+  color: var(--color-text-muted);
+}
+
+[data-theme="dark"] .leaflet-control-scale-line {
+  border-color: var(--color-text-muted);
+}
+
+[data-theme="dark"] .leaflet-container .leaflet-control-attribution a {
+  color: var(--color-link);
+}
+
+[data-theme="dark"] .flatpickr-calendar {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+}
+
+[data-theme="dark"] .flatpickr-calendar.arrowTop::after {
+  border-bottom-color: var(--color-surface);
+}
+
+[data-theme="dark"] .flatpickr-calendar.arrowBottom::after {
+  border-top-color: var(--color-surface);
+}
+
+[data-theme="dark"] .flatpickr-months .flatpickr-month,
+[data-theme="dark"] .flatpickr-current-month .flatpickr-monthDropdown-months,
+[data-theme="dark"] span.flatpickr-weekday,
+[data-theme="dark"] .flatpickr-day {
+  background: transparent;
+  color: var(--color-text);
+  fill: var(--color-text);
+}
+
+[data-theme="dark"] .flatpickr-months .flatpickr-prev-month,
+[data-theme="dark"] .flatpickr-months .flatpickr-next-month {
+  color: var(--color-text);
+  fill: var(--color-text);
+}
+
+[data-theme="dark"] .flatpickr-day:hover {
+  background: var(--color-surface-muted);
+  border-color: var(--color-surface-muted);
+}
+
+[data-theme="dark"] .flatpickr-day.flatpickr-disabled,
+[data-theme="dark"] .flatpickr-day.prevMonthDay,
+[data-theme="dark"] .flatpickr-day.nextMonthDay {
+  color: rgba(226, 232, 239, 0.25);
+}
+
+[data-theme="dark"] .flatpickr-day.selected {
+  background: var(--color-accent-strong);
+  border-color: var(--color-accent-strong);
+  color: #ffffff;
 }

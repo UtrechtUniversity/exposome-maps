@@ -41,12 +41,12 @@
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-accent-strong);
+  color: var(--color-accent-text);
 }
 
 .hero h1 {
   font-size: var(--text-2xl);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .lede {
@@ -103,7 +103,7 @@
 
 .section h2 {
   font-size: var(--text-xl);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .section__intro {
@@ -135,7 +135,7 @@
 
 .details dt {
   font-weight: 600;
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .details dd {
@@ -156,7 +156,7 @@
 .prose h3 {
   margin-top: var(--space-5);
   font-size: var(--text-lg);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .references {

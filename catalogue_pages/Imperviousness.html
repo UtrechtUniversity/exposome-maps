@@ -8,10 +8,11 @@
   <meta property="og:title" content="Imperviousness · Exposome Maps">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/thumbnails/imperviousness.png">
-  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../images/UU_favicon.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <script src="../js/theme.js"></script>
   <link rel="stylesheet" href="../css/tokens.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/dataset.css">
@@ -26,9 +27,16 @@
       <a href="../index.html#view=catalogue" aria-current="page">Catalogue</a>
       <a href="../index.html#view=open-data">Open data</a>
     </nav>
-    <div class="brand-logos">
-      <img src="../images/ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL" width="132" height="32">
-      <img src="../images/EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE" width="147" height="32">
+    <div class="header-actions">
+      <button type="button" class="btn btn--header theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="brand-logos">
+        <img src="../images/ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL" width="132" height="32">
+        <img src="../images/EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE" width="147" height="32">
+        <img src="../images/Utrecht-univesrsity-logo.svg" alt="Utrecht University" width="85" height="32">
+      </div>
     </div>
   </header>
 

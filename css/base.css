@@ -32,12 +32,12 @@ h3 {
 }
 
 a {
-  color: var(--color-brand);
+  color: var(--color-link);
   text-underline-offset: 2px;
 }
 
 a:hover {
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 button {
@@ -93,7 +93,7 @@ button {
   min-height: var(--header-height);
   padding: 0 var(--space-4);
   color: var(--color-text-inverse);
-  background: linear-gradient(100deg, var(--color-brand-strong) 0%, var(--color-brand) 100%);
+  background: var(--header-bg);
   box-shadow: var(--shadow-md);
 }
 
@@ -212,12 +212,12 @@ button {
 .btn--ghost {
   background: var(--color-surface);
   border-color: var(--color-border-strong);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .btn--ghost:hover {
   background: var(--color-brand-soft);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
 }
 
 .btn--header {
@@ -247,7 +247,7 @@ button {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   background: var(--color-surface);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
   cursor: pointer;
 }
 
@@ -293,7 +293,7 @@ button {
 
 .data-table th {
   background: var(--color-surface-muted);
-  color: var(--color-brand-strong);
+  color: var(--color-heading);
   font-weight: 600;
   white-space: nowrap;
 }
@@ -361,4 +361,20 @@ button {
     animation-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ---------- Theme toggle ---------- */
+
+.theme-toggle {
+  padding: 0 var(--space-2);
+  min-width: 34px;
+}
+
+.theme-toggle__sun,
+[data-theme="dark"] .theme-toggle__moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__sun {
+  display: block;
 }

@@ -35,7 +35,8 @@ export function createBaseMap(element) {
       pane: "basemaps",
     }),
   };
-  basemaps.light.addTo(map);
+  const themeBasemap = () => (document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+  basemaps[themeBasemap()].addTo(map);
 
   L.control.zoom({ position: "topleft" }).addTo(map);
   createResetControl().addTo(map);
@@ -55,6 +56,11 @@ export function createBaseMap(element) {
     Object.values(basemaps).forEach((layer) => map.removeLayer(layer));
     target.addTo(map);
   }
+
+  // Follow the site theme (light ↔ dark background) unless OpenStreetMap was chosen.
+  window.addEventListener("themechange", () => {
+    if (!map.hasLayer(basemaps.osm)) setBasemap(themeBasemap());
+  });
 
   return { map, setBasemap };
 }
