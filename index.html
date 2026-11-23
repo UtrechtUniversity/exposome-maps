@@ -1,184 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exposome Maps</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
-    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exposome Maps</title>
+  <meta name="description" content="Explore and request environmental exposure (exposome) data layers from the ExposomeNL and EXPANSE projects: air pollution, green space, temperature, food environment and more.">
+  <meta property="og:title" content="Exposome Maps">
+  <meta property="og:description" content="Interactive map and catalogue of exposome data layers from ExposomeNL and EXPANSE.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/UU_favicon.jpg" type="image/jpeg">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css"
+        integrity="sha384-RkASv+6KfBMW9eknReJIJ6b3UnjKOKC5bOUaNgIY778NFbQ8MtWq9Lr/khUgqtTt" crossorigin="anonymous">
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/app.css">
 
-    <!--external scripts-->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Lilita+One&family=Pangolin&display=swap" rel="stylesheet">
-
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"
+          integrity="sha384-5JqMv4L/Xa0hfvtF06qboNdhvuYXUku9ZrhZh3bSk8VXF0A/RuSLHpLsSV9Zqhl6" crossorigin="anonymous" defer></script>
+  <script type="module" src="js/main.js"></script>
 </head>
-<body>
-    <div id="top-bar">
-        <div id="title" class="title">
-            <span class="top-bar-text">Exposome Maps</span>
-        </div>
-        <div id="view_buttons" class="view-buttons">
-            <button id="mapViewBtn" class="viewbutton active">Map View</button>
-            <button id="catalogueViewBtn" class="viewbutton">Catalogue View</button>
-            <button id="info_button" class="info-button">&#9432;</button>
-        </div>
+<body class="app">
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <a class="brand" href="./">Exposome Maps</a>
+    <nav class="site-nav" role="tablist" aria-label="Views">
+      <button type="button" role="tab" id="tab-map" data-view="map" aria-controls="view-map" aria-selected="true">Map</button>
+      <button type="button" role="tab" id="tab-catalogue" data-view="catalogue" aria-controls="view-catalogue" aria-selected="false" tabindex="-1">Catalogue</button>
+      <button type="button" role="tab" id="tab-open-data" data-view="open-data" aria-controls="view-open-data" aria-selected="false" tabindex="-1">Open data</button>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="btn btn--header theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button type="button" class="btn btn--header" id="about-button" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        About
+      </button>
+      <div class="brand-logos">
+        <img src="images/ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL" width="132" height="32">
+        <img src="images/EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE" width="147" height="32">
+        <img src="images/Utrecht-univesrsity-logo.svg" alt="Utrecht University" width="85" height="32">
+      </div>
     </div>
-    <div id="infoBox" class="info-box">
-        <button id="info-close" class="info-close">&times;</button>
-        <div id="info-content">
-            <p></p>
-        </div>
-    </div>
-    <div id="MapView" class="view active">
-        <div id="map_container">
-            <div id="map"></div>
-            <div id="map-label">Select a theme and a time to display on the map</div>
-            <div class="slider-container">
-                <label for="opacity-slider">Layer transparency</label>
-                <input type="range" id="opacity-slider" min="0" max="1" step="0.01" value="1">
+  </header>
+
+  <div class="banner" id="app-banner" role="alert" hidden></div>
+
+  <main id="main" class="views">
+    <!-- ============ MAP VIEW ============ -->
+    <section class="view view--map" id="view-map" role="tabpanel" aria-labelledby="tab-map">
+      <div class="map-area">
+        <div id="map" class="map" role="region" aria-label="Map"></div>
+
+        <div class="layer-card" id="layer-card" aria-live="polite">
+          <p class="layer-card__empty" id="layer-card-empty">Choose a layer in the panel to show it on the map.</p>
+          <div class="layer-card__body" id="layer-card-body" hidden>
+            <div class="layer-card__heading">
+              <span class="spinner" id="layer-spinner" role="status" hidden><span class="visually-hidden">Loading map tiles…</span></span>
+              <h2 class="layer-card__title" id="layer-card-title"></h2>
             </div>
-            <div id="projection_note" class="projection_note">Note: Data was reprojected from its original coordinate reference system. The values displayed on the map may be slightly different from actual data due to interpolation.</div>
-        </div>
-        <div id="sidebar" class="open">
-            <div class="toggle_container change" id="sidebar-toggle">
-                <div class="toggle_bar1"></div>
-                <div class="toggle_bar2"></div>
-                <div class="toggle_bar3"></div>
+            <p class="layer-card__meta" id="layer-card-meta"></p>
+            <div class="layer-card__links">
+              <a id="layer-card-details" href="#">Dataset details</a>
+              <button type="button" class="link-button" id="layer-card-metadata">Metadata</button>
             </div>
-            <aside class="sidebar">
-                <div id="leftside-navigation" class="nano">
-                    <div class="project-menu-section">
-                        <h3 class="project-menu-label">Europe</h3>
-                        <ul class="nano-content project-menu" id="dynamic-populated-menu">
-                            <!-- menu gets automatically populated here based on a JSON -->
-                        </ul>
-                    </div>
-                    <div class="project-menu-divider" aria-hidden="true"></div>
-                    <div class="project-menu-section">
-                        <h3 class="project-menu-label">Netherlands</h3>
-                        <ul class="nano-content project-menu" id="dynamic-populated-menu-map-view-exposome">
-                            <!-- menu gets automatically populated here based on a JSON -->
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="time-component">
-                    <h3>Time Selection</h3>
-                    <div class="time-controls">
-                        <input id="datePicker" type="text" placeholder="Select a date">
-                    </div>
-                </div>
-                <button id="showOnMapBtn" disabled>Show on Map</button>
-            </aside>
-        
-            <img id="sidebar-img1" src="images/ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL logo" class="sidebar-img1 open">
-            <img id="sidebar-img2" src="images/EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE logo" class="sidebar-img2 open">
-        </div>
-        <div id="metadata-box" class="metadata-box hidden">
-            <button id="metadata-close">&times;</button>
-            <div id="metadata-content"></div>
+          </div>
         </div>
 
+        <div class="toast" id="map-toast" role="status" hidden></div>
+      </div>
+
+      <aside class="sidebar" id="map-sidebar" data-open="true" aria-label="Layers and time">
+        <button type="button" class="sidebar__toggle" id="sidebar-toggle" aria-expanded="true" aria-controls="sidebar-body">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="visually-hidden">Toggle layer panel</span>
+        </button>
+        <div class="sidebar__body" id="sidebar-body">
+          <section class="panel panel--time" id="time-panel" aria-labelledby="time-heading" hidden>
+            <h2 class="panel__heading" id="time-heading">Date</h2>
+            <div class="time-control">
+              <button type="button" class="icon-btn" id="time-prev" aria-label="Previous date">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="time-control__picker" id="time-picker"></div>
+              <button type="button" class="icon-btn" id="time-next" aria-label="Next date">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+            <p class="panel__hint" id="time-hint"></p>
+          </section>
+
+          <section class="panel panel--layers" aria-labelledby="layers-heading">
+            <div class="panel__header">
+              <h2 class="panel__heading" id="layers-heading">Layers</h2>
+              <label class="toggle">
+                <input type="checkbox" id="show-catalogue-only">
+                <span>Show catalogue-only</span>
+              </label>
+            </div>
+            <label class="visually-hidden" for="layer-filter">Filter layers</label>
+            <input type="search" class="search-input" id="layer-filter" placeholder="Filter layers…" autocomplete="off">
+            <div id="layer-menu" class="menu"></div>
+            <p class="panel__hint" id="layer-filter-empty" hidden>No layers match your filter.</p>
+          </section>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ============ CATALOGUE VIEW ============ -->
+    <section class="view view--catalogue" id="view-catalogue" role="tabpanel" aria-labelledby="tab-catalogue" hidden>
+      <div class="catalogue">
+        <header class="catalogue__header">
+          <div>
+            <h1 class="page-title">Data catalogue</h1>
+            <p class="page-intro">Browse all exposome datasets. Open a dataset for details, surfaces and data access, or view it on the map.</p>
+          </div>
+          <div class="catalogue__search">
+            <label class="visually-hidden" for="catalogue-search">Search datasets</label>
+            <input type="search" class="search-input search-input--lg" id="catalogue-search" placeholder="Search datasets, e.g. NO2, green space…" autocomplete="off">
+          </div>
+        </header>
+
+        <div class="filters" id="catalogue-filters" aria-label="Filters"></div>
+
+        <div class="catalogue__status">
+          <p id="catalogue-count" aria-live="polite"></p>
+          <button type="button" class="link-button" id="catalogue-clear" hidden>Clear filters</button>
+        </div>
+
+        <ul class="card-grid" id="catalogue-grid"></ul>
+        <p class="empty-state" id="catalogue-empty" hidden>No datasets match your search. Try fewer filters.</p>
+      </div>
+    </section>
+
+    <!-- ============ OPEN DATA VIEW ============ -->
+    <section class="view view--open-data" id="view-open-data" role="tabpanel" aria-labelledby="tab-open-data" hidden>
+      <div class="catalogue" id="open-data"></div>
+    </section>
+  </main>
+
+  <!-- About dialog: content from info-page.html -->
+  <dialog class="dialog" id="info-dialog" aria-labelledby="info-title">
+    <form method="dialog" class="dialog__close-form">
+      <button class="dialog__close" aria-label="Close">&times;</button>
+    </form>
+    <div class="dialog__content" id="info-content" tabindex="-1" autofocus><p>Loading…</p></div>
+  </dialog>
+
+  <!-- Metadata dialog -->
+  <dialog class="dialog dialog--drawer" id="metadata-dialog" aria-labelledby="metadata-title">
+    <form method="dialog" class="dialog__close-form">
+      <button class="dialog__close" aria-label="Close">&times;</button>
+    </form>
+    <div class="dialog__content" tabindex="-1" autofocus>
+      <p class="eyebrow" id="metadata-eyebrow"></p>
+      <h2 class="dialog__title" id="metadata-title"></h2>
+      <dl class="meta-list" id="metadata-list"></dl>
+      <div class="dialog__actions" id="metadata-actions"></div>
     </div>
-    <div id = "CatalogueView" class="view">
-        <div id="sidebar2" class="open">
-            <aside class="sidebar">
-                <div id="leftside-navigation" class="nano">
-                    <div class="project-menu-section">
-                        <h3 class="project-menu-label">Europe</h3>
-                        <ul class="nano-content project-menu" id="dynamic-populated-menu-catalogue-view-expanse">
-                            <!-- menu gets automatically populated here based on a JSON -->
-                        </ul>
-                    </div>
-                    <div class="project-menu-divider" aria-hidden="true"></div>
-                    <div class="project-menu-section">
-                        <h3 class="project-menu-label">Netherlands</h3>
-                        <ul class="nano-content project-menu" id="dynamic-populated-menu-catalogue-view-exposome">
-                            <!-- menu gets automatically populated here based on a JSON -->
-                        </ul>
-                    </div>
-                </div>
-
-            </aside>
-            <div style="margin-top: 20px;"></div>
-            <!-- Button -->
-             <button id="OpenDataButton">Open exposome data</button>
-        </div>
-        <div id="catalogue">
-            <div id="catalogue-panel"></div>
-        </div>
-        
-    </div>
-
-    <!--local scripts-->
-    <script src="dataloader.js"></script>
-    <script src="map_view.js"></script>
-    <script src="catalogue_view.js"></script>
-    <script src="map.js"></script>
-
-    <script>
-        const mapBtn = document.getElementById("mapViewBtn");
-        const catalogueBtn = document.getElementById("catalogueViewBtn");
-
-        const mapView = document.getElementById("MapView");
-        const catalogueView = document.getElementById("CatalogueView");
-
-        function activateView(view) {
-            if (view === "map") {
-                mapView.classList.add("active");
-                catalogueView.classList.remove("active");
-                mapBtn.classList.add("active");
-                catalogueBtn.classList.remove("active");
-            } else if (view === "catalogue") {
-                catalogueView.classList.add("active");
-                mapView.classList.remove("active");
-                catalogueBtn.classList.add("active");
-                mapBtn.classList.remove("active");
-            }
-        }
-
-        mapBtn.addEventListener("click", () => activateView("map"));
-        catalogueBtn.addEventListener("click", () => activateView("catalogue"));
-    </script>
-
-    <script>
-        const infoButton = document.getElementById("info_button");
-        const infoBox = document.getElementById("infoBox");
-        const infoCloseButton = document.getElementById("info-close");
-
-        infoButton.addEventListener("click", () => {
-            infoBox.classList.remove("hidden");
-        });
-
-        infoCloseButton.addEventListener("click", () => {
-            infoBox.classList.add("hidden");
-        });
-    </script>
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        fetch("info-page.html")
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById("info-content").innerHTML = html;
-            })
-            .catch(err => console.error("Error loading info:", err));
-    });
-    </script>
-
-    <!-- External scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/index.js"></script>
-    
-    <!-- <script src ="remove_link.js"></script> -->
+  </dialog>
 </body>
 </html>

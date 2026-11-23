@@ -1,225 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exposome Maps</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
-
-    <link rel="stylesheet" href="catalogue_pages_style.css">
-
-    <!--external scripts-->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Lilita+One&family=Pangolin&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Median Normalized Difference Vegetation Index (NDVI) · Exposome Maps</title>
+  <meta name="description" content="Median Normalized Difference Vegetation Index (NDVI) – NDVI exposure dataset (Europe, 2000 - 2020) in the Exposome Maps catalogue.">
+  <meta property="og:title" content="Median Normalized Difference Vegetation Index (NDVI) · Exposome Maps">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/thumbnails/median_ndvi.png">
+  <link rel="icon" href="../images/UU_favicon.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <script src="../js/theme.js"></script>
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/dataset.css">
 </head>
-<body>
-    <div id="top-bar">
-        <div class="top-bar-inner">
-            <div class="top-bar-logos">
-                <img src="images/EXPANSE_logo_1380x300_noborder.png"
-                    alt="EXPANSE logo"
-                    class="sidebar-img">
+<body class="dataset-page">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-                <img src="images/ExposomeNL_logo_1320x320_noborder.png"
-                    alt="ExposomeNL logo"
-                    class="sidebar-img">
-            </div>
-
-            <div id="title" class="title">
-                <span class="title-text">
-                    Dataset: Median Normalized Difference Vegetation Index (NDVI)
-                </span>
-            </div>
-        </div>
+  <header class="site-header">
+    <a class="brand" href="../index.html">Exposome Maps</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../index.html#view=map">Map</a>
+      <a href="../index.html#view=catalogue" aria-current="page">Catalogue</a>
+      <a href="../index.html#view=open-data">Open data</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="btn btn--header theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="brand-logos">
+        <img src="../images/ExposomeNL_logo_1320x320_noborder.png" alt="ExposomeNL" width="132" height="32">
+        <img src="../images/EXPANSE_logo_1380x300_noborder.png" alt="EXPANSE" width="147" height="32">
+        <img src="../images/Utrecht-univesrsity-logo.svg" alt="Utrecht University" width="85" height="32">
+      </div>
     </div>
+  </header>
 
-    <div id="page">
-        <h2 class="title">Details</h2>
-        <div id="metadata-section">
-            
-            <div id="metadata-box"> 
-            </div>
-            <img src="images/thumbnails/median_ndvi.png" alt="NDVI example image" class="thumbnail" onerror="this.onerror=null; this.src='images/thumbnails/not_available.png';">
+  <main id="main" class="page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../index.html#view=catalogue">Catalogue</a></li>
+        <li>Built</li>
+        <li>NDVI</li>
+      </ol>
+    </nav>
 
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">Built · NDVI</p>
+        <h1>Median Normalized Difference Vegetation Index (NDVI)</h1>
+        <ul class="facts" aria-label="Key facts">
+          <li><span class="facts__label">Region</span> Europe</li>
+          <li><span class="facts__label">Period</span> 2000 - 2020</li>
+          <li><span class="facts__label">Time step</span> Annual</li>
+          <li><span class="facts__label">Resolution</span> 250x250m</li>
+          <li><span class="facts__label">Surfaces</span> 3</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--primary" href="../index.html#view=map&amp;layer=NDV_MD3">View on map</a>
+          <a class="btn btn--secondary" href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">Request data access</a>
         </div>
+      </div>
+      <figure class="hero__figure">
+        <img src="images/thumbnails/median_ndvi.png" alt="Example map of Median Normalized Difference Vegetation Index (NDVI)" loading="lazy">
+      </figure>
+    </section>
 
-        <h2 class="title">Surfaces</h2>
-                
-        <style>
-            table {
-                margin-left: 0;
-                text-align: left;
-                border-collapse: collapse;
-            }
-            th, td {
-                padding: 8px 24px; /* horizontal padding gives space between columns */
-            }
-        </style>        
-        <table>
-        <tr>
-            <th>Surface ID</th>
-            <th>Description</th>
-            <th>Metadata</th>
-        </tr>
-        <tr>
-            <td>14</td>
-            <td>Median NDVI within 300m</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml" target="_blank">Open metadata XML</a></td>         
-        </tr>
-        <tr>
-            <td>15</td>
-            <td>Median NDVI within 500m</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml" target="_blank">Open metadata XML</a></td>         
-        </tr>
-        <tr>
-            <td>16</td>
-            <td>Median NDVI within 1km</td>
-            <td><a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml" target="_blank">Open metadata XML</a></td>         
-        </tr>
+    <section class="section" aria-labelledby="details-heading">
+      <h2 id="details-heading">Details</h2>
+      <dl class="details">
+        <div class="details__row">
+          <dt>Category</dt>
+          <dd>Built</dd>
+        </div>
+        <div class="details__row">
+          <dt>Theme</dt>
+          <dd>NDVI</dd>
+        </div>
+        <div class="details__row">
+          <dt>File type</dt>
+          <dd>TIF</dd>
+        </div>
+        <div class="details__row">
+          <dt>Temporal resolution</dt>
+          <dd>Annual</dd>
+        </div>
+        <div class="details__row">
+          <dt>Time period</dt>
+          <dd>2000 - 2020</dd>
+        </div>
+        <div class="details__row">
+          <dt>Frequency</dt>
+          <dd>Every 5 years</dd>
+        </div>
+        <div class="details__row">
+          <dt>Spatial resolution</dt>
+          <dd>250x250m</dd>
+        </div>
+        <div class="details__row">
+          <dt>Extent</dt>
+          <dd>Full EU</dd>
+        </div>
+        <div class="details__row">
+          <dt>Unit</dt>
+          <dd>index</dd>
+        </div>
+        <div class="details__row">
+          <dt>CRS</dt>
+          <dd>ETRS89-extended / LAEA Europe (EPSG: 3035)</dd>
+        </div>
+        <div class="details__row">
+          <dt>No-data value</dt>
+          <dd>-3.40E+38</dd>
+        </div>
+        <div class="details__row">
+          <dt>Owner</dt>
+          <dd>Kees de Hoogh</dd>
+        </div>
+        <div class="details__row">
+          <dt>Source project</dt>
+          <dd>EXPANSE (EXposome Powered tools for healthy living in urbAN SEttings)</dd>
+        </div>
+        <div class="details__row">
+          <dt>Metadata last updated</dt>
+          <dd>6-2-2026</dd>
+        </div>
+        <div class="details__row">
+          <dt>Dataset last revised</dt>
+          <dd>8-1-2026</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="surfaces-heading">
+      <h2 id="surfaces-heading">Surfaces</h2>
+      <p class="section__intro">Each surface is a separate data layer of this dataset.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Surface</th>
+              <th scope="col">Resolution</th>
+              <th scope="col">Time coverage</th>
+              <th scope="col">Map</th>
+              <th scope="col">Metadata</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>14</td>
+              <td>Median NDVI within 300m</td>
+              <td>250x250m</td>
+              <td>2000, 2005, 2010, 2015, 2020</td>
+              <td>
+<a href="../index.html#view=map&amp;layer=NDV_MD3">View</a>              </td>
+              <td>
+<a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_300m.xml">XML</a>              </td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Median NDVI within 500m</td>
+              <td>250x250m</td>
+              <td>2000, 2005, 2010, 2015, 2020</td>
+              <td>
+<a href="../index.html#view=map&amp;layer=NDV_MD5">View</a>              </td>
+              <td>
+<a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_500m.xml">XML</a>              </td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Median NDVI within 1km</td>
+              <td>250x250m</td>
+              <td>2000, 2005, 2010, 2015, 2020</td>
+              <td>
+<a href="../index.html#view=map&amp;layer=NDV_MD1">View</a>              </td>
+              <td>
+<a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/metadata_XMLs/metadata_Median_NDVI_within_1km.xml">XML</a>              </td>
+            </tr>
+          </tbody>
         </table>
+      </div>
+    </section>
 
-        <h2 class="title">Methodology</h2>
-        <div class="methodology-section">
-            <p>
-            NDVI quantifies photosynthetically active vegetation by measuring the difference between near-infrared
-            (which vegetation strongly reflects) and red light (which vegetation absorbs). NDVI values range from +1.0 to -1.0.
-            Areas of barren rock, sand, or snow usually show very low NDVI values (for example, 0.1 or less).
-            Sparse vegetation such as shrubs and grasslands or senescing crops may result in moderate NDVI values
-            (approximately 0.2 to 0.5). High NDVI values (approximately 0.6 to 0.9) correspond to dense vegetation such as that found
-            in temperate and tropical forests or crops at their peak growth stage.
-            Negative values of NDVI (values approaching -1) correspond mainly to water and ice and snow cover.
-            <br><br>
-            NDVI was derived from the Vegetation Indices (MOD13Q1) product of the Terra Moderate Resolution
-            Imaging Spectroradiometer (MODIS) with 250 m x 250 m resolution (K. Didan, 2015).
-            MOD13Q1 16-day composite vegetation indices provide one NDVI value every 16 days allowing the composition of gap-free temporal-series.
-            The per-pixel compositing algorithm is described in the MOD13Q1 product user guide [1].
-            The MOD13Q1 product includes the following relevant bands, among others: a) NDVI and b) quality assessment (QA) information.
-            More information can be found elsewhere [2].
-            Per-pixel Quality Assessment (QA) band provides information about how reliable the acquired data is and allows for
-            removal of pixels with less accuracies. QA values of 0 and 1 mean a good quality level, whereas values of 2 and 3 represent
-            pixels covered by ice, snow or clouds, which are discarded. Water features have typically negative signal values for NDVI,
-            so they add noise to the negative edge when conducting spatial analysis. In order to identify and remove the influence
-            of water bodies in the analysis, the Land Water Mask derived from MODIS and SRTM (MOD44W) were used 
-            to filter out the water bodies from the NDVI maps [3].
-            <br><br>
-            The data processing strategy included the following steps:
-            <br><br>
-            <ul>
-                <li>All MOD13Q1 imagery within a year was loaded and processed using Google Earth Engine</li>
-                <li>Processed imagery was clipped to the defined study area within the project</li>
-                <li>Quality assessment (QA) information was applied to obtain good quality data</li>
-                <li>Water bodies were masked out, using MOD44W</li>
-                <li>Selected statistics were calculated</li>
-            </ul>
-            <h3 class="title">Citations</h3>
-            <ol class="citations-list">
-                [1] Didan, Kamel, Barreto Munoz, A., Solano, R., & Huete, A. (2015). MODIS Vegetation Index User’s Guide (MOD13 Series). http://vip.arizona.edu.
-                <br><br>
-                [2] https://lpdaac.usgs.gov/products/mod13q1v006/
-                <br><br>
-                [3] Carroll, M. L., DiMiceli, C. M., Townshend, J. R. G., Sohlberg, R. A., Elders, A. I., Devadiga, S., Sayer, A. M., & Levy, R. C. (2017). Development of an operational land water mask for MODIS Collection 6, and influence on downstream data products. International Journal of Digital Earth, 10(2), 207–218. https://doi.org/10.1080/17538947.2016.1232756
-            </ol>
-            <br><br>
-        </div>
+    <section class="section prose" aria-labelledby="methodology-heading">
+      <h2 id="methodology-heading">Methodology</h2>
+      <p>NDVI quantifies photosynthetically active vegetation by measuring the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs). NDVI values range from +1.0 to -1.0. Areas of barren rock, sand, or snow usually show very low NDVI values (for example, 0.1 or less). Sparse vegetation such as shrubs and grasslands or senescing crops may result in moderate NDVI values (approximately 0.2 to 0.5). High NDVI values (approximately 0.6 to 0.9) correspond to dense vegetation such as that found in temperate and tropical forests or crops at their peak growth stage. Negative values of NDVI (values approaching -1) correspond mainly to water and ice and snow cover.</p>
+<p>NDVI was derived from the Vegetation Indices (MOD13Q1) product of the Terra Moderate Resolution Imaging Spectroradiometer (MODIS) with 250 m x 250 m resolution (K. Didan, 2015). MOD13Q1 16-day composite vegetation indices provide one NDVI value every 16 days allowing the composition of gap-free temporal-series. The per-pixel compositing algorithm is described in the MOD13Q1 product user guide [1]. The MOD13Q1 product includes the following relevant bands, among others: a) NDVI and b) quality assessment (QA) information. More information can be found elsewhere [2]. Per-pixel Quality Assessment (QA) band provides information about how reliable the acquired data is and allows for removal of pixels with less accuracies. QA values of 0 and 1 mean a good quality level, whereas values of 2 and 3 represent pixels covered by ice, snow or clouds, which are discarded. Water features have typically negative signal values for NDVI, so they add noise to the negative edge when conducting spatial analysis. In order to identify and remove the influence of water bodies in the analysis, the Land Water Mask derived from MODIS and SRTM (MOD44W) were used to filter out the water bodies from the NDVI maps [3].</p>
+<p>The data processing strategy included the following steps:</p>
+<ul>
+  <li>All MOD13Q1 imagery within a year was loaded and processed using Google Earth Engine</li>
+  <li>Processed imagery was clipped to the defined study area within the project</li>
+  <li>Quality assessment (QA) information was applied to obtain good quality data</li>
+  <li>Water bodies were masked out, using MOD44W</li>
+  <li>Selected statistics were calculated</li>
+</ul>
 
-    </div>
+<h3>References</h3>
+<ol class="references">
+  <li>Didan, Kamel, Barreto Munoz, A., Solano, R., &amp; Huete, A. (2015). MODIS Vegetation Index User’s Guide (MOD13 Series). <a href="http://vip.arizona.edu">http://vip.arizona.edu</a>.</li>
+  <li><a href="https://lpdaac.usgs.gov/products/mod13q1v006/">https://lpdaac.usgs.gov/products/mod13q1v006/</a></li>
+  <li>Carroll, M. L., DiMiceli, C. M., Townshend, J. R. G., Sohlberg, R. A., Elders, A. I., Devadiga, S., Sayer, A. M., &amp; Levy, R. C. (2017). Development of an operational land water mask for MODIS Collection 6, and influence on downstream data products. International Journal of Digital Earth, 10(2), 207–218. <a href="https://doi.org/10.1080/17538947.2016.1232756">https://doi.org/10.1080/17538947.2016.1232756</a></li>
+</ol>
 
+    </section>
+
+    <section class="section callout" aria-labelledby="access-heading">
+      <h2 id="access-heading">Data access</h2>
+      <p>
+        To request access, complete the <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_request_form/">data access request form</a>
+        and send it to <a href="mailto:expanse@uu.nl">expanse@uu.nl</a>.
+        Requests are assessed under the <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/">Data Access and Publication Policy</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Exposome Maps · ExposomeNL &amp; EXPANSE</span>
+    <nav aria-label="Footer">
+      <a href="https://utrechtuniversity.github.io/Exposome-Map-Documents/Data_Access_and_Publication_Policy/">Data access policy</a>
+      <a href="mailto:expanse@uu.nl">Contact</a>
+    </nav>
+  </footer>
 </body>
-    <script>
-        const metadataBox = document.getElementById("metadata-box");
-        const metadataContent = document.createElement("div");
-
-    </script>
-    <script>
-    const specifiedKeys = [
-        "Category",
-        "Theme",
-        "Summary",
-        "File type",
-        "Temporal resolution",
-        "Time period",
-        "Frequency",
-        "Spatial resolution",
-        "Extent",
-        "Unit",
-        "CRS",
-        "No-data value",
-        "Owner",
-        "References",
-        "Source project",
-        "Comments"
-    ];
-
-    
-
-    const productName = "Median_NDVI";
-
-    fetch("../metadata.json")
-        .then(response => response.json())
-        .then(data => {
-            console.log("Metadata loaded:", data, productName);
-            const product = findProductByName(data, productName);
-
-            if (!product) {
-                console.error("Product not found:", productName);
-                return;
-            }
-
-            populateMetadata(product);
-        })
-        .catch(error => console.error("Error loading metadata:", error));
-
-    function findProductByName(metadata, productName) {
-        for (const categoryKey in metadata) {
-            const categoryObj = metadata[categoryKey];
-            if (typeof categoryObj !== "object") continue;
-
-            for (const themeKey in categoryObj) {
-                const list = categoryObj[themeKey];
-                if (!Array.isArray(list)) continue;
-
-                const match = list.find(
-                    item => item.catalogue_page=== productName
-                );
-
-                if (match) return match;
-            }
-        }
-        return null;
-    }
-
-    function populateMetadata(item) {
-        const metadataBox = document.getElementById("metadata-box");
-        metadataBox.innerHTML = "";
-
-        for (const key of specifiedKeys) {
-            if (item[key] !== undefined && item[key] !== null && item[key] !== "") {
-                const rowDiv = document.createElement("div");
-                rowDiv.className = "metadata-row";
-
-                const keyDiv = document.createElement("div");
-                keyDiv.className = "metadata-key";
-                keyDiv.textContent = key;
-
-                const valueDiv = document.createElement("div");
-                valueDiv.className = "metadata-value";
-                valueDiv.textContent = item[key];
-
-
-                rowDiv.appendChild(keyDiv);
-                rowDiv.appendChild(valueDiv);
-                metadataBox.appendChild(rowDiv);
-            }
-        }
-    }
-
-    </script>
-
+</html>
