@@ -1,5 +1,5 @@
 assets/
 index_3_col.html
-config.js
+/config.js
 __pycache__/
 *.pyc
