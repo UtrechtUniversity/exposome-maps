@@ -17,7 +17,11 @@ const THEMES = {
 };
 
 const esriTiles = (service, pane) =>
-  L.tileLayer(`${ESRI_TILES}/${service}/MapServer/tile/{z}/{y}/{x}`, { attribution: ESRI, pane });
+  L.tileLayer(`${ESRI_TILES}/${service}/MapServer/tile/{z}/{y}/{x}`, {
+    attribution: ESRI,
+    pane,
+    maxZoom: MAP_VIEW.maxZoom,
+  });
 
 export function createBaseMap(element) {
   const map = L.map(element, {
@@ -25,6 +29,7 @@ export function createBaseMap(element) {
     center: MAP_VIEW.center,
     zoom: MAP_VIEW.zoom,
     minZoom: MAP_VIEW.minZoom,
+    maxZoom: MAP_VIEW.maxZoom,
   });
 
   // Stacking: basemap < data layer < labels, so place names stay readable on top of the data.
