@@ -18,7 +18,9 @@ export const REGION_ORDER = ["Netherlands", "Europe", "Global"];
 // Empty: every dataset is listed; those without a map layer are shown but can't be selected.
 export const MAP_HIDDEN_THEMES = [];
 
-export const MAP_VIEW = { center: [47.58, 6.06], zoom: 6, minZoom: 4 };
+// maxZoom: the Esri Canvas basemaps have no tiles past level 16 (they return a
+// "Map data not yet available" placeholder), so zooming further is not allowed.
+export const MAP_VIEW = { center: [47.58, 6.06], zoom: 6, minZoom: 4, maxZoom: 16 };
 
 export const STORAGE_KEYS = {
   infoSeen: "exposome-maps:info-seen",
